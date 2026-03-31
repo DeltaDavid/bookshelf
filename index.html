@@ -867,8 +867,7 @@ function renderTable(){
   }
   h+='</tbody></table></div>';  document.getElementById('v-table').innerHTML=h;
   applyFilters();
-  if(typeof updateMenuState==='function')updateMenuState();
-}
+  }
 
 // ===== RENDER STATS =====
 function renderStats(){
@@ -1136,6 +1135,7 @@ function switchTab(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   const el=document.getElementById('v-'+id);if(el)el.classList.add('active');
   applyFilters();
+  updateMenuState();
   }
 function applyFilters(){
   const q=document.getElementById('srch').value.toLowerCase();
