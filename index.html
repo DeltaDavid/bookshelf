@@ -340,9 +340,8 @@ body.compact .bk-tbl th{padding:6px 6px;font-size:10px}
 body.compact .tbl-cover{width:24px;height:36px}
 
 /* MENU BAR */
-.menubar{background:#f6f6f6;border-bottom:1px solid var(--border);padding:0 12px;display:flex;gap:0;font-size:13px;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;user-select:none}
+.menubar{background:#f6f6f6;border-bottom:1px solid var(--border);padding:0 12px;display:flex;gap:0;font-size:13px;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;user-select:none;position:sticky;top:0;z-index:500}
 
-.menubar{position:sticky;top:0;z-index:200}
 .md-sub{position:relative}
 .menu-sub{display:none;position:absolute;left:100%;top:-4px;background:var(--bg);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow2);min-width:120px;padding:4px 0;z-index:201}
 .md-sub:hover .menu-sub{display:block}
@@ -374,8 +373,6 @@ body.compact .tbl-cover{width:24px;height:36px}
 .wishlist-section{background:linear-gradient(135deg,#FFF8E1,#FFF3E0);border:1px solid #FFE0B2;border-radius:12px;padding:16px 20px;margin-bottom:20px}
 .wishlist-section h3{font-size:.9em;color:#E65100;margin-bottom:10px;font-weight:600}
 
-/* SERIES */
-.series-badge{display:inline-block;padding:2px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:.75em;color:var(--accent);font-weight:500}
 
 /* BACKUP */
 .backup-indicator{font-size:10px;color:var(--dim);padding:4px 40px;background:var(--bg);border-top:1px solid var(--border);text-align:right}
@@ -410,7 +407,6 @@ body.compact .tbl-cover{width:24px;height:36px}
 <div class="md-item" onclick="exportData()">JSON<span class="md-key">&#8984;E</span></div>
 <div class="md-item" onclick="exportCSV()">CSV</div>
 </div></div>
-<div class="md-item" onclick="document.getElementById('import-file').click()">Import<span class="md-key">&#8984;I</span></div>
 <div class="md-sep"></div>
 <div class="md-item" onclick="downloadBackup()">Download Backup</div>
 </div></div>
@@ -724,12 +720,7 @@ function startEdit(el,bookId,field){  if(el.classList.contains('editing'))return
   if(field==='shelves'){openPicker(el,bookId,'shelves');return}
   if(field==='status'){openPicker(el,bookId,'status');return}
   if(field==='tags'){openPicker(el,bookId,'tags');return}
-  if(field==='series'){
-    const inp=document.createElement('input');inp.type='text';inp.className='edit-input';inp.value=getSeries(b)||'';inp.placeholder='Series name';
-    el.replaceWith(inp);inp.focus();inp.select();
-    const save=()=>{saveField(bookId,'series',inp.value||null);if(document.getElementById('modal').classList.contains('open')&&currentModalId===bookId)renderModalContent(bookId)};
-    inp.addEventListener('blur',save);inp.addEventListener('keydown',e=>{if(e.key==='Enter')inp.blur()});
-    return}
+  i
   if(field==='type'){
     el.classList.add('editing');
     const sel=document.createElement('select');sel.className='edit-input';
@@ -1057,9 +1048,6 @@ function renderModalContent(id){
   body+='<div class="mb-section"><div class="mb-label">Tags</div><div class="mb-val">';  if(tg){body+=tagPillsHTML(b)+' ';}
   body+=makeEditable(tg||'',b.id,'tags')+'</div></div>';
 
-  // Series
-  const series=getSeries(b);
-  body+='<div class="mb-section"><div class="mb-label">Series</div><div class="mb-val">'+makeEditable(series||'',b.id,'series')+'</div></div>';
 
   // Date Read
   body+='<div class="mb-section"><div class="mb-label">Date Read</div><div class="mb-val">'+makeEditable(dr||'',b.id,'date_read')+'</div></div>';
@@ -1120,7 +1108,7 @@ function deleteQuote(bookId,idx){
   saveField(bookId,'quotes',quotes);  renderModalContent(bookId);
 }
 
-function closeModal(){document.getElementById('modal').classList.remove('open');currentModalId=null;?.textContent?.trim()?.toLowerCase()||'spine')}
+function closeModal(){document.getElementById('modal').classList.remove('open');currentModalId=null}
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape')closeModal();
   if(document.getElementById('modal').classList.contains('open')){
@@ -1198,8 +1186,8 @@ function sortTbl(th){
   const arrow=th.querySelector('.arrow');if(arrow)arrow.textContent=sortAsc?'\u25B2':'\u25BC';
   rows.sort((a,b)=>{
     let av,bv;const ac=a.children[col+1],bc=b.children[col+1];
-    if(type==='num'){av=parseFloat(ac?.dataset?.v||ac?.textContent)||0;bv=parseFloat(bc?.dataset?.v||bc?.textContent)||0}
-    else{av=(ac?.textContent||'').toLowerCase();bv=(bc?.textContent||'').toLowerCase()}
+    if(type==='num'){av=parseFloat((ac&&ac.dataset&&ac.dataset.v)||((ac&&ac.textContent)||''))||0;bv=parseFloat((bc&&bc.dataset&&bc.dataset.v)||((bc&&bc.textContent)||''))||0}
+    else{av=((ac&&ac.textContent)||'').toLowerCase();bv=((bc&&bc.textContent)||'').toLowerCase()}
     if(av<bv)return sortAsc?-1:1;if(av>bv)return sortAsc?1:-1;return 0;
   });
   rows.forEach(r=>tbody.appendChild(r));
@@ -1358,38 +1346,6 @@ function exportData(){
   a.click();URL.revokeObjectURL(url);
 }
 
-function importData(event){
-  const file=event.target.files[0];if(!file)return;
-  const reader=new FileReader();
-  reader.onload=function(e){
-    try{
-      const imp=JSON.parse(e.target.result);
-      if(imp.userData){saved=imp.userData;localStorage.setItem('bs_data',JSON.stringify(saved))}
-      if(imp.shelves){ALL_SHELVES=imp.shelves;localStorage.setItem('bs_shelves',JSON.stringify(ALL_SHELVES))}
-      if(imp.tags){ALL_TAGS=imp.tags;localStorage.setItem('bs_tags',JSON.stringify(ALL_TAGS))}
-      if(imp.addedBooks){
-        addedBooks=imp.addedBooks;localStorage.setItem('bs_added',JSON.stringify(addedBooks));
-        imp.addedBooks.forEach(ab=>{
-          if(!DATA.find(b=>b.id===ab.id)){
-            DATA.push(ab);
-            if(!BY_CAT[ab.category])BY_CAT[ab.category]=[];
-            BY_CAT[ab.category].push(ab);
-          }
-        });
-        CATS=Object.keys(BY_CAT).sort();
-      }
-      const bc2=document.getElementById('bookcount');if(bc2)bc2.textContent=DATA.length;
-      const cc2=document.getElementById('catcount');if(cc2)cc2.textContent=CATS.length;
-      const sel=document.getElementById('cf');
-      sel.innerHTML='<option value="">All Categories</option>';
-      CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c+' ('+(BY_CAT[c]||[]).length+')';sel.appendChild(o)});
-      renderSpine();renderCover();renderTable();renderStats();
-      alert('Import successful! '+DATA.length+' books loaded.');
-    }catch(err){alert('Import failed: '+err.message)}
-  };
-  reader.readAsText(file);
-  event.target.value='';
-}
 
 
 
@@ -1531,9 +1487,6 @@ function updateStatusFilter(){
 }
 
 
-// ===== SERIES =====
-function getSeries(b){const s=saved[b.id];return s&&s.series!==undefined?s.series:''}
-
 // ===== PROGRESS TRACKING =====
 function getProgress(b){
   const s=saved[b.id];
@@ -1552,8 +1505,8 @@ function renderProgressSection(b){
 
 // ===== CSV EXPORT =====
 function exportCSV(){
-  let csv='Title,Author,Category,Type,Rating,Avg Rating,Pages,Year,Status,Shelves,Tags,Date Read,Date Added,Notes,Series\n';
-  DATA.forEach(b=>{const r=getR(b);const row=[b.title,b.author,b.category,getType(b),r||'',b.avg_rating||'',b.pages||'',b.year||'',getStatus(b),getShelves(b),getTags(b),getDateRead(b)?fmtDate(getDateRead(b)):'',fmtDate(b.date_added),getNotes(b),getSeries(b)];csv+=row.map(v=>'"'+String(v||'').replace(/"/g,'""')+'"').join(',')+' \n'});
+  let csv='Title,Author,Category,Type,Rating,Avg Rating,Pages,Year,Status,Shelves,Tags,Date Read,Date Added,Notes\n';
+  DATA.forEach(b=>{const r=getR(b);const row=[b.title,b.author,b.category,getType(b),r||'',b.avg_rating||'',b.pages||'',b.year||'',getStatus(b),getShelves(b),getTags(b),getDateRead(b)?fmtDate(getDateRead(b)):'',fmtDate(b.date_added),getNotes(b)];csv+=row.map(v=>'"'+String(v||'').replace(/"/g,'""')+'"').join(',')+' \n'});
   const blob=new Blob([csv],{type:'text/csv'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bookshelf_'+new Date().toISOString().slice(0,10)+'.csv';a.click();
 }
 // ===== DUPLICATE DETECTION =====
@@ -1569,7 +1522,6 @@ document.addEventListener('keydown',e=>{
   const tag=e.target.tagName;if(tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT')return;
   if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();document.getElementById('srch').focus();return}
   if((e.metaKey||e.ctrlKey)&&e.key==='e'){e.preventDefault();exportData();return}
-  if((e.metaKey||e.ctrlKey)&&e.key==='i'){e.preventDefault();document.getElementById('import-file').click();return}
   if((e.metaKey||e.ctrlKey)&&e.key==='a'){e.preventDefault();const cb=document.querySelector('thead .sel-cb');if(cb){cb.checked=true;toggleAllRows(cb)}return}
   if(e.key==='Escape'){const kb=document.getElementById('kbOverlay');if(kb.classList.contains('open')){kb.classList.remove('open');return}const modal=document.getElementById('modal');if(modal.classList.contains('open')){closeModal();return}document.querySelectorAll('.picker-overlay,.sf-picker,.bulk-picker').forEach(p=>p.remove());return}
   if(e.key==='1')switchTab('spine');if(e.key==='2')switchTab('cover');if(e.key==='3')switchTab('table');if(e.key==='4')switchTab('stats');
@@ -1584,20 +1536,18 @@ const viewLabels={spine:'Spine View',cover:'Cover View',table:'Table View',stats
 
 // ===== AUTO-BACKUP =====
 function checkAutoBackup(){
-  const lastTs=parseInt(localStorage.getItem('bs_autobackup_ts')||'0');const now=Date.now();
+  var lastTs=parseInt(localStorage.getItem('bs_autobackup_ts')||'0');var now=Date.now();
   if(now-lastTs>604800000){
-    const backup={books:DATA,saved:saved,shelves:ALL_SHELVES,tags:ALL_TAGS,addedBooks:addedBooks,timestamp:new Date().toISOString()};
+    var backup={books:DATA,saved:saved,shelves:ALL_SHELVES,tags:ALL_TAGS,addedBooks:addedBooks,timestamp:new Date().toISOString()};
     try{
-      const prev2=localStorage.getItem('bs_autobackup_1');if(prev2)localStorage.setItem('bs_autobackup_2',prev2);
-      const prev1=localStorage.getItem('bs_autobackup');if(prev1)localStorage.setItem('bs_autobackup_1',prev1);
+      var prev2=localStorage.getItem('bs_autobackup_1');if(prev2)localStorage.setItem('bs_autobackup_2',prev2);
+      var prev1=localStorage.getItem('bs_autobackup');if(prev1)localStorage.setItem('bs_autobackup_1',prev1);
       localStorage.setItem('bs_autobackup',JSON.stringify(backup));localStorage.setItem('bs_autobackup_ts',String(now));
-      const ind=document.getElementById('backupIndicatofunction downloadBackup(){const backup=localStorage.getItem('bs_autobackup');if(!backup){alert('No backup available yet.');return}const blob=new Blob([backup],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bookshelf_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click()}
-ontent=ts>0?'Last backup: '+new Date(ts).toLocaleDateString()+' '+new Date(ts).toLocaleTimeString():'No backup yet'}
+      var ind=document.getElementById('backupIndicator');if(ind){ind.textContent='Backed up '+new Date().toLocaleDateString();ind.style.opacity='1';setTimeout(function(){ind.style.opacity='0'},3000)}
+    }catch(e){console.warn('Backup too large')}
+  }
 }
-function downloadBackup(){const backup=localStorage.getItem('bs_autobackup');if(!backup){alert('No backup yet.');return}const blob=new Blob([backup],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bookshelf_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click()}
-// ===== READING CHALLENGES =====
-
-
+function downloadBackup(){var backup=localStorage.getItem('bs_autobackup');if(!backup){alert('No backup available yet.');return}var blob=new Blob([backup],{type:'application/json'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bookshelf_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click()}
 // ===== PIE CHART =====
 function drawCategoryPie(){
   const canvas=document.getElementById('cat-pie-canvas');if(!canvas)return;const ctx=canvas.getContext('2d');if(!ctx)return;
@@ -1632,6 +1582,8 @@ function updateMenuState(){
   if(editMenu){editMenu.querySelectorAll('.md-item').forEach(i=>i.classList.toggle('disabled',!isTable))}
 }
 
+
+(function(){let sx=0,sy=0;document.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});document.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)<50||Math.abs(dy)>Math.abs(dx))return;var modal=document.getElementById('modal');if(!modal||!modal.classList.contains('open'))return;if(dx<-50)navModal(1);else if(dx>50)navModal(-1)},{passive:true})})();
 // Register service worker
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.log('SW reg failed:',e))}
 </script><div class="kb-overlay" id="kbOverlay" onclick="if(event.target===this)this.classList.remove('open')">
