@@ -232,6 +232,65 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .toolbar-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .toolbar-btn.primary:hover{opacity:.85}
 
+
+/* RECOMMENDATIONS */
+.recs-wrap{padding:16px 40px 0;display:none}
+.recs-wrap.has-recs{display:block}
+.recs-hdr{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.recs-hdr h3{font-size:.95em;font-weight:600;color:var(--txt)}
+.recs-hdr .recs-sub{font-size:.75em;color:var(--dim);font-weight:400}
+.recs-hdr .recs-hide{margin-left:auto;font-size:11px;color:var(--dim);cursor:pointer;border:none;background:none;font-family:inherit}
+.recs-hdr .recs-hide:hover{color:var(--accent)}
+.recs-scroll{display:flex;gap:14px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.recs-scroll::-webkit-scrollbar{height:4px}
+.recs-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.rec-card{flex-shrink:0;width:130px;scroll-snap-align:start;cursor:pointer;transition:transform .2s;position:relative}
+.rec-card:hover{transform:translateY(-4px)}
+.rec-card img{width:130px;height:195px;border-radius:8px;box-shadow:0 2px 10px var(--shadow2);object-fit:contain;background:var(--bg3)}
+.rec-card .rec-ph{width:130px;height:195px;border-radius:8px;box-shadow:0 2px 10px var(--shadow2);background:var(--bg3);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8px;text-align:center;font-size:10px}
+.rec-card .rec-title{font-size:11px;font-weight:600;color:var(--txt);margin-top:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rec-card .rec-author{font-size:10px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rec-card .rec-reason{font-size:9px;color:var(--accent);margin-top:2px}
+.rec-card .rec-dismiss{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;border:none;font-size:14px;line-height:22px;text-align:center;cursor:pointer;opacity:0;transition:opacity .2s}
+.rec-card:hover .rec-dismiss{opacity:1}
+
+/* READING TIMELINE */
+.timeline{margin-top:16px;padding:12px 0;border-top:1px solid var(--border)}
+.timeline h4{font-size:13px;font-weight:600;color:var(--txt);margin-bottom:10px}
+.tl-track{position:relative;padding-left:20px}
+.tl-item{position:relative;padding-bottom:14px;padding-left:12px;border-left:2px solid var(--border)}
+.tl-item:last-child{border-left-color:transparent;padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-5px;top:2px;width:8px;height:8px;border-radius:50%;background:var(--accent);border:2px solid var(--bg2)}
+.tl-item.tl-future::before{background:var(--border)}
+.tl-date{font-size:11px;color:var(--dim);margin-bottom:1px}
+.tl-label{font-size:12px;color:var(--txt);font-weight:500}
+.tl-add-date{margin-top:8px}
+.tl-add-date input{padding:4px 8px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-family:inherit;outline:none;color:var(--txt);background:var(--bg)}
+.tl-add-date label{font-size:11px;color:var(--dim);margin-right:6px}
+
+/* READING GOAL */
+.goal-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:20px;margin-bottom:16px}
+.goal-card h3{font-size:1em;font-weight:600;margin-bottom:12px}
+.goal-bar{height:24px;background:var(--bg3);border-radius:12px;overflow:hidden;position:relative;margin-bottom:8px}
+.goal-fill{height:100%;background:linear-gradient(90deg,var(--accent),#34C759);border-radius:12px;transition:width .5s;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:11px;font-weight:700;color:#fff;min-width:30px}
+.goal-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--dim)}
+.goal-set{display:flex;align-items:center;gap:8px;margin-top:8px}
+.goal-set input{width:60px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;text-align:center;font-family:inherit;outline:none}
+.goal-set label{font-size:12px;color:var(--dim)}
+
+/* YEAR CHART */
+.year-chart{display:flex;align-items:flex-end;gap:6px;height:120px;padding:12px 0;border-bottom:1px solid var(--border)}
+.yc-bar{flex:1;min-width:24px;max-width:50px;display:flex;flex-direction:column;align-items:center;gap:4px}
+.yc-fill{width:100%;background:var(--accent);border-radius:4px 4px 0 0;transition:height .3s;min-height:2px}
+.yc-label{font-size:9px;color:var(--dim);writing-mode:vertical-lr;text-orientation:mixed;white-space:nowrap}
+.yc-val{font-size:10px;font-weight:600;color:var(--txt)}
+
+/* AUTHOR DETAIL CARD */
+.auth-detail{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.auth-card{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:12px;min-width:200px;flex:1}
+.auth-card .auth-name{font-size:13px;font-weight:600;color:var(--txt);margin-bottom:4px}
+.auth-card .auth-stat{font-size:11px;color:var(--dim)}
+
 /* RESPONSIVE */
 @media(max-width:1024px){
 .view{padding:16px 20px}.hdr{padding:18px 20px}.search-wrap{padding:10px 20px}.tabs{padding:0 20px}.ctl{padding:10px 20px}
@@ -287,6 +346,16 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 <button class="toolbar-btn" onclick="document.getElementById('import-file').click()">Import</button>
 <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
 <div class="st" id="st">0 books</div>
+</div>
+
+
+<div class="recs-wrap" id="recsWrap">
+<div class="recs-hdr">
+<h3>Recommended For You</h3>
+<span class="recs-sub" id="recsSub"></span>
+<button class="recs-hide" onclick="toggleRecs()">Hide</button>
+</div>
+<div class="recs-scroll" id="recsScroll"></div>
 </div>
 
 <div class="view active" id="v-spine"></div>
@@ -685,13 +754,26 @@ function renderStats(){
   const stCounts={};STATUSES.forEach(s=>{stCounts[s]=DATA.filter(b=>(getStatus(b)||'').split(',').map(x=>x.trim()).includes(s)).length});
   const noStatus=DATA.filter(b=>!getStatus(b)).length;
 
-  let h='<div class="stats-grid">';  h+='<div class="stat-card"><h3>Overview</h3><div class="mini-grid">';
+  const currentYear=new Date().getFullYear();
+  const readGoal=parseInt(localStorage.getItem('bs_goal_'+currentYear)||'0');
+  const booksReadThisYear=DATA.filter(b=>{const dr=getDateRead(b);return dr&&dr.includes&&dr.includes(String(currentYear))}).length;
+  const booksWithStatusRead=DATA.filter(b=>{const st=getStatus(b);return st==='Read'||st==='Listened'}).length;
+  const yearlyRead={};DATA.forEach(b=>{const dr=getDateRead(b);if(!dr)return;const m=String(dr).match(/(\d{4})/);if(m){const y=parseInt(m[1]);if(y>1900)yearlyRead[y]=(yearlyRead[y]||0)+1}});
+  const yearKeys=Object.keys(yearlyRead).sort();
+  const maxYearly=Math.max(...Object.values(yearlyRead),1);
+  const authDetailStats={};DATA.forEach(b=>{if(!authDetailStats[b.author])authDetailStats[b.author]={count:0,rated:0,ratingSum:0,pages:0,cats:new Set()};const a=authDetailStats[b.author];a.count++;const r=getR(b);if(r>0){a.rated++;a.ratingSum+=r}if(b.pages)a.pages+=b.pages;a.cats.add(b.category)});
+  let h='';
+  h+='<div class="goal-card"><h3>'+currentYear+' Reading Goal</h3>';
+  if(readGoal>0){const pct=Math.min(Math.round(booksReadThisYear/readGoal*100),100);h+='<div class="goal-bar"><div class="goal-fill" style="width:'+pct+'%">'+pct+'%</div></div>';h+='<div class="goal-meta"><span>'+booksReadThisYear+' of '+readGoal+' books</span><span>'+(readGoal-booksReadThisYear>0?(readGoal-booksReadThisYear)+' to go':'Goal reached!')+'</span></div>'}
+  else{h+='<div style="font-size:13px;color:var(--dim);margin-bottom:8px">Set a reading goal to track your progress this year.</div>'}
+  h+="<div class=\"goal-set\"><label>Goal:</label><input type=\"number\" value=\""+(readGoal||'')+'\" placeholder=\"24\" onchange=\"localStorage.setItem(\'bs_goal_'+currentYear+"\',this.value);renderStats()\"><label>books in "+currentYear+'</label></div></div>';
+  h+='<div class="stats-grid">';  h+='<div class="stat-card"><h3>Overview</h3><div class="mini-grid">';
   h+='<div><div class="big-num">'+total+'</div><div class="big-label">Total Books</div></div>';
   h+='<div><div class="big-num">'+CATS.length+'</div><div class="big-label">Categories</div></div>';
   h+='<div><div class="big-num">'+authors+'</div><div class="big-label">Authors</div></div>';
   h+='<div><div class="big-num">'+avgMy.toFixed(1)+'</div><div class="big-label">Avg Rating</div></div>';
   h+='<div><div class="big-num">'+totalPages.toLocaleString()+'</div><div class="big-label">Total Pages</div></div>';
-  h+='<div><div class="big-num">'+avgPages+'</div><div class="big-label">Avg Pages</div></div>';
+  h+='<div><div class="big-num">'+booksWithStatusRead+'</div><div class="big-label">Books Read</div></div>';
   h+='</div></div>';
 
   // Status breakdown
@@ -710,7 +792,12 @@ function renderStats(){
   h+='<div class="bar-row"><div class="bar-label">Unrated</div><div class="bar-track"><div class="bar-fill" style="width:'+unrated/Math.max(maxRat,1)*100+'%;background:var(--dim)">'+unrated+'</div></div></div></div>';
   h+='<div class="stat-card"><h3>Publication Decade</h3>';
   topDec.forEach(([d,n])=>{h+='<div class="bar-row"><div class="bar-label">'+d+'s</div><div class="bar-track"><div class="bar-fill" style="width:'+n/maxDec*100+'%;background:var(--accent2)">'+n+'</div></div></div>'});
-  h+='</div></div>';
+  h+='</div>';
+  if(yearKeys.length>0){h+='<div class="stat-card"><h3>Books Read Per Year</h3><div class="year-chart">';yearKeys.forEach(y=>{const n=yearlyRead[y];const hPct=Math.max(n/maxYearly*100,5);h+='<div class="yc-bar"><div class="yc-val">'+n+'</div><div class="yc-fill" style="height:'+hPct+'%"></div><div class="yc-label">'+y+'</div></div>'});h+='</div></div>'}
+  const topAuthDetail=Object.entries(authStats).sort((a,b)=>b[1].count-a[1].count).slice(0,8);
+  h+='<div class="stat-card" style="grid-column:1/-1"><h3>Top Authors</h3><div class="auth-detail">';
+  topAuthDetail.forEach(([name,s])=>{const avgR=s.rated>0?(s.ratingSum/s.rated).toFixed(1):'N/A';const cats=[...s.cats].join(', ');h+='<div class="auth-card"><div class="auth-name"><a href="'+wikiURL(name)+'" target="_blank">'+esc(name)+'</a></div><div class="auth-stat">'+s.count+' book'+(s.count>1?'s':'')+' &middot; '+s.pages.toLocaleString()+' pages &middot; Avg '+avgR+' \u2605</div><div class="auth-stat" style="margin-top:2px">'+esc(cats)+'</div></div>'});
+  h+='</div></div></div>';
   document.getElementById('v-stats').innerHTML=h;
 }
 // ===== MODAL =====
@@ -838,6 +925,9 @@ function renderModalContent(id){
   if(b.isbn)body+='<div class="mb-section"><div class="mb-label">ISBN</div><div class="mb-val">'+esc(b.isbn)+'</div></div>';
   if(b.isbn13)body+='<div class="mb-section"><div class="mb-label">ISBN13</div><div class="mb-val">'+esc(b.isbn13)+'</div></div>';
   if(b.book_id)body+='<div class="mb-section"><div class="mb-label">Goodreads</div><div class="mb-val"><a href="https://www.goodreads.com/book/show/'+b.book_id+'" target="_blank">View on Goodreads</a></div></div>';
+
+  // Reading Timeline
+  body+=renderTimeline(b);
 
   document.getElementById('modal-body').innerHTML=body;
 }
@@ -1048,6 +1138,85 @@ function addBookToLibrary(book){
   renderSpine();renderCover();renderTable();renderStats();
 }
 
+
+// ===== RECOMMENDATIONS =====
+let recsHidden=localStorage.getItem('bs_recs_hidden')==='1';
+let dismissedRecs=JSON.parse(localStorage.getItem('bs_recs_dismissed')||'[]');
+
+function getRecommendations(){
+  const wrap=document.getElementById('recsWrap');
+  if(recsHidden){wrap.classList.remove('has-recs');return}
+  const catScores={};const authorScores={};
+  DATA.forEach(b=>{
+    const r=getR(b);if(!r||r<1)return;
+    if(!catScores[b.category])catScores[b.category]={sum:0,count:0};
+    catScores[b.category].sum+=r;catScores[b.category].count++;
+    if(!authorScores[b.author])authorScores[b.author]={sum:0,count:0};
+    authorScores[b.author].sum+=r;authorScores[b.author].count++;
+  });
+  const catAvg={};Object.keys(catScores).forEach(c=>{catAvg[c]=catScores[c].sum/catScores[c].count});
+  const authAvg={};Object.keys(authorScores).forEach(a=>{authAvg[a]=authorScores[a].sum/authorScores[a].count});
+  const candidates=DATA.filter(b=>{
+    const r=getR(b);const status=getStatus(b);
+    return (!r||r<1)&&status!=='Read'&&status!=='Listened'&&status!=='Abandoned'&&!dismissedRecs.includes(b.id);
+  });
+  const scored=candidates.map(b=>{
+    let score=0;let reasons=[];
+    if(catAvg[b.category]&&catAvg[b.category]>=3.5){score+=(catAvg[b.category]-3)*2;reasons.push('You love '+b.category.split(' ')[0])}
+    if(authAvg[b.author]&&authAvg[b.author]>=3.5){score+=(authAvg[b.author]-3)*3;reasons.push('You enjoyed '+b.author.split(' ')[0])}
+    if(b.avg_rating)score+=b.avg_rating*0.3;
+    const status=getStatus(b);
+    if(status==='Wishlist')score+=1;if(status==='Pending')score+=0.5;
+    return {book:b,score:score,reason:reasons[0]||'Highly rated'};
+  }).filter(s=>s.score>0);
+  scored.sort((a,b)=>b.score-a.score);
+  const top=scored.slice(0,8);
+  if(top.length<2){wrap.classList.remove('has-recs');return}
+  let h='';
+  top.forEach(s=>{
+    const b=s.book;
+    const cov=b.cover||(b.isbn?'https://covers.openlibrary.org/b/isbn/'+b.isbn+'-M.jpg':'');
+    h+='<div class="rec-card" onclick="openModal('+b.id+')">';
+    h+='<button class="rec-dismiss" onclick="event.stopPropagation();dismissRec('+b.id+')">&times;</button>';
+    if(cov)h+='<img src="'+cov+'" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'" alt=""><div class="rec-ph" style="display:none">'+esc(b.title)+'</div>';
+    else h+='<div class="rec-ph">'+esc(b.title)+'</div>';
+    h+='<div class="rec-title" title="'+esc(b.title)+'">'+esc(b.title)+'</div>';
+    h+='<div class="rec-author">'+esc(b.author)+'</div>';
+    h+='<div class="rec-reason">'+esc(s.reason)+'</div>';
+    h+='</div>';
+  });
+  document.getElementById('recsScroll').innerHTML=h;
+  document.getElementById('recsSub').textContent='Based on your ratings';
+  wrap.classList.add('has-recs');
+}
+function dismissRec(id){dismissedRecs.push(id);localStorage.setItem('bs_recs_dismissed',JSON.stringify(dismissedRecs));getRecommendations()}
+function toggleRecs(){recsHidden=!recsHidden;localStorage.setItem('bs_recs_hidden',recsHidden?'1':'0');getRecommendations()}
+
+// ===== READING TIMELINE =====
+function renderTimeline(b){
+  const s=saved[b.id]||{};const events=[];
+  const dateAdded=s.date_added||b.date_added;
+  if(dateAdded)events.push({date:dateAdded,label:'Added to library',key:'date_added'});
+  const dateStarted=s.date_started;
+  if(dateStarted)events.push({date:dateStarted,label:'Started reading',key:'date_started'});
+  const dateRead=s.date_read||b.date_read;
+  if(dateRead)events.push({date:dateRead,label:'Finished reading',key:'date_read'});
+  events.sort((a,b)=>a.date.localeCompare(b.date));
+  let h='<div class="timeline"><h4>Reading Timeline</h4><div class="tl-track">';
+  if(events.length===0){h+='<div style="font-size:12px;color:var(--dim);padding:4px 0">No dates recorded yet.</div>'}
+  events.forEach(ev=>{h+='<div class="tl-item"><div class="tl-date">'+ev.date+'</div><div class="tl-label">'+ev.label+'</div></div>'});
+  h+='</div><div class="tl-add-date">';
+  if(!events.find(e=>e.key==='date_started')){h+='<label>Started:</label><input type="date" onchange="setBookDate('+b.id+',\'date_started\',this.value)"> '}
+  if(!events.find(e=>e.key==='date_read')){h+='<label>Finished:</label><input type="date" onchange="setBookDate('+b.id+',\'date_read\',this.value)">'}
+  h+='</div></div>';
+  return h;
+}
+function setBookDate(id,key,val){
+  if(!saved[id])saved[id]={};saved[id][key]=val;
+  localStorage.setItem('bs_data',JSON.stringify(saved));
+  const b=DATA.find(x=>x.id===id);if(b)openModal(id);
+}
+
 // ===== EXPORT/IMPORT =====
 function exportData(){
   const exp={
@@ -1110,6 +1279,7 @@ fetch('data.json').then(r=>r.json()).then(d=>{  DATA=d.books;
   document.getElementById('catcount').textContent=CATS.length;
   collectAllShelves();collectAllTags();
   renderSpine();renderCover();renderTable();renderStats();
+  getRecommendations();
 }).catch(e=>{document.getElementById('v-spine').innerHTML='<p style="color:#FF3B30;padding:20px">Failed to load data: '+e.message+'</p>';console.error(e)});
 
 // Register service worker
