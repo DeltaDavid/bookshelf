@@ -195,6 +195,43 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .st-read{background:#F3E5F5;color:#7B1FA2}
 .st-listened{background:#E0F7FA;color:#00838F}
 .st-abandoned{background:#FFEBEE;color:#C62828}
+
+/* ADD BOOK MODAL */
+.add-modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:600;justify-content:center;align-items:flex-start;padding:40px;overflow-y:auto;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.add-modal-overlay.open{display:flex}
+.add-modal{background:var(--bg2);border:1px solid var(--border);border-radius:20px;max-width:600px;width:100%;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.12);padding:24px 30px}
+.add-modal h3{font-size:1.2em;font-weight:700;margin-bottom:16px;color:var(--txt)}
+.add-search-row{display:flex;gap:8px;margin-bottom:16px}
+.add-search-row input{flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:10px;font-size:14px;font-family:inherit;outline:none;background:var(--bg);color:var(--txt)}
+.add-search-row input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,122,255,.15)}
+.add-search-row button{padding:10px 18px;border:none;background:var(--accent);color:#fff;border-radius:10px;cursor:pointer;font-size:14px;font-weight:600;white-space:nowrap}
+.add-results{max-height:400px;overflow-y:auto;margin-bottom:12px}
+.add-result{display:flex;gap:12px;padding:12px;border:1px solid var(--border);border-radius:10px;margin-bottom:8px;cursor:pointer;transition:all .15s}
+.add-result:hover{border-color:var(--accent);background:rgba(0,122,255,.04)}
+.add-result img{width:50px;height:75px;object-fit:contain;border-radius:4px;background:var(--bg3);flex-shrink:0}
+.add-result .ar-ph{width:50px;height:75px;border-radius:4px;background:var(--bg3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:8px;text-align:center;padding:2px}
+.add-result .ar-info{flex:1;min-width:0}
+.add-result .ar-title{font-weight:600;font-size:13px;color:var(--txt);margin-bottom:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.add-result .ar-author{font-size:12px;color:var(--dim);margin-bottom:2px}
+.add-result .ar-meta{font-size:11px;color:var(--dim)}
+.add-result .ar-added{color:var(--accent);font-size:11px;font-weight:600}
+.add-msg{text-align:center;color:var(--dim);padding:20px;font-size:13px}
+.add-manual{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.add-manual label{font-size:12px;color:var(--dim);display:block;margin-bottom:3px}
+.add-manual input,.add-manual select{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit;outline:none;background:var(--bg);color:var(--txt)}
+.add-manual input:focus,.add-manual select:focus{border-color:var(--accent)}
+.add-manual .full{grid-column:1/-1}
+.add-btns{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+.add-btns button{padding:10px 20px;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;border:1px solid var(--border)}
+.add-btns .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.add-btns .btn-secondary{background:var(--bg);color:var(--txt)}
+
+/* TOOLBAR BUTTONS */
+.toolbar-btn{padding:6px 14px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:var(--txt);font-size:12px;cursor:pointer;font-family:inherit;font-weight:500;transition:all .15s;display:inline-flex;align-items:center;gap:5px}
+.toolbar-btn:hover{border-color:var(--accent);color:var(--accent)}
+.toolbar-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.toolbar-btn.primary:hover{opacity:.85}
+
 /* RESPONSIVE */
 @media(max-width:1024px){
 .view{padding:16px 20px}.hdr{padding:18px 20px}.search-wrap{padding:10px 20px}.tabs{padding:0 20px}.ctl{padding:10px 20px}
@@ -245,6 +282,10 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 <option value="In Progress">In Progress</option><option value="Read">Read</option>
 <option value="Listened">Listened</option><option value="Abandoned">Abandoned</option>
 <option value="_none">No Status</option></select>
+<button class="toolbar-btn primary" onclick="openAddBook()">+ Add Book</button>
+<button class="toolbar-btn" onclick="exportData()">Export</button>
+<button class="toolbar-btn" onclick="document.getElementById('import-file').click()">Import</button>
+<input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
 <div class="st" id="st">0 books</div>
 </div>
 
@@ -272,6 +313,35 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 </div>
 </div>
 <div class="modal-body" id="modal-body"></div>
+</div>
+</div>
+
+<!-- Add Book Modal -->
+<div class="add-modal-overlay" id="addModal" onclick="if(event.target===this)closeAddBook()">
+<div class="add-modal">
+<button class="modal-close" onclick="closeAddBook()" style="top:12px;right:16px">&times;</button>
+<h3>Add a Book</h3>
+<div class="add-search-row">
+<input type="text" id="addSearch" placeholder="Search by title or author..." onkeydown="if(event.key==='Enter')searchBooks()">
+<button onclick="searchBooks()">Search</button>
+</div>
+<div id="addResults"><div class="add-msg">Search Open Library to find and add books, or add manually below.</div></div>
+<details style="margin-top:12px">
+<summary style="cursor:pointer;font-size:13px;color:var(--accent);font-weight:600">Add Manually</summary>
+<div class="add-manual" id="manualForm">
+<div class="full"><label>Title *</label><input id="m-title" placeholder="Book title"></div>
+<div><label>Author *</label><input id="m-author" placeholder="Author name"></div>
+<div><label>Category</label><select id="m-category"><option value="">Select...</option></select></div>
+<div><label>Pages</label><input id="m-pages" type="number" placeholder="0"></div>
+<div><label>Year Published</label><input id="m-year" type="number" placeholder="2024"></div>
+<div><label>ISBN</label><input id="m-isbn" placeholder="ISBN"></div>
+<div><label>Publisher</label><input id="m-publisher" placeholder="Publisher"></div>
+<div class="add-btns full">
+<button class="btn-secondary" onclick="closeAddBook()">Cancel</button>
+<button class="btn-primary" onclick="addManualBook()">Add Book</button>
+</div>
+</div>
+</details>
 </div>
 </div>
 
@@ -868,8 +938,170 @@ function sortTbl(th){
   rows.forEach(r=>tbody.appendChild(r));
 }
 
+
+// ===== ADD BOOK =====
+let addedBooks=JSON.parse(localStorage.getItem('bs_added')||'[]');
+
+function openAddBook(){
+  document.getElementById('addModal').classList.add('open');
+  document.getElementById('addResults').innerHTML='<div class="add-msg">Search Open Library to find and add books, or add manually below.</div>';
+  document.getElementById('addSearch').value='';
+  const sel=document.getElementById('m-category');
+  sel.innerHTML='<option value="">Select...</option>';
+  CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o)});
+  setTimeout(()=>document.getElementById('addSearch').focus(),100);
+}
+function closeAddBook(){document.getElementById('addModal').classList.remove('open')}
+
+function searchBooks(){
+  const q=document.getElementById('addSearch').value.trim();
+  if(!q){return}
+  const results=document.getElementById('addResults');
+  results.innerHTML='<div class="add-msg">Searching...</div>';
+  fetch('https://openlibrary.org/search.json?q='+encodeURIComponent(q)+'&limit=12&fields=key,title,author_name,first_publish_year,number_of_pages_median,isbn,publisher,cover_i')
+    .then(r=>r.json())
+    .then(data=>{
+      if(!data.docs||data.docs.length===0){results.innerHTML='<div class="add-msg">No results found. Try a different search or add manually.</div>';return}
+      let h='';
+      data.docs.forEach(d=>{
+        const title=d.title||'Unknown';
+        const author=(d.author_name&&d.author_name[0])||'Unknown';
+        const year=d.first_publish_year||'';
+        const pages=d.number_of_pages_median||'';
+        const isbn=(d.isbn&&d.isbn[0])||'';
+        const publisher=(d.publisher&&d.publisher[0])||'';
+        const coverId=d.cover_i;
+        const coverURL=coverId?'https://covers.openlibrary.org/b/id/'+coverId+'-M.jpg':'';
+        const existing=DATA.find(b=>b.title.toLowerCase()===title.toLowerCase()&&b.author.toLowerCase()===author.toLowerCase());
+        h+='<div class="add-result" onclick="addFromSearch(this)" data-title="'+esc(title)+'" data-author="'+esc(author)+'" data-year="'+year+'" data-pages="'+pages+'" data-isbn="'+esc(isbn)+'" data-publisher="'+esc(publisher)+'" data-cover="'+esc(coverURL)+'">';
+        if(coverURL)h+='<img src="'+coverURL+'" loading="lazy">';
+        else h+='<div class="ar-ph">No Cover</div>';
+        h+='<div class="ar-info"><div class="ar-title">'+esc(title)+'</div><div class="ar-author">'+esc(author)+'</div><div class="ar-meta">';
+        if(year)h+=year+' &middot; ';
+        if(pages)h+=pages+' pages &middot; ';
+        if(publisher)h+=esc(publisher);
+        h+='</div>';
+        if(existing)h+='<div class="ar-added">Already in library</div>';
+        h+='</div></div>';
+      });
+      results.innerHTML=h;
+    })
+    .catch(e=>{results.innerHTML='<div class="add-msg">Search failed: '+e.message+'. Try again or add manually.</div>'});
+}
+function addFromSearch(el){
+  const title=el.dataset.title;
+  const author=el.dataset.author;
+  const existing=DATA.find(b=>b.title.toLowerCase()===title.toLowerCase()&&b.author.toLowerCase()===author.toLowerCase());
+  if(existing){openModal(existing.id);closeAddBook();return}
+  const newId=Math.max(...DATA.map(b=>b.id),0)+1;
+  const book={
+    id:newId,title:title,author:author,author_lf:author.split(' ').reverse().join(', '),
+    addl_authors:'',isbn:el.dataset.isbn||'',isbn13:'',book_id:'',
+    my_rating:0,avg_rating:0,pages:parseInt(el.dataset.pages)||0,
+    year:parseInt(el.dataset.year)||0,year_pub:parseInt(el.dataset.year)||0,
+    publisher:el.dataset.publisher||'',binding:'',
+    date_read:'',date_added:new Date().toISOString().split('T')[0].replace(/-/g,'/'),
+    shelves:'',read_count:0,category:'Uncategorized',
+    cover:el.dataset.cover||'',spine_color:''
+  };
+  addBookToLibrary(book);
+  el.querySelector('.ar-meta').insertAdjacentHTML('afterend','<div class="ar-added">Added!</div>');
+}
+
+function addManualBook(){
+  const title=document.getElementById('m-title').value.trim();
+  const author=document.getElementById('m-author').value.trim();
+  if(!title||!author){alert('Title and Author are required.');return}
+  const newId=Math.max(...DATA.map(b=>b.id),0)+1;
+  const book={
+    id:newId,title:title,author:author,author_lf:author.split(' ').reverse().join(', '),
+    addl_authors:'',isbn:document.getElementById('m-isbn').value.trim(),isbn13:'',book_id:'',
+    my_rating:0,avg_rating:0,pages:parseInt(document.getElementById('m-pages').value)||0,
+    year:parseInt(document.getElementById('m-year').value)||0,year_pub:parseInt(document.getElementById('m-year').value)||0,
+    publisher:document.getElementById('m-publisher').value.trim(),binding:'',
+    date_read:'',date_added:new Date().toISOString().split('T')[0].replace(/-/g,'/'),
+    shelves:'',read_count:0,category:document.getElementById('m-category').value||'Uncategorized',
+    cover:'',spine_color:''
+  };
+  if(book.isbn){
+    book.cover='https://covers.openlibrary.org/b/isbn/'+book.isbn+'-M.jpg';
+  }
+  addBookToLibrary(book);
+  closeAddBook();
+  openModal(book.id);
+}
+
+function addBookToLibrary(book){
+  DATA.push(book);
+  if(!BY_CAT[book.category])BY_CAT[book.category]=[];
+  BY_CAT[book.category].push(book);
+  if(!CATS.includes(book.category)){
+    CATS.push(book.category);CATS.sort();
+    const sel=document.getElementById('cf');
+    sel.innerHTML='<option value="">All Categories</option>';
+    CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c+' ('+(BY_CAT[c]||[]).length+')';sel.appendChild(o)});
+  }
+  addedBooks.push(book);
+  localStorage.setItem('bs_added',JSON.stringify(addedBooks));
+  document.getElementById('bookcount').textContent=DATA.length;
+  document.getElementById('catcount').textContent=CATS.length;
+  renderSpine();renderCover();renderTable();renderStats();
+}
+
+// ===== EXPORT/IMPORT =====
+function exportData(){
+  const exp={
+    books:DATA,
+    userData:saved,
+    shelves:ALL_SHELVES,
+    tags:ALL_TAGS,
+    addedBooks:addedBooks,
+    exportDate:new Date().toISOString()
+  };
+  const blob=new Blob([JSON.stringify(exp,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;
+  a.download='bookshelf-backup-'+new Date().toISOString().slice(0,10)+'.json';
+  a.click();URL.revokeObjectURL(url);
+}
+
+function importData(event){
+  const file=event.target.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=function(e){
+    try{
+      const imp=JSON.parse(e.target.result);
+      if(imp.userData){saved=imp.userData;localStorage.setItem('bs_data',JSON.stringify(saved))}
+      if(imp.shelves){ALL_SHELVES=imp.shelves;localStorage.setItem('bs_shelves',JSON.stringify(ALL_SHELVES))}
+      if(imp.tags){ALL_TAGS=imp.tags;localStorage.setItem('bs_tags',JSON.stringify(ALL_TAGS))}
+      if(imp.addedBooks){
+        addedBooks=imp.addedBooks;localStorage.setItem('bs_added',JSON.stringify(addedBooks));
+        imp.addedBooks.forEach(ab=>{
+          if(!DATA.find(b=>b.id===ab.id)){
+            DATA.push(ab);
+            if(!BY_CAT[ab.category])BY_CAT[ab.category]=[];
+            BY_CAT[ab.category].push(ab);
+          }
+        });
+        CATS=Object.keys(BY_CAT).sort();
+      }
+      document.getElementById('bookcount').textContent=DATA.length;
+      document.getElementById('catcount').textContent=CATS.length;
+      const sel=document.getElementById('cf');
+      sel.innerHTML='<option value="">All Categories</option>';
+      CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c+' ('+(BY_CAT[c]||[]).length+')';sel.appendChild(o)});
+      renderSpine();renderCover();renderTable();renderStats();
+      alert('Import successful! '+DATA.length+' books loaded.');
+    }catch(err){alert('Import failed: '+err.message)}
+  };
+  reader.readAsText(file);
+  event.target.value='';
+}
+
 // ===== INIT =====
 fetch('data.json').then(r=>r.json()).then(d=>{  DATA=d.books;
+  // Merge user-added books
+  addedBooks.forEach(ab=>{if(!DATA.find(b=>b.id===ab.id))DATA.push(ab)});
   DATA.forEach(b=>{if(!BY_CAT[b.category])BY_CAT[b.category]=[];BY_CAT[b.category].push(b)});
   CATS=Object.keys(BY_CAT).sort();
   const sel=document.getElementById('cf');
