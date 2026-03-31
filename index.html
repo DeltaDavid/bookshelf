@@ -54,7 +54,10 @@ a:hover{text-decoration:underline}
 .shelf-wood{height:12px;background:linear-gradient(180deg,#D4A574,#C49464 30%,#B08050 60%,#A07040);border-radius:0 0 4px 4px;box-shadow:0 4px 8px rgba(0,0,0,.12);position:relative}
 .shelf-wood::before{content:'';position:absolute;top:-2px;left:0;right:0;height:2px;background:linear-gradient(180deg,rgba(255,255,255,.3),transparent)}
 .book3d{position:relative;transform-style:preserve-3d;transition:transform .5s ease,margin .3s;cursor:pointer;z-index:1;flex-shrink:0;perspective:800px}
-.book3d:hover{transform:rotateY(-35deg) rotateX(3deg) translateZ(25px) translateY(-12px);z-index:50;margin:0 18px}
+.book3d{transition:transform .5s cubic-bezier(.25,.46,.45,.94),margin .3s,box-shadow .5s}
+.book3d:hover{transform:perspective(600px) rotateY(-30deg) rotateX(2deg) translateZ(30px) translateY(-14px) scale(1.08);z-index:50;margin:0 22px;filter:drop-shadow(8px 12px 16px rgba(0,0,0,.35))}
+.book3d:hover .spine{box-shadow:2px 2px 8px rgba(0,0,0,.3),inset -3px 0 6px rgba(255,255,255,.15)}
+.book3d:hover .cover-face{box-shadow:5px 5px 18px rgba(0,0,0,.4)}
 .spine{display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:2px 0 0 2px;box-shadow:1px 2px 6px rgba(0,0,0,.2);writing-mode:vertical-rl;text-orientation:mixed;padding:2px 1px;overflow:hidden;position:relative}.spine .sp-t{font-size:8px;font-weight:bold;letter-spacing:.3px;line-height:1;display:block;max-height:75%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .spine .sp-a{font-size:6.5px;opacity:.7;margin-top:2px;display:block;max-height:20%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .spine::after{content:'';position:absolute;top:0;right:0;bottom:0;width:2px;background:linear-gradient(90deg,rgba(0,0,0,.2),rgba(0,0,0,.05))}
@@ -109,7 +112,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .edit-input[type=date]{min-width:130px}
 
 /* SHELF/STATUS/TAG PICKER */
-.picker-overlay{position:fixed;z-index:300;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:12px;min-width:220px;box-shadow:0 8px 30px rgba(0,0,0,.12),0 2px 8px rgba(0,0,0,.06)}
+.picker-overlay{position:fixed;z-index:600;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:12px;min-width:220px;box-shadow:0 8px 30px rgba(0,0,0,.12),0 2px 8px rgba(0,0,0,.06)}
 .picker-overlay label{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;cursor:pointer;font-size:13px;color:var(--txt)}
 .picker-overlay label:hover{background:rgba(0,122,255,.06)}.picker-overlay .sp-name{flex:1}
 .picker-overlay .sp-del{color:var(--dim);font-size:16px;padding:0 4px;cursor:pointer;opacity:0;transition:opacity .2s}
@@ -1129,6 +1132,10 @@ let dismissedRecs=JSON.parse(localStorage.getItem('bs_recs_dismissed')||'[]');
 function getRecommendations(){
   const wrap=document.getElementById('recsWrap');
   if(recsHidden){wrap.classList.remove('has-recs');return}
+  // Only show recs after user has rated books or set statuses
+  const hasRatings=DATA.some(b=>{const r=getR(b);return r&&r>=1});
+  const hasStatuses=DATA.some(b=>{const s=getStatus(b);return s&&s.length>0});
+  if(!hasRatings&&!hasStatuses){wrap.classList.remove('has-recs');return}
   const catScores={};const authorScores={};
   DATA.forEach(b=>{
     const r=getR(b);if(!r||r<1)return;
