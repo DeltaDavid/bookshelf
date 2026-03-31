@@ -1,4 +1,4 @@
-const CACHE='bookshelf-v1';
+const CACHE='bookshelf-v2';
 const CORE=['/bookshelf/','/bookshelf/index.html','/bookshelf/data.json','/bookshelf/manifest.json'];
 
 self.addEventListener('install',e=>{
@@ -10,13 +10,14 @@ self.addEventListener('activate',e=>{
 });
 
 self.addEventListener('fetch',e=>{
-  // Network-first for HTML/JSON (so pushes auto-update), cache-first for images
   const url=new URL(e.request.url);
+  // Network-first for HTML/JSON so updates arrive immediately
   if(url.pathname.endsWith('.html')||url.pathname.endsWith('.json')||url.pathname.endsWith('/')){
     e.respondWith(fetch(e.request).then(r=>{
       const rc=r.clone();caches.open(CACHE).then(c=>c.put(e.request,rc));return r;
     }).catch(()=>caches.match(e.request)));
   } else {
+    // Cache-first for images and other assets
     e.respondWith(caches.match(e.request).then(r=>{
       if(r)return r;
       return fetch(e.request).then(nr=>{
