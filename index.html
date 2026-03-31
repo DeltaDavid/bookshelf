@@ -1561,7 +1561,7 @@ function drawCategoryPie(){
 }
 
 // ===== INIT =====
-fetch('data.json').then(r=>r.json()).then(d=>{  DATA=d.books;
+fetch('data.json?v='+Date.now()).then(r=>r.json()).then(d=>{  DATA=d.books;
   // Merge user-added books
   addedBooks.forEach(ab=>{if(!DATA.find(b=>b.id===ab.id))DATA.push(ab)});
   DATA.forEach(b=>{if(!BY_CAT[b.category])BY_CAT[b.category]=[];BY_CAT[b.category].push(b)});
