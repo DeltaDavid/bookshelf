@@ -327,21 +327,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .pages-stat-label{font-size:11px;color:var(--dim);margin-top:4px}
 
 /* CHALLENGES */
-.challenge-list{display:flex;flex-direction:column;gap:12px}
-.challenge-item{display:flex;flex-direction:column;gap:6px}
-.challenge-header{display:flex;justify-content:space-between;align-items:center}
-.challenge-name{font-size:13px;color:var(--txt);font-weight:500}
-.challenge-progress{font-size:11px;color:var(--dim)}
-.challenge-bar{height:20px;background:var(--bg3);border-radius:6px;overflow:hidden}
-.challenge-fill{height:100%;background:linear-gradient(90deg,var(--accent),#34C759);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:600;min-width:24px}
-.challenge-add-btn{padding:8px 14px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:var(--accent);font-size:12px;cursor:pointer;font-family:inherit;font-weight:500;margin-top:12px}
-.challenge-edit-btn,.challenge-del-btn{padding:4px 8px;border-radius:4px;border:none;background:var(--bg3);font-size:11px;cursor:pointer;font-family:inherit}
-.challenge-edit-btn{color:var(--dim)}
-.challenge-del-btn{color:#FF3B30}
-.challenge-form{background:var(--bg);border-radius:12px;padding:14px;margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.challenge-form select,.challenge-form input{padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg2);color:var(--txt);font-size:12px;font-family:inherit}
-.challenge-form input{width:60px;text-align:center}
-.challenge-form button{padding:6px 12px;border:none;background:var(--accent);color:#fff;border-radius:6px;font-size:12px;cursor:pointer;font-weight:500}
+
 
 /* COMPACT */
 body.compact .shelf-row{min-height:140px;gap:3px}
@@ -355,6 +341,13 @@ body.compact .tbl-cover{width:24px;height:36px}
 
 /* MENU BAR */
 .menubar{background:#f6f6f6;border-bottom:1px solid var(--border);padding:0 12px;display:flex;gap:0;font-size:13px;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;user-select:none}
+
+.menubar{position:sticky;top:0;z-index:200}
+.md-sub{position:relative}
+.menu-sub{display:none;position:absolute;left:100%;top:-4px;background:var(--bg);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow2);min-width:120px;padding:4px 0;z-index:201}
+.md-sub:hover .menu-sub{display:block}
+.md-arrow{float:right;font-size:10px;opacity:.5;margin-left:12px}
+.md-item.disabled{opacity:.35;pointer-events:none}
 .menu-item{position:relative;padding:4px 12px;cursor:default;color:var(--txt)}
 .menu-item:hover{background:var(--accent);color:#fff;border-radius:4px}
 .menu-drop{display:none;position:absolute;top:100%;left:0;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:4px 0;min-width:200px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:999}
@@ -375,11 +368,7 @@ body.compact .tbl-cover{width:24px;height:36px}
 .kb-key{background:var(--bg3);padding:2px 8px;border-radius:4px;font-family:monospace;font-size:12px;border:1px solid var(--border)}
 
 /* BREADCRUMB */
-.breadcrumb{padding:8px 40px;font-size:12px;color:var(--dim);background:var(--bg2);border-bottom:1px solid var(--border)}
-.breadcrumb a{color:var(--dim);text-decoration:none}
-.breadcrumb a:hover{color:var(--accent)}
-.breadcrumb .bc-sep{margin:0 6px;opacity:.5}
-.breadcrumb .bc-current{color:var(--txt);font-weight:500}
+
 
 /* WISHLIST */
 .wishlist-section{background:linear-gradient(135deg,#FFF8E1,#FFF3E0);border:1px solid #FFE0B2;border-radius:12px;padding:16px 20px;margin-bottom:20px}
@@ -417,13 +406,15 @@ body.compact .tbl-cover{width:24px;height:36px}
 
 <div class="menubar" id="menubar">
 <div class="menu-item">File<div class="menu-drop">
-<div class="md-item" onclick="exportData()">Export JSON<span class="md-key">&#8984;E</span></div>
-<div class="md-item" onclick="exportCSV()">Export CSV</div>
+<div class="md-item md-sub">Export<span class="md-arrow">&#9656;</span><div class="menu-sub">
+<div class="md-item" onclick="exportData()">JSON<span class="md-key">&#8984;E</span></div>
+<div class="md-item" onclick="exportCSV()">CSV</div>
+</div></div>
 <div class="md-item" onclick="document.getElementById('import-file').click()">Import<span class="md-key">&#8984;I</span></div>
 <div class="md-sep"></div>
 <div class="md-item" onclick="downloadBackup()">Download Backup</div>
 </div></div>
-<div class="menu-item">Edit<div class="menu-drop">
+<div class="menu-item">Edit<div class="menu-drop" id="menu-edit">
 <div class="md-item" onclick="toggleAllRows(document.querySelector('thead .sel-cb'))">Select All<span class="md-key">&#8984;A</span></div>
 <div class="md-item" onclick="clearBulkSelection()">Clear Selection</div>
 </div></div>
@@ -450,7 +441,6 @@ body.compact .tbl-cover{width:24px;height:36px}
 </div>
 </div>
 
-<div class="breadcrumb" id="breadcrumb"><a href="#" onclick="event.preventDefault();closeModal()">Library</a><span class="bc-sep">&rsaquo;</span><span class="bc-current" id="bc-view">Spine View</span></div>
 <div class="tabs">
 <button class="tab-btn active" onclick="switchTab('spine')">Spine</button>
 <button class="tab-btn" onclick="switchTab('cover')">Cover</button>
@@ -877,6 +867,7 @@ function renderTable(){
   }
   h+='</tbody></table></div>';  document.getElementById('v-table').innerHTML=h;
   applyFilters();
+  if(typeof updateMenuState==='function')updateMenuState();
 }
 
 // ===== RENDER STATS =====
@@ -965,12 +956,7 @@ function renderStats(){
   const daysIntoYear=Math.floor((new Date()-new Date(currentYear,0,1))/(1000*60*60*24))+1;
   const dailyAvgPages=daysIntoYear>0?Math.round(thisYearPages/daysIntoYear):0;
   h+='<div class="stat-card"><h3>Pages Read</h3><div class="pages-stat-section"><div class="pages-stat-box"><div class="pages-stat-num">'+totalPagesRead.toLocaleString()+'</div><div class="pages-stat-label">All Time</div></div><div class="pages-stat-box"><div class="pages-stat-num">'+thisYearPages.toLocaleString()+'</div><div class="pages-stat-label">'+currentYear+'</div></div></div><div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:12px;color:var(--dim)">Daily average: <strong style="color:var(--txt)">'+dailyAvgPages+'</strong> pages/day</div></div>';
-  // Reading Challenges
-  const challenges=getChallenges();
-  h+='<div class="stat-card" style="grid-column:1/-1"><h3>Reading Challenges</h3>';
-  if(challenges.length===0){h+='<div style="font-size:13px;color:var(--dim);margin-bottom:12px">Create challenges to track goals beyond the annual target.</div>'}
-  else{h+='<div class="challenge-list">';challenges.forEach((ch,idx)=>{const prog=getChallengeProgress(ch);const pct=Math.min(Math.round(prog.current/Math.max(prog.target,1)*100),100);h+='<div class="challenge-item"><div class="challenge-header"><div class="challenge-name">'+esc(ch.name)+'</div><div class="challenge-progress">'+prog.current+'/'+prog.target+'</div></div><div class="challenge-bar"><div class="challenge-fill" style="width:'+pct+'%">'+pct+'%</div></div><div style="display:flex;gap:6px;margin-top:4px"><button class="challenge-edit-btn" onclick="editChallenge('+idx+')">Edit</button><button class="challenge-del-btn" onclick="deleteChallenge('+idx+')">Delete</button></div></div>'});h+='</div>'}
-  h+='<button class="challenge-add-btn" onclick="showAddChallengeForm()">+ Add Challenge</button><div id="challenge-form-container"></div></div>';
+  
 
   document.getElementById('v-stats').innerHTML=h;
   requestAnimationFrame(()=>drawCategoryPie());
@@ -1004,7 +990,7 @@ function buildModalList(){
 
 function openModal(id){
   currentModalId=id;
-  const bb=DATA.find(x=>x.id===id);if(bb)updateBreadcrumb(bb.title);  buildModalList();
+  const bb=DATA.find(x=>x.id===id);buildModalList();
   modalIdx=modalBookList.indexOf(id);
   if(modalIdx<0)modalIdx=0;
   renderModalContent(id);
@@ -1135,7 +1121,7 @@ function deleteQuote(bookId,idx){
   saveField(bookId,'quotes',quotes);  renderModalContent(bookId);
 }
 
-function closeModal(){document.getElementById('modal').classList.remove('open');currentModalId=null;if(typeof updateBreadcrumb==='function')updateBreadcrumb(document.querySelector('.tab-btn.active')?.textContent?.trim()?.toLowerCase()||'spine')}
+function closeModal(){document.getElementById('modal').classList.remove('open');currentModalId=null;?.textContent?.trim()?.toLowerCase()||'spine')}
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape')closeModal();
   if(document.getElementById('modal').classList.contains('open')){
@@ -1150,8 +1136,7 @@ function switchTab(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   const el=document.getElementById('v-'+id);if(el)el.classList.add('active');
   applyFilters();
-  if(typeof updateBreadcrumb==='function')updateBreadcrumb(id);
-}
+  }
 function applyFilters(){
   const q=document.getElementById('srch').value.toLowerCase();
   const c=document.getElementById('cf').value;
@@ -1327,7 +1312,7 @@ function addBookToLibrary(book){
   localStorage.setItem('bs_added',JSON.stringify(addedBooks));
   const bce=document.getElementById('bookcount');if(bce)bce.textContent=DATA.length;
   const cce=document.getElementById('catcount');if(cce)cce.textContent=CATS.length;
-  renderSpine();renderCover();renderTable();renderStats();
+  renderSpine();renderCover();renderTable();renderStats();updateMenuState();
 }
 
 
@@ -1593,31 +1578,25 @@ document.addEventListener('keydown',e=>{
 // ===== BREADCRUMB =====
 let currentView='Spine View';
 const viewLabels={spine:'Spine View',cover:'Cover View',table:'Table View',stats:'Stats'};
-function updateBreadcrumb(bookTitle){const bc=document.getElementById('breadcrumb');if(!bc)return;let h='<a href="#" onclick="event.preventDefault();closeModal()">Library</a><span class="bc-sep">&rsaquo;</span><a href="#" onclick="event.preventDefault();closeModal()" class="bc-current">'+currentView+'</a>';if(bookTitle){h+='<span class="bc-sep">&rsaquo;</span><span class="bc-current">'+esc(bookTitle)+'</span>'}bc.innerHTML=h}
+
 // ===== SWIPE GESTURES =====
-(function(){let sx=0,sy=0;document.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});document.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)<50||Math.abs(dy)>Math.abs(dx))return;const modal=document.getElementById('modal');if(!modal||!modal.classList.contains('open'))return;if(dx<-50)navModal(1);else if(dx>50)navModal(-1)},{passive:true})})();
+
 
 // ===== AUTO-BACKUP =====
 function checkAutoBackup(){
   const lastTs=parseInt(localStorage.getItem('bs_autobackup_ts')||'0');const now=Date.now();
-  if(now-lastTs>86400000){const backup={books:DATA,saved:saved,shelves:ALL_SHELVES,tags:ALL_TAGS,addedBooks:addedBooks,timestamp:new Date().toISOString()};try{localStorage.setItem('bs_autobackup',JSON.stringify(backup));localStorage.setItem('bs_autobackup_ts',String(now))}catch(e){console.warn('Backup too large')}}
-  const ind=document.getElementById('backupIndicator');if(ind){const ts=parseInt(localStorage.getItem('bs_autobackup_ts')||'0');ind.textContent=ts>0?'Last backup: '+new Date(ts).toLocaleDateString()+' '+new Date(ts).toLocaleTimeString():'No backup yet'}
+  if(now-lastTs>604800000){
+    const backup={books:DATA,saved:saved,shelves:ALL_SHELVES,tags:ALL_TAGS,addedBooks:addedBooks,timestamp:new Date().toISOString()};
+    try{
+      const prev2=localStorage.getItem('bs_autobackup_1');if(prev2)localStorage.setItem('bs_autobackup_2',prev2);
+      const prev1=localStorage.getItem('bs_autobackup');if(prev1)localStorage.setItem('bs_autobackup_1',prev1);
+      localStorage.setItem('bs_autobackup',JSON.stringify(backup));localStorage.setItem('bs_autobackup_ts',String(now));
+      const ind=document.getElementById('backupIndicatofunction downloadBackup(){const backup=localStorage.getItem('bs_autobackup');if(!backup){alert('No backup available yet.');return}const blob=new Blob([backup],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bookshelf_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click()}
+ontent=ts>0?'Last backup: '+new Date(ts).toLocaleDateString()+' '+new Date(ts).toLocaleTimeString():'No backup yet'}
 }
 function downloadBackup(){const backup=localStorage.getItem('bs_autobackup');if(!backup){alert('No backup yet.');return}const blob=new Blob([backup],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bookshelf_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click()}
 // ===== READING CHALLENGES =====
-function getChallenges(){return JSON.parse(localStorage.getItem('bs_challenges')||'[]')}
-function saveChallenges(c){localStorage.setItem('bs_challenges',JSON.stringify(c))}
-function getChallengeProgress(ch){
-  if(ch.type==='genres'){const s=new Set();DATA.forEach(b=>{if(getDateRead(b))s.add(b.category)});return{current:s.size,target:ch.target||1}}
-  if(ch.type==='authors'){const s=new Set();DATA.forEach(b=>{if(getDateRead(b))s.add(b.author)});return{current:s.size,target:ch.target||1}}
-  if(ch.type==='decades'){const s=new Set();DATA.forEach(b=>{if(getDateRead(b)&&b.year){const d=Math.floor(parseInt(b.year)/10)*10;if(d>0)s.add(d)}});return{current:s.size,target:ch.target||1}}
-  return{current:0,target:ch.target||1};
-}
-function showAddChallengeForm(){let f='<div class="challenge-form"><select id="ch-type-sel"><option value="genres">Read different genres</option><option value="authors">Read different authors</option><option value="decades">Read different decades</option></select><input type="number" id="ch-target-inp" placeholder="#" min="1" max="100" value="5"><button onclick="addChallenge()">Create</button><button onclick="document.getElementById(\'challenge-form-container\').innerHTML=\'\'" style="background:var(--dim)">Cancel</button></div>';document.getElementById('challenge-form-container').innerHTML=f}
-function addChallenge(){const type=document.getElementById('ch-type-sel').value;const target=parseInt(document.getElementById('ch-target-inp').value)||5;const labels={genres:'genres',authors:'authors',decades:'decades'};const ch=getChallenges();ch.push({name:'Read '+target+' '+labels[type],type:type,target:target});saveChallenges(ch);renderStats()}
-function editChallenge(idx){const ch=getChallenges()[idx];if(!ch)return;let f='<div class="challenge-form"><select id="ch-type-edit"><option value="genres" '+(ch.type==='genres'?'selected':'')+'>genres</option><option value="authors" '+(ch.type==='authors'?'selected':'')+'>authors</option><option value="decades" '+(ch.type==='decades'?'selected':'')+'>decades</option></select><input type="number" id="ch-target-edit" min="1" max="100" value="'+ch.target+'"><button onclick="saveEditChallenge('+idx+')">Save</button><button onclick="document.getElementById(\'challenge-form-container\').innerHTML=\'\'" style="background:var(--dim)">Cancel</button></div>';document.getElementById('challenge-form-container').innerHTML=f}
-function saveEditChallenge(idx){const ch=getChallenges();const type=document.getElementById('ch-type-edit').value;const target=parseInt(document.getElementById('ch-target-edit').value)||5;const labels={genres:'genres',authors:'authors',decades:'decades'};ch[idx]={name:'Read '+target+' '+labels[type],type:type,target:target};saveChallenges(ch);renderStats()}
-function deleteChallenge(idx){const ch=getChallenges();ch.splice(idx,1);saveChallenges(ch);renderStats()}
+
 
 // ===== PIE CHART =====
 function drawCategoryPie(){
@@ -1645,6 +1624,13 @@ fetch('data.json').then(r=>r.json()).then(d=>{  DATA=d.books;
   checkAutoBackup();
   renderSpine();renderCover();renderTable();renderStats();
 }).catch(e=>{document.getElementById('v-spine').innerHTML='<p style="color:#FF3B30;padding:20px">Failed to load data: '+e.message+'</p>';console.error(e)});
+
+
+function updateMenuState(){
+  const isTable=document.getElementById('v-table')&&document.getElementById('v-table').classList.contains('active');
+  const editMenu=document.getElementById('menu-edit');
+  if(editMenu){editMenu.querySelectorAll('.md-item').forEach(i=>i.classList.toggle('disabled',!isTable))}
+}
 
 // Register service worker
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.log('SW reg failed:',e))}
