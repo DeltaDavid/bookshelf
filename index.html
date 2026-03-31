@@ -149,7 +149,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .modal-close:hover{background:var(--border);color:var(--txt)}
 
 /* MODAL NAV (prev/next) */
-.modal-nav{display:flex;justify-content:space-between;align-items:center;padding:0 30px 16px;border-bottom:1px solid var(--border)}
+.modal-nav{display:flex;justify-content:space-between;align-items:center;padding:16px 30px 16px;border-bottom:1px solid var(--border)}
 .modal-nav-btn{background:var(--bg3);border:1px solid var(--border);color:var(--txt);padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit;font-weight:500;transition:all .15s}
 .modal-nav-btn:hover:not(:disabled){background:var(--accent);color:#fff;border-color:var(--accent)}
 .modal-nav-btn:disabled{opacity:.3;cursor:default}
@@ -318,7 +318,6 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 
 <div class="hdr">
 <h1>David's Bookshelf</h1>
-<div class="sub"><span id="bookcount">0</span> books across <span id="catcount">0</span> categories</div>
 </div>
 <div class="search-wrap">
 <div class="search-bar">
@@ -343,8 +342,6 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 <option value="_none">No Status</option></select>
 <button class="toolbar-btn primary" onclick="openAddBook()">+ Add Book</button>
 <button class="toolbar-btn" onclick="exportData()">Export</button>
-<button class="toolbar-btn" onclick="document.getElementById('import-file').click()">Import</button>
-<input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
 <div class="st" id="st">0 books</div>
 </div>
 
@@ -395,22 +392,6 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 <button onclick="searchBooks()">Search</button>
 </div>
 <div id="addResults"><div class="add-msg">Search Open Library to find and add books, or add manually below.</div></div>
-<details style="margin-top:12px">
-<summary style="cursor:pointer;font-size:13px;color:var(--accent);font-weight:600">Add Manually</summary>
-<div class="add-manual" id="manualForm">
-<div class="full"><label>Title *</label><input id="m-title" placeholder="Book title"></div>
-<div><label>Author *</label><input id="m-author" placeholder="Author name"></div>
-<div><label>Category</label><select id="m-category"><option value="">Select...</option></select></div>
-<div><label>Pages</label><input id="m-pages" type="number" placeholder="0"></div>
-<div><label>Year Published</label><input id="m-year" type="number" placeholder="2024"></div>
-<div><label>ISBN</label><input id="m-isbn" placeholder="ISBN"></div>
-<div><label>Publisher</label><input id="m-publisher" placeholder="Publisher"></div>
-<div class="add-btns full">
-<button class="btn-secondary" onclick="closeAddBook()">Cancel</button>
-<button class="btn-primary" onclick="addManualBook()">Add Book</button>
-</div>
-</div>
-</details>
 </div>
 </div>
 
@@ -596,6 +577,8 @@ function addPickerItem(bookId,type){
 }
 function deletePicker(delBtn,name,bookId,type){
   if(type==='shelves'){
+    if(!confirm('Delete shelf "'+name+'" from all books?'))return;
+    if(!confirm('Are you absolutely sure? This cannot be undone.'))return;
     ALL_SHELVES=ALL_SHELVES.filter(s=>s!==name);localStorage.setItem('bs_shelves',JSON.stringify(ALL_SHELVES));
     DATA.forEach(b=>{const s=getShelves(b)||'';const parts=s.split(',').map(x=>x.trim()).filter(x=>x&&x!==name);if(parts.join(', ')!==s)saveField(b.id,'shelves',parts.join(', '))});
   } else if(type==='tags'){
@@ -794,7 +777,7 @@ function renderStats(){
   topDec.forEach(([d,n])=>{h+='<div class="bar-row"><div class="bar-label">'+d+'s</div><div class="bar-track"><div class="bar-fill" style="width:'+n/maxDec*100+'%;background:var(--accent2)">'+n+'</div></div></div>'});
   h+='</div>';
   if(yearKeys.length>0){h+='<div class="stat-card"><h3>Books Read Per Year</h3><div class="year-chart">';yearKeys.forEach(y=>{const n=yearlyRead[y];const hPct=Math.max(n/maxYearly*100,5);h+='<div class="yc-bar"><div class="yc-val">'+n+'</div><div class="yc-fill" style="height:'+hPct+'%"></div><div class="yc-label">'+y+'</div></div>'});h+='</div></div>'}
-  const topAuthDetail=Object.entries(authStats).sort((a,b)=>b[1].count-a[1].count).slice(0,8);
+  const topAuthDetail=Object.entries(authDetailStats).sort((a,b)=>b[1].count-a[1].count).slice(0,8);
   h+='<div class="stat-card" style="grid-column:1/-1"><h3>Top Authors</h3><div class="auth-detail">';
   topAuthDetail.forEach(([name,s])=>{const avgR=s.rated>0?(s.ratingSum/s.rated).toFixed(1):'N/A';const cats=[...s.cats].join(', ');h+='<div class="auth-card"><div class="auth-name"><a href="'+wikiURL(name)+'" target="_blank">'+esc(name)+'</a></div><div class="auth-stat">'+s.count+' book'+(s.count>1?'s':'')+' &middot; '+s.pages.toLocaleString()+' pages &middot; Avg '+avgR+' \u2605</div><div class="auth-stat" style="margin-top:2px">'+esc(cats)+'</div></div>'});
   h+='</div></div></div>';
