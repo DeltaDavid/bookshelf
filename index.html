@@ -280,7 +280,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .toolbar-btn:hover{background:var(--bg3);border-color:var(--accent)}
 .toolbar-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .toolbar-btn.primary:hover{opacity:.85}
-.sf-picker{position:absolute;top:100%;left:0;margin-top:6px;z-index:250;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:10px;min-width:200px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.sf-picker{position:fixed;z-index:250;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:10px;min-width:200px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
 .sf-picker label{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:6px;cursor:pointer;font-size:13px}
 .sf-picker label:hover{background:rgba(0,122,255,.06)}
 .sf-picker input[type=checkbox]{accent-color:var(--accent);width:15px;height:15px}
@@ -765,6 +765,14 @@ function renderStats(){
   STATUSES.forEach(s=>{const n=stCounts[s]||0;h+='<div class="bar-row"><div class="bar-label">'+esc(s)+'</div><div class="bar-track"><div class="bar-fill" style="width:'+Math.max(n/Math.max(total*.3,1)*100,n>0?8:0)+'%;background:var(--accent)">'+n+'</div></div></div>'});
   h+='<div class="bar-row"><div class="bar-label">No Status</div><div class="bar-track"><div class="bar-fill" style="width:'+noStatus/total*100+'%;background:var(--dim)">'+noStatus+'</div></div></div></div>';
 
+  // Type breakdown
+  const typeCounts={'Book':0,'Audiobook':0,'eBook':0};
+  DATA.forEach(b=>{const t=getType(b);typeCounts[t]=(typeCounts[t]||0)+1});
+  const maxType=Math.max(...Object.values(typeCounts),1);
+  h+='<div class="stat-card"><h3>Books by Type</h3>';
+  ['Book','Audiobook','eBook'].forEach(t=>{const n=typeCounts[t]||0;h+='<div class="bar-row"><div class="bar-label">'+t+'</div><div class="bar-track"><div class="bar-fill" style="width:'+Math.max(n/maxType*100,n>0?8:0)+'%;background:var(--accent)">'+n+'</div></div></div>'});
+  h+='</div>';
+
   h+='<div class="stat-card"><h3>Books by Category</h3>';
   CATS.forEach(c=>{const n=catCounts[c]||0;h+='<div class="bar-row"><div class="bar-label">'+esc(c)+'</div><div class="bar-track"><div class="bar-fill" style="width:'+n/maxCat*100+'%;background:'+(CC[c]||'#666')+'">'+n+'</div></div></div>'});
   h+='</div>';
@@ -863,7 +871,9 @@ function renderModalContent(id){
 
   // Type
   const bookType=getType(b);
-  body+='<div class="mb-section"><div class="mb-label">Type</div><div class="mb-val">'+makeEditable(bookType,b.id,'type')+'</div></div>';
+  body+='<div class="mb-section"><div class="mb-label">Type</div><div class="mb-val"><select class="edit-input" style="width:auto;display:inline-block" onchange="saveField('+b.id+',\'type\',this.value);openModal('+b.id+')">';
+  ['Book','Audiobook','eBook'].forEach(t=>{body+='<option value="'+t+'"'+(t===bookType?' selected':'')+'>'+t+'</option>'});
+  body+='</select></div></div>';
 
   // Category
   body+='<div class="mb-section"><div class="mb-label">Category</div><div class="mb-val"><span class="cat-badge" style="background:'+(CB[b.category]||'#F5F5F5')+';color:'+(CC[b.category]||'#616161')+'">'+esc(b.category)+'</span></div></div>';
@@ -1223,8 +1233,11 @@ function openStatusFilter(){
   });
   h+='<button class="sf-done" onclick="document.querySelector(\'.sf-picker\').remove()">Done</button>';
   picker.innerHTML=h;
-  btn.parentElement.style.position='relative';
-  btn.after(picker);
+  const rect=btn.getBoundingClientRect();
+  picker.style.position='fixed';
+  picker.style.left=rect.left+'px';
+  picker.style.top=(rect.bottom+4)+'px';
+  document.body.appendChild(picker);
   setTimeout(()=>{
     function closeOnOutside(e){if(!picker.contains(e.target)&&e.target!==btn){picker.remove();document.removeEventListener('click',closeOnOutside)}}
     document.addEventListener('click',closeOnOutside);
