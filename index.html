@@ -1020,8 +1020,8 @@ function openAddBook(){
   document.getElementById('addResults').innerHTML='<div class="add-msg">Search Open Library to find and add books, or add manually below.</div>';
   document.getElementById('addSearch').value='';
   const sel=document.getElementById('m-category');
-  sel.innerHTML='<option value="">Select...</option>';
-  CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o)});
+  if(sel){sel.innerHTML='<option value="">Select...</option>';
+  CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o)})}
   setTimeout(()=>document.getElementById('addSearch').focus(),100);
 }
 function closeAddBook(){document.getElementById('addModal').classList.remove('open')}
