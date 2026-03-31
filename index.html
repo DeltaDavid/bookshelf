@@ -280,6 +280,20 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .toolbar-btn:hover{background:var(--bg3);border-color:var(--accent)}
 .toolbar-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .toolbar-btn.primary:hover{opacity:.85}
+.bulk-bar{display:none;position:sticky;top:0;z-index:200;background:var(--accent);color:#fff;padding:10px 20px;border-radius:0 0 12px 12px;margin:0 40px;align-items:center;gap:10px;box-shadow:0 4px 12px rgba(0,0,0,.15);flex-wrap:wrap}
+.bulk-bar.show{display:flex}
+.bulk-bar .bulk-count{font-weight:600;font-size:13px;margin-right:8px}
+.bulk-bar button{padding:6px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.15);color:#fff;font-size:12px;cursor:pointer;font-family:inherit;font-weight:500;transition:all .15s}
+.bulk-bar button:hover{background:rgba(255,255,255,.3)}
+.bulk-bar .bulk-clear{margin-left:auto;background:none;border:none;color:rgba(255,255,255,.7);font-size:18px;cursor:pointer;padding:0 4px}
+.bulk-bar .bulk-clear:hover{color:#fff}
+.bulk-picker{position:fixed;z-index:600;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:12px;min-width:240px;max-height:400px;overflow-y:auto;box-shadow:0 8px 30px rgba(0,0,0,.15)}
+.bulk-picker label{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:6px;cursor:pointer;font-size:13px;color:var(--txt)}
+.bulk-picker label:hover{background:rgba(0,122,255,.06)}
+.bulk-picker input[type=checkbox],.bulk-picker input[type=radio]{accent-color:var(--accent);width:15px;height:15px}
+.bulk-picker select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);font-size:13px;font-family:inherit;margin-bottom:8px}
+.bulk-picker .bp-done{display:block;width:100%;margin-top:10px;padding:8px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:13px;cursor:pointer;font-weight:600}
+.bk-tbl .sel-cb{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}
 .sf-picker{position:fixed;z-index:250;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:10px;min-width:200px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
 .sf-picker label{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:6px;cursor:pointer;font-size:13px}
 .sf-picker label:hover{background:rgba(0,122,255,.06)}
@@ -339,6 +353,15 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 
 <div class="view active" id="v-spine"></div>
 <div class="view" id="v-cover"></div>
+<div id="bulkBar" class="bulk-bar">
+<span class="bulk-count" id="bulkCount">0 selected</span>
+<button onclick="bulkEdit('category')">Category</button>
+<button onclick="bulkEdit('type')">Type</button>
+<button onclick="bulkEdit('status')">Status</button>
+<button onclick="bulkEdit('shelves')">Shelves</button>
+<button onclick="bulkEdit('tags')">Tags</button>
+<span class="bulk-clear" onclick="clearBulkSelection()" title="Clear selection">&times;</span>
+</div>
 <div class="view" id="v-table"></div>
 <div class="view" id="v-stats"></div>
 <!-- Book Detail Modal -->
@@ -676,6 +699,7 @@ function renderCover(){
 // ===== RENDER TABLE =====
 function renderTable(){
   let h='<div class="tbl-wrap"><table class="bk-tbl" id="bktbl"><thead><tr>';
+  h+='<th class="no-sort" style="width:36px"><input type="checkbox" class="sel-cb" onchange="toggleAllRows(this)" title="Select all"></th>';
   h+='<th class="no-sort" style="width:50px">Cover</th>';
   h+='<th data-col="1" data-type="str" onclick="sortTbl(this)" style="width:240px">Title <span class="arrow">\u25B2</span></th>';
   h+='<th data-col="2" data-type="str" onclick="sortTbl(this)" style="width:160px">Author <span class="arrow">\u25B2</span></th>';
@@ -694,6 +718,7 @@ function renderTable(){
     const r=getR(b);const shelves=getShelves(b);const dr=getDateRead(b);const st=getStatus(b);const tg=getTags(b);
     const ccc=CC[b.category]||'#616161',cbg=CB[b.category]||'#F5F5F5';
     h+='<tr data-t="'+esc(b.title)+'" data-a="'+esc(b.author)+'" data-c="'+esc(b.category)+'" data-tags="'+esc(tg)+'" data-status="'+esc(st)+'" onclick="openModal('+b.id+')">';
+    h+='<td onclick="event.stopPropagation()"><input type="checkbox" class="sel-cb" data-bid="'+b.id+'" onchange="updateBulkSelection()"></td>';
     h+='<td>'+coverHTML(b,32,48)+'</td>';
     h+='<td><a href="'+amazonURL(b)+'" target="_blank" onclick="event.stopPropagation()" title="Search on Amazon">'+esc(b.title)+'</a></td>';
     h+='<td><a href="'+wikiURL(b.author)+'" target="_blank" onclick="event.stopPropagation()">'+esc(b.author)+'</a></td>';
@@ -1020,7 +1045,7 @@ function sortTbl(th){
   th.classList.add('sorted');
   const arrow=th.querySelector('.arrow');if(arrow)arrow.textContent=sortAsc?'\u25B2':'\u25BC';
   rows.sort((a,b)=>{
-    let av,bv;const ac=a.children[col],bc=b.children[col];
+    let av,bv;const ac=a.children[col+1],bc=b.children[col+1];
     if(type==='num'){av=parseFloat(ac?.dataset?.v||ac?.textContent)||0;bv=parseFloat(bc?.dataset?.v||bc?.textContent)||0}
     else{av=(ac?.textContent||'').toLowerCase();bv=(bc?.textContent||'').toLowerCase()}
     if(av<bv)return sortAsc?-1:1;if(av>bv)return sortAsc?1:-1;return 0;
@@ -1214,6 +1239,105 @@ function importData(event){
   event.target.value='';
 }
 
+
+
+// ===== BULK EDIT =====
+function getSelectedBookIds(){
+  return [...document.querySelectorAll('.sel-cb[data-bid]:checked')].map(c=>parseInt(c.dataset.bid));
+}
+function updateBulkSelection(){
+  const ids=getSelectedBookIds();
+  const bar=document.getElementById('bulkBar');
+  const cnt=document.getElementById('bulkCount');
+  if(ids.length>0){bar.classList.add('show');cnt.textContent=ids.length+' selected'}
+  else{bar.classList.remove('show')}
+}
+function toggleAllRows(masterCb){
+  const visible=[...document.querySelectorAll('#bktbl tbody tr')].filter(r=>r.style.display!=='none');
+  visible.forEach(r=>{const cb=r.querySelector('.sel-cb[data-bid]');if(cb)cb.checked=masterCb.checked});
+  updateBulkSelection();
+}
+function clearBulkSelection(){
+  document.querySelectorAll('.sel-cb').forEach(c=>c.checked=false);
+  updateBulkSelection();
+}
+function bulkEdit(field){
+  document.querySelectorAll('.bulk-picker').forEach(p=>p.remove());
+  const ids=getSelectedBookIds();
+  if(ids.length===0)return;
+  const picker=document.createElement('div');
+  picker.className='bulk-picker';
+  let h='<div style="font-size:12px;color:var(--dim);margin-bottom:8px">Apply to '+ids.length+' book'+(ids.length>1?'s':'')+'</div>';
+  if(field==='category'){
+    h+='<select id="bp-val">';
+    CATS.forEach(c=>{h+='<option value="'+esc(c)+'">'+esc(c)+'</option>'});
+    h+='</select>';
+    h+='<button class="bp-done" onclick="applyBulk(\'category\')">Apply</button>';
+  } else if(field==='type'){
+    h+='<select id="bp-val">';
+    ['Book','Audiobook','eBook'].forEach(t=>{h+='<option value="'+t+'">'+t+'</option>'});
+    h+='</select>';
+    h+='<button class="bp-done" onclick="applyBulk(\'type\')">Apply</button>';
+  } else if(field==='status'){
+    STATUSES.forEach(s=>{h+='<label><input type="checkbox" value="'+esc(s)+'"> '+esc(s)+'</label>'});
+    h+='<button class="bp-done" onclick="applyBulkMulti(\'status\')">Apply</button>';
+  } else if(field==='shelves'){
+    collectAllShelves().forEach(s=>{h+='<label><input type="checkbox" value="'+esc(s)+'"> '+esc(s)+'</label>'});
+    h+='<div style="display:flex;gap:6px;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)"><input type="text" id="bp-new" placeholder="New shelf..." style="flex:1;padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px"><button style="padding:6px 12px;border:none;background:var(--accent);color:#fff;border-radius:6px;font-size:12px;cursor:pointer" onclick="bulkAddNewItem(\'shelves\')">Add</button></div>';
+    h+='<button class="bp-done" onclick="applyBulkMulti(\'shelves\')">Apply</button>';
+  } else if(field==='tags'){
+    collectAllTags().forEach(t=>{h+='<label><input type="checkbox" value="'+esc(t)+'"> '+esc(t)+'</label>'});
+    h+='<div style="display:flex;gap:6px;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)"><input type="text" id="bp-new" placeholder="New tag..." style="flex:1;padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px"><button style="padding:6px 12px;border:none;background:var(--accent);color:#fff;border-radius:6px;font-size:12px;cursor:pointer" onclick="bulkAddNewItem(\'tags\')">Add</button></div>';
+    h+='<button class="bp-done" onclick="applyBulkMulti(\'tags\')">Apply</button>';
+  }
+  picker.innerHTML=h;
+  // Position centered in viewport
+  picker.style.top='120px';
+  picker.style.left='50%';
+  picker.style.transform='translateX(-50%)';
+  document.body.appendChild(picker);
+  setTimeout(()=>{
+    function closeOnOutside(e){if(!picker.contains(e.target)&&!e.target.closest('.bulk-bar')){picker.remove();document.removeEventListener('click',closeOnOutside)}}
+    document.addEventListener('click',closeOnOutside);
+  },100);
+}
+function bulkAddNewItem(type){
+  const inp=document.getElementById('bp-new');if(!inp)return;
+  const val=inp.value.trim();if(!val)return;
+  const picker=inp.closest('.bulk-picker');
+  const label=document.createElement('label');
+  label.innerHTML='<input type="checkbox" value="'+esc(val)+'" checked> '+esc(val);
+  const doneBtn=picker.querySelector('.bp-done');
+  picker.insertBefore(label,doneBtn.previousElementSibling);
+  inp.value='';
+  if(type==='shelves'&&!ALL_SHELVES.includes(val)){ALL_SHELVES.push(val);ALL_SHELVES.sort();localStorage.setItem('bs_shelves',JSON.stringify(ALL_SHELVES))}
+  if(type==='tags'&&!ALL_TAGS.includes(val)){ALL_TAGS.push(val);ALL_TAGS.sort();localStorage.setItem('bs_tags',JSON.stringify(ALL_TAGS))}
+}
+function applyBulk(field){
+  const ids=getSelectedBookIds();
+  const val=document.getElementById('bp-val').value;
+  ids.forEach(id=>saveField(id,field,val));
+  document.querySelectorAll('.bulk-picker').forEach(p=>p.remove());
+  clearBulkSelection();
+  renderTable();
+}
+function applyBulkMulti(field){
+  const picker=document.querySelector('.bulk-picker');if(!picker)return;
+  const checked=[...picker.querySelectorAll('input[type=checkbox]:checked')].map(c=>c.value);
+  const ids=getSelectedBookIds();
+  const storageKey=field==='status'?'status':field;
+  ids.forEach(id=>{
+    const b=DATA.find(x=>x.id===id);
+    // Merge with existing values
+    const existing=field==='status'?(getStatus(b)||''):field==='shelves'?(getShelves(b)||''):(getTags(b)||'');
+    const current=existing.split(',').map(x=>x.trim()).filter(Boolean);
+    const merged=[...new Set([...current,...checked])];
+    saveField(id,storageKey,merged.join(', '));
+  });
+  picker.remove();
+  clearBulkSelection();
+  renderTable();
+}
 
 // ===== STATUS FILTER (MULTI-SELECT) =====
 let selectedStatuses=[];
