@@ -1116,8 +1116,8 @@ function addBookToLibrary(book){
   }
   addedBooks.push(book);
   localStorage.setItem('bs_added',JSON.stringify(addedBooks));
-  document.getElementById('bookcount').textContent=DATA.length;
-  document.getElementById('catcount').textContent=CATS.length;
+  const bce=document.getElementById('bookcount');if(bce)bce.textContent=DATA.length;
+  const cce=document.getElementById('catcount');if(cce)cce.textContent=CATS.length;
   renderSpine();renderCover();renderTable();renderStats();
 }
 
@@ -1237,8 +1237,8 @@ function importData(event){
         });
         CATS=Object.keys(BY_CAT).sort();
       }
-      document.getElementById('bookcount').textContent=DATA.length;
-      document.getElementById('catcount').textContent=CATS.length;
+      const bc2=document.getElementById('bookcount');if(bc2)bc2.textContent=DATA.length;
+      const cc2=document.getElementById('catcount');if(cc2)cc2.textContent=CATS.length;
       const sel=document.getElementById('cf');
       sel.innerHTML='<option value="">All Categories</option>';
       CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c+' ('+(BY_CAT[c]||[]).length+')';sel.appendChild(o)});
@@ -1258,8 +1258,8 @@ fetch('data.json').then(r=>r.json()).then(d=>{  DATA=d.books;
   CATS=Object.keys(BY_CAT).sort();
   const sel=document.getElementById('cf');
   CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c+' ('+BY_CAT[c].length+')';sel.appendChild(o)});
-  document.getElementById('bookcount').textContent=DATA.length;
-  document.getElementById('catcount').textContent=CATS.length;
+  const bce=document.getElementById('bookcount');if(bce)bce.textContent=DATA.length;
+  const cce=document.getElementById('catcount');if(cce)cce.textContent=CATS.length;
   collectAllShelves();collectAllTags();
   renderSpine();renderCover();renderTable();renderStats();
   getRecommendations();
