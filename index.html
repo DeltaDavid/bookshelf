@@ -418,6 +418,26 @@ body.compact .tbl-cover{width:24px;height:36px}
   .ctl{gap:8px}
   .stat-grid{grid-template-columns:1fr !important}
 }
+
+/* MOBILE ICON TOOLBAR */
+.mob-toolbar{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 16px}
+.mob-toolbar-icons{display:flex;justify-content:space-around;align-items:center;gap:4px}
+.mob-icon-btn{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 12px;border:none;background:none;color:var(--dim);cursor:pointer;border-radius:10px;transition:all .15s;font-family:inherit;font-size:10px;font-weight:500;min-width:48px}
+.mob-icon-btn:active{background:var(--bg3)}
+.mob-icon-btn.active{color:var(--accent);background:rgba(74,124,247,.08)}
+.mob-icon-btn svg{width:22px;height:22px}
+.mob-expand{overflow:hidden;max-height:0;transition:max-height .25s ease;background:var(--bg2);border-bottom:1px solid transparent}
+.mob-expand.open{max-height:200px;border-bottom-color:var(--border);padding:10px 16px}
+.mob-expand .search-bar{max-width:100%}
+.mob-expand select{width:100%;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:var(--bg3);color:var(--txt);font-size:15px;font-family:inherit;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%2386868B' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px}
+.mob-expand .toolbar-btn{width:100%;justify-content:center;padding:10px;font-size:14px;border-radius:12px}
+.mob-expand .export-btns{display:flex;gap:8px}
+.mob-expand .export-btns .toolbar-btn{flex:1}
+@media(max-width:768px){
+  .mob-toolbar{display:block;position:sticky;top:0;z-index:200}
+  .search-wrap{display:none}
+  .ctl{display:none}
+}
 </style></head><body>
 
 <div class="menubar" id="menubar">
@@ -454,6 +474,51 @@ body.compact .tbl-cover{width:24px;height:36px}
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
 <input type="text" id="srch" placeholder="Search titles, authors, categories, tags...">
 </div>
+</div>
+
+<div class="mob-toolbar" id="mobToolbar">
+<div class="mob-toolbar-icons">
+<button class="mob-icon-btn" onclick="toggleMobPanel('search')" id="mob-search-btn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+Search
+</button>
+<button class="mob-icon-btn" onclick="toggleMobPanel('category')" id="mob-cat-btn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+Category
+</button>
+<button class="mob-icon-btn" onclick="toggleMobPanel('status')" id="mob-status-btn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+Status
+</button>
+<button class="mob-icon-btn" onclick="toggleMobPanel('export')" id="mob-export-btn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+Export
+</button>
+<button class="mob-icon-btn" onclick="openAddBook()" style="color:var(--accent)">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+Add
+</button>
+</div>
+<div class="mob-expand" id="mob-panel-search">
+<div class="search-bar" style="max-width:100%">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+<input type="text" id="mobSrch" placeholder="Search titles, authors, categories, tags..." oninput="document.getElementById('srch').value=this.value;applyFilters()">
+</div>
+</div>
+<div class="mob-expand" id="mob-panel-category">
+<select id="mobCf" onchange="document.getElementById('cf').value=this.value;applyFilters()"><option value="">All Categories</option></select>
+</div>
+<div class="mob-expand" id="mob-panel-status">
+<button class="toolbar-btn" onclick="openStatusFilter()" style="width:100%;justify-content:center;padding:10px;font-size:14px;border-radius:12px">All Statuses &#9662;</button>
+</div>
+<div class="mob-expand" id="mob-panel-export">
+<div class="export-btns" style="display:flex;gap:8px">
+<button class="toolbar-btn" onclick="exportData()" style="flex:1;justify-content:center;padding:10px;font-size:14px;border-radius:12px">JSON</button>
+<button class="toolbar-btn" onclick="exportCSV()" style="flex:1;justify-content:center;padding:10px;font-size:14px;border-radius:12px">CSV</button>
+<button class="toolbar-btn" onclick="downloadBackup()" style="flex:1;justify-content:center;padding:10px;font-size:14px;border-radius:12px">Backup</button>
+</div>
+</div>
+<div class="st" id="mobSt" style="text-align:center;color:var(--dim);font-size:12px;font-weight:500;padding-top:4px">0 books</div>
 </div>
 
 <div class="tabs">
