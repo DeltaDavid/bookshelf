@@ -80,7 +80,7 @@ a:hover{text-decoration:underline}
 .cover-ph{width:105px;height:158px;border-radius:6px;box-shadow:0 2px 8px var(--shadow2);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8px;text-align:center;font-size:9px}
 
 /* TABLE VIEW */
-.tbl-wrap{overflow-x:auto;border-radius:24px;border:1px solid var(--border);background:var(--bg2)}
+.tbl-wrap{border-radius:24px;border:1px solid var(--border);background:var(--bg2);overflow:visible}
 table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 .bk-tbl th{padding:10px 8px;text-align:left;background:var(--bg3);color:var(--txt);border-bottom:2px solid var(--border);border-right:1px solid var(--border);cursor:pointer;position:sticky;top:0;z-index:10;user-select:none;white-space:nowrap;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.3px}
 .bk-tbl th.no-sort{cursor:default}
@@ -527,9 +527,6 @@ body.dark-mode .auth-card{background:var(--bg);border-color:var(--border)}
 .tab-search-panel.open{display:block}
 .tab-search-panel .search-bar{max-width:100%;margin:0}
 body.dark-mode .tab-search-panel{background:var(--bg2);border-top-color:var(--border)}
-
-/* STICKY TABLE HEADER */
-.bk-tbl thead th{position:sticky;top:0;z-index:10}
 </style></head><body>
 
 <div class="menubar" id="menubar">
@@ -1821,24 +1818,26 @@ function syncMobCats(){
     var rect=book.getBoundingClientRect();
     var cx=rect.left+rect.width/2;
     var dx=(touchX-cx)/Math.max(rect.width,1);
-    var rotY=Math.max(-55,Math.min(10,-30+dx*45));
-    book.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(20px) translateY(-10px)';
+    var rotY=Math.max(-35,Math.min(5,-15+dx*25));
+    book.style.transform='rotateY('+rotY+'deg) rotateX(2deg) translateZ(10px) translateY(-5px)';
   }
   function activateBook(book,touchX){
     if(activeBook&&activeBook!==book)resetBook(activeBook);
     activeBook=book;
     book.classList.add('touch-active','js-controlled');
     book.style.zIndex='50';
-    book.style.margin='0 14px';
+    book.style.margin='0 8px';
     applyTouchAngle(book,touchX);
   }
   document.addEventListener('touchstart',function(e){
+    if(typeof searchActive!=='undefined'&&searchActive)return;
     var book=e.target.closest('.book3d');
     var spineView=document.getElementById('v-spine');
     if(!book||!spineView||!spineView.classList.contains('active'))return;
     activateBook(book,e.touches[0].clientX);
   },{passive:true});
   document.addEventListener('touchmove',function(e){
+    if(typeof searchActive!=='undefined'&&searchActive)return;
     var spineView=document.getElementById('v-spine');
     if(!spineView||!spineView.classList.contains('active'))return;
     var touch=e.touches[0];
@@ -1868,6 +1867,7 @@ function syncMobCats(){
   var mouseRaf=null;
   function handleMouseSpine(e){
     if(window.innerWidth<769)return;
+    if(document.activeElement&&(document.activeElement.tagName==='INPUT'||document.activeElement.tagName==='TEXTAREA'))return;
     var spineView=document.getElementById('v-spine');
     if(!spineView||!spineView.classList.contains('active'))return;
     var hovered=e.target.closest('.book3d');
@@ -1965,6 +1965,7 @@ function toggleDarkMode(){
 if(isDark){var mi=document.getElementById('darkModeMenuItem');if(mi)mi.innerHTML='Light Mode<span class="md-key">D</span>';}
 
 /* Tab Bar search toggle */
+var searchActive=false;
 function toggleTabSearch(){
   var panel=document.getElementById('tabSearchPanel');
   var btn=document.getElementById('btab-search');
@@ -1972,7 +1973,11 @@ function toggleTabSearch(){
   var isOpen=panel.classList.contains('open');
   panel.classList.toggle('open',!isOpen);
   if(btn)btn.classList.toggle('active',!isOpen);
-  if(!isOpen)setTimeout(function(){document.getElementById('tabSrch').focus()},100);
+  searchActive=!isOpen;
+  if(!isOpen){
+    var inp=document.getElementById('tabSrch');
+    if(inp){inp.focus();inp.click();}
+  }
 }
 /* Sync tab bar search input with main search */
 (function(){
