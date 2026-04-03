@@ -63,7 +63,7 @@ a:hover{text-decoration:underline}
 .shelf-row{display:flex;align-items:flex-end;gap:5px;padding:10px 5px 0;min-height:200px;flex-wrap:wrap}
 .shelf-wood{height:12px;background:linear-gradient(180deg,#D4A574,#C49464 30%,#B08050 60%,#A07040);border-radius:0 0 4px 4px;box-shadow:0 4px 8px rgba(0,0,0,.12);position:relative}
 .shelf-wood::before{content:'';position:absolute;top:-2px;left:0;right:0;height:2px;background:linear-gradient(180deg,rgba(255,255,255,.3),transparent)}
-.book3d{position:relative;transform-style:preserve-3d;transition:transform .5s ease,margin .3s;cursor:pointer;z-index:1;flex-shrink:0;perspective:800px}
+.book3d{position:relative;transform-style:preserve-3d;transition:transform .3s ease,margin .3s ease;cursor:pointer;z-index:1;flex-shrink:0;perspective:800px}
 .book3d:hover{transform:rotateY(-35deg) rotateX(3deg) translateZ(25px) translateY(-12px);z-index:50;margin:0 18px}
 .book3d:hover .spine{box-shadow:2px 2px 8px rgba(0,0,0,.35),inset -2px 0 4px rgba(255,255,255,.12);border-left:1px solid rgba(255,255,255,.15)}
 .book3d:hover .cover-face{opacity:1;box-shadow:4px 4px 14px rgba(0,0,0,.35)}
@@ -341,7 +341,9 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
 
 /* COMPACT */
 body.compact .shelf-row{min-height:140px;gap:3px}
-body.compact .book3d{transform:scale(.7);transform-origin:bottom center}
+body.compact .cover-grid{gap:6px !important}
+body.compact .cover-item{transform:scale(.6);transform-origin:top left;margin:0 -20px -30px 0}
+body.compact .cover-item img,body.compact .cover-ph{width:65px !important;height:98px !important}
 body.compact .cover-grid{gap:10px}
 body.compact .cover-item img,.compact .cover-ph{width:75px;height:112px}
 body.compact .bk-tbl{font-size:11px}
@@ -430,22 +432,25 @@ body.compact .tbl-cover{width:24px;height:36px}
 }
 
 
+
+.book3d.js-controlled{transition:none !important}
 /* Touch-active state for spine books */
 .book3d.touch-active .cover-face{opacity:1;box-shadow:4px 4px 14px rgba(0,0,0,.35)}
 .book3d.touch-active .spine{box-shadow:2px 2px 8px rgba(0,0,0,.35),inset -2px 0 4px rgba(255,255,255,.12);border-left:1px solid rgba(255,255,255,.15)}
 .book3d.touch-active .book-top{height:8px;background:linear-gradient(to bottom,rgba(255,255,255,.1),rgba(0,0,0,.05))}
 .book3d.touch-active .book-bottom{height:8px;background:linear-gradient(to top,rgba(0,0,0,.15),rgba(0,0,0,.03))}
 
-/* BOTTOM TAB BAR (mobile) */
-.bottom-tabs{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--bg2);border-top:1px solid var(--border);z-index:300;padding-bottom:env(safe-area-inset-bottom,0px)}
-.bottom-tabs-inner{display:flex;justify-content:space-around;align-items:center}
-.btab-btn{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0;flex:1;border:none;background:none;color:var(--dim);cursor:pointer;font-family:inherit;font-size:10px;font-weight:500;transition:color .15s}
+/* BOTTOM TAB BAR (mobile) - WhatsApp style */
+.bottom-tabs{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(249,249,249,.92);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-top:1px solid rgba(0,0,0,.08);z-index:300;padding-bottom:env(safe-area-inset-bottom,0px)}
+.bottom-tabs-inner{display:flex;justify-content:space-around;align-items:center;max-width:500px;margin:0 auto}
+.btab-btn{display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 0 2px;flex:1;border:none;background:none;color:#8e8e93;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:10px;font-weight:500;transition:color .15s;position:relative;-webkit-tap-highlight-color:transparent}
 .btab-btn.active{color:var(--accent)}
-.btab-btn svg{width:22px;height:22px}
+.btab-btn svg{width:24px;height:24px;stroke-width:1.5}
+.btab-btn.active svg{stroke-width:2}
 @media(max-width:768px){
   .bottom-tabs{display:block}
   .tabs{display:none}
-  body{padding-bottom:calc(60px + env(safe-area-inset-bottom,0px))}
+  body{padding-bottom:calc(56px + env(safe-area-inset-bottom,0px))}
 }
 /* MOBILE ICON TOOLBAR */
 .mob-toolbar{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 16px}
@@ -493,7 +498,7 @@ body.compact .tbl-cover{width:24px;height:36px}
 </div></div>
 <div class="menu-item">Help<div class="menu-drop">
 <div class="md-item" onclick="showShortcuts()">Keyboard Shortcuts<span class="md-key">?</span></div>
-<div class="md-item" onclick="alert('Bookshelf v2.1')">About</div>
+<div class="md-item" onclick="alert('Bookshelf v2.2')">About</div>
 </div></div>
 </div>
 <div class="hdr">
@@ -557,8 +562,6 @@ Add
 <select id="cf"><option value="">All Categories</option></select>
 <button class="toolbar-btn" id="sf-btn" onclick="openStatusFilter()" style="position:relative">All Statuses &#9662;</button>
 <button class="toolbar-btn primary" onclick="openAddBook()">+ Add Book</button>
-<button class="toolbar-btn" onclick="toggleCompact()" title="Compact view">Compact</button>
-<button class="toolbar-btn" onclick="exportData()">Export</button>
 <div class="st" id="st">0 books</div>
 </div>
 
@@ -1749,61 +1752,90 @@ function syncMobCats(){
 /* Touch interaction for spine view - angle books to show covers on mobile */
 (function(){
   var activeBook=null;
+  var touchRaf=null;
   function resetBook(el){
     if(!el)return;
+    el.classList.remove('touch-active','js-controlled');
     el.style.transform='';
     el.style.zIndex='';
     el.style.margin='';
-    el.classList.remove('touch-active');
+  }
+  function applyTouchAngle(book,touchX){
+    var rect=book.getBoundingClientRect();
+    var cx=rect.left+rect.width/2;
+    var dx=(touchX-cx)/Math.max(rect.width,1);
+    var rotY=Math.max(-55,Math.min(10,-30+dx*45));
+    book.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(20px) translateY(-10px)';
+  }
+  function activateBook(book,touchX){
+    if(activeBook&&activeBook!==book)resetBook(activeBook);
+    activeBook=book;
+    book.classList.add('touch-active','js-controlled');
+    book.style.zIndex='50';
+    book.style.margin='0 14px';
+    applyTouchAngle(book,touchX);
   }
   document.addEventListener('touchstart',function(e){
     var book=e.target.closest('.book3d');
     var spineView=document.getElementById('v-spine');
     if(!book||!spineView||!spineView.classList.contains('active'))return;
-    if(activeBook&&activeBook!==book)resetBook(activeBook);
-    activeBook=book;
-    book.style.zIndex='50';
-    book.style.margin='0 18px';
-    book.classList.add('touch-active');
-    var rect=book.getBoundingClientRect();
-    var touch=e.touches[0];
-    var dx=(touch.clientX-(rect.left+rect.width/2))/rect.width;
-    var rotY=Math.max(-45,Math.min(0,-35*Math.abs(dx)));
-    book.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
+    activateBook(book,e.touches[0].clientX);
   },{passive:true});
   document.addEventListener('touchmove',function(e){
-    if(!activeBook)return;
-    var rect=activeBook.getBoundingClientRect();
+    var spineView=document.getElementById('v-spine');
+    if(!spineView||!spineView.classList.contains('active'))return;
     var touch=e.touches[0];
-    var dx=(touch.clientX-(rect.left+rect.width/2))/rect.width;
-    var rotY=Math.max(-55,Math.min(10,-35+dx*40));
-    activeBook.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
+    /* Find which book the finger is over now */
+    var el=document.elementFromPoint(touch.clientX,touch.clientY);
+    var book=el?el.closest('.book3d'):null;
+    if(book&&spineView.contains(book)){
+      if(book!==activeBook)activateBook(book,touch.clientX);
+      else{
+        if(touchRaf)cancelAnimationFrame(touchRaf);
+        touchRaf=requestAnimationFrame(function(){applyTouchAngle(book,touch.clientX)});
+      }
+    }else if(activeBook){
+      /* Finger moved off all books */
+      if(touchRaf)cancelAnimationFrame(touchRaf);
+      touchRaf=requestAnimationFrame(function(){applyTouchAngle(activeBook,touch.clientX)});
+    }
   },{passive:true});
   document.addEventListener('touchend',function(e){
     if(!activeBook)return;
     var book=activeBook;
-    setTimeout(function(){
-      if(book===activeBook){resetBook(book);activeBook=null;}
-    },300);
+    activeBook=null;
+    resetBook(book);
   });
   /* Desktop: dynamic mouse-follow angle on spine hover */
   var lastHovered=null;
-  document.addEventListener('mousemove',function(e){
+  var mouseRaf=null;
+  function handleMouseSpine(e){
     if(window.innerWidth<769)return;
     var spineView=document.getElementById('v-spine');
     if(!spineView||!spineView.classList.contains('active'))return;
-    var hovered=document.querySelector('.book3d:hover');
-    if(hovered){
+    var hovered=e.target.closest('.book3d');
+    if(hovered&&spineView.contains(hovered)){
+      if(lastHovered&&lastHovered!==hovered){
+        lastHovered.classList.remove('js-controlled');
+        lastHovered.style.transform='';lastHovered.style.zIndex='';lastHovered.style.margin='';
+      }
+      hovered.classList.add('js-controlled');
+      hovered.style.zIndex='50';
+      hovered.style.margin='0 18px';
       var rect=hovered.getBoundingClientRect();
       var dx=(e.clientX-(rect.left+rect.width/2))/rect.width;
       var rotY=Math.max(-55,Math.min(10,-25+dx*30));
       hovered.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
-      if(lastHovered&&lastHovered!==hovered){lastHovered.style.transform='';lastHovered.style.zIndex='';lastHovered.style.margin='';}
       lastHovered=hovered;
     }else if(lastHovered){
+      lastHovered.classList.remove('js-controlled');
       lastHovered.style.transform='';lastHovered.style.zIndex='';lastHovered.style.margin='';
       lastHovered=null;
     }
+  }
+  document.addEventListener('mousemove',function(e){
+    if(mouseRaf)cancelAnimationFrame(mouseRaf);
+    mouseRaf=requestAnimationFrame(function(){handleMouseSpine(e)});
   });
 })();
 
@@ -1872,20 +1904,24 @@ if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch
 
 <div class="bottom-tabs" id="bottomTabs">
 <div class="bottom-tabs-inner">
+<button class="btab-btn" onclick="toggleMobPanel('search');return false;" id="btab-search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+Search
+</button>
 <button class="btab-btn active" onclick="switchTab('spine')" data-tab="spine">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5v-15A2.5 2.5 0 016.5 2H20v20H6.5A2.5 2.5 0 014 19.5z"/><path d="M4 17h16"/></svg>
 Spine
 </button>
 <button class="btab-btn" onclick="switchTab('cover')" data-tab="cover">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
 Cover
 </button>
 <button class="btab-btn" onclick="switchTab('table')" data-tab="table">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="3" cy="6" r=".5" fill="currentColor" stroke="none"/><circle cx="3" cy="12" r=".5" fill="currentColor" stroke="none"/><circle cx="3" cy="18" r=".5" fill="currentColor" stroke="none"/></svg>
 Table
 </button>
 <button class="btab-btn" onclick="switchTab('stats')" data-tab="stats">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="14" width="4" height="7" rx="1"/><rect x="10" y="4" width="4" height="17" rx="1"/><rect x="16" y="9" width="4" height="12" rx="1"/></svg>
 Stats
 </button>
 </div>
