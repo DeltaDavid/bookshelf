@@ -388,7 +388,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .view{padding:12px 16px}.hdr{padding:14px 16px}.search-wrap{padding:8px 16px}.tabs{padding:0 10px}.ctl{padding:8px 16px}
 .tab-btn{padding:10px 14px;font-size:13px}
 .modal-overlay{padding:0}
-.modal{border-radius:0;max-width:100%;min-height:100vh}
+.modal{border-radius:0;max-width:100%;min-height:100vh;padding-top:env(safe-area-inset-top,0px)}
 .modal-top{flex-direction:column;align-items:center;padding:20px 16px}
 .modal-body{padding:16px}
 .modal-nav{padding:0 16px 12px}
@@ -429,6 +429,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .book3d.js-controlled 
 .book3d.js-controlled .book-top,.book3d.js-controlled 
 
+.bottom-tabs{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(247,247,247,.92);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-top:1px solid var(--border);padding-bottom:env(safe-area-inset-bottom,0px)}
 .bottom-tabs-inner{display:flex;justify-content:space-around;align-items:center;max-width:500px;margin:0 auto}
 .btab-btn{display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 0 2px;flex:1;border:none;background:none;color:#8e8e93;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:10px;font-weight:500;transition:color .15s;position:relative;-webkit-tap-highlight-color:transparent}
 .btab-btn.active{color:var(--accent)}
@@ -441,7 +442,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 }
 /* MOBILE ICON TOOLBAR */
 .mob-toolbar{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 16px}
-.mob-toolbar-icons{display:flex;justify-content:space-around;align-items:center;gap:4px}
+.mob-toolbar-icons{display:flex;justify-content:center;align-items:center;gap:24px}
 .mob-icon-btn{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 12px;border:none;background:none;color:var(--dim);cursor:pointer;border-radius:10px;transition:all .15s;font-family:inherit;font-size:10px;font-weight:500;min-width:48px}
 .mob-icon-btn:active{background:var(--bg3)}
 .mob-icon-btn.active{color:var(--accent);background:rgba(74,124,247,.08)}
@@ -597,11 +598,11 @@ body.dark-mode .search-overlay-bar input{color:var(--txt)}
 <div class="mob-toolbar" id="mobToolbar">
 <div class="mob-toolbar-icons">
 
-<button class="mob-icon-btn" onclick="toggleMobPanel('category')" id="mob-cat-btn">
+<button class="mob-icon-btn" onclick="document.getElementById('mobCf').focus();document.getElementById('mobCf').click();" id="mob-cat-btn">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
 Category
 </button>
-<button class="mob-icon-btn" onclick="toggleMobPanel('status')" id="mob-status-btn">
+<button class="mob-icon-btn" onclick="openStatusFilter()" id="mob-status-btn">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
 Status
 </button>
