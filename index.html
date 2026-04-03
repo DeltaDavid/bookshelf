@@ -36,6 +36,16 @@ a:hover{text-decoration:underline}
 .tab-btn:hover{color:var(--txt);background:var(--bg3)}
 .tab-btn.active{color:var(--accent);border-bottom-color:var(--accent)}
 
+
+/* Inline search in controls bar (desktop) */
+.ctl-search-bar{display:flex;align-items:center;gap:8px;background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:6px 14px;min-width:180px;max-width:280px;transition:border-color .2s,box-shadow .2s}
+.ctl-search-bar:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(74,124,247,.15)}
+.ctl-search-bar svg{flex-shrink:0;color:var(--dim)}
+.ctl-search-bar input{border:none;background:none;font-size:13px;color:var(--txt);outline:none;width:100%;font-family:inherit}
+.ctl-search-bar input::placeholder{color:var(--dim)}
+
+/* Hide standalone search bar (merged into controls) */
+.search-wrap{display:none}
 /* CONTROLS */
 .ctl{background:var(--bg);padding:12px 40px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;z-index:197}
 .ctl select{padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--bg2);color:var(--txt);font-size:13px;font-family:inherit;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%2386868B' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
@@ -425,6 +435,18 @@ body.compact .tbl-cover{width:24px;height:36px}
 .book3d.touch-active .spine{box-shadow:2px 2px 8px rgba(0,0,0,.35),inset -2px 0 4px rgba(255,255,255,.12);border-left:1px solid rgba(255,255,255,.15)}
 .book3d.touch-active .book-top{height:8px;background:linear-gradient(to bottom,rgba(255,255,255,.1),rgba(0,0,0,.05))}
 .book3d.touch-active .book-bottom{height:8px;background:linear-gradient(to top,rgba(0,0,0,.15),rgba(0,0,0,.03))}
+
+/* BOTTOM TAB BAR (mobile) */
+.bottom-tabs{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--bg2);border-top:1px solid var(--border);z-index:300;padding-bottom:env(safe-area-inset-bottom,0px)}
+.bottom-tabs-inner{display:flex;justify-content:space-around;align-items:center}
+.btab-btn{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0;flex:1;border:none;background:none;color:var(--dim);cursor:pointer;font-family:inherit;font-size:10px;font-weight:500;transition:color .15s}
+.btab-btn.active{color:var(--accent)}
+.btab-btn svg{width:22px;height:22px}
+@media(max-width:768px){
+  .bottom-tabs{display:block}
+  .tabs{display:none}
+  body{padding-bottom:calc(60px + env(safe-area-inset-bottom,0px))}
+}
 /* MOBILE ICON TOOLBAR */
 .mob-toolbar{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 16px}
 .mob-toolbar-icons{display:flex;justify-content:space-around;align-items:center;gap:4px}
@@ -471,7 +493,7 @@ body.compact .tbl-cover{width:24px;height:36px}
 </div></div>
 <div class="menu-item">Help<div class="menu-drop">
 <div class="md-item" onclick="showShortcuts()">Keyboard Shortcuts<span class="md-key">?</span></div>
-<div class="md-item" onclick="alert('Bookshelf v2.0')">About</div>
+<div class="md-item" onclick="alert('Bookshelf v2.1')">About</div>
 </div></div>
 </div>
 <div class="hdr">
@@ -528,6 +550,10 @@ Add
 </div>
 
 <div class="ctl">
+<div class="ctl-search-bar">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+<input type="text" id="srch2" placeholder="Search..." oninput="document.getElementById('srch').value=this.value;applyFilters()">
+</div>
 <select id="cf"><option value="">All Categories</option></select>
 <button class="toolbar-btn" id="sf-btn" onclick="openStatusFilter()" style="position:relative">All Statuses &#9662;</button>
 <button class="toolbar-btn primary" onclick="openAddBook()">+ Add Book</button>
@@ -1761,17 +1787,23 @@ function syncMobCats(){
     },300);
   });
   /* Desktop: dynamic mouse-follow angle on spine hover */
+  var lastHovered=null;
   document.addEventListener('mousemove',function(e){
     if(window.innerWidth<769)return;
     var spineView=document.getElementById('v-spine');
     if(!spineView||!spineView.classList.contains('active'))return;
-    var hovered=document.querySelectorAll('.book3d:hover');
-    hovered.forEach(function(book){
-      var rect=book.getBoundingClientRect();
+    var hovered=document.querySelector('.book3d:hover');
+    if(hovered){
+      var rect=hovered.getBoundingClientRect();
       var dx=(e.clientX-(rect.left+rect.width/2))/rect.width;
       var rotY=Math.max(-55,Math.min(10,-25+dx*30));
-      book.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
-    });
+      hovered.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
+      if(lastHovered&&lastHovered!==hovered){lastHovered.style.transform='';lastHovered.style.zIndex='';lastHovered.style.margin='';}
+      lastHovered=hovered;
+    }else if(lastHovered){
+      lastHovered.style.transform='';lastHovered.style.zIndex='';lastHovered.style.margin='';
+      lastHovered=null;
+    }
   });
 })();
 
@@ -1800,6 +1832,28 @@ function syncMobCats(){
   window.addEventListener('resize',setStickyTops);
   setTimeout(setStickyTops,200);
 })();
+
+/* Sync bottom tab bar with view switches */
+(function(){
+  var origSwitch=window.switchTab;
+  window.switchTab=function(name){
+    origSwitch(name);
+    document.querySelectorAll('.btab-btn').forEach(function(b){
+      b.classList.toggle('active',b.dataset.tab===name);
+    });
+  };
+})();
+
+/* Sync inline desktop search with original search input */
+(function(){
+  var s2=document.getElementById('srch2');
+  if(s2){
+    s2.addEventListener('input',function(){
+      document.getElementById('srch').value=this.value;
+      if(typeof applyFilters==='function')applyFilters();
+    });
+  }
+})();
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.log('SW reg failed:',e))}
 </script><div class="kb-overlay" id="kbOverlay" onclick="if(event.target===this)this.classList.remove('open')">
 <div class="kb-panel">
@@ -1815,4 +1869,25 @@ if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch
 <div class="kb-row"><span>Show this help</span><span class="kb-key">?</span></div>
 </div></div>
 <div class="backup-indicator" id="backupIndicator"></div>
+
+<div class="bottom-tabs" id="bottomTabs">
+<div class="bottom-tabs-inner">
+<button class="btab-btn active" onclick="switchTab('spine')" data-tab="spine">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+Spine
+</button>
+<button class="btab-btn" onclick="switchTab('cover')" data-tab="cover">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+Cover
+</button>
+<button class="btab-btn" onclick="switchTab('table')" data-tab="table">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+Table
+</button>
+<button class="btab-btn" onclick="switchTab('stats')" data-tab="stats">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+Stats
+</button>
+</div>
+</div>
 </body></html>
