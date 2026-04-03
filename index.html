@@ -344,7 +344,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 
 
 /* MENU BAR */
-.menubar{background:#f6f6f6;border-bottom:1px solid var(--border);padding:0 12px;display:flex;gap:0;font-size:13px;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;user-select:none;position:sticky;top:0;z-index:500}
+.menubar{background:#f6f6f6;border-bottom:1px solid var(--border);padding:0 12px;display:flex;gap:0;font-size:13px;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;user-select:none;position:sticky;top:0;z-index:500;padding-top:env(safe-area-inset-top,0px)}
 
 .md-sub{position:relative}
 .menu-sub{display:none;position:absolute;left:100%;top:-4px;background:var(--bg);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow2);min-width:120px;padding:4px 0;z-index:201}
@@ -436,7 +436,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .btab-btn svg{width:24px;height:24px;stroke-width:1.5}
 .btab-btn.active svg{stroke-width:2}
 @media(max-width:768px){
-  .bottom-tabs{display:block}
+  .bottom-tabs{display:block;height:50px}
   .tabs{display:none}
   body{padding-bottom:calc(56px + env(safe-area-inset-bottom,0px))}
 }
@@ -1614,10 +1614,17 @@ function openStatusFilter(){
   });
   h+='<button class="sf-done" onclick="document.querySelector(\'.sf-picker\').remove()">Done</button>';
   picker.innerHTML=h;
-  const rect=btn.getBoundingClientRect();
   picker.style.position='fixed';
-  picker.style.left=rect.left+'px';
-  picker.style.top=(rect.bottom+4)+'px';
+  if(window.innerWidth<=768){
+    picker.style.left='50%';
+    picker.style.top='50%';
+    picker.style.transform='translate(-50%,-50%)';
+    picker.style.minWidth='260px';
+  }else{
+    const rect=btn.getBoundingClientRect();
+    picker.style.left=rect.left+'px';
+    picker.style.top=(rect.bottom+4)+'px';
+  }
   document.body.appendChild(picker);
   setTimeout(()=>{
     function closeOnOutside(e){if(!picker.contains(e.target)&&e.target!==btn){picker.remove();document.removeEventListener('click',closeOnOutside)}}
@@ -1905,6 +1912,8 @@ function closeSearchOverlay(){
   if(!ctl)return;
   var threshold=10;
   window.addEventListener('scroll',function(){
+    var active=document.querySelector('.view.active');
+    if(active&&active.id==='v-stats')return;
     var curr=window.pageYOffset||document.documentElement.scrollTop;
     if(curr>lastScroll+threshold&&curr>100){
       ctl.style.transform='translateY(-100%)';
