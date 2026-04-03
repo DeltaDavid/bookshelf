@@ -31,13 +31,13 @@ a:hover{text-decoration:underline}
 .search-bar input::placeholder{color:var(--dim)}
 
 /* TABS */
-.tabs{background:var(--bg2);padding:0 40px;display:flex;gap:0;border-bottom:1px solid var(--border)}
+.tabs{background:var(--bg2);padding:0 40px;display:flex;gap:0;border-bottom:1px solid var(--border);position:sticky;z-index:198}
 .tab-btn{padding:12px 20px;background:none;border:none;color:var(--dim);font-size:14px;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;font-weight:500;font-family:inherit}
 .tab-btn:hover{color:var(--txt);background:var(--bg3)}
 .tab-btn.active{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* CONTROLS */
-.ctl{background:var(--bg);padding:12px 40px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.ctl{background:var(--bg);padding:12px 40px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;z-index:197}
 .ctl select{padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--bg2);color:var(--txt);font-size:13px;font-family:inherit;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%2386868B' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
 .ctl .st{margin-left:auto;color:var(--dim);font-size:13px;font-weight:500}
 
@@ -419,6 +419,12 @@ body.compact .tbl-cover{width:24px;height:36px}
   .stat-grid{grid-template-columns:1fr !important}
 }
 
+
+/* Touch-active state for spine books */
+.book3d.touch-active .cover-face{opacity:1;box-shadow:4px 4px 14px rgba(0,0,0,.35)}
+.book3d.touch-active .spine{box-shadow:2px 2px 8px rgba(0,0,0,.35),inset -2px 0 4px rgba(255,255,255,.12);border-left:1px solid rgba(255,255,255,.15)}
+.book3d.touch-active .book-top{height:8px;background:linear-gradient(to bottom,rgba(255,255,255,.1),rgba(0,0,0,.05))}
+.book3d.touch-active .book-bottom{height:8px;background:linear-gradient(to top,rgba(0,0,0,.15),rgba(0,0,0,.03))}
 /* MOBILE ICON TOOLBAR */
 .mob-toolbar{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 16px}
 .mob-toolbar-icons{display:flex;justify-content:space-around;align-items:center;gap:4px}
@@ -437,6 +443,8 @@ body.compact .tbl-cover{width:24px;height:36px}
   .mob-toolbar{display:block;position:sticky;top:0;z-index:200}
   .search-wrap{display:none}
   .ctl{display:none}
+  .menubar{display:none}
+  .tabs{position:sticky;top:54px;z-index:199;background:var(--bg2)}
 }
 </style></head><body>
 
@@ -490,10 +498,7 @@ Category
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
 Status
 </button>
-<button class="mob-icon-btn" onclick="toggleMobPanel('export')" id="mob-export-btn">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-Export
-</button>
+
 <button class="mob-icon-btn" onclick="openAddBook()" style="color:var(--accent)">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
 Add
@@ -511,13 +516,7 @@ Add
 <div class="mob-expand" id="mob-panel-status">
 <button class="toolbar-btn" onclick="openStatusFilter()" style="width:100%;justify-content:center;padding:10px;font-size:14px;border-radius:12px">All Statuses &#9662;</button>
 </div>
-<div class="mob-expand" id="mob-panel-export">
-<div class="export-btns" style="display:flex;gap:8px">
-<button class="toolbar-btn" onclick="exportData()" style="flex:1;justify-content:center;padding:10px;font-size:14px;border-radius:12px">JSON</button>
-<button class="toolbar-btn" onclick="exportCSV()" style="flex:1;justify-content:center;padding:10px;font-size:14px;border-radius:12px">CSV</button>
-<button class="toolbar-btn" onclick="downloadBackup()" style="flex:1;justify-content:center;padding:10px;font-size:14px;border-radius:12px">Backup</button>
-</div>
-</div>
+
 <div class="st" id="mobSt" style="text-align:center;color:var(--dim);font-size:12px;font-weight:500;padding-top:4px">0 books</div>
 </div>
 
@@ -1669,6 +1668,138 @@ function updateMenuState(){
 
 (function(){let sx=0,sy=0;document.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});document.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)<50||Math.abs(dy)>Math.abs(dx))return;var modal=document.getElementById('modal');if(!modal||!modal.classList.contains('open'))return;if(dx<-50)navModal(1);else if(dx>50)navModal(-1)},{passive:true})})();
 // Register service worker
+
+
+/* Mobile icon toolbar toggle */
+function toggleMobPanel(name){
+  var panels=['search','category','status'];
+  panels.forEach(function(p){
+    var panel=document.getElementById('mob-panel-'+p);
+    var btn=document.getElementById('mob-'+p+'-btn');
+    if(!panel||!btn)return;
+    if(p===name&&!panel.classList.contains('open')){
+      panel.classList.add('open');
+      btn.classList.add('active');
+      if(p==='search')setTimeout(function(){document.getElementById('mobSrch').focus()},100);
+    }else{
+      panel.classList.remove('open');
+      btn.classList.remove('active');
+    }
+  });
+}
+/* Sync mobile category dropdown with desktop one */
+function syncMobCats(){
+  var src=document.getElementById('cf');
+  var dst=document.getElementById('mobCf');
+  if(!src||!dst)return;
+  dst.innerHTML=src.innerHTML;
+  dst.value=src.value;
+}
+/* Sync book count to mobile */
+(function(){
+  var origSt=document.getElementById('st');
+  if(origSt){
+    var obs=new MutationObserver(function(){
+      var ms=document.getElementById('mobSt');
+      if(ms)ms.textContent=origSt.textContent;
+    });
+    obs.observe(origSt,{childList:true,characterData:true,subtree:true});
+  }
+  var origCf=document.getElementById('cf');
+  if(origCf){
+    new MutationObserver(function(){syncMobCats()}).observe(origCf,{childList:true});
+    origCf.addEventListener('change',function(){var m=document.getElementById('mobCf');if(m)m.value=origCf.value});
+  }
+  var mobSrch=document.getElementById('mobSrch');
+  if(mobSrch){
+    mobSrch.addEventListener('input',function(){
+      document.getElementById('srch').value=this.value;
+      if(typeof applyFilters==='function')applyFilters();
+    });
+  }
+  setTimeout(syncMobCats,500);
+})();
+
+/* Touch interaction for spine view - angle books to show covers on mobile */
+(function(){
+  var activeBook=null;
+  function resetBook(el){
+    if(!el)return;
+    el.style.transform='';
+    el.style.zIndex='';
+    el.style.margin='';
+    el.classList.remove('touch-active');
+  }
+  document.addEventListener('touchstart',function(e){
+    var book=e.target.closest('.book3d');
+    var spineView=document.getElementById('v-spine');
+    if(!book||!spineView||!spineView.classList.contains('active'))return;
+    if(activeBook&&activeBook!==book)resetBook(activeBook);
+    activeBook=book;
+    book.style.zIndex='50';
+    book.style.margin='0 18px';
+    book.classList.add('touch-active');
+    var rect=book.getBoundingClientRect();
+    var touch=e.touches[0];
+    var dx=(touch.clientX-(rect.left+rect.width/2))/rect.width;
+    var rotY=Math.max(-45,Math.min(0,-35*Math.abs(dx)));
+    book.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
+  },{passive:true});
+  document.addEventListener('touchmove',function(e){
+    if(!activeBook)return;
+    var rect=activeBook.getBoundingClientRect();
+    var touch=e.touches[0];
+    var dx=(touch.clientX-(rect.left+rect.width/2))/rect.width;
+    var rotY=Math.max(-55,Math.min(10,-35+dx*40));
+    activeBook.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
+  },{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(!activeBook)return;
+    var book=activeBook;
+    setTimeout(function(){
+      if(book===activeBook){resetBook(book);activeBook=null;}
+    },300);
+  });
+  /* Desktop: dynamic mouse-follow angle on spine hover */
+  document.addEventListener('mousemove',function(e){
+    if(window.innerWidth<769)return;
+    var spineView=document.getElementById('v-spine');
+    if(!spineView||!spineView.classList.contains('active'))return;
+    var hovered=document.querySelectorAll('.book3d:hover');
+    hovered.forEach(function(book){
+      var rect=book.getBoundingClientRect();
+      var dx=(e.clientX-(rect.left+rect.width/2))/rect.width;
+      var rotY=Math.max(-55,Math.min(10,-25+dx*30));
+      book.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
+    });
+  });
+})();
+
+/* Calculate sticky top offsets */
+(function(){
+  function setStickyTops(){
+    var mb=document.querySelector('.menubar');
+    var sw=document.querySelector('.search-wrap');
+    var tabs=document.querySelector('.tabs');
+    var ctl=document.querySelector('.ctl');
+    if(window.innerWidth>768){
+      var mbH=mb?mb.offsetHeight:0;
+      var swH=sw?sw.offsetHeight:0;
+      var tabH=tabs?tabs.offsetHeight:0;
+      if(sw)sw.style.top=mbH+'px';
+      if(tabs)tabs.style.top=(mbH+swH)+'px';
+      if(ctl)ctl.style.top=(mbH+swH+tabH)+'px';
+    }else{
+      if(tabs){
+        var mt=document.getElementById('mobToolbar');
+        tabs.style.top=(mt?mt.offsetHeight:54)+'px';
+      }
+    }
+  }
+  setStickyTops();
+  window.addEventListener('resize',setStickyTops);
+  setTimeout(setStickyTops,200);
+})();
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.log('SW reg failed:',e))}
 </script><div class="kb-overlay" id="kbOverlay" onclick="if(event.target===this)this.classList.remove('open')">
 <div class="kb-panel">
