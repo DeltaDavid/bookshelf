@@ -1937,8 +1937,13 @@ function closeSearchOverlay(){
       if(tabs)top+=tabs.offsetHeight;
       if(ctl)top+=ctl.offsetHeight;
     }else{
+      /* On mobile, toolbar sticks at safe-area-inset-top. Read its computed CSS top + height. */
       var mt=document.getElementById('mobToolbar');
-      if(mt)top+=mt.offsetHeight;
+      if(mt){
+        var mtStyle=getComputedStyle(mt);
+        var mtTop=parseFloat(mtStyle.top)||0;
+        top=mtTop+mt.offsetHeight;
+      }
     }
     document.documentElement.style.setProperty('--th-top',top+'px');
   }
