@@ -426,9 +426,6 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 
 
 
-.book3d.js-controlled 
-.book3d.js-controlled .book-top,.book3d.js-controlled 
-
 .bottom-tabs{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(247,247,247,.92);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-top:1px solid var(--border);padding-bottom:env(safe-area-inset-bottom,0px)}
 .bottom-tabs-inner{display:flex;justify-content:space-around;align-items:center;max-width:500px;margin:0 auto}
 .btab-btn{display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 0 2px;flex:1;border:none;background:none;color:#8e8e93;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:10px;font-weight:500;transition:color .15s;position:relative;-webkit-tap-highlight-color:transparent}
@@ -1617,8 +1614,8 @@ function openStatusFilter(){
   picker.style.position='fixed';
   if(window.innerWidth<=768){
     picker.style.left='50%';
-    picker.style.top='50%';
-    picker.style.transform='translate(-50%,-50%)';
+    picker.style.top='80px';
+    picker.style.transform='translateX(-50%)';
     picker.style.minWidth='260px';
   }else{
     const rect=btn.getBoundingClientRect();
