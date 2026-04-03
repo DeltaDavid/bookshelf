@@ -454,7 +454,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .mob-expand .export-btns{display:flex;gap:8px}
 .mob-expand .export-btns .toolbar-btn{flex:1}
 @media(max-width:768px){
-  .mob-toolbar{display:block;position:sticky;top:0;z-index:200}
+  .mob-toolbar{display:block;position:sticky;top:env(safe-area-inset-top,0px);z-index:200}
   .search-wrap{display:none}
   .ctl{display:none}
   .menubar{display:none}
