@@ -1,4 +1,4 @@
-const CACHE='bookshelf-v21';
+const CACHE='bookshelf-v22';
 const CORE=['/','/index.html','/data.json','/manifest.json'];
 
 self.addEventListener('install',e=>{

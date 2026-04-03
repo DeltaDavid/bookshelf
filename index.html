@@ -80,9 +80,9 @@ a:hover{text-decoration:underline}
 .cover-ph{width:105px;height:158px;border-radius:6px;box-shadow:0 2px 8px var(--shadow2);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8px;text-align:center;font-size:9px}
 
 /* TABLE VIEW */
-.tbl-wrap{border-radius:24px;border:1px solid var(--border);background:var(--bg2);overflow:visible}
+.tbl-wrap{border:1px solid var(--border);background:var(--bg2);border-radius:0;overflow:clip}
 table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
-.bk-tbl th{padding:10px 8px;text-align:left;background:var(--bg3);color:var(--txt);border-bottom:2px solid var(--border);border-right:1px solid var(--border);cursor:pointer;position:sticky;top:0;z-index:10;user-select:none;white-space:nowrap;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.3px}
+.bk-tbl th{padding:10px 8px;text-align:left;background:var(--bg3);color:var(--txt);border-bottom:2px solid var(--border);border-right:1px solid var(--border);cursor:pointer;position:sticky;top:var(--th-top,0px);z-index:10;user-select:none;white-space:nowrap;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.3px}
 .bk-tbl th.no-sort{cursor:default}
 .bk-tbl th:last-child{border-right:none}
 .bk-tbl th:hover{background:#E8E8E6}
@@ -406,7 +406,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
   .ctl{padding:8px 16px}
   .view{padding:0 16px}
   .ch{font-size:.9em}
-  .tbl-wrap{border-radius:16px}
+  .tbl-wrap{border-radius:0}
   .modal-content{border-radius:20px;margin:8px;max-height:calc(100vh - 16px)}
   .stat-grid{grid-template-columns:1fr 1fr !important}
 }
@@ -522,12 +522,41 @@ body.dark-mode .bar-track{background:var(--bg3)}
 body.dark-mode .pages-stat-box{background:var(--bg3)}
 body.dark-mode .auth-card{background:var(--bg);border-color:var(--border)}
 
-/* TAB BAR SEARCH PANEL (mobile) */
-.tab-search-panel{display:none;position:fixed;bottom:calc(56px + env(safe-area-inset-bottom,0px));left:0;right:0;background:var(--bg2);border-top:1px solid var(--border);padding:10px 16px;z-index:299;box-shadow:0 -2px 10px rgba(0,0,0,.08)}
-.tab-search-panel.open{display:block}
-.tab-search-panel .search-bar{max-width:100%;margin:0}
-body.dark-mode .tab-search-panel{background:var(--bg2);border-top-color:var(--border)}
+/* SEARCH OVERLAY (full screen) */
+.search-overlay{display:none;position:fixed;inset:0;background:var(--bg);z-index:400;overflow-y:auto;padding-bottom:calc(60px + env(safe-area-inset-bottom,0px))}
+.search-overlay.open{display:flex;flex-direction:column}
+.search-overlay-bar{position:sticky;top:0;z-index:10;background:var(--bg2);padding:12px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)}
+.search-overlay-bar input{flex:1;border:none;background:none;font-size:16px;color:var(--txt);outline:none;font-family:inherit}
+.search-overlay-bar input::placeholder{color:var(--dim)}
+.search-overlay-cancel{border:none;background:none;color:var(--accent);font-size:15px;font-weight:500;cursor:pointer;font-family:inherit;padding:4px 8px;white-space:nowrap}
+.search-results{flex:1;padding:12px 16px}
+.search-result-item{display:flex;gap:12px;padding:12px;border-bottom:1px solid var(--border);cursor:pointer;align-items:center}
+.search-result-item:active{background:var(--bg3)}
+.search-result-cover{width:40px;height:60px;border-radius:4px;object-fit:contain;background:var(--bg3);flex-shrink:0}
+.search-result-cover-ph{width:40px;height:60px;border-radius:4px;background:var(--bg3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:8px;color:var(--dim)}
+.search-result-info{flex:1;min-width:0}
+.search-result-title{font-size:14px;font-weight:600;color:var(--txt);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-result-author{font-size:12px;color:var(--dim);margin-top:2px}
+.search-result-meta{font-size:11px;color:var(--dim);margin-top:3px}
+.search-empty{text-align:center;padding:40px 20px;color:var(--dim);font-size:14px}
+body.dark-mode .search-overlay{background:var(--bg)}
+body.dark-mode .search-overlay-bar{background:var(--bg2);border-bottom-color:var(--border)}
+body.dark-mode .search-overlay-bar input{color:var(--txt)}
+@media(min-width:769px){
+  .search-overlay{display:none !important}
+}
 </style></head><body>
+<div class="search-overlay" id="searchOverlay">
+<div class="search-overlay-bar">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--dim);flex-shrink:0"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+<input type="text" id="searchOverlayInput" placeholder="Search titles, authors, tags..." autocomplete="off" autocorrect="off">
+<button class="search-overlay-cancel" onclick="closeSearchOverlay()">Cancel</button>
+</div>
+<div class="search-results" id="searchResults">
+<div class="search-empty">Type to search your books</div>
+</div>
+</div>
+
 
 <div class="menubar" id="menubar">
 <div class="menu-item">File<div class="menu-drop">
@@ -1818,15 +1847,15 @@ function syncMobCats(){
     var rect=book.getBoundingClientRect();
     var cx=rect.left+rect.width/2;
     var dx=(touchX-cx)/Math.max(rect.width,1);
-    var rotY=Math.max(-35,Math.min(5,-15+dx*25));
-    book.style.transform='rotateY('+rotY+'deg) rotateX(2deg) translateZ(10px) translateY(-5px)';
+    var rotY=Math.max(-20,Math.min(0,-10+dx*15));
+    book.style.transform='rotateY('+rotY+'deg) rotateX(1deg) translateZ(5px) translateY(-3px)';
   }
   function activateBook(book,touchX){
     if(activeBook&&activeBook!==book)resetBook(activeBook);
     activeBook=book;
     book.classList.add('touch-active','js-controlled');
     book.style.zIndex='50';
-    book.style.margin='0 8px';
+    book.style.margin='0 4px';
     applyTouchAngle(book,touchX);
   }
   document.addEventListener('touchstart',function(e){
@@ -1881,14 +1910,14 @@ function syncMobCats(){
       }
       hovered.classList.add('js-controlled');
       hovered.style.zIndex='50';
-      hovered.style.margin='0 18px';
+      hovered.style.margin='0 8px';
       var hcf=hovered.querySelector('.cover-face');if(hcf){hcf.style.opacity='1';hcf.style.transition='none'}
       var hbt=hovered.querySelector('.book-top');if(hbt){hbt.style.height='8px';hbt.style.background='linear-gradient(to bottom,rgba(255,255,255,.1),rgba(0,0,0,.05))'}
       var hbb=hovered.querySelector('.book-bottom');if(hbb){hbb.style.height='8px';hbb.style.background='linear-gradient(to top,rgba(0,0,0,.15),rgba(0,0,0,.03))'}
       var rect=hovered.getBoundingClientRect();
       var dx=(e.clientX-(rect.left+rect.width/2))/rect.width;
-      var rotY=Math.max(-55,Math.min(10,-25+dx*30));
-      hovered.style.transform='rotateY('+rotY+'deg) rotateX(3deg) translateZ(25px) translateY(-12px)';
+      var rotY=Math.max(-30,Math.min(5,-15+dx*20));
+      hovered.style.transform='rotateY('+rotY+'deg) rotateX(2deg) translateZ(12px) translateY(-6px)';
       lastHovered=hovered;
     }else if(lastHovered){
       lastHovered.classList.remove('js-controlled');
@@ -1967,27 +1996,62 @@ if(isDark){var mi=document.getElementById('darkModeMenuItem');if(mi)mi.innerHTML
 /* Tab Bar search toggle */
 var searchActive=false;
 function toggleTabSearch(){
-  var panel=document.getElementById('tabSearchPanel');
+  var overlay=document.getElementById('searchOverlay');
   var btn=document.getElementById('btab-search');
-  if(!panel)return;
-  var isOpen=panel.classList.contains('open');
-  panel.classList.toggle('open',!isOpen);
-  if(btn)btn.classList.toggle('active',!isOpen);
-  searchActive=!isOpen;
-  if(!isOpen){
-    var inp=document.getElementById('tabSrch');
-    if(inp){inp.focus();inp.click();}
+  if(!overlay)return;
+  var isOpen=overlay.classList.contains('open');
+  if(isOpen){
+    closeSearchOverlay();
+  }else{
+    overlay.classList.add('open');
+    if(btn)btn.classList.add('active');
+    searchActive=true;
+    var inp=document.getElementById('searchOverlayInput');
+    if(inp){inp.value='';inp.focus();}
+    document.getElementById('searchResults').innerHTML='<div class="search-empty">Type to search your books</div>';
   }
 }
-/* Sync tab bar search input with main search */
+function closeSearchOverlay(){
+  var overlay=document.getElementById('searchOverlay');
+  var btn=document.getElementById('btab-search');
+  if(overlay)overlay.classList.remove('open');
+  if(btn)btn.classList.remove('active');
+  searchActive=false;
+}
+/* Search overlay live results */
 (function(){
-  var ts=document.getElementById('tabSrch');
-  if(ts){
-    ts.addEventListener('input',function(){
-      document.getElementById('srch').value=this.value;
-      if(typeof applyFilters==='function')applyFilters();
+  var inp=document.getElementById('searchOverlayInput');
+  if(!inp)return;
+  inp.addEventListener('input',function(){
+    var q=this.value.toLowerCase().trim();
+    var results=document.getElementById('searchResults');
+    if(!q){results.innerHTML='<div class="search-empty">Type to search your books</div>';return;}
+    var matches=DATA.filter(function(b){
+      return (b.title||'').toLowerCase().includes(q)
+        ||(b.author||'').toLowerCase().includes(q)
+        ||(b.category||'').toLowerCase().includes(q)
+        ||(getTags(b)||'').toLowerCase().includes(q);
     });
-  }
+    if(matches.length===0){results.innerHTML='<div class="search-empty">No books found</div>';return;}
+    var h='';
+    matches.slice(0,50).forEach(function(b){
+      var cover=b.cover?'<img class="search-result-cover" src="'+b.cover+'" loading="lazy">':'<div class="search-result-cover-ph">No cover</div>';
+      var status=getStatus(b);
+      var meta=[];
+      if(b.category)meta.push(b.category);
+      if(status)meta.push(status);
+      if(b.pages)meta.push(b.pages+' pages');
+      h+='<div class="search-result-item" onclick="closeSearchOverlay();openModal('+b.id+')">';
+      h+=cover;
+      h+='<div class="search-result-info">';
+      h+='<div class="search-result-title">'+esc(b.title)+'</div>';
+      h+='<div class="search-result-author">'+esc(b.author||'Unknown')+'</div>';
+      if(meta.length)h+='<div class="search-result-meta">'+esc(meta.join(' · '))+'</div>';
+      h+='</div></div>';
+    });
+    if(matches.length>50)h+='<div class="search-empty">'+(matches.length-50)+' more results...</div>';
+    results.innerHTML=h;
+  });
 })();
 
 
@@ -2012,6 +2076,26 @@ function toggleTabSearch(){
   },{passive:true});
 })();
 
+/* Calculate sticky th top offset */
+(function(){
+  function setThTop(){
+    var top=0;
+    if(window.innerWidth>768){
+      var mb=document.querySelector('.menubar');
+      var ctl=document.querySelector('.ctl');
+      if(mb)top+=mb.offsetHeight;
+      if(ctl)top+=ctl.offsetHeight;
+    }else{
+      var mt=document.getElementById('mobToolbar');
+      if(mt)top+=mt.offsetHeight;
+    }
+    document.documentElement.style.setProperty('--th-top',top+'px');
+  }
+  setThTop();
+  window.addEventListener('resize',setThTop);
+  setTimeout(setThTop,300);
+})();
+
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.log('SW reg failed:',e))}
 </script><div class="kb-overlay" id="kbOverlay" onclick="if(event.target===this)this.classList.remove('open')">
 <div class="kb-panel">
@@ -2028,12 +2112,6 @@ if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch
 </div></div>
 <div class="backup-indicator" id="backupIndicator"></div>
 
-<div class="tab-search-panel" id="tabSearchPanel">
-<div class="search-bar" style="max-width:100%">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-<input type="text" id="tabSrch" placeholder="Search titles, authors, categories, tags...">
-</div>
-</div>
 <div class="bottom-tabs" id="bottomTabs">
 <div class="bottom-tabs-inner">
 <button class="btab-btn" onclick="toggleTabSearch();return false;" id="btab-search">
