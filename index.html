@@ -24,8 +24,7 @@ a:hover{text-decoration:underline}
 .hdr .sub{color:var(--dim);font-size:.85em;margin-top:2px}
 
 /* SEARCH BAR */
-.search-wrap{padding:12px 40px;background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200}
-@media(max-width:768px){.search-wrap{display:none}}
+.search-wrap{display:none}
 .search-bar{display:flex;align-items:center;gap:10px;background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:10px 16px;max-width:600px;transition:border-color .2s,box-shadow .2s}
 .search-bar:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(74,124,247,.15)}
 .search-bar svg{flex-shrink:0;color:var(--dim)}.search-bar input{border:none;background:none;font-size:16px;color:var(--txt);outline:none;width:100%;font-family:inherit}
@@ -41,6 +40,15 @@ a:hover{text-decoration:underline}
 
 
 
+
+/* Inline search in controls */
+.ctl-search{display:flex;align-items:center;gap:8px;background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:6px 14px;min-width:180px;max-width:280px;flex-shrink:1;transition:border-color .2s,box-shadow .2s}
+.ctl-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(74,124,247,.15)}
+.ctl-search svg{flex-shrink:0;color:var(--dim)}
+.ctl-search input{border:none;background:none;font-size:13px;color:var(--txt);outline:none;width:100%;font-family:inherit}
+.ctl-search input::placeholder{color:var(--dim)}
+body.dark-mode .ctl-search{background:var(--bg3);border-color:var(--border)}
+body.dark-mode .ctl-search input{color:var(--txt)}
 /* CONTROLS */
 .ctl{background:var(--bg);padding:12px 40px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;z-index:197;transition:transform .2s ease,opacity .2s ease}
 .ctl select{padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--bg2);color:var(--txt);font-size:13px;font-family:inherit;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%2386868B' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
@@ -59,7 +67,7 @@ a:hover{text-decoration:underline}
 .shelf-wood{height:12px;background:linear-gradient(180deg,#D4A574,#C49464 30%,#B08050 60%,#A07040);border-radius:0 0 4px 4px;box-shadow:0 4px 8px rgba(0,0,0,.12);position:relative}
 .shelf-wood::before{content:'';position:absolute;top:-2px;left:0;right:0;height:2px;background:linear-gradient(180deg,rgba(255,255,255,.3),transparent)}
 .book3d{position:relative;transform-style:preserve-3d;transition:transform .15s ease,margin .15s ease;cursor:pointer;z-index:1;flex-shrink:0;perspective:800px}
-.book3d:hover:not(.js-controlled){transform:rotateY(-35deg) rotateX(3deg) translateZ(25px) translateY(-12px);z-index:50;margin:0 18px}
+.book3d:hover:not(.js-controlled){transform:rotateY(-30deg) rotateX(2deg) translateZ(15px) translateX(-15px) translateY(-8px);z-index:50;margin:0 25px 0 0}
 .book3d:hover:not(.js-controlled) .spine{box-shadow:2px 2px 8px rgba(0,0,0,.35),inset -2px 0 4px rgba(255,255,255,.12);border-left:1px solid rgba(255,255,255,.15)}
 .book3d:hover:not(.js-controlled) .cover-face{opacity:1;box-shadow:4px 4px 14px rgba(0,0,0,.35)}
 .book3d:hover:not(.js-controlled) .book-top{height:8px;background:linear-gradient(to bottom,rgba(255,255,255,.1),rgba(0,0,0,.05))}
@@ -80,8 +88,8 @@ a:hover{text-decoration:underline}
 .cover-ph{width:105px;height:158px;border-radius:6px;box-shadow:0 2px 8px var(--shadow2);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8px;text-align:center;font-size:9px}
 
 /* TABLE VIEW */
-.tbl-wrap{border:1px solid var(--border);background:var(--bg2);border-radius:0;overflow:clip}
-table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl-wrap{border:1px solid var(--border);background:var(--bg2);border-radius:0;overflow:visible;display:contents}
+table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid var(--border);background:var(--bg2)}
 .bk-tbl th{padding:10px 8px;text-align:left;background:var(--bg3);color:var(--txt);border-bottom:2px solid var(--border);border-right:1px solid var(--border);cursor:pointer;position:sticky;top:var(--th-top,0px);z-index:10;user-select:none;white-space:nowrap;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.3px}
 .bk-tbl th.no-sort{cursor:default}
 .bk-tbl th:last-child{border-right:none}
@@ -406,7 +414,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px}
   .ctl{padding:8px 16px}
   .view{padding:0 16px}
   .ch{font-size:.9em}
-  .tbl-wrap{border-radius:0}
+  .tbl-wrap{border-radius:0;display:contents}
   .modal-content{border-radius:20px;margin:8px;max-height:calc(100vh - 16px)}
   .stat-grid{grid-template-columns:1fr 1fr !important}
 }
@@ -476,6 +484,7 @@ body.dark-mode .toolbar-btn{background:var(--bg2);color:var(--txt);border-color:
 body.dark-mode .toolbar-btn:hover{border-color:var(--accent);color:var(--accent)}
 body.dark-mode .cover-item img,.dark-mode .cover-ph{background:var(--bg3)}
 body.dark-mode .tbl-wrap{background:var(--bg2);border-color:var(--border)}
+body.dark-mode table.bk-tbl{background:var(--bg2);border-color:var(--border)}
 body.dark-mode .bk-tbl th{background:var(--bg3);border-color:var(--border);color:var(--txt)}
 body.dark-mode .bk-tbl th:hover{background:#1a3a6c}
 body.dark-mode .bk-tbl td{border-color:var(--border)}
@@ -635,7 +644,7 @@ Add
 </div>
 
 <div class="ctl">
-
+<div class="ctl-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" id="ctlSrch" placeholder="Search..." oninput="document.getElementById('srch').value=this.value;applyFilters()"></div>
 <select id="cf"><option value="">All Categories</option></select>
 <button class="toolbar-btn" id="sf-btn" onclick="openStatusFilter()" style="position:relative">All Statuses &#9662;</button>
 <button class="toolbar-btn primary" onclick="openAddBook()">+ Add Book</button>
@@ -1847,15 +1856,15 @@ function syncMobCats(){
     var rect=book.getBoundingClientRect();
     var cx=rect.left+rect.width/2;
     var dx=(touchX-cx)/Math.max(rect.width,1);
-    var rotY=Math.max(-20,Math.min(0,-10+dx*15));
-    book.style.transform='rotateY('+rotY+'deg) rotateX(1deg) translateZ(5px) translateY(-3px)';
+    var rotY=Math.max(-25,Math.min(0,-12+dx*18));
+    book.style.transform='rotateY('+rotY+'deg) rotateX(1deg) translateZ(8px) translateX(-20px) translateY(-3px)';
   }
   function activateBook(book,touchX){
     if(activeBook&&activeBook!==book)resetBook(activeBook);
     activeBook=book;
     book.classList.add('touch-active','js-controlled');
     book.style.zIndex='50';
-    book.style.margin='0 4px';
+    book.style.margin='0 30px 0 0';
     applyTouchAngle(book,touchX);
   }
   document.addEventListener('touchstart',function(e){
@@ -1910,14 +1919,14 @@ function syncMobCats(){
       }
       hovered.classList.add('js-controlled');
       hovered.style.zIndex='50';
-      hovered.style.margin='0 8px';
+      hovered.style.margin='0 25px 0 0';
       var hcf=hovered.querySelector('.cover-face');if(hcf){hcf.style.opacity='1';hcf.style.transition='none'}
       var hbt=hovered.querySelector('.book-top');if(hbt){hbt.style.height='8px';hbt.style.background='linear-gradient(to bottom,rgba(255,255,255,.1),rgba(0,0,0,.05))'}
       var hbb=hovered.querySelector('.book-bottom');if(hbb){hbb.style.height='8px';hbb.style.background='linear-gradient(to top,rgba(0,0,0,.15),rgba(0,0,0,.03))'}
       var rect=hovered.getBoundingClientRect();
       var dx=(e.clientX-(rect.left+rect.width/2))/rect.width;
       var rotY=Math.max(-30,Math.min(5,-15+dx*20));
-      hovered.style.transform='rotateY('+rotY+'deg) rotateX(2deg) translateZ(12px) translateY(-6px)';
+      hovered.style.transform='rotateY('+rotY+'deg) rotateX(2deg) translateZ(12px) translateX(-15px) translateY(-6px)';
       lastHovered=hovered;
     }else if(lastHovered){
       lastHovered.classList.remove('js-controlled');
@@ -1938,21 +1947,13 @@ function syncMobCats(){
 (function(){
   function setStickyTops(){
     var mb=document.querySelector('.menubar');
-    var sw=document.querySelector('.search-wrap');
     var tabs=document.querySelector('.tabs');
     var ctl=document.querySelector('.ctl');
     if(window.innerWidth>768){
       var mbH=mb?mb.offsetHeight:0;
-      var swH=sw?sw.offsetHeight:0;
       var tabH=tabs?tabs.offsetHeight:0;
-      if(sw)sw.style.top=mbH+'px';
-      if(tabs)tabs.style.top=(mbH+swH)+'px';
-      if(ctl)ctl.style.top=(mbH+swH+tabH)+'px';
-    }else{
-      if(tabs){
-        var mt=document.getElementById('mobToolbar');
-        tabs.style.top=(mt?mt.offsetHeight:54)+'px';
-      }
+      if(tabs)tabs.style.top=mbH+'px';
+      if(ctl)ctl.style.top=(mbH+tabH)+'px';
     }
   }
   setStickyTops();
@@ -2082,8 +2083,10 @@ function closeSearchOverlay(){
     var top=0;
     if(window.innerWidth>768){
       var mb=document.querySelector('.menubar');
+      var tabs=document.querySelector('.tabs');
       var ctl=document.querySelector('.ctl');
       if(mb)top+=mb.offsetHeight;
+      if(tabs)top+=tabs.offsetHeight;
       if(ctl)top+=ctl.offsetHeight;
     }else{
       var mt=document.getElementById('mobToolbar');
@@ -2094,6 +2097,27 @@ function closeSearchOverlay(){
   setThTop();
   window.addEventListener('resize',setThTop);
   setTimeout(setThTop,300);
+})();
+
+/* Sync controls bar search with main search */
+(function(){
+  var cs=document.getElementById('ctlSrch');
+  if(cs){
+    cs.addEventListener('input',function(){
+      document.getElementById('srch').value=this.value;
+      if(typeof applyFilters==='function')applyFilters();
+    });
+  }
+  /* Override Cmd+K to focus controls search on desktop */
+  document.addEventListener('keydown',function(e){
+    if((e.metaKey||e.ctrlKey)&&e.key==='k'){
+      e.preventDefault();
+      if(window.innerWidth>768){
+        var cs2=document.getElementById('ctlSrch');
+        if(cs2)cs2.focus();
+      }
+    }
+  });
 })();
 
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.log('SW reg failed:',e))}
