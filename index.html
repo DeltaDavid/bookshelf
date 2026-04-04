@@ -436,11 +436,15 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 }
 /* MOBILE ICON TOOLBAR */
 .mob-toolbar{display:none;background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 16px}
-.mob-toolbar-icons{display:flex;justify-content:center;align-items:center;gap:24px}
-.mob-icon-btn{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 12px;border:none;background:none;color:var(--dim);cursor:pointer;border-radius:10px;transition:all .15s;font-family:inherit;font-size:10px;font-weight:500;min-width:48px}
-.mob-icon-btn:active{background:var(--bg3)}
-.mob-icon-btn.active{color:var(--accent);background:rgba(74,124,247,.08)}
-.mob-icon-btn svg{width:22px;height:22px}
+.mob-filter-bar{display:flex;gap:8px;align-items:center;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mob-filter-bar::-webkit-scrollbar{display:none}
+.mob-chip{padding:7px 14px;border-radius:20px;border:1px solid var(--border);background:var(--bg);color:var(--txt);font-size:13px;cursor:pointer;font-family:inherit;font-weight:500;white-space:nowrap;display:inline-flex;align-items:center;gap:5px;transition:all .15s;-webkit-tap-highlight-color:transparent}
+.mob-chip:active{background:var(--bg3)}
+.mob-chip.active{background:rgba(74,124,247,.1);border-color:var(--accent);color:var(--accent)}
+.mob-chip svg{width:14px;height:14px}
+.mob-fab{position:fixed;bottom:calc(62px + env(safe-area-inset-bottom,0px));right:16px;width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;border:none;cursor:pointer;z-index:250;box-shadow:0 4px 14px rgba(74,124,247,.35);display:none;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;transition:transform .15s}
+.mob-fab:active{transform:scale(.92)}
+.mob-fab svg{width:26px;height:26px}
 .mob-expand{overflow:hidden;max-height:0;transition:max-height .25s ease;background:var(--bg2);border-bottom:1px solid transparent}
 .mob-expand.open{max-height:200px;border-bottom-color:var(--border);padding:10px 16px}
 .mob-expand .search-bar{max-width:100%}
@@ -452,6 +456,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
   .hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:201;background:var(--bg2)}
   .hdr::before{content:'';position:absolute;top:calc(-1 * env(safe-area-inset-top,0px));left:0;right:0;height:env(safe-area-inset-top,0px);background:var(--bg2)}
   .mob-toolbar{display:block;position:relative;z-index:200}
+  .mob-fab{display:flex}
   .search-wrap{display:none}
   .ctl{display:none}
   .menubar{display:none}
@@ -464,6 +469,9 @@ body.dark-mode{background:var(--bg);color:var(--txt)}
 body.dark-mode .menubar{background:#16213e;border-bottom-color:var(--border)}
 body.dark-mode .menu-drop{background:#16213e;border-color:var(--border)}
 body.dark-mode .md-item:hover{background:var(--accent)}
+body.dark-mode .mob-chip{background:var(--bg);border-color:var(--border)}
+body.dark-mode .mob-chip.active{background:rgba(74,124,247,.15)}
+body.dark-mode .mob-fab{box-shadow:0 4px 14px rgba(0,0,0,.4)}
 body.dark-mode .hdr{background:var(--bg2);border-bottom-color:var(--border)}
 body.dark-mode .search-bar{background:var(--bg3);border-color:var(--border)}
 body.dark-mode .search-bar input{color:var(--txt)}
@@ -560,7 +568,7 @@ body.dark-mode .toast{background:#ddd;color:#222}
 /* PRINT */
 @media print{.menubar,.mob-toolbar,.bottom-tabs,.search-wrap,.ctl,.tabs,.modal-overlay,.search-overlay,.sf-picker,.ctx-menu,.toast,.hdr .sub,.bulk-bar,.kb-overlay,.backup-indicator,.offline-bar{display:none !important}body{padding:0 !important;background:#fff !important}.hdr{position:static !important;border:none !important;box-shadow:none !important;background:#fff !important}.hdr::before{display:none !important}.view{padding:10px !important}.bk-tbl th{position:static !important}.bk-tbl thead::before{display:none !important}.cover-item img{break-inside:avoid}}
 /* TOUCH: reset hover on non-hover devices */
-@media(hover:none){.mob-icon-btn:hover,.tab-btn:hover,.toolbar-btn:hover,.btab-btn:hover,.md-item:hover,.ctx-menu-item:hover{background:initial !important}.bk-tbl th:hover{background:var(--bg3) !important}.modal-close:hover{background:var(--bg3) !important;color:var(--dim) !important}}
+@media(hover:none){.mob-chip:hover,.tab-btn:hover,.toolbar-btn:hover,.btab-btn:hover,.md-item:hover,.ctx-menu-item:hover{background:initial !important}.bk-tbl th:hover{background:var(--bg3) !important}.modal-close:hover{background:var(--bg3) !important;color:var(--dim) !important}}
 </style></head><body>
 <div class="search-overlay" id="searchOverlay">
 <div class="search-overlay-bar">
@@ -611,20 +619,14 @@ body.dark-mode .toast{background:#ddd;color:#222}
 </div>
 
 <div class="mob-toolbar" id="mobToolbar">
-<div class="mob-toolbar-icons">
-
-<button class="mob-icon-btn" onclick="document.getElementById('mobCf').focus();document.getElementById('mobCf').click();" id="mob-cat-btn">
+<div class="mob-filter-bar">
+<button class="mob-chip" onclick="document.getElementById('mobCf').focus();document.getElementById('mobCf').click();" id="mob-cat-btn">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
 Category
 </button>
-<button class="mob-icon-btn" onclick="openStatusFilter()" id="mob-status-btn">
+<button class="mob-chip" onclick="openStatusFilter()" id="mob-status-btn">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
 Status
-</button>
-
-<button class="mob-icon-btn" onclick="openAddBook()" style="color:var(--accent)">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-Add
 </button>
 </div>
 
@@ -791,7 +793,7 @@ function wikiURL(a){return'https://en.wikipedia.org/wiki/'+encodeURIComponent(a.
 
 // ===== COVER HTML =====
 function coverHTML(b,w,h){
-  if(b.cover)return'<img src="'+b.cover+'" width="'+w+'" height="'+h+'" loading="lazy" style="object-fit:contain;border-radius:4px;background:var(--bg3)">';
+  if(b.cover)return'<img src="'+b.cover+'" width="'+w+'" height="'+h+'" loading="lazy" style="object-fit:contain;border-radius:4px;background:var(--bg3)" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'cover-ph\',style:\'width:'+w+'px;height:'+h+'px\',innerHTML:\'<span>\'+this.closest(\'[data-t]\')?.dataset.t?.slice(0,30)+\'</span>\'}))">';
   const bg=CB[b.category]||'#F5F5F5',fg=CC[b.category]||'#616161';
   return'<div style="width:'+w+'px;height:'+h+'px;background:'+bg+';color:'+fg+';border-radius:4px;display:flex;align-items:center;justify-content:center;text-align:center;padding:4px;font-size:'+(w<50?7:9)+'px"><b>'+esc(b.title.slice(0,35))+'</b></div>';
 }
@@ -966,7 +968,7 @@ function renderCover(){
     const cb=BY_CAT[cat]||[];
     h+='<div class="cs" data-c="'+esc(cat)+'"><div class="ch">'+esc(cat)+' <span class="cn">'+cb.length+'</span></div><div class="cover-grid">';
     for(const b of cb){
-      h+='<div class="cover-item" data-t="'+esc(b.title)+'" data-a="'+esc(b.author)+'" data-c="'+esc(b.category)+'" data-tags="'+esc(getTags(b))+'" data-status="'+esc(getStatus(b))+'" onclick="openModal('+b.id+')">'+coverHTML(b,105,158)+tipHTML(b)+'</div>';
+      h+='<div class="cover-item" data-id="'+b.id+'" data-t="'+esc(b.title)+'" data-a="'+esc(b.author)+'" data-c="'+esc(b.category)+'" data-tags="'+esc(getTags(b))+'" data-status="'+esc(getStatus(b))+'" onclick="openModal('+b.id+')">'+coverHTML(b,105,158)+tipHTML(b)+'</div>';
     }
     h+='</div></div>';
   }
@@ -994,7 +996,7 @@ function renderTable(){
   for(const b of DATA){
     const r=getR(b);const shelves=getShelves(b);const dr=getDateRead(b);const st=getStatus(b);const tg=getTags(b);
     const ccc=CC[b.category]||'#616161',cbg=CB[b.category]||'#F5F5F5';
-    h+='<tr data-t="'+esc(b.title)+'" data-a="'+esc(b.author)+'" data-c="'+esc(b.category)+'" data-tags="'+esc(tg)+'" data-status="'+esc(st)+'" onclick="openModal('+b.id+')">';
+    h+='<tr data-id="'+b.id+'" data-t="'+esc(b.title)+'" data-a="'+esc(b.author)+'" data-c="'+esc(b.category)+'" data-tags="'+esc(tg)+'" data-status="'+esc(st)+'" onclick="openModal('+b.id+')">';
     h+='<td onclick="event.stopPropagation()"><input type="checkbox" class="sel-cb" data-bid="'+b.id+'" onchange="updateBulkSelection()"></td>';
     h+='<td>'+coverHTML(b,32,48)+'</td>';
     h+='<td><a href="'+amazonURL(b)+'" target="_blank" onclick="event.stopPropagation()" title="Search on Amazon">'+esc(b.title)+'</a></td>';
@@ -2015,7 +2017,7 @@ window.addEventListener('online',function(){document.getElementById('offlineBar'
 window.addEventListener('offline',function(){document.getElementById('offlineBar').classList.add('show')});
 if(!navigator.onLine)document.getElementById('offlineBar').classList.add('show');
 
-</script><div class="kb-overlay" id="kbOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+</script><button class="mob-fab" onclick="openAddBook()" aria-label="Add Book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="kb-overlay" id="kbOverlay" onclick="if(event.target===this)this.classList.remove('open')">
 <div class="kb-panel">
 <h3>Keyboard Shortcuts</h3>
 <div class="kb-row"><span>Focus search</span><span class="kb-key">&#8984;K</span></div>
