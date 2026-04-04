@@ -453,6 +453,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .mob-expand .export-btns{display:flex;gap:8px}
 .mob-expand .export-btns .toolbar-btn{flex:1}
 @media(max-width:768px){
+  .hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:201;background:var(--bg2)}
   .mob-toolbar{display:block;position:relative;z-index:200}
   .search-wrap{display:none}
   .ctl{display:none}
@@ -1938,12 +1939,13 @@ function closeSearchOverlay(){
       if(tabs)top+=tabs.offsetHeight;
       if(ctl)top+=ctl.offsetHeight;
     }else{
-      /* On mobile, toolbar scrolls away. Headers stick at the safe area top. */
-      var test=document.createElement('div');
-      test.style.cssText='position:fixed;top:env(safe-area-inset-top,0px);visibility:hidden';
-      document.body.appendChild(test);
-      top=test.getBoundingClientRect().top;
-      document.body.removeChild(test);
+      /* On mobile, title is sticky at safe-area-inset-top. Headers stick below it. */
+      var hdr=document.querySelector('.hdr');
+      if(hdr){
+        var hdrStyle=getComputedStyle(hdr);
+        var hdrTop=parseFloat(hdrStyle.top)||0;
+        top=hdrTop+hdr.offsetHeight;
+      }
     }
     document.documentElement.style.setProperty('--th-top',top+'px');
   }
