@@ -2094,11 +2094,6 @@ if(!navigator.onLine)document.getElementById('offlineBar').classList.add('show')
 
 <div class="bottom-tabs" id="bottomTabs">
 <div class="bottom-tabs-inner">
-<button class="btab-btn" onclick="toggleTabSearch();return false;" id="btab-search">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-Search
-</button>
-
 <button class="btab-btn active" onclick="switchTab('cover')" data-tab="cover">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
 Cover
@@ -2106,6 +2101,10 @@ Cover
 <button class="btab-btn" onclick="switchTab('table')" data-tab="table">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="3" cy="6" r=".5" fill="currentColor" stroke="none"/><circle cx="3" cy="12" r=".5" fill="currentColor" stroke="none"/><circle cx="3" cy="18" r=".5" fill="currentColor" stroke="none"/></svg>
 Table
+</button>
+<button class="btab-btn" onclick="toggleTabSearch();return false;" id="btab-search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+Search
 </button>
 <button class="btab-btn" onclick="switchTab('stats')" data-tab="stats">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="14" width="4" height="7" rx="1"/><rect x="10" y="4" width="4" height="17" rx="1"/><rect x="16" y="9" width="4" height="12" rx="1"/></svg>
