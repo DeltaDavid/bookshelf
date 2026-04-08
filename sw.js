@@ -1,26 +1,23 @@
-const CACHE='bookshelf-v40';
-const CORE=['/','/index.html','/data.json','/manifest.json'];
+// Self-destructing service worker - clears all caches and unregisters
+// Deployed during Netlify > Cloudflare Pages migration
 
-self.addEventListener('install',e=>{
-  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()));
+self.addEventListener('install', () => {
+  self.skipWaiting();
 });
 
-self.addEventListener('activate',e=>{
-  e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
+self.addEventListener('activate', e => {
+  e.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
+      .then(() => self.clients.matchAll({ type: 'window' }))
+      .then(clients => {
+        clients.forEach(c => c.navigate(c.url));
+      })
+      .then(() => self.registration.unregister())
+  );
 });
 
-self.addEventListener('fetch',e=>{
-  const url=new URL(e.request.url);
-  if(url.pathname.endsWith('.html')||url.pathname.endsWith('.json')||url.pathname==='/'){
-    e.respondWith(fetch(e.request).then(r=>{
-      const rc=r.clone();caches.open(CACHE).then(c=>c.put(e.request,rc));return r;
-    }).catch(()=>caches.match(e.request)));
-  } else {
-    e.respondWith(caches.match(e.request).then(r=>{
-      if(r)return r;
-      return fetch(e.request).then(nr=>{
-        const rc=nr.clone();caches.open(CACHE).then(c=>c.put(e.request,rc));return nr;
-      });
-    }));
-  }
+self.addEventListener('fetch', e => {
+  e.respondWith(fetch(e.request));
 });
