@@ -1849,7 +1849,7 @@ function toggleDarkMode(){
   if(typeof setStickyTops==='function')setStickyTops();
 }
 /* Update menu label on load if dark */
-if(isDark){let mi=document.getElementById('darkModeMenuItem');if(mi)mi.innerHTML='Light Mode<span class="md-key">D</span>';}
+if(isDark){const mi=document.getElementById('darkModeMenuItem');if(mi)mi.innerHTML='Light Mode<span class="md-key">D</span>';}
 
 /* Tab Bar search toggle */
 let searchActive=false;
