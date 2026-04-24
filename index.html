@@ -1969,7 +1969,8 @@ function closeSearchOverlay(){
   });
 })();
 
-if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.warn('SW reg failed:',e))}
+/* No SW registration: app runs directly. Any leftover SW from a prior visit is silently unregistered by sw.js. */
+if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{})}
 
 
 /* Cover image fallback chain */
