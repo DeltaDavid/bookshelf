@@ -12,7 +12,7 @@
     "no-var": "error",
     "prefer-const": "warn",
     "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
-    "no-console": "warn",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
     "eqeqeq": ["error", "always"],
     "no-duplicate-imports": "error",
     "no-undef": "off"
