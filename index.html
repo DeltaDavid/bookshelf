@@ -7,6 +7,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Bookshelf">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://covers.openlibrary.org data:; connect-src 'self' https://openlibrary.org; font-src 'self'; object-src 'none'; frame-ancestors 'none';">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="manifest" href="manifest.json">
@@ -1172,11 +1175,12 @@ function renderModalContent(id){
   document.getElementById('modalCounter').textContent=(modalIdx+1)+' of '+modalBookList.length;
 
   // Title
-  document.getElementById('modal-title').innerHTML='<a href="'+amazonURL(b)+'" target="_blank">'+esc(b.title)+'</a>';
+  document.getElementById('modal-title').innerHTML='<a href="'+esc(amazonURL(b))+'" target="_blank">'+esc(b.title)+'</a>';
   // Author
   document.getElementById('modal-author').innerHTML='by <a href="'+wikiURL(b.author)+'" target="_blank">'+esc(b.author)+'</a>'+(b.addl_authors?', '+esc(b.addl_authors):'');
   // Cover
-  document.getElementById('modal-cover').innerHTML=b.cover?    '<img class="modal-cover" src="'+b.cover+'">':
+  const safeCover=b.cover&&/^https:\/\/covers\.openlibrary\.org\//.test(b.cover)?b.cover:null;
+  document.getElementById('modal-cover').innerHTML=safeCover?    '<img class="modal-cover" src="'+esc(safeCover)+'">':
     '<div class="modal-cover-ph" style="background:'+(CB[b.category]||'#F5F5F5')+';color:'+(CC[b.category]||'#616161')+'"><b>'+esc(b.title)+'</b></div>';
   // Ratings
   document.getElementById('modal-stars').innerHTML=halfStarHTML(r,b.id,true);
@@ -1184,11 +1188,11 @@ function renderModalContent(id){
   document.getElementById('modal-avg-text').textContent=b.avg_rating+' average';
   // Meta
   const meta=[];
-  if(b.pages)meta.push(b.pages+' pages');
-  if(b.binding)meta.push(b.binding);
-  if(b.publisher)meta.push(b.publisher);
-  if(b.year)meta.push('First published '+b.year);
-  if(b.year_pub&&b.year_pub!==b.year)meta.push('Edition: '+b.year_pub);
+  if(b.pages)meta.push(esc(b.pages+' pages'));
+  if(b.binding)meta.push(esc(b.binding));
+  if(b.publisher)meta.push(esc(b.publisher));
+  if(b.year)meta.push('First published '+esc(b.year));
+  if(b.year_pub&&b.year_pub!==b.year)meta.push('Edition: '+esc(b.year_pub));
   document.getElementById('modal-meta').innerHTML=meta.join(' &middot; ');
 
   // Body
