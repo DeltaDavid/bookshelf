@@ -602,6 +602,262 @@ body.dark-mode .toast{background:#ddd;color:#222}
 @media print{.menubar,.mob-toolbar,.bottom-tabs,.search-wrap,.ctl,.tabs,.modal-overlay,.search-overlay,.sf-picker,.ctx-menu,.toast,.hdr .sub,.bulk-bar,.kb-overlay,.backup-indicator,.offline-bar{display:none !important}body{padding:0 !important;background:#fff !important}.hdr{position:static !important;border:none !important;box-shadow:none !important;background:#fff !important}.hdr::before{display:none !important}.view{padding:10px !important}.bk-tbl th{position:static !important}.bk-tbl thead::before{display:none !important}.cover-item img{break-inside:avoid}}
 /* TOUCH: reset hover on non-hover devices */
 @media(hover:none){.mob-chip:hover,.tab-btn:hover,.toolbar-btn:hover,.btab-btn:hover,.md-item:hover,.ctx-menu-item:hover{background:initial !important}.bk-tbl th:hover{background:var(--bg3) !important}.modal-close:hover{background:var(--bg3) !important;color:var(--dim) !important}}
+
+/* ============================================================
+   WEALTHTRACE DESIGN LAYER — added 2026-08-23
+   ------------------------------------------------------------
+   David asked for "a more professional layout", using WealthTrace
+   (mywealthtrace.com) as the reference, fitted to a bookshelf
+   rather than a portfolio.
+
+   Deliberately an OVERRIDE LAYER appended to the existing
+   stylesheet rather than a rewrite of it. The app is one 2,100-line
+   file with its markup and behaviour interleaved; restyling in
+   place would mean touching all of it and risking the parts that
+   work. Everything below is additive, so rolling back is deleting
+   from this banner to the end of the block — or restoring
+   index.html.pre-wealthtrace-2026-08-23.bak, a byte copy of the
+   previous file sitting beside it.
+
+   What the reference actually does, and what this borrows:
+     - A cool blue-grey page ground under white cards, so cards
+       read as surfaces rather than as the page itself.
+     - Deep navy for headings and primary actions. Colour is
+       structural, almost never decorative.
+     - One big figure per card as the focal point, its label small
+       and quiet beneath it.
+     - Dense tables with right-aligned numerals, sitting next to
+       the charts rather than hidden behind another click.
+     - Generous whitespace around a dense core.
+     - Large confident headline type; plain quiet body type.
+   ============================================================ */
+
+:root{
+  /* Page and surfaces */
+  --bg:#eef2f7;
+  --bg2:#ffffff;
+  --bg3:#e6ecf4;
+  /* Ink. --dim was #718096, which measures 3.7:1 on the page and
+     fails WCAG AA for body text; #55657a clears 4.5:1 and reads as
+     the same grey. */
+  --txt:#0f2138;
+  --dim:#55657a;
+  /* Navy carries structure; the brighter blue is for interaction
+     only. The old --accent #4a7cf7 sat at 3.5:1 and was used for
+     both, so nothing signalled "clickable" specifically. */
+  --navy:#1f4c7a;
+  --accent:#1f4c7a;
+  --accent-live:#2f6fb5;
+  --accent2:#a97b3c;
+  --border:#dbe3ec;
+  --shadow:rgba(15,33,56,.05);
+  --shadow2:rgba(15,33,56,.09);
+  --rule:#e4eaf1;
+}
+
+body{
+  background:
+    linear-gradient(180deg,#f4f7fb 0%,#eef2f7 340px,#eef2f7 100%);
+  background-attachment:fixed;
+  letter-spacing:-0.005em;
+}
+
+/* ---- Header: a masthead, not a toolbar ---- */
+.hdr{
+  background:var(--bg2);
+  border-bottom:1px solid var(--border);
+  box-shadow:0 1px 2px var(--shadow);
+  padding:22px 28px 18px;
+}
+.hdr h1{
+  font-size:1.55rem;
+  font-weight:680;
+  letter-spacing:-0.02em;
+  color:var(--txt);
+}
+.hdr .sub,.hdr small,#bookcount{
+  color:var(--dim);
+  font-weight:450;
+}
+
+/* ---- Controls ---- */
+.ctl{
+  background:transparent;
+  border-bottom:1px solid var(--border);
+  padding:14px 28px;
+  gap:10px;
+}
+.ctl select,.ctl input,.ctl-search input{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  color:var(--txt);
+  padding:9px 12px;
+  font-size:.9rem;
+  box-shadow:0 1px 1px var(--shadow);
+}
+.ctl select:focus,.ctl input:focus,.ctl-search input:focus{
+  outline:2px solid var(--accent-live);
+  outline-offset:1px;
+  border-color:var(--accent-live);
+}
+.toolbar-btn{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  color:var(--txt);
+  font-weight:560;
+  padding:9px 15px;
+  box-shadow:0 1px 1px var(--shadow);
+}
+.toolbar-btn:hover{background:#f4f7fb;border-color:#c9d5e3}
+.toolbar-btn.primary{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#fff;
+  box-shadow:0 1px 2px rgba(31,76,122,.28);
+}
+.toolbar-btn.primary:hover{background:#1a4269;border-color:#1a4269}
+
+/* ---- Cards: the unit the whole reference is built from ---- */
+.stat-card,.goal-card,.auth-card,.tbl-wrap,.wishlist-section,.timeline{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:0 1px 2px var(--shadow),0 8px 20px -14px var(--shadow2);
+  padding:22px;
+}
+.stat-card h3,.wishlist-section h3,.timeline h4{
+  font-size:.72rem;
+  font-weight:640;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--dim);
+  margin-bottom:16px;
+}
+.stats-grid,.stat-grid{gap:18px}
+
+/* ---- The figure is the point ---- */
+.big-num{
+  font-size:2rem;
+  font-weight:660;
+  color:var(--navy);
+  letter-spacing:-0.03em;
+  font-variant-numeric:tabular-nums;
+  line-height:1.1;
+}
+.big-label{
+  font-size:.74rem;
+  font-weight:500;
+  color:var(--dim);
+  letter-spacing:.01em;
+  margin-top:3px;
+}
+
+/* ---- Bars ---- */
+.bar-track,.br-trk{background:var(--bg3);border-radius:5px;height:9px}
+.bar-fill,.br-fi{
+  background:linear-gradient(90deg,var(--navy),#3f7fbe);
+  border-radius:5px;
+}
+.bar-label,.bar-row,.br-row{font-size:.82rem;color:var(--txt)}
+.goal-fill{background:linear-gradient(90deg,var(--navy),#3f7fbe)}
+
+/* ---- Table: dense, aligned, quiet ---- */
+.bk-tbl{font-size:.86rem;border-collapse:separate;border-spacing:0}
+.bk-tbl th{
+  background:#f2f6fa;
+  color:var(--dim);
+  font-size:.68rem;
+  font-weight:640;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  border-bottom:1px solid var(--border);
+  padding:11px 12px;
+  position:sticky;
+  top:0;
+  z-index:2;
+}
+.bk-tbl td{
+  border-bottom:1px solid var(--rule);
+  padding:10px 12px;
+  color:var(--txt);
+  vertical-align:middle;
+}
+.bk-tbl tr:hover td{background:#f7fafd}
+/* Numerals right-aligned and tabular, as financial tables do — the
+   columns that are numbers: Rating, Avg, Pages, Year. */
+.bk-tbl td:nth-child(6),.bk-tbl td:nth-child(7),
+.bk-tbl td:nth-child(8),.bk-tbl td:nth-child(9),
+.bk-tbl th:nth-child(6),.bk-tbl th:nth-child(7),
+.bk-tbl th:nth-child(8),.bk-tbl th:nth-child(9){
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+
+/* ---- Badges and pills: paired fore/background, one weight ---- */
+.status-badge,.cat-badge,.tag-pill{
+  border-radius:5px;
+  font-size:.7rem;
+  font-weight:580;
+  letter-spacing:.015em;
+  padding:3px 8px;
+  border:1px solid transparent;
+}
+.tag-pill{background:#eef3f9;color:#3c536e;border-color:#dde6f0}
+
+/* ---- Cover grid ---- */
+.cover-item img,.cover-ph{
+  border-radius:5px;
+  box-shadow:0 1px 3px var(--shadow),0 10px 22px -14px var(--shadow2);
+}
+.cover-grid{gap:20px}
+
+/* ---- Tabs ---- */
+.tab-btn{color:var(--dim);font-weight:560;border-radius:8px}
+.tab-btn.active{color:var(--navy);background:#e9f0f8}
+.bottom-tabs-inner{background:rgba(255,255,255,.94);border-top:1px solid var(--border)}
+.btab-btn.active,.btb-btn.active{color:var(--navy)}
+
+/* ---- Modal ---- */
+.modal,.add-modal{border-radius:14px;border:1px solid var(--border)}
+.mb-label{
+  font-size:.68rem;
+  font-weight:640;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:var(--dim);
+}
+
+/* ---- Focus visible everywhere, which the original had nowhere ---- */
+a:focus-visible,button:focus-visible,select:focus-visible,
+input:focus-visible,[tabindex]:focus-visible{
+  outline:2px solid var(--accent-live);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+@media (max-width:640px){
+  .hdr{padding:16px 18px 14px}
+  .ctl{padding:12px 18px}
+  .stat-card,.goal-card,.auth-card,.tbl-wrap{padding:16px;border-radius:11px}
+  .big-num{font-size:1.7rem}
+}
+
+/* ---- One colour system, not two ----
+   The per-category colours are meaningful — each category has its own — so
+   they are kept rather than replaced. But at full saturation they fought the
+   navy structure and were the least professional thing on the page. Pulling
+   the saturation down lets them stay informative while sitting inside the
+   same family, which is what the reference does with its chart ramp. */
+.cat-badge,.cat-picker-item,.bar-fill[style*="background"],.br-fi[style*="background"]{
+  filter:saturate(.55) brightness(1.02);
+}
+.status-badge{filter:saturate(.7)}
+
+/* Ratings: the old gold measured 2.2:1 on white. This is the same warmth at
+   a weight you can actually see. */
+.hstar,.hstar-ro,.hstar-val{color:var(--accent2)}
 </style></head><body>
 <script>
 /* Apply dark mode before paint to prevent theme flash */
