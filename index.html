@@ -858,6 +858,20 @@ input:focus-visible,[tabindex]:focus-visible{
 /* Ratings: the old gold measured 2.2:1 on white. This is the same warmth at
    a weight you can actually see. */
 .hstar,.hstar-ro,.hstar-val{color:var(--accent2)}
+
+/* ---- David's review of the redesign, 2026-08-23 ----
+
+   "I like the liquid tab pad that currently exists and don't want it replaced
+   by the filing tabs in Wealth Trace." The Cover/Table/Stats row had been
+   restyled into WealthTrace's filing tabs. Reverted to what the app already
+   had; the layer no longer touches them. Everything else he liked stays.   */
+.tab-btn{color:inherit;font-weight:inherit;border-radius:inherit;background:inherit}
+.tab-btn.active{color:inherit;background:inherit}
+
+/* "We don't need the search, categories, statuses, etc. at the top of the
+   stats." The control bar is global markup rendered on every view; Stats has
+   nothing to filter, so it is hidden there rather than removed. */
+body:has(#v-stats.active) .ctl{display:none}
 </style></head><body>
 <script>
 /* Apply dark mode before paint to prevent theme flash */
@@ -1336,10 +1350,9 @@ function renderStats(){
   const maxYearly=Math.max(...Object.values(yearlyRead),1);
   const authDetailStats={};DATA.forEach(b=>{if(!authDetailStats[b.author])authDetailStats[b.author]={count:0,rated:0,ratingSum:0,pages:0,cats:new Set()};const a=authDetailStats[b.author];a.count++;const r=getR(b);if(r>0){a.rated++;a.ratingSum+=r}if(b.pages)a.pages+=b.pages;a.cats.add(b.category)});
   let h='';
-  h+='<div class="goal-card"><h3>'+currentYear+' Reading Goal</h3>';
-  if(readGoal>0){const pct=Math.min(Math.round(booksReadThisYear/readGoal*100),100);h+='<div class="goal-bar"><div class="goal-fill" style="width:'+pct+'%">'+pct+'%</div></div>';h+='<div class="goal-meta"><span>'+booksReadThisYear+' of '+readGoal+' books</span><span>'+(readGoal-booksReadThisYear>0?(readGoal-booksReadThisYear)+' to go':'Goal reached!')+'</span></div>'}
-  else{h+='<div style="font-size:13px;color:var(--dim);margin-bottom:8px">Set a reading goal to track your progress this year.</div>'}
-  h+="<div class=\"goal-set\"><label>Goal:</label><input type=\"number\" value=\""+(readGoal||'')+'\" placeholder=\"24\" onchange=\"localStorage.setItem(\'bs_goal_'+currentYear+"\',this.value);renderStats()\"><label>books in "+currentYear+'</label></div></div>';
+  // Reading goal card removed at David's request 2026-08-23. He does not set
+  // a yearly target, so it was an empty prompt sitting above the real
+  // numbers every time the page opened.
   h+='<div class="stats-grid">';  h+='<div class="stat-card"><h3>Overview</h3><div class="mini-grid">';
   h+='<div><div class="big-num">'+total+'</div><div class="big-label">Total Books</div></div>';
   h+='<div><div class="big-num">'+CATS.length+'</div><div class="big-label">Categories</div></div>';
