@@ -8,6 +8,13 @@
     "ecmaVersion": "latest",
     "sourceType": "script"
   },
+  "overrides": [
+    {
+      "files": ["ask-me-kit.js", "bookshelf-ask.js", "bookshelf-ask.test.js"],
+      "parserOptions": { "sourceType": "module" },
+      "env": { "node": true }
+    }
+  ],
   "rules": {
     "no-var": "error",
     "prefer-const": "warn",
