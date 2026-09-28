@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#f5f5f7" id="themeColorMeta">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Bookshelf">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://covers.openlibrary.org data:; connect-src 'self' https://openlibrary.org; font-src 'self'; object-src 'none'; frame-ancestors 'none';">
+<meta name="apple-mobile-web-app-title" content="Books">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://covers.openlibrary.org https://archive.org https://*.archive.org https://books.google.com https://m.media-amazon.com; connect-src 'self' https://openlibrary.org; font-src 'self'; object-src 'none'; frame-ancestors 'none';">
 <meta http-equiv="X-Frame-Options" content="DENY">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <!-- Splash screens -->
@@ -27,9 +27,9 @@
 <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/splash/splash-1668x2388.png">
 <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/splash/splash-2048x2732.png">
 <link rel="apple-touch-icon" href="icon-180.png">
-<link rel="icon" type="image/png" href="favicon.png?v=20260927-color">
+<link rel="icon" type="image/png" href="favicon.png?v=20260927-final3">
 <link rel="manifest" href="manifest.json">
-<title>Bookshelf</title>
+<title>Books</title>
 <style>
 :root{--bg:#f5f5f7;--bg2:#ffffff;--bg3:#eef1f8;--accent:#4a7cf7;--accent2:#D4A574;--txt:#2d3748;--dim:#718096;--border:#eef1f8;--shadow:rgba(74,124,247,.06);--shadow2:rgba(74,124,247,.1)}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -38,7 +38,7 @@ a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
 /* HEADER */
-.hdr{background:var(--bg2);padding:24px 40px 16px;border-bottom:1px solid var(--border);box-shadow:0 1px 3px var(--shadow);position:sticky;top:0;z-index:201}
+.hdr{background:var(--bg2);padding:24px 40px 16px;border-bottom:1px solid var(--border);box-shadow:0 1px 3px var(--shadow)}
 .hdr h1{font-size:1.75em;color:var(--txt);font-weight:700;letter-spacing:-0.02em}
 .hdr .sub{color:var(--dim);font-size:.85em;margin-top:2px}
 
@@ -69,7 +69,7 @@ a:hover{text-decoration:underline}
 body.dark-mode .ctl-search{background:var(--bg3);border-color:var(--border)}
 body.dark-mode .ctl-search input{color:var(--txt)}
 /* CONTROLS */
-.ctl{background:var(--bg);padding:12px 40px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;z-index:197;transition:transform .2s ease,opacity .2s ease}
+.ctl{background:var(--bg2);padding:12px 40px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;z-index:197}
 .ctl select{padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--bg2);color:var(--txt);font-size:13px;font-family:inherit;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%2386868B' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
 .ctl .st{margin-left:auto;color:var(--dim);font-size:13px;font-weight:500}
 
@@ -104,6 +104,10 @@ body.dark-mode .ctl-search input{color:var(--txt)}
 .cover-item:hover{transform:translateY(-8px) scale(1.03);z-index:10}
 .cover-item img{width:105px;height:158px;border-radius:6px;box-shadow:0 2px 8px var(--shadow2);object-fit:contain;background:var(--bg3)}
 .cover-ph{width:105px;height:158px;border-radius:6px;box-shadow:0 2px 8px var(--shadow2);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8px;text-align:center;font-size:9px}
+.cover-ph{background:linear-gradient(145deg,var(--cover-bg,#e8eef9),var(--bg2));color:var(--cover-fg,var(--txt));border-left:7px solid var(--cover-fg,var(--accent));gap:8px;overflow:hidden}
+.cover-ph strong{font-size:1.12em;line-height:1.25;overflow-wrap:anywhere}.cover-ph small{font-size:.85em;opacity:.8;overflow-wrap:anywhere}
+.cover-ph.small{width:32px;height:48px;border-left-width:3px;font-size:5px;padding:2px;gap:0}.cover-ph.small small{display:none}
+.cover-ph.large{width:150px;height:225px;font-size:14px;padding:15px}
 
 /* TABLE VIEW */
 .tbl-wrap{border:1px solid var(--border);background:var(--bg2);border-radius:0;overflow:visible;display:contents}
@@ -411,6 +415,7 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .stats-grid{grid-template-columns:1fr}
 .cover-grid{gap:12px}
 .cover-item img,.cover-ph{width:85px;height:128px}
+.cover-ph.small{width:32px;height:48px}.cover-ph.large{width:150px;height:225px}
 .mini-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:480px){
@@ -464,6 +469,10 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .mob-fab{position:fixed;bottom:calc(62px + env(safe-area-inset-bottom,0px));right:16px;width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;border:none;cursor:pointer;z-index:250;box-shadow:0 4px 14px rgba(74,124,247,.35);display:none;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;transition:transform .15s}
 .mob-fab:active{transform:scale(.92)}
 .mob-fab svg{width:26px;height:26px}
+.askme-fab{position:fixed;right:16px;bottom:16px;z-index:2147481901;width:52px;height:52px;border:0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.24);cursor:grab;touch-action:none}
+.askme-fab:active{cursor:grabbing}
+.askme-fab svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.askme-fab:focus-visible{outline:3px solid var(--txt);outline-offset:3px}
 .mob-expand{overflow:hidden;max-height:0;transition:max-height .25s ease;background:var(--bg2);border-bottom:1px solid transparent}
 .mob-expand.open{max-height:200px;border-bottom-color:var(--border);padding:10px 16px}
 .mob-expand .search-bar{max-width:100%}
@@ -472,10 +481,11 @@ table.bk-tbl{width:100%;border-collapse:collapse;font-size:13px;border:1px solid
 .mob-expand .export-btns{display:flex;gap:8px}
 .mob-expand .export-btns .toolbar-btn{flex:1}
 @media(max-width:768px){
-  .hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:201;background:var(--bg2)}
-  .hdr::before{content:'';position:absolute;top:calc(-1 * env(safe-area-inset-top,0px));left:0;right:0;height:env(safe-area-inset-top,0px);background:var(--bg2)}
-  .mob-toolbar{display:block;position:relative;z-index:200}
+  .hdr{background:var(--bg2)}
+  .hdr::before{display:none}
+  .mob-toolbar{display:block;position:sticky;top:env(safe-area-inset-top,0px);z-index:200}
   .mob-fab{display:flex}
+  .askme-fab{bottom:calc(124px + env(safe-area-inset-bottom,0px))}
   .search-wrap{display:none}
   .ctl{display:none}
   .menubar{display:none}
@@ -682,7 +692,7 @@ body{
 
 /* ---- Controls ---- */
 .ctl{
-  background:transparent;
+  background:var(--bg2);
   border-bottom:1px solid var(--border);
   padding:14px 28px;
   gap:10px;
@@ -775,7 +785,7 @@ body{
   border-bottom:1px solid var(--border);
   padding:11px 12px;
   position:sticky;
-  top:0;
+  top:var(--th-top,0px);
   z-index:2;
 }
 .bk-tbl td{
@@ -913,11 +923,11 @@ try{if(localStorage.getItem('bs_dark')==='1')document.body.classList.add('dark-m
 </div></div>
 <div class="menu-item">Help<div class="menu-drop">
 <div class="md-item" onclick="showShortcuts()">Keyboard Shortcuts<span class="md-key">?</span></div>
-<div class="md-item" onclick="alert('Bookshelf v2.2')">About</div>
+<div class="md-item" onclick="alert('Books v2.2')">About</div>
 </div></div>
 </div>
 <div class="hdr">
-<h1>Bookshelf</h1>
+<h1>Books</h1>
 </div>
 <div class="search-wrap">
 <div class="search-bar">
@@ -1100,10 +1110,25 @@ function amazonURL(b){return'https://www.amazon.com/s?k='+encodeURIComponent(b.t
 function wikiURL(a){return'https://en.wikipedia.org/wiki/'+encodeURIComponent(a.replace(/ /g,'_'))}
 
 // ===== COVER HTML =====
+function safeCoverURL(value){
+  if(!value)return'';
+  try{
+    if(/^covers\/[0-9]+\.jpg$/.test(value))return value;
+    const url=new URL(value);
+    if(url.protocol==='http:'&&url.hostname==='books.google.com')url.protocol='https:';
+    if(url.protocol!=='https:'||!['covers.openlibrary.org','books.google.com','m.media-amazon.com'].includes(url.hostname))return'';
+    return url.href;
+  }catch{return''}
+}
+function coverAttr(value){return esc(value).replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
+function coverFallbackHTML(b,w){
+  const bg=CB[b.category]||'#e8eef9',fg=CC[b.category]||'#4a7cf7';
+  return'<div class="cover-ph '+(w<50?'small':w>105?'large':'')+'" data-cover-fallback="true" role="img" aria-label="Cover for '+coverAttr(b.title)+'" style="--cover-bg:'+bg+';--cover-fg:'+fg+'"><strong>'+esc(b.title)+'</strong><small>'+esc(b.author||'')+'</small></div>';
+}
 function coverHTML(b,w,h){
-  if(b.cover)return'<img src="'+b.cover+'" width="'+w+'" height="'+h+'" loading="lazy" style="object-fit:contain;border-radius:4px;background:var(--bg3)" onload="coverCheck(this)" onerror="coverFail(this)">';
-  const bg=CB[b.category]||'#F5F5F5',fg=CC[b.category]||'#616161';
-  return'<div style="width:'+w+'px;height:'+h+'px;background:'+bg+';color:'+fg+';border-radius:4px;display:flex;align-items:center;justify-content:center;text-align:center;padding:4px;font-size:'+(w<50?7:9)+'px"><b>'+esc(b.title.slice(0,35))+'</b></div>';
+  const src=safeCoverURL(b.cover);
+  if(!src)return coverFallbackHTML(b,w);
+  return'<img src="'+coverAttr(src)+'" alt="Cover for '+coverAttr(b.title)+'" data-book-id="'+b.id+'" width="'+w+'" height="'+h+'" loading="lazy" style="object-fit:contain;border-radius:4px;background:var(--bg3)" onload="coverCheck(this)" onerror="coverFail(this)">';
 }
 // ===== TOOLTIP =====
 function tipHTML(b){
@@ -1466,9 +1491,7 @@ function renderModalContent(id){
   // Author
   document.getElementById('modal-author').innerHTML='by <a href="'+wikiURL(b.author)+'" target="_blank">'+esc(b.author)+'</a>'+(b.addl_authors?', '+esc(b.addl_authors):'');
   // Cover
-  const safeCover=b.cover&&/^https:\/\/covers\.openlibrary\.org\//.test(b.cover)?b.cover:null;
-  document.getElementById('modal-cover').innerHTML=safeCover?    '<img class="modal-cover" src="'+esc(safeCover)+'">':
-    '<div class="modal-cover-ph" style="background:'+(CB[b.category]||'#F5F5F5')+';color:'+(CC[b.category]||'#616161')+'"><b>'+esc(b.title)+'</b></div>';
+  document.getElementById('modal-cover').innerHTML=coverHTML(b,150,225);
   // Ratings
   document.getElementById('modal-stars').innerHTML=halfStarHTML(r,b.id,true);
   document.getElementById('modal-avg-stars').innerHTML='<span class="hstar-ro">'+starsRO(b.avg_rating)+'</span>';
@@ -2189,29 +2212,6 @@ function closeSearchOverlay(){
 })();
 
 
-/* Auto-hide controls on scroll down, show on scroll up */
-(function(){
-  let lastScroll=0;
-  const ctl=document.querySelector('.ctl');
-  if(!ctl)return;
-  const threshold=10;
-  window.addEventListener('scroll',function(){
-    const active=document.querySelector('.view.active');
-    if(active&&active.id==='v-stats')return;
-    const curr=window.pageYOffset||document.documentElement.scrollTop;
-    if(curr>lastScroll+threshold&&curr>100){
-      ctl.style.transform='translateY(-100%)';
-      ctl.style.opacity='0';
-      ctl.style.pointerEvents='none';
-    }else if(curr<lastScroll-threshold){
-      ctl.style.transform='';
-      ctl.style.opacity='';
-      ctl.style.pointerEvents='';
-    }
-    lastScroll=curr<0?0:curr;
-  },{passive:true});
-})();
-
 /* Calculate sticky th top offset */
 (function(){
   function setThTop(){
@@ -2224,18 +2224,23 @@ function closeSearchOverlay(){
       if(tabs)top+=tabs.offsetHeight;
       if(ctl)top+=ctl.offsetHeight;
     }else{
-      /* On mobile, title is sticky at safe-area-inset-top. Headers stick below it. */
-      const hdr=document.querySelector('.hdr');
-      if(hdr){
-        const hdrStyle=getComputedStyle(hdr);
-        const hdrTop=parseFloat(hdrStyle.top)||0;
-        top=hdrTop+hdr.offsetHeight;
+      const toolbar=document.querySelector('.mob-toolbar');
+      if(toolbar){
+        const toolbarTop=parseFloat(getComputedStyle(toolbar).top)||0;
+        top=toolbarTop+toolbar.offsetHeight;
       }
     }
     document.documentElement.style.setProperty('--th-top',top+'px');
   }
   setThTop();
   window.addEventListener('resize',setThTop);
+  if(window.ResizeObserver){
+    const observer=new ResizeObserver(setThTop);
+    ['.menubar','.tabs','.ctl','.mob-toolbar'].forEach(selector=>{
+      const element=document.querySelector(selector);
+      if(element)observer.observe(element);
+    });
+  }
   setTimeout(setThTop,300);
 })();
 
@@ -2266,16 +2271,10 @@ if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then
 
 /* Cover image fallback chain */
 function coverFail(img){
-  const el=img.closest('[data-t]');
-  const title=el?el.dataset.t:'';
-  const w=img.width,h=img.height;
-  /* Try Google Books if was OpenLibrary */
-  const src=img.getAttribute('src')||'';
-  if(src.includes('openlibrary.org')&&!img.dataset.retried){
-    const isbn=src.match(/isbn\/([^-]+)/);
-    if(isbn){img.dataset.retried='1';img.src='https://books.google.com/books/content?vid=isbn:'+isbn[1]+'&printsec=frontcover&img=1&zoom=1';return}
-  }
-  const ph=document.createElement('div');ph.className='cover-ph';ph.style.cssText='width:'+w+'px;height:'+h+'px';ph.innerHTML='<span>'+title.slice(0,30)+'</span>';img.replaceWith(ph);
+  const b=DATA.find(book=>book.id===Number(img.dataset.bookId));
+  if(!b)return;
+  const host=document.createElement('div');host.innerHTML=coverFallbackHTML(b,Number(img.getAttribute('width')));
+  img.replaceWith(host.firstChild);
 }
 function coverCheck(img){
   if(img.naturalWidth<3||img.naturalHeight<3)coverFail(img);

@@ -1,0 +1,4125 @@
+{
+  "3": {
+    "path": "covers/3.jpg",
+    "sha256": "f933fb208672f3d24079462748843657e66ce5efeddd06a2a479b2519507ac83",
+    "width": 311,
+    "height": 475,
+    "source": null
+  },
+  "131": {
+    "path": "covers/131.jpg",
+    "sha256": "3c7480473da62bce3451511540f8b3ff2fd7aedc14df012262bee07b48899fd0",
+    "width": 359,
+    "height": 500,
+    "source": null
+  },
+  "171": {
+    "path": "covers/171.jpg",
+    "sha256": "8ae768a1a920b6a1cf48080b3310d7f37ab3fd70f78ebe9c788420f9982dd922",
+    "width": 100,
+    "height": 141,
+    "source": null
+  },
+  "187": {
+    "path": "covers/187.jpg",
+    "sha256": "21b96bf42054d47459fe4ab0abbe83dce2159b51a08f1a80ef0702a79e54c167",
+    "width": 100,
+    "height": 142,
+    "source": null
+  },
+  "208": {
+    "path": "covers/208.jpg",
+    "sha256": "8762ee5c4f6912b716137354c080900312d210705920ba043e3b892d31f1caa0",
+    "width": 307,
+    "height": 475,
+    "source": null
+  },
+  "224": {
+    "path": "covers/224.jpg",
+    "sha256": "77abdd4b8d846946abebd0604cbbca1467102b43cf9df4e7ae11797f367ace9f",
+    "width": 295,
+    "height": 475,
+    "source": null
+  },
+  "235": {
+    "path": "covers/235.jpg",
+    "sha256": "07c9543f917839164e2b63d24e55fa44bf36848e02dc0f2ac236973d0944530c",
+    "width": 444,
+    "height": 500,
+    "source": null
+  },
+  "262": {
+    "path": "covers/262.jpg",
+    "sha256": "dfa9018c853a52150adb9ee0135e9441d6285189ac22c704436d4eaf3df8de3c",
+    "width": 300,
+    "height": 475,
+    "source": null
+  },
+  "268": {
+    "path": "covers/268.jpg",
+    "sha256": "0ade378eba293d2c7fc2f278e1787207f2d721bb2be036743659504f489f0362",
+    "width": 289,
+    "height": 475,
+    "source": null
+  },
+  "269": {
+    "path": "covers/269.jpg",
+    "sha256": "159b6abd72c52f1fa23724b98fcf31d30faab9381b9099d5c8cafc6e59cd69e6",
+    "width": 310,
+    "height": 500,
+    "source": null
+  },
+  "280": {
+    "path": "covers/280.jpg",
+    "sha256": "c8bad9af05bd21fe936bdb564f5246705081917971e6c3dea98bf19f6eadd8c5",
+    "width": 100,
+    "height": 169,
+    "source": null
+  },
+  "300": {
+    "path": "covers/300.jpg",
+    "sha256": "5b433c21e1437fb262a69c31011cbe500ef118539a93607a3d668fe31f34e3fc",
+    "width": 225,
+    "height": 500,
+    "source": null
+  },
+  "328": {
+    "path": "covers/328.jpg",
+    "sha256": "363d0fcc9fa4822717016dfbfc1ddcac0f8d165055e247b8cd39029b43afe921",
+    "width": 87,
+    "height": 140,
+    "source": null
+  },
+  "406": {
+    "path": "covers/406.jpg",
+    "sha256": "6621b9ccc6be7b516ec33c949478fcbb0a49c225b9b7c120be66bc3bad19c036",
+    "width": 594,
+    "height": 866,
+    "source": null
+  },
+  "422": {
+    "path": "covers/422.jpg",
+    "sha256": "34e4761611730dc7472b15d23f54ab6b4d1f3681f3073dafabfd9125aae1fd72",
+    "width": 274,
+    "height": 475,
+    "source": null
+  },
+  "442": {
+    "path": "covers/442.jpg",
+    "sha256": "6c384078f0d07e182a4457a78edd1982e7bdec8f33174cedb9dae0c2f56f2134",
+    "width": 178,
+    "height": 280,
+    "source": null
+  },
+  "492": {
+    "path": "covers/492.jpg",
+    "sha256": "e93f809964d877fe21ba3fb739519ebac00d712ef8d59465d7b9181574d614b2",
+    "width": 600,
+    "height": 750,
+    "source": null
+  },
+  "504": {
+    "path": "covers/504.jpg",
+    "sha256": "a345469107ecc845b4e1c78bcda0737c535e4efb51264bfc5bd6e4cede11c0ef",
+    "width": 600,
+    "height": 900,
+    "source": null
+  },
+  "540": {
+    "path": "covers/540.jpg",
+    "sha256": "aec41660cba16ec6956379ccc11629c20f014937fd5c08c482b58ad01a97ec70",
+    "width": 596,
+    "height": 900,
+    "source": null
+  },
+  "549": {
+    "path": "covers/549.jpg",
+    "sha256": "f5726f68f9711d86e1adc3795b2aef39d3e72acd3db93719ac9d08bc9f330d60",
+    "width": 600,
+    "height": 774,
+    "source": null
+  },
+  "550": {
+    "path": "covers/550.jpg",
+    "sha256": "df8d2840fb65816eb206c5e9df61625105ac2b63a69acfd5f3dbbb3d26226c3a",
+    "width": 600,
+    "height": 774,
+    "source": null
+  },
+  "573": {
+    "path": "covers/573.jpg",
+    "sha256": "e85671aafa7acff5e9e08071b788ed1788e4090fd0b7a5f599a0abbfd68ed0c3",
+    "width": 597,
+    "height": 900,
+    "source": null
+  },
+  "0": {
+    "path": "covers/0.jpg",
+    "sha256": "f3fdaa7a1116f6fd819b83e7bd662213646ff38f7af934dc0101731c113febc9",
+    "width": 128,
+    "height": 198,
+    "source": "https://covers.openlibrary.org/b/id/4841603-M.jpg"
+  },
+  "1": {
+    "path": "covers/1.jpg",
+    "sha256": "f768ef9e7cf1a7838cb3d4271ccf990e7b5dce5179b550a6dde87ef19bfeaef0",
+    "width": 180,
+    "height": 225,
+    "source": "https://covers.openlibrary.org/b/isbn/0028612752-M.jpg"
+  },
+  "2": {
+    "path": "covers/2.jpg",
+    "sha256": "97e9558d2dda8ec4e08268ad8d576de745cf1547e32d90b884519483deb2eef8",
+    "width": 180,
+    "height": 223,
+    "source": "https://covers.openlibrary.org/b/isbn/156884381X-M.jpg"
+  },
+  "4": {
+    "path": "covers/4.jpg",
+    "sha256": "ac427b4e6c8bb73d6cc74cbf4e6d27f218464120120da625ad17aaab8727c3c1",
+    "width": 128,
+    "height": 211,
+    "source": "https://covers.openlibrary.org/b/isbn/0393094154-M.jpg"
+  },
+  "5": {
+    "path": "covers/5.jpg",
+    "sha256": "be8f1c9f073da780e2c967bfb03a1d470e939128a4b970f0d7ae4edb437e81a6",
+    "width": 180,
+    "height": 231,
+    "source": "https://covers.openlibrary.org/b/isbn/1413306489-M.jpg"
+  },
+  "6": {
+    "path": "covers/6.jpg",
+    "sha256": "4fd7afc970562da9eda4e0e13a057cffc1c402b1271bd2a975ee63beed9307ce",
+    "width": 180,
+    "height": 259,
+    "source": "https://covers.openlibrary.org/b/isbn/0517097575-M.jpg"
+  },
+  "7": {
+    "path": "covers/7.jpg",
+    "sha256": "4a441501597ae39fa628aabd22711931f54f5b42c68524ba24960badf527c3ab",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/0393092305-M.jpg"
+  },
+  "8": {
+    "path": "covers/8.jpg",
+    "sha256": "26eacd86c2a3ae4e46b295162f5f17c2abbf785c2ff8f2e6a113242a0d3945a3",
+    "width": 180,
+    "height": 267,
+    "source": "https://covers.openlibrary.org/b/isbn/0155126105-M.jpg"
+  },
+  "9": {
+    "path": "covers/9.jpg",
+    "sha256": "f738638e397e21b406a14e9f7c80758ec694b76784aed115e040105deb73f57c",
+    "width": 180,
+    "height": 262,
+    "source": "https://covers.openlibrary.org/b/isbn/1878424440-M.jpg"
+  },
+  "10": {
+    "path": "covers/10.jpg",
+    "sha256": "8974794ddb50b6c28b38f25076e910c04715c5f8761cb7ddc22b1410e35b8677",
+    "width": 180,
+    "height": 248,
+    "source": "https://covers.openlibrary.org/b/isbn/0471380237-M.jpg"
+  },
+  "11": {
+    "path": "covers/11.jpg",
+    "sha256": "0aa3bb0f53ba952f885936b470c74667fcccd1595167be6b33f60624683523e0",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0061707813-M.jpg"
+  },
+  "12": {
+    "path": "covers/12.jpg",
+    "sha256": "430b2843e32503110a974ec1880fb27c3dff0a3187f5eee51dd6c2a54aec8667",
+    "width": 180,
+    "height": 280,
+    "source": "https://covers.openlibrary.org/b/id/7263662-M.jpg"
+  },
+  "13": {
+    "path": "covers/13.jpg",
+    "sha256": "c2b72ac5c6dcd3e29ec8fbdf728104893928e03f730b1b9d6b8f83f13678f1d3",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/0761513116-M.jpg"
+  },
+  "14": {
+    "path": "covers/14.jpg",
+    "sha256": "1eab102035c5ddd7cbe9fb75396c7ff919caeb98e38a73a82b688f0f4813fdc6",
+    "width": 180,
+    "height": 250,
+    "source": "https://covers.openlibrary.org/b/isbn/1400103789-M.jpg"
+  },
+  "15": {
+    "path": "covers/15.jpg",
+    "sha256": "8dcf5ee05207904715f18cbd822abe1c04ebe0877ab1d4a2614398ad408c79bd",
+    "width": 180,
+    "height": 205,
+    "source": "https://covers.openlibrary.org/b/isbn/0743567056-M.jpg"
+  },
+  "16": {
+    "path": "covers/16.jpg",
+    "sha256": "877e7a40c2c401c998095cf89709d0039cd416cbee43f728c090acb97038949c",
+    "width": 180,
+    "height": 161,
+    "source": "https://covers.openlibrary.org/b/isbn/1878424777-M.jpg"
+  },
+  "17": {
+    "path": "covers/17.jpg",
+    "sha256": "1a6057a2aa301e43ab10843d8b5af6e7f6478d7af6a23c15b49546a06bd5b713",
+    "width": 180,
+    "height": 240,
+    "source": "https://covers.openlibrary.org/b/isbn/1430328037-M.jpg"
+  },
+  "18": {
+    "path": "covers/18.jpg",
+    "sha256": "cf9e233545423b23ea7c65caf874825fa4f4decbbb7223a9dd08c738fcd9e9df",
+    "width": 180,
+    "height": 268,
+    "source": "https://covers.openlibrary.org/b/isbn/1587613379-M.jpg"
+  },
+  "19": {
+    "path": "covers/19.jpg",
+    "sha256": "a91226698c29a71274bc00193797816ddeab95079a0987e3942cdb140c4f38f4",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/isbn/1741797144-M.jpg"
+  },
+  "20": {
+    "path": "covers/20.jpg",
+    "sha256": "cabc984264a266bb4ab1e55576f6895e01a8a96702f2987ab6b007de9a5aa492",
+    "width": 180,
+    "height": 178,
+    "source": "https://covers.openlibrary.org/b/isbn/1780674880-M.jpg"
+  },
+  "21": {
+    "path": "covers/21.jpg",
+    "sha256": "ac7cb7713c4deeff18098ca559dc548b2cd98fbb34ff049f263d6d2bd69e10fe",
+    "width": 180,
+    "height": 191,
+    "source": "https://covers.openlibrary.org/b/isbn/076793010X-M.jpg"
+  },
+  "22": {
+    "path": "covers/22.jpg",
+    "sha256": "a8b353d3c10474a7da1576c2bd0de217e77380bb65c82538b1177116b1474303",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/1521841187-M.jpg"
+  },
+  "23": {
+    "path": "covers/23.jpg",
+    "sha256": "707275475598faaecfcac7db0fe7ae9530eb60680db24f5aa65463a6afc1a657",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/1892005034-M.jpg"
+  },
+  "24": {
+    "path": "covers/24.jpg",
+    "sha256": "31597765192bb0f8ba2dca03c3c05a8e0ad9941ba8507fe3d7f16e41f5b690dc",
+    "width": 180,
+    "height": 269,
+    "source": "https://covers.openlibrary.org/b/id/8231990-M.jpg"
+  },
+  "25": {
+    "path": "covers/25.jpg",
+    "sha256": "51fa94c29dae2a00e87e02ca75ee359246f209f5e62f19089392922d2db3ab40",
+    "width": 180,
+    "height": 259,
+    "source": "https://covers.openlibrary.org/b/id/10873292-M.jpg"
+  },
+  "26": {
+    "path": "covers/26.jpg",
+    "sha256": "62d8fc4fb38963c02de8a591b63de3f71fd60a7d0298aa4606f5d3f53ab77c27",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/id/8634250-M.jpg"
+  },
+  "27": {
+    "path": "covers/27.jpg",
+    "sha256": "8e6ff622b1f46be3861450c6761288ff7310ff78f54260559bfc4cd1b868bee1",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/1883219078-M.jpg"
+  },
+  "28": {
+    "path": "covers/28.jpg",
+    "sha256": "64af867894db1cc3a72e61cc9b102c0362dd51763007893e4344b1a8ad2b166d",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/0671864416-M.jpg"
+  },
+  "29": {
+    "path": "covers/29.jpg",
+    "sha256": "6dd7b50a96e522def09fcc46983cf05c4672df3d6e89625022f5fbb2631e86db",
+    "width": 38,
+    "height": 58,
+    "source": "https://covers.openlibrary.org/b/isbn/0671708635-M.jpg"
+  },
+  "30": {
+    "path": "covers/30.jpg",
+    "sha256": "939f6a8172b6d14593e7841f92cfbc46c21d92ddf64f343f7650f9d4ccf9ff02",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/isbn/0142000280-M.jpg"
+  },
+  "31": {
+    "path": "covers/31.jpg",
+    "sha256": "550900b1cb05371519a1f1b2cefae61da609f6090d1fe266ed3e0fda31362d9b",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/isbn/0887307280-M.jpg"
+  },
+  "32": {
+    "path": "covers/32.jpg",
+    "sha256": "95c2e02e909c439ca3eca12ccf73f9f0b945ff67e4310bc60285209636c9d3de",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0066620996-M.jpg"
+  },
+  "33": {
+    "path": "covers/33.jpg",
+    "sha256": "2bfda1e0195805c9f6d841457a6d3a3699fdb5accae8354841e03dbbac1c45c3",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0743269519-M.jpg"
+  },
+  "34": {
+    "path": "covers/34.jpg",
+    "sha256": "09ef1aef33736f375f87b65511c10842ebe1a4417957738c4c8db7361f9bc271",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0307353133-M.jpg"
+  },
+  "35": {
+    "path": "covers/35.jpg",
+    "sha256": "e68d822ac3cf7b7abc4519f1b2df6e02b6a080e41467e480b5847329d988db7e",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/id/13314878-M.jpg"
+  },
+  "36": {
+    "path": "covers/36.jpg",
+    "sha256": "2f84d5a148084c1bda210a277859451e5912cae0821130fd08c331e3b735a499",
+    "width": 180,
+    "height": 192,
+    "source": "https://covers.openlibrary.org/b/id/7308093-M.jpg"
+  },
+  "37": {
+    "path": "covers/37.jpg",
+    "sha256": "1f89aa9474974b3b9a9234dadedd70aca6b73220d0a4441053cad0de3bfebee7",
+    "width": 180,
+    "height": 249,
+    "source": "https://covers.openlibrary.org/b/id/551262-M.jpg"
+  },
+  "38": {
+    "path": "covers/38.jpg",
+    "sha256": "5a781af0fc6a5509b422692623ab3ac8f679aca9eddce8e60b529cd6e7318bd1",
+    "width": 180,
+    "height": 238,
+    "source": "https://covers.openlibrary.org/b/id/10630553-M.jpg"
+  },
+  "39": {
+    "path": "covers/39.jpg",
+    "sha256": "84e5e720368c9b6347f3f6d69a204dc3dccb1c2d3fe1c716c94cf3fe96749a72",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/id/5695928-M.jpg"
+  },
+  "40": {
+    "path": "covers/40.jpg",
+    "sha256": "847c222f4b30d1e09d58c7fffed9e8a86149e47c596eb59812f687bc0f2b6b6c",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/isbn/0140440372-M.jpg"
+  },
+  "41": {
+    "path": "covers/41.jpg",
+    "sha256": "3317d72079318e981a52b1159b2d9966ac9ecdddcbb0eee82457e28a40c3d7f9",
+    "width": 180,
+    "height": 164,
+    "source": "https://covers.openlibrary.org/b/isbn/0739310364-M.jpg"
+  },
+  "42": {
+    "path": "covers/42.jpg",
+    "sha256": "241f0a95f1975862c8f09b2e80a024fccefed61bec14ac45aa472f021f7a5764",
+    "width": 128,
+    "height": 200,
+    "source": "https://books.google.com/books/content?vid=isbn:9781420930290&printsec=frontcover&img=1&zoom=1"
+  },
+  "43": {
+    "path": "covers/43.jpg",
+    "sha256": "b71bd2f861ca52df30782131e7bf5d8d784cc923985eb21df1ba9726d5463f90",
+    "width": 180,
+    "height": 309,
+    "source": "https://covers.openlibrary.org/b/isbn/0451524586-M.jpg"
+  },
+  "44": {
+    "path": "covers/44.jpg",
+    "sha256": "e70d3c008474301b773237fbea5a2d66ec4f0b8b9091e3f0e41b508368f4a623",
+    "width": 128,
+    "height": 192,
+    "source": "https://covers.openlibrary.org/b/id/4640271-M.jpg"
+  },
+  "45": {
+    "path": "covers/45.jpg",
+    "sha256": "bd96daddcec0bcff85eca58a2d5de2bec54f306dcf8614e164209643484aae78",
+    "width": 180,
+    "height": 305,
+    "source": "https://covers.openlibrary.org/b/isbn/0451523148-M.jpg"
+  },
+  "46": {
+    "path": "covers/46.jpg",
+    "sha256": "504938436ecfb8204ce30caf1af9e2b65eeccb7e215d4b2127750d5a7cce07c0",
+    "width": 128,
+    "height": 209,
+    "source": "https://covers.openlibrary.org/b/isbn/0915132354-M.jpg"
+  },
+  "47": {
+    "path": "covers/47.jpg",
+    "sha256": "7af573c12f53fd99444306c87bac14634f667468a28db98003b4bf22a37ef5b6",
+    "width": 180,
+    "height": 231,
+    "source": "https://covers.openlibrary.org/b/isbn/0789433028-M.jpg"
+  },
+  "48": {
+    "path": "covers/48.jpg",
+    "sha256": "4ab47e48af74289e250d7de310df0e68dffc6a1c2fa9f505769fd6337f3d2cc9",
+    "width": 180,
+    "height": 293,
+    "source": "https://covers.openlibrary.org/b/id/8238736-M.jpg"
+  },
+  "49": {
+    "path": "covers/49.jpg",
+    "sha256": "1803413984692b843c36b001b03f4d176855adc27a47f6c1fef53e145088d188",
+    "width": 180,
+    "height": 310,
+    "source": "https://covers.openlibrary.org/b/isbn/0451151534-M.jpg"
+  },
+  "50": {
+    "path": "covers/50.jpg",
+    "sha256": "a35f44fb759eb3ddb42abe1a641fde4e6bbd4fbc210453b5a76f8b3810ba2e7c",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/1580081231-M.jpg"
+  },
+  "51": {
+    "path": "covers/51.jpg",
+    "sha256": "a043c90fb1ceb0dae373646018feaafab665aa5c272181c69a03889a0792781d",
+    "width": 180,
+    "height": 135,
+    "source": "https://covers.openlibrary.org/b/isbn/9781565852808-M.jpg"
+  },
+  "52": {
+    "path": "covers/52.jpg",
+    "sha256": "ad5c7ba8b0684e53631ab1148b195c51662f97702500748a54376d193cbf6792",
+    "width": 180,
+    "height": 285,
+    "source": "https://covers.openlibrary.org/b/isbn/0931432723-M.jpg"
+  },
+  "53": {
+    "path": "covers/53.jpg",
+    "sha256": "713a0d918b0c961369748b94828f0a42046a6e013a4d31cced1b9cbe1e7f2891",
+    "width": 180,
+    "height": 288,
+    "source": "https://covers.openlibrary.org/b/id/14390287-M.jpg"
+  },
+  "54": {
+    "path": "covers/54.jpg",
+    "sha256": "e285c1f3755183b4f945eb5cbd0c3ce8b40766ccac12eac7875691bbc2aa0bb5",
+    "width": 180,
+    "height": 238,
+    "source": "https://covers.openlibrary.org/b/isbn/0914941488-M.jpg"
+  },
+  "55": {
+    "path": "covers/55.jpg",
+    "sha256": "d8c1b1c5a3d76cfe5928d28c83b83272d0357274108256aa5374b4493fe14840",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/isbn/0822013541-M.jpg"
+  },
+  "56": {
+    "path": "covers/56.jpg",
+    "sha256": "c16e46607fb2abf7e094428fdca86269d6c25de200908a0dce28cd46e7e46259",
+    "width": 180,
+    "height": 312,
+    "source": "https://covers.openlibrary.org/b/id/12984540-M.jpg"
+  },
+  "57": {
+    "path": "covers/57.jpg",
+    "sha256": "8cbf544f0feeccea290dc8681c6d0e1de3fc2f48c306e6ca36ea46b80347f01d",
+    "width": 128,
+    "height": 195,
+    "source": "https://covers.openlibrary.org/b/id/3873252-M.jpg"
+  },
+  "58": {
+    "path": "covers/58.jpg",
+    "sha256": "903b83c1867b5733a1b77ebcbc031a36f687409ee8f38f48413cf49c5f5cfb6a",
+    "width": 180,
+    "height": 281,
+    "source": "https://covers.openlibrary.org/b/isbn/0517577402-M.jpg"
+  },
+  "59": {
+    "path": "covers/59.jpg",
+    "sha256": "e8977e162de9f14e48e1e6b5740ebddbfda02eb288be43ff637657a91dffc04f",
+    "width": 180,
+    "height": 303,
+    "source": "https://covers.openlibrary.org/b/isbn/0451522680-M.jpg"
+  },
+  "60": {
+    "path": "covers/60.jpg",
+    "sha256": "341b6a411da8dc3f0a2c30cf079307b95dd3fced837b41ff0e393356084ffaf7",
+    "width": 154,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/0934641838-M.jpg"
+  },
+  "61": {
+    "path": "covers/61.jpg",
+    "sha256": "d91816a332522655e850d463a2ff8fe9688c53f358c862852e89d1be069686d3",
+    "width": 160,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/093464182X-M.jpg"
+  },
+  "62": {
+    "path": "covers/62.jpg",
+    "sha256": "58952ec95174af5ee6d1f1066f8d49b68c0fb1cf86ff99d8487d42032402ada9",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/id/13300802-M.jpg"
+  },
+  "63": {
+    "path": "covers/63.jpg",
+    "sha256": "5c48c78f502336e96f9d8a61a7f1676d135362cb90b7f9f15d653e7c99fc5c63",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/isbn/140003342X-M.jpg"
+  },
+  "64": {
+    "path": "covers/64.jpg",
+    "sha256": "f950913b34ae991bbaa249a16e997b8b0b083a6a7f9655b19a560ca30b346090",
+    "width": 180,
+    "height": 267,
+    "source": "https://covers.openlibrary.org/b/isbn/0452278899-M.jpg"
+  },
+  "65": {
+    "path": "covers/65.jpg",
+    "sha256": "2c4ee072074d15b9db334cd0b29f55b045cde9a2a6dc23cdf15ed787feafa674",
+    "width": 180,
+    "height": 263,
+    "source": "https://covers.openlibrary.org/b/id/12569842-M.jpg"
+  },
+  "66": {
+    "path": "covers/66.jpg",
+    "sha256": "db967e3dea92e464b9a92cf5d4117effe066850bac3aa8690f06ec598bfdaba3",
+    "width": 180,
+    "height": 283,
+    "source": "https://covers.openlibrary.org/b/isbn/0142437204-M.jpg"
+  },
+  "67": {
+    "path": "covers/67.jpg",
+    "sha256": "0c249f29719ef97c310df4c33934ba838244160c2546c9dcf01b05dc213c8ade",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/014043013X-M.jpg"
+  },
+  "68": {
+    "path": "covers/68.jpg",
+    "sha256": "42187099a478183f48df304e166f7d30489b6d56958bf5193758307dd6f0bfb0",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/156924328X-M.jpg"
+  },
+  "69": {
+    "path": "covers/69.jpg",
+    "sha256": "7d851891d4f4629a61cc6aa476a5a85215c195c6b6b5fcf64c937b02d66158c6",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/1885167660-M.jpg"
+  },
+  "70": {
+    "path": "covers/70.jpg",
+    "sha256": "5c3e882b1904b892ee812ee5d1976e3ae4646c8e44d0dfb4e6f7d4e8b50dd41f",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/isbn/0981709176-M.jpg"
+  },
+  "71": {
+    "path": "covers/71.jpg",
+    "sha256": "41c86b5bd146ba6c937cc5702cdf5982f2da00bc60ab50d36c1d1a1658599d1b",
+    "width": 180,
+    "height": 303,
+    "source": "https://covers.openlibrary.org/b/isbn/0553292153-M.jpg"
+  },
+  "72": {
+    "path": "covers/72.jpg",
+    "sha256": "642732f52ee2c7f2587d7c3bd5bbd70e1e6fee92a06c84e54a1dbd2d2835cc0a",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/id/15118068-M.jpg"
+  },
+  "73": {
+    "path": "covers/73.jpg",
+    "sha256": "8b05f516e4dbf897501429dc8ea5414e8a398f4d0a418c10f6dd3e4182b2045c",
+    "width": 180,
+    "height": 227,
+    "source": "https://covers.openlibrary.org/b/isbn/1560520434-M.jpg"
+  },
+  "74": {
+    "path": "covers/74.jpg",
+    "sha256": "65d316a3286a0434b87238c59813f74c8a272496ad5d29899a6bd9d4d91322b3",
+    "width": 180,
+    "height": 241,
+    "source": "https://covers.openlibrary.org/b/isbn/089721479X-M.jpg"
+  },
+  "75": {
+    "path": "covers/75.jpg",
+    "sha256": "092f67cb9e0faacacb1f34035d9e851b860518b1c4626880173315b6c6c5248a",
+    "width": 128,
+    "height": 170,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737002-M.jpg"
+  },
+  "76": {
+    "path": "covers/76.jpg",
+    "sha256": "2241ea9928de4bd9f0c9ea5455575ec4ef026e3e99aed2432baa771a1f41f46e",
+    "width": 180,
+    "height": 235,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737215-M.jpg"
+  },
+  "77": {
+    "path": "covers/77.jpg",
+    "sha256": "624547cb93e98dc984fe874a324671879e2bfa5e767241b0239f4e3961dffa87",
+    "width": 128,
+    "height": 162,
+    "source": "https://books.google.com/books/content?vid=isbn:9780751305944&printsec=frontcover&img=1&zoom=1"
+  },
+  "78": {
+    "path": "covers/78.jpg",
+    "sha256": "16d0988d7d78e6cf3b52d95b5a7f0e60f9d2a5dce676ef2552331ca5460f872c",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0071440372-M.jpg"
+  },
+  "79": {
+    "path": "covers/79.jpg",
+    "sha256": "e854b1ad09f315816d45e87a60b779e7c6af8915b125a9489acb8be4e0bd804e",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/id/15063950-M.jpg"
+  },
+  "80": {
+    "path": "covers/80.jpg",
+    "sha256": "2a4281d62750087fa6f52d8037d8c7200b6f29240a46a133e505dbf542899c33",
+    "width": 180,
+    "height": 233,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737053-M.jpg"
+  },
+  "81": {
+    "path": "covers/81.jpg",
+    "sha256": "b579d5be3f7071640e38cc009492c7a8b2110b9d5e08adb310080dfd102652de",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/id/240491-M.jpg"
+  },
+  "82": {
+    "path": "covers/82.jpg",
+    "sha256": "a458ab25c0dc9d7baedea765031aa824692def8501176ab4365a8e0e2a0b1d6b",
+    "width": 180,
+    "height": 198,
+    "source": "https://covers.openlibrary.org/b/isbn/0060755598-M.jpg"
+  },
+  "83": {
+    "path": "covers/83.jpg",
+    "sha256": "3cb9211806b8ab80ad41f599e8e764ea5f9b879ebb063048af5e32f4932338b4",
+    "width": 180,
+    "height": 233,
+    "source": "https://covers.openlibrary.org/b/isbn/996077015X-M.jpg"
+  },
+  "84": {
+    "path": "covers/84.jpg",
+    "sha256": "66625c79cfaef44f257378d8fb80e5eff97a646d463070f5ea7b640346076fd7",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0452009138-M.jpg"
+  },
+  "85": {
+    "path": "covers/85.jpg",
+    "sha256": "7c20408545ab1b15c26bdf4a033a4628fb3699fc5b6ddb5ddc5d32471d013017",
+    "width": 180,
+    "height": 236,
+    "source": "https://covers.openlibrary.org/b/isbn/0930031822-M.jpg"
+  },
+  "86": {
+    "path": "covers/86.jpg",
+    "sha256": "abe623ffab3b690a57e8bdf44eba22aabae7c991e07ca68638216674c1339667",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0894803190-M.jpg"
+  },
+  "87": {
+    "path": "covers/87.jpg",
+    "sha256": "44a2ec3f723bb091ee173d8659620605b069ce08e987de41a14fadef4a30e004",
+    "width": 180,
+    "height": 267,
+    "source": "https://covers.openlibrary.org/b/isbn/0471848190-M.jpg"
+  },
+  "88": {
+    "path": "covers/88.jpg",
+    "sha256": "e80e06b8d8a966123c7d6273cfaf39fbcccc4924c960541e3e2b7e2097d84ab7",
+    "width": 180,
+    "height": 309,
+    "source": "https://covers.openlibrary.org/b/isbn/0915132397-M.jpg"
+  },
+  "89": {
+    "path": "covers/89.jpg",
+    "sha256": "dc4da94420cd4a45efcbeee30ac402b95a3139feae803c77b5e6841253f60906",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/id/8684447-M.jpg"
+  },
+  "90": {
+    "path": "covers/90.jpg",
+    "sha256": "4a359be3277677fc100e10c07086b573e55de66de1c0817277642f11825fa39f",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/isbn/0890434654-M.jpg"
+  },
+  "91": {
+    "path": "covers/91.jpg",
+    "sha256": "c7a6fb4062364f4d8e71cdee15b88e06b6dd991fd3dad105c747132fbdba7baf",
+    "width": 180,
+    "height": 247,
+    "source": "https://covers.openlibrary.org/b/isbn/0312119402-M.jpg"
+  },
+  "92": {
+    "path": "covers/92.jpg",
+    "sha256": "ef348cec483a8a13a4e9dde3e46098acacc6f0ffeff7f02fce9b8904e82482be",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/isbn/0802130348-M.jpg"
+  },
+  "93": {
+    "path": "covers/93.jpg",
+    "sha256": "392ee461c4d9231d5f327a465d64d7d907026d97c1ba86a643c1c4326297545a",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/isbn/0440218616-M.jpg"
+  },
+  "94": {
+    "path": "covers/94.jpg",
+    "sha256": "ba62184b72498123548d80e6d9868a2ac38dc4978e15c0b14f9c25c147b7e88c",
+    "width": 180,
+    "height": 264,
+    "source": "https://covers.openlibrary.org/b/isbn/0395329442-M.jpg"
+  },
+  "95": {
+    "path": "covers/95.jpg",
+    "sha256": "092f67cb9e0faacacb1f34035d9e851b860518b1c4626880173315b6c6c5248a",
+    "width": 128,
+    "height": 170,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737010-M.jpg"
+  },
+  "96": {
+    "path": "covers/96.jpg",
+    "sha256": "c42696a9f09325efa2162175d016a17001afbc9d3fa70ab1d2b22c3ad41eda25",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/0671870750-M.jpg"
+  },
+  "97": {
+    "path": "covers/97.jpg",
+    "sha256": "ae4e32bef15af5bfab7a1e45f1630504f59fd92d77a1f9a5c06214e983236351",
+    "width": 180,
+    "height": 278,
+    "source": "https://covers.openlibrary.org/b/isbn/0807403121-M.jpg"
+  },
+  "98": {
+    "path": "covers/98.jpg",
+    "sha256": "4a4362508b3ede713cb9bf8d5a66bf480e113f4a55fa0274f01ce982d8befa06",
+    "width": 180,
+    "height": 147,
+    "source": "https://covers.openlibrary.org/b/isbn/0895778718-M.jpg"
+  },
+  "99": {
+    "path": "covers/99.jpg",
+    "sha256": "bba578c4b1e672cd83a0617403d48c63b4f08764bb9a5a6a42d04b36e009e1b7",
+    "width": 180,
+    "height": 234,
+    "source": "https://covers.openlibrary.org/b/isbn/1413306519-M.jpg"
+  },
+  "100": {
+    "path": "covers/100.jpg",
+    "sha256": "bdf421aca8e9c40c9fd56b1785fa47e817835e5b18155898a7d6da718afed70f",
+    "width": 180,
+    "height": 318,
+    "source": "https://covers.openlibrary.org/b/isbn/0140707042-M.jpg"
+  },
+  "101": {
+    "path": "covers/101.jpg",
+    "sha256": "f73ae829ef7f7fedc80eefd5ff8bd1f842765d52250a8c73ada268c7f712b762",
+    "width": 180,
+    "height": 295,
+    "source": "https://covers.openlibrary.org/b/isbn/0451521242-M.jpg"
+  },
+  "102": {
+    "path": "covers/102.jpg",
+    "sha256": "373e64d4fd052077a921a518cc3d7b5a623084cce7e15a88d9969c3b8957ac70",
+    "width": 180,
+    "height": 240,
+    "source": "https://covers.openlibrary.org/b/id/6419463-M.jpg"
+  },
+  "103": {
+    "path": "covers/103.jpg",
+    "sha256": "afa192286c45407d25a9e433ec489f61bd1ad590d84cae033f0dd00d23a78fb5",
+    "width": 128,
+    "height": 155,
+    "source": "https://covers.openlibrary.org/b/isbn/0874770882-M.jpg"
+  },
+  "104": {
+    "path": "covers/104.jpg",
+    "sha256": "842ac441678e3c7de1bd567a222a45119f703abbd541d0722c9b2ce008f9d8ed",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/isbn/089906650X-M.jpg"
+  },
+  "105": {
+    "path": "covers/105.jpg",
+    "sha256": "adc2673c9625ac81329fb08a1b3d050c3ddd677725f461907e6393cc01626bdf",
+    "width": 180,
+    "height": 263,
+    "source": "https://covers.openlibrary.org/b/isbn/1572302836-M.jpg"
+  },
+  "106": {
+    "path": "covers/106.jpg",
+    "sha256": "eef058de37e12b02b090e2ba59453ae15d9382769bfc8a229fc179a8ba42e779",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/isbn/1577311671-M.jpg"
+  },
+  "107": {
+    "path": "covers/107.jpg",
+    "sha256": "9d77500a690f93c8ccf31d03c0c218243a3bd0d507b2d3e416011af2c13b7c1d",
+    "width": 180,
+    "height": 238,
+    "source": "https://covers.openlibrary.org/b/isbn/0941807177-M.jpg"
+  },
+  "108": {
+    "path": "covers/108.jpg",
+    "sha256": "d75c94d80e6345323509b1ab2b493e14dc033589c3e55d8d23d9555061a85bc7",
+    "width": 132,
+    "height": 180,
+    "source": "https://covers.openlibrary.org/b/isbn/0930657179-M.jpg"
+  },
+  "109": {
+    "path": "covers/109.jpg",
+    "sha256": "0f230b6bd942d8a877b9cc3550c0918a503191b00282b47331d9f38c94141211",
+    "width": 128,
+    "height": 160,
+    "source": "https://covers.openlibrary.org/b/isbn/0881252905-M.jpg"
+  },
+  "110": {
+    "path": "covers/110.jpg",
+    "sha256": "bf3cb41334ab07fe1e5431254de2a95a3ae85cf09f749c2cc5dad100f903bf03",
+    "width": 128,
+    "height": 192,
+    "source": "https://covers.openlibrary.org/b/id/4849549-M.jpg"
+  },
+  "111": {
+    "path": "covers/111.jpg",
+    "sha256": "976d01ed0efee473083d9de4ebb1aaa8896708c57051f8962bc8bd09b296f847",
+    "width": 180,
+    "height": 311,
+    "source": "https://covers.openlibrary.org/b/id/11701180-M.jpg"
+  },
+  "112": {
+    "path": "covers/112.jpg",
+    "sha256": "032a8bd7742467522f41d6d9d3a885fe2966eff1a9657f3add5d17716556ac5e",
+    "width": 180,
+    "height": 218,
+    "source": "https://covers.openlibrary.org/b/isbn/0809131595-M.jpg"
+  },
+  "113": {
+    "path": "covers/113.jpg",
+    "sha256": "1116dcca3f626735dfd8bc60ec3fa981c8c447310bf5b1fda87b4981625b4ee6",
+    "width": 180,
+    "height": 246,
+    "source": "https://covers.openlibrary.org/b/isbn/0807400556-M.jpg"
+  },
+  "114": {
+    "path": "covers/114.jpg",
+    "sha256": "a73f6e844f619b856ec1d6981a2201574a0d579a77a6317722202b68f5670b8d",
+    "width": 180,
+    "height": 258,
+    "source": "https://covers.openlibrary.org/b/isbn/0151002347-M.jpg"
+  },
+  "115": {
+    "path": "covers/115.jpg",
+    "sha256": "082f9e63d18a1ae9c2c5c8e932984c14d989f5b5b4870a22e6444f67492c5b67",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/isbn/1557091528-M.jpg"
+  },
+  "116": {
+    "path": "covers/116.jpg",
+    "sha256": "2d0d91bdd571cc958b1f9af6875d95b33910e48d4ac4b7ae12368cfbae468ef3",
+    "width": 180,
+    "height": 230,
+    "source": "https://covers.openlibrary.org/b/isbn/0679738312-M.jpg"
+  },
+  "117": {
+    "path": "covers/117.jpg",
+    "sha256": "bdcd73f315c86a5bff54cda2a9cd4be95210c35d878672e70b3881223cac373b",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/isbn/0345466411-M.jpg"
+  },
+  "118": {
+    "path": "covers/118.jpg",
+    "sha256": "53a51ad8ebb0ae83ffbbce0ea7d3325a314bcf781b251204eda29cbff436d76a",
+    "width": 180,
+    "height": 249,
+    "source": "https://covers.openlibrary.org/b/isbn/0201389347-M.jpg"
+  },
+  "119": {
+    "path": "covers/119.jpg",
+    "sha256": "59612fab37dee5669b683cc800b3fc7ac708b74da5c06903d23ef8d1011271a9",
+    "width": 180,
+    "height": 312,
+    "source": "https://covers.openlibrary.org/b/isbn/0671580817-M.jpg"
+  },
+  "120": {
+    "path": "covers/120.jpg",
+    "sha256": "53f922a17113ad69bb77ecc0024d79846be523500cd2e229b34ffdc6f146825d",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0553384104-M.jpg"
+  },
+  "121": {
+    "path": "covers/121.jpg",
+    "sha256": "8232b8f4683ea842c99c1cb6bdcfdd8fc80fbf7ad95d4a29d2680fd73fe98007",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/isbn/0553277545-M.jpg"
+  },
+  "122": {
+    "path": "covers/122.jpg",
+    "sha256": "6e4ad71a18fc6949bbb1774ff9a13cd1237020451553c835de3fac440fc20cd5",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0374500010-M.jpg"
+  },
+  "123": {
+    "path": "covers/123.jpg",
+    "sha256": "e680c04b637cb7521394926935f3df0b55543fd01caa07ef8ca2b36972fe1d18",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/isbn/0316769177-M.jpg"
+  },
+  "124": {
+    "path": "covers/124.jpg",
+    "sha256": "baf293ba661eff3b4f54f14a00e8743ffdecdff637510ee3ffe06873601cca7c",
+    "width": 128,
+    "height": 190,
+    "source": "https://covers.openlibrary.org/b/isbn/0517799669-M.jpg"
+  },
+  "125": {
+    "path": "covers/125.jpg",
+    "sha256": "05cfbd9d0f9ccc68d9318d93938c76c8b2d06b2dfb5096416523d63a302bcab8",
+    "width": 180,
+    "height": 268,
+    "source": "https://covers.openlibrary.org/b/isbn/0399512721-M.jpg"
+  },
+  "126": {
+    "path": "covers/126.jpg",
+    "sha256": "6a8d27a7ed4f9715d3a785a03cc8ebc0db6eb651edb453623833b185fa42f533",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/0091883768-M.jpg"
+  },
+  "127": {
+    "path": "covers/127.jpg",
+    "sha256": "16699db34e85647d441fe92d3d645536cbef38cc0185ee036a7ff7884fae1dc7",
+    "width": 180,
+    "height": 269,
+    "source": "https://covers.openlibrary.org/b/id/1364468-M.jpg"
+  },
+  "128": {
+    "path": "covers/128.jpg",
+    "sha256": "cebb0301031cef32330b39ef5a89bc1ba9e5357f981b12c305b1665a83d79228",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/isbn/0609802720-M.jpg"
+  },
+  "129": {
+    "path": "covers/129.jpg",
+    "sha256": "0d77c736720ec6ac8011886a791bcada2debe56eed00026e2c787cbfd4c59e18",
+    "width": 128,
+    "height": 186,
+    "source": "https://covers.openlibrary.org/b/isbn/0201539853-M.jpg"
+  },
+  "130": {
+    "path": "covers/130.jpg",
+    "sha256": "ff11ed6d128c364abaab32ed0b8a5028bee9afaf671b779a089995381001ae9e",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/isbn/0201060973-M.jpg"
+  },
+  "132": {
+    "path": "covers/132.jpg",
+    "sha256": "c030233c20daf1da23034be859e3501cf7588bafea29d9d475ddfa8da77b4c8f",
+    "width": 128,
+    "height": 199,
+    "source": "https://covers.openlibrary.org/b/isbn/0070540284-M.jpg"
+  },
+  "133": {
+    "path": "covers/133.jpg",
+    "sha256": "3ffb52d398a4239d6601c81b764a964f45f3720fca3ce122ed5e47ff069de497",
+    "width": 180,
+    "height": 228,
+    "source": "https://covers.openlibrary.org/b/isbn/0070464766-M.jpg"
+  },
+  "134": {
+    "path": "covers/134.jpg",
+    "sha256": "6243a5f9663f6e0605553e2bd6299719d570ec2662499314e866c96ffed72e29",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/id/8289774-M.jpg"
+  },
+  "135": {
+    "path": "covers/135.jpg",
+    "sha256": "022abca35f31853ebabb1fd9e00f7ba9442ae2898113b471b04b488d548f20a1",
+    "width": 180,
+    "height": 227,
+    "source": "https://covers.openlibrary.org/b/isbn/0060256710-M.jpg"
+  },
+  "136": {
+    "path": "covers/136.jpg",
+    "sha256": "b5d43750ba6b534fd789a4376fef28a930ff07c54ca8fb5d3ad595da724687a5",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/isbn/0060891548-M.jpg"
+  },
+  "137": {
+    "path": "covers/137.jpg",
+    "sha256": "4bd5c4c01ae3ff5cf356143e495de8d209639d223f3a5c5a92f5e5fe6edf368f",
+    "width": 137,
+    "height": 218,
+    "source": "https://covers.openlibrary.org/b/isbn/0425081028-M.jpg"
+  },
+  "138": {
+    "path": "covers/138.jpg",
+    "sha256": "8e9cd690b36a8af4013384fb77b3534badbdb91b192c9687a60758984007d218",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0130952842-M.jpg"
+  },
+  "139": {
+    "path": "covers/139.jpg",
+    "sha256": "fa8e01b29e0e2ab33c1c303ca862e4f0f1322fb8938e901bf3a5c1152bef10b4",
+    "width": 180,
+    "height": 182,
+    "source": "https://covers.openlibrary.org/b/isbn/1563053241-M.jpg"
+  },
+  "140": {
+    "path": "covers/140.jpg",
+    "sha256": "bc1ebe4b2ac4ba6a5a8f1a62ceb3edb604e118c375f2a1050a69edc086580fe2",
+    "width": 180,
+    "height": 176,
+    "source": "https://covers.openlibrary.org/b/isbn/0002558327-M.jpg"
+  },
+  "141": {
+    "path": "covers/141.jpg",
+    "sha256": "c1925ed7d3070476d12a5a138ec3eae6c31b08af7345d44ee77edf45fae8e32f",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/isbn/0385493207-M.jpg"
+  },
+  "142": {
+    "path": "covers/142.jpg",
+    "sha256": "51982a40b3d859bda54b9359871e9200980246c7361fd37bbdc6fb441b66e236",
+    "width": 180,
+    "height": 290,
+    "source": "https://covers.openlibrary.org/b/isbn/0060518650-M.jpg"
+  },
+  "143": {
+    "path": "covers/143.jpg",
+    "sha256": "f57b944f6662ec9d02d857b2eb2b643bfc65a8e39daad20d6a5134ce9f7cd976",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/isbn/0887306373-M.jpg"
+  },
+  "144": {
+    "path": "covers/144.jpg",
+    "sha256": "d3016f81da80d1dc7b19081ace2f8a264e87bb6534b790239cc0ffede179c433",
+    "width": 180,
+    "height": 291,
+    "source": "https://covers.openlibrary.org/b/isbn/0345397452-M.jpg"
+  },
+  "145": {
+    "path": "covers/145.jpg",
+    "sha256": "1cc3108d6551026a342e201af5b6a5fbbbb0464df15d6c7b410317e4cd14da72",
+    "width": 180,
+    "height": 232,
+    "source": "https://covers.openlibrary.org/b/isbn/1413304141-M.jpg"
+  },
+  "146": {
+    "path": "covers/146.jpg",
+    "sha256": "5e8563a295726d9c7e19e93a5e96bd60eb41a1cb68203632e059836690f08f55",
+    "width": 180,
+    "height": 232,
+    "source": "https://covers.openlibrary.org/b/isbn/0865730318-M.jpg"
+  },
+  "147": {
+    "path": "covers/147.jpg",
+    "sha256": "399190dacc206da31c76f864bcd9a955a56c8d23beb85ed42351b1bafebb7fae",
+    "width": 180,
+    "height": 281,
+    "source": "https://covers.openlibrary.org/b/isbn/0307356868-M.jpg"
+  },
+  "148": {
+    "path": "covers/148.jpg",
+    "sha256": "46ede85600c6e6e1b73d2efd28158ea0d49d544355808069c016c68495c36376",
+    "width": 128,
+    "height": 167,
+    "source": "https://covers.openlibrary.org/b/isbn/0943955777-M.jpg"
+  },
+  "149": {
+    "path": "covers/149.jpg",
+    "sha256": "78275321b1863fef856135698291349402bb3b4bcf1c18400f650d700f7532e1",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0071392300-M.jpg"
+  },
+  "150": {
+    "path": "covers/150.jpg",
+    "sha256": "0fb4881d4274df2c97ab6cda9aac981bc30edb03d535168967449c9a5c502788",
+    "width": 180,
+    "height": 262,
+    "source": "https://covers.openlibrary.org/b/isbn/1878424505-M.jpg"
+  },
+  "151": {
+    "path": "covers/151.jpg",
+    "sha256": "deea104f6fc0bd6b43b0e7a4f5ba6908fecc4c46632ae6022162cb659e23f818",
+    "width": 128,
+    "height": 165,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737274-M.jpg"
+  },
+  "152": {
+    "path": "covers/152.jpg",
+    "sha256": "1e0aa9317596ed30d8653cc891ceedeeb9ba7eb9906b9dc403ef35aefe88365d",
+    "width": 180,
+    "height": 242,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737150-M.jpg"
+  },
+  "153": {
+    "path": "covers/153.jpg",
+    "sha256": "c4c2d5cff6e91bc25da8f8d62a5ac5c9a07348dd606e910e43738fe2a02bcce8",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/0060987359-M.jpg"
+  },
+  "154": {
+    "path": "covers/154.jpg",
+    "sha256": "f51fb18c7f2bc6104077e5806eb65b916f56300235f60fcbb19c9a10fd403fd1",
+    "width": 180,
+    "height": 229,
+    "source": "https://covers.openlibrary.org/b/isbn/0345498461-M.jpg"
+  },
+  "155": {
+    "path": "covers/155.jpg",
+    "sha256": "a7cdeaee2f18b1902704fd88f8fdd8bdaf42e63a58c9dd130c37b579a42af932",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0071401946-M.jpg"
+  },
+  "156": {
+    "path": "covers/156.jpg",
+    "sha256": "afcf465e31f25e2a0d07514c4cb62e6998903795d8317eaa6666d7c3e82e2c78",
+    "width": 128,
+    "height": 198,
+    "source": "https://books.google.com/books/content?vid=isbn:9788187111931&printsec=frontcover&img=1&zoom=1"
+  },
+  "157": {
+    "path": "covers/157.jpg",
+    "sha256": "5a19fe027be95beefee5126c9608dbc10ee3d799bc8e80b4d4c5aa0fcb346d21",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/isbn/0060172568-M.jpg"
+  },
+  "158": {
+    "path": "covers/158.jpg",
+    "sha256": "549a3c4b17704e0ed6b0b8f64e907ec32763f70c90e4adaa033dd00f6acfe490",
+    "width": 180,
+    "height": 242,
+    "source": "https://covers.openlibrary.org/b/isbn/0897214951-M.jpg"
+  },
+  "159": {
+    "path": "covers/159.jpg",
+    "sha256": "731f9dd05c223c2b4e194c224a9ce4e3f53b0cbaa25c5de3a3085766f117f03c",
+    "width": 128,
+    "height": 214,
+    "source": "https://books.google.com/books/content?vid=isbn:9780198129523&printsec=frontcover&img=1&zoom=1"
+  },
+  "160": {
+    "path": "covers/160.jpg",
+    "sha256": "4b88f7fca875dd2f0d8f7ff1e9855a3ac741b686885dd980654a8ebeccaebd48",
+    "width": 174,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/0743266323-M.jpg"
+  },
+  "161": {
+    "path": "covers/161.jpg",
+    "sha256": "de7202f3afc407df1cabd4a119b412a50483dbfcbbd901382b7f67d4f2d7f983",
+    "width": 178,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/0684869020-M.jpg"
+  },
+  "162": {
+    "path": "covers/162.jpg",
+    "sha256": "446169b899c8f6a830f5fd49a15bf8a455a898a968fd7eaa808d2488884a49d7",
+    "width": 180,
+    "height": 296,
+    "source": "https://covers.openlibrary.org/b/isbn/0451163095-M.jpg"
+  },
+  "163": {
+    "path": "covers/163.jpg",
+    "sha256": "adb12ec52a08cc7651d76249c990048b7706af06ddf46cba2000f026e51d879a",
+    "width": 180,
+    "height": 261,
+    "source": "https://covers.openlibrary.org/b/isbn/0321303598-M.jpg"
+  },
+  "164": {
+    "path": "covers/164.jpg",
+    "sha256": "d7dd2e625bc3ff77cd3caacfa107c32f5146cd3eae2b9df7c5712a5fe96d2d71",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/0435233076-M.jpg"
+  },
+  "165": {
+    "path": "covers/165.jpg",
+    "sha256": "91f6d834068406230df7cbe484411821566c5b05217929d8aa5db299b79370ff",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/019214183X-M.jpg"
+  },
+  "166": {
+    "path": "covers/166.jpg",
+    "sha256": "5f85375afaec133772f44858df54d5a1a2e49fc20e88d75114625802f7b7747f",
+    "width": 180,
+    "height": 265,
+    "source": "https://covers.openlibrary.org/b/isbn/0942364155-M.jpg"
+  },
+  "167": {
+    "path": "covers/167.jpg",
+    "sha256": "b33cdd4feaa2c610aeaa6d8daeb9efa2b9e4cc7de493ade8ca1e00099c5e2aaf",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0684811634-M.jpg"
+  },
+  "168": {
+    "path": "covers/168.jpg",
+    "sha256": "7fd00b2f4a4a002051277ef0b5ee2cacef73c2c4daeef83c0a580feb7900a231",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0312270178-M.jpg"
+  },
+  "170": {
+    "path": "covers/170.jpg",
+    "sha256": "7a12f0d415e9eb03277a0518b0b48ac9da47947510b7c3320a8e442b3c894e6e",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0143037889-M.jpg"
+  },
+  "172": {
+    "path": "covers/172.jpg",
+    "sha256": "b06cc7c3e1c92c851cb23a8acb18563fdd786efeabd9c574fe0c6a7fdd79d73e",
+    "width": 180,
+    "height": 283,
+    "source": "https://covers.openlibrary.org/b/isbn/0517223317-M.jpg"
+  },
+  "173": {
+    "path": "covers/173.jpg",
+    "sha256": "f6b31cbeef34056eabb57b8c0422873e9ac476b0fc6083e63e1bde21c0e15b83",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/isbn/0966086309-M.jpg"
+  },
+  "174": {
+    "path": "covers/174.jpg",
+    "sha256": "b6beb7ba5053447fa9f5f4efc2699edbd87664ceb6905cf1ec1da7beadd1fdbe",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0787112615-M.jpg"
+  },
+  "175": {
+    "path": "covers/175.jpg",
+    "sha256": "73c1a29da73898164531a8a67240359c939ac671fec30659b00ff666a6bb4fe9",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0964043009-M.jpg"
+  },
+  "176": {
+    "path": "covers/176.jpg",
+    "sha256": "d3adcb89c16f66d1d04c36e1db8e9202058fb6bda1e0e664ee5ff17c1fa4cda7",
+    "width": 180,
+    "height": 245,
+    "source": "https://covers.openlibrary.org/b/isbn/158923331X-M.jpg"
+  },
+  "177": {
+    "path": "covers/177.jpg",
+    "sha256": "e62da8568e78829e01b3c4fb0ae6a0e561b83370d37f1070b8009f8a68370928",
+    "width": 128,
+    "height": 168,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737037-M.jpg"
+  },
+  "178": {
+    "path": "covers/178.jpg",
+    "sha256": "3456b145fa056a068be8fcc2fb88ca175d2dc7f9b62c1ae3fb7b06f81bd3b076",
+    "width": 180,
+    "height": 290,
+    "source": "https://covers.openlibrary.org/b/isbn/0895263343-M.jpg"
+  },
+  "179": {
+    "path": "covers/179.jpg",
+    "sha256": "4aa58bc8a11cba18d4ecad4e917d038b8279f5a72cb2c2b8a69cb6bc92c699c3",
+    "width": 180,
+    "height": 281,
+    "source": "https://covers.openlibrary.org/b/isbn/1591841607-M.jpg"
+  },
+  "180": {
+    "path": "covers/180.jpg",
+    "sha256": "edb536d4833534e287582efb69beb368eb7bc83ec44737b16a690aefe9c77339",
+    "width": 180,
+    "height": 211,
+    "source": "https://covers.openlibrary.org/b/isbn/1605471046-M.jpg"
+  },
+  "181": {
+    "path": "covers/181.jpg",
+    "sha256": "a4c30fbad623a44a27148b3658a4d3d8539d5a705594d6fd9cc6fbe4c73cb304",
+    "width": 180,
+    "height": 224,
+    "source": "https://covers.openlibrary.org/b/isbn/1562761331-M.jpg"
+  },
+  "182": {
+    "path": "covers/182.jpg",
+    "sha256": "eb9730d0c4185b19b3180110cc72feae7c7fb6aa6d1130366efa715256f2cc1b",
+    "width": 180,
+    "height": 217,
+    "source": "https://covers.openlibrary.org/b/isbn/0062720082-M.jpg"
+  },
+  "183": {
+    "path": "covers/183.jpg",
+    "sha256": "0246f541d1701f8dbf79fc3ef4eb231fd785ec9485ffe0e2f0649d3cf513d175",
+    "width": 180,
+    "height": 244,
+    "source": "https://covers.openlibrary.org/b/id/87290-M.jpg"
+  },
+  "184": {
+    "path": "covers/184.jpg",
+    "sha256": "88ada10390279f729e8ed52b324c6ef5f0cd15b4165e8712d37bdd3506b93a15",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/isbn/1558502548-M.jpg"
+  },
+  "185": {
+    "path": "covers/185.jpg",
+    "sha256": "ec3455a35c513eccba0c9b20161a968fde501cc6870772f79b2be5ecf151ae84",
+    "width": 180,
+    "height": 288,
+    "source": "https://covers.openlibrary.org/b/isbn/1565112601-M.jpg"
+  },
+  "186": {
+    "path": "covers/186.jpg",
+    "sha256": "359bf225c2a2df51428272d8e026799d3730dfa0db9e5d00d71db1596e1a2685",
+    "width": 180,
+    "height": 252,
+    "source": "https://covers.openlibrary.org/b/isbn/0761101608-M.jpg"
+  },
+  "188": {
+    "path": "covers/188.jpg",
+    "sha256": "6cf52c8a430085827c9951a571408d6a18ac783554a639215e82e571b926aace",
+    "width": 180,
+    "height": 168,
+    "source": "https://covers.openlibrary.org/b/isbn/1565793471-M.jpg"
+  },
+  "189": {
+    "path": "covers/189.jpg",
+    "sha256": "eaac8f77554d46bc54e518dce334555f9b33956e6b1571627feba09c45be179d",
+    "width": 128,
+    "height": 165,
+    "source": "https://covers.openlibrary.org/b/isbn/007882043X-M.jpg"
+  },
+  "190": {
+    "path": "covers/190.jpg",
+    "sha256": "51b23b1bc57c679a54644c9d3adfddea83764aa552155e3080441d3cb2a2d5fd",
+    "width": 180,
+    "height": 153,
+    "source": "https://covers.openlibrary.org/b/isbn/0842322973-M.jpg"
+  },
+  "191": {
+    "path": "covers/191.jpg",
+    "sha256": "73d6cfbda1432c6df59e359227fcef1edd825a259581e710854a109d6fa3480e",
+    "width": 180,
+    "height": 253,
+    "source": "https://covers.openlibrary.org/b/id/8741318-M.jpg"
+  },
+  "192": {
+    "path": "covers/192.jpg",
+    "sha256": "831dc8f8982869ea8948675d2cea166289f4e78120df0843e49d47dccc374189",
+    "width": 180,
+    "height": 242,
+    "source": "https://covers.openlibrary.org/b/isbn/0900689218-M.jpg"
+  },
+  "193": {
+    "path": "covers/193.jpg",
+    "sha256": "3de5482725aa6fc85f084bfd5e242f9999f29f8e9259422ae95168566d2b4976",
+    "width": 180,
+    "height": 248,
+    "source": "https://covers.openlibrary.org/b/isbn/0312003579-M.jpg"
+  },
+  "194": {
+    "path": "covers/194.jpg",
+    "sha256": "4120a2c4de56a0ac455afc3149a32faa87e4facb50f07bebe2351f769e9c9444",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/0375708111-M.jpg"
+  },
+  "195": {
+    "path": "covers/195.jpg",
+    "sha256": "a31eeed74040f70a79e3f0799debf0fa55038790794fcf6408a0308d43ceb6fc",
+    "width": 180,
+    "height": 283,
+    "source": "https://covers.openlibrary.org/b/isbn/0671562568-M.jpg"
+  },
+  "196": {
+    "path": "covers/196.jpg",
+    "sha256": "9e62edbee5b4ae7da1d1d36df04f4f6225f9e116a8c2ae117bd97ebfd2f45fbe",
+    "width": 180,
+    "height": 301,
+    "source": "https://covers.openlibrary.org/b/isbn/042509975X-M.jpg"
+  },
+  "197": {
+    "path": "covers/197.jpg",
+    "sha256": "b1a3df43ef81fa6ba998d2e5abe38b12d5f29d7b72270ac99da6d45e9ffe6f57",
+    "width": 180,
+    "height": 229,
+    "source": "https://covers.openlibrary.org/b/isbn/1563921375-M.jpg"
+  },
+  "198": {
+    "path": "covers/198.jpg",
+    "sha256": "692111a3cd04a4bca38bb871e402a4d82cd81ef0fafd9a97408bf662113d79e2",
+    "width": 160,
+    "height": 160,
+    "source": "https://covers.openlibrary.org/b/isbn/0670532576-M.jpg"
+  },
+  "199": {
+    "path": "covers/199.jpg",
+    "sha256": "a98e26450d8bdc8c406f086e794dd48fe975ce4f272ebdad26a40b8b7906c9c6",
+    "width": 180,
+    "height": 223,
+    "source": "https://covers.openlibrary.org/b/isbn/0471213039-M.jpg"
+  },
+  "200": {
+    "path": "covers/200.jpg",
+    "sha256": "eb400fb2f3ef5e1da472ac14e757ddfd8c1608e8fffd6ab52f7ba561b0f577c7",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/id/7867646-M.jpg"
+  },
+  "201": {
+    "path": "covers/201.jpg",
+    "sha256": "a423b6c0beb76f4f3a05aac138940fcb49f4da451ef04410d64f6313d5a31fee",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0761112278-M.jpg"
+  },
+  "202": {
+    "path": "covers/202.jpg",
+    "sha256": "4a89bdb9f58417d80b08ecd8fd515d4c2d9afc00b891f7b9fdc5e64ac0ce62a2",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0071444858-M.jpg"
+  },
+  "203": {
+    "path": "covers/203.jpg",
+    "sha256": "8bb94dea813768d009f7210f5f0866ae1c187914425a4ef8673fa19618cd00c9",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/0884043762-M.jpg"
+  },
+  "204": {
+    "path": "covers/204.jpg",
+    "sha256": "1615bf621f79bcc75bb8bc83c781cc2c73c28ce8a0e3099a95b8f097020560f4",
+    "width": 180,
+    "height": 260,
+    "source": "https://covers.openlibrary.org/b/isbn/0929261046-M.jpg"
+  },
+  "205": {
+    "path": "covers/205.jpg",
+    "sha256": "914239be0e6dc2b8190c4bd0e99ebfdc74109a6b02dbc0d1bb22509a0d34f0f2",
+    "width": 180,
+    "height": 224,
+    "source": "https://covers.openlibrary.org/b/isbn/0395290317-M.jpg"
+  },
+  "206": {
+    "path": "covers/206.jpg",
+    "sha256": "5b233dbed5300c23ae0e2788643fe68427c678833b2155b484aff29208229864",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/id/6990576-M.jpg"
+  },
+  "207": {
+    "path": "covers/207.jpg",
+    "sha256": "609d836755b2bf3dfe0557140d8767e7a684d997425124e24758500431ba1b74",
+    "width": 180,
+    "height": 282,
+    "source": "https://covers.openlibrary.org/b/isbn/0679726136-M.jpg"
+  },
+  "209": {
+    "path": "covers/209.jpg",
+    "sha256": "1ef6cf6361967d2faf0ca9b9e08de19b28d6d53b19d28d8797d4b17dadf77c06",
+    "width": 180,
+    "height": 180,
+    "source": "https://covers.openlibrary.org/b/isbn/0762432845-M.jpg"
+  },
+  "210": {
+    "path": "covers/210.jpg",
+    "sha256": "b70fc9c366b1fa3fee10cc5658ba02dbb6222f5c96f205747c7726c02b8c9d66",
+    "width": 180,
+    "height": 157,
+    "source": "https://covers.openlibrary.org/b/isbn/1883219442-M.jpg"
+  },
+  "211": {
+    "path": "covers/211.jpg",
+    "sha256": "8de7e27cc058e77ed1755ca587030a909660e4f180c88524a2dffbe65c723c14",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/155994823X-M.jpg"
+  },
+  "212": {
+    "path": "covers/212.jpg",
+    "sha256": "887163f99595141ccf7b4f478d3c9c75e49f2b18da737857c5f77f6e6c12d6c4",
+    "width": 128,
+    "height": 196,
+    "source": "https://covers.openlibrary.org/b/isbn/0060621192-M.jpg"
+  },
+  "213": {
+    "path": "covers/213.jpg",
+    "sha256": "0bfcc7f6c1963529db6119779151c918a5c828bdd3f962cc669a2f1651be0f12",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0886878209-M.jpg"
+  },
+  "214": {
+    "path": "covers/214.jpg",
+    "sha256": "52ce3c086c0edd2b997d0c606dd17394cd33488c7c2b4d3327aa1e0e5bb0f8b2",
+    "width": 180,
+    "height": 214,
+    "source": "https://covers.openlibrary.org/b/isbn/0789715953-M.jpg"
+  },
+  "215": {
+    "path": "covers/215.jpg",
+    "sha256": "6032e3f2283b30bf2b13379203fdf876b2f19147b69b4679a9d2d9f8cb9158f9",
+    "width": 128,
+    "height": 215,
+    "source": "https://books.google.com/books/content?vid=isbn:9780345414410&printsec=frontcover&img=1&zoom=1"
+  },
+  "216": {
+    "path": "covers/216.jpg",
+    "sha256": "f185889888fdf30a8e0c3b4a0313938a74df70830a63e4192e155b0b44909407",
+    "width": 180,
+    "height": 228,
+    "source": "https://covers.openlibrary.org/b/isbn/0789721325-M.jpg"
+  },
+  "217": {
+    "path": "covers/217.jpg",
+    "sha256": "748a02cce983228f7f0f1dc558135038ab3b7b980abd5ed55347e61999c8eeb7",
+    "width": 180,
+    "height": 200,
+    "source": "https://covers.openlibrary.org/b/isbn/0385175140-M.jpg"
+  },
+  "218": {
+    "path": "covers/218.jpg",
+    "sha256": "e9d492e997581ed50be4439322f823d3b11afdf00ceda22051bef223fd8185cc",
+    "width": 180,
+    "height": 252,
+    "source": "https://covers.openlibrary.org/b/isbn/0786158964-M.jpg"
+  },
+  "219": {
+    "path": "covers/219.jpg",
+    "sha256": "f40b0712b0e581a3e454275788d2e4a923138c1d4cda40e5e2bde19d258b8910",
+    "width": 180,
+    "height": 233,
+    "source": "https://covers.openlibrary.org/b/isbn/0873377788-M.jpg"
+  },
+  "220": {
+    "path": "covers/220.jpg",
+    "sha256": "1442eceed7d1c617a819cedf80c0783f1e0f6f093a68eaca493c7c257593a85a",
+    "width": 180,
+    "height": 290,
+    "source": "https://covers.openlibrary.org/b/isbn/0671244221-M.jpg"
+  },
+  "221": {
+    "path": "covers/221.jpg",
+    "sha256": "aaca208d03dc6274411efcac30753cb95e70f86f4590456ac89d71e04becd109",
+    "width": 180,
+    "height": 218,
+    "source": "https://covers.openlibrary.org/b/isbn/0895886448-M.jpg"
+  },
+  "222": {
+    "path": "covers/222.jpg",
+    "sha256": "aa274cf283c42a08390098ddc656dbb5f264035220103a32de7c8f5aa849283f",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/isbn/1883219051-M.jpg"
+  },
+  "223": {
+    "path": "covers/223.jpg",
+    "sha256": "4296ddd18a67bafd9a935ce09f7b37cd3a8a4c01621566c68672202fcefcfc1f",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/0075536064-M.jpg"
+  },
+  "225": {
+    "path": "covers/225.jpg",
+    "sha256": "f8afa3bb83f65b33924aa828be24fdbc89004ca5c73c39cf552b7ae5e04a35d8",
+    "width": 180,
+    "height": 227,
+    "source": "https://covers.openlibrary.org/b/isbn/0786303158-M.jpg"
+  },
+  "226": {
+    "path": "covers/226.jpg",
+    "sha256": "cd24a93bf6345d99f1ea57e5d73f446a9b0409c0ddc5229919430aa1917387db",
+    "width": 180,
+    "height": 131,
+    "source": "https://covers.openlibrary.org/b/isbn/1558531564-M.jpg"
+  },
+  "227": {
+    "path": "covers/227.jpg",
+    "sha256": "9eb1ab043b00e11c9160345a5a816cc1b3b0e348583c090532eed2baa52e55bd",
+    "width": 180,
+    "height": 293,
+    "source": "https://covers.openlibrary.org/b/isbn/0944993591-M.jpg"
+  },
+  "228": {
+    "path": "covers/228.jpg",
+    "sha256": "96c91d75bce9e625eb6c569369a573d09b856e75398827d934f05ef4130b179d",
+    "width": 180,
+    "height": 283,
+    "source": "https://covers.openlibrary.org/b/isbn/0140194614-M.jpg"
+  },
+  "229": {
+    "path": "covers/229.jpg",
+    "sha256": "7fc6eb7afce80e97d8b9a35677176b043e866b51ccdad2dbe88fe995d692c93c",
+    "width": 174,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/0965774600-M.jpg"
+  },
+  "230": {
+    "path": "covers/230.jpg",
+    "sha256": "eea3fbd0d6456b115f571e5175848379158e90be1aa9f1890eb24a135aec6d23",
+    "width": 128,
+    "height": 204,
+    "source": "https://covers.openlibrary.org/b/isbn/067142517X-M.jpg"
+  },
+  "231": {
+    "path": "covers/231.jpg",
+    "sha256": "c2f4f815bdde65b1999ba5e3e2135a889eb2ad2ebe839fed39ca68772d2f8133",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/0679416765-M.jpg"
+  },
+  "232": {
+    "path": "covers/232.jpg",
+    "sha256": "47915ac910b802908199845115ddcb597b7b14f43361c39933288e231b60e731",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/014043531X-M.jpg"
+  },
+  "233": {
+    "path": "covers/233.jpg",
+    "sha256": "6884c0deb10a6384626e4008c1082df9b587ce42684de403ae69612681e16e2b",
+    "width": 180,
+    "height": 295,
+    "source": "https://covers.openlibrary.org/b/isbn/0553278223-M.jpg"
+  },
+  "234": {
+    "path": "covers/234.jpg",
+    "sha256": "0b37cced690300ddf87b9a44f8d6290271c39e15d3e884804e0e5c611f9bf146",
+    "width": 180,
+    "height": 321,
+    "source": "https://covers.openlibrary.org/b/isbn/0679001344-M.jpg"
+  },
+  "236": {
+    "path": "covers/236.jpg",
+    "sha256": "0a40db80bd7f04f7bb1c2e75c22237fa3736c2920af470460d8fe2af6c03ca00",
+    "width": 180,
+    "height": 291,
+    "source": "https://covers.openlibrary.org/b/isbn/1891115014-M.jpg"
+  },
+  "237": {
+    "path": "covers/237.jpg",
+    "sha256": "4e6d4290d80b57a8a19427c3bc87b09fb5a062eb60cb196f39ff38c0e2098f98",
+    "width": 180,
+    "height": 236,
+    "source": "https://covers.openlibrary.org/b/isbn/0873641752-M.jpg"
+  },
+  "238": {
+    "path": "covers/238.jpg",
+    "sha256": "93b3062ec5a80712abd298d2e314933d2db6b330eca977a5ef994f1ee86fd50b",
+    "width": 180,
+    "height": 247,
+    "source": "https://covers.openlibrary.org/b/isbn/0525938982-M.jpg"
+  },
+  "239": {
+    "path": "covers/239.jpg",
+    "sha256": "bf539b59a24f44521a225247e16fc128bd4ca6040ec24ae09f5b6a08fa7ec526",
+    "width": 180,
+    "height": 263,
+    "source": "https://covers.openlibrary.org/b/isbn/0393313344-M.jpg"
+  },
+  "240": {
+    "path": "covers/240.jpg",
+    "sha256": "e5860850de3768a4ea005a4365718534e28ecbbb9e9fe2dea513b997bf77dcfb",
+    "width": 180,
+    "height": 292,
+    "source": "https://covers.openlibrary.org/b/isbn/1879371634-M.jpg"
+  },
+  "241": {
+    "path": "covers/241.jpg",
+    "sha256": "f0c68f269634a9d8db9b27b6be6f6c4d3b05ea3ef08e955258e7c4883fe57e54",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/0694517828-M.jpg"
+  },
+  "242": {
+    "path": "covers/242.jpg",
+    "sha256": "416a5a774c9ee32520cd0c289488da205a704430101cbcff0337999604e599f3",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0471155616-M.jpg"
+  },
+  "243": {
+    "path": "covers/243.jpg",
+    "sha256": "2e879317d6c85759055669aae3634047ae7afe4ba245d82a14d5e5f479b855c2",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/038531258X-M.jpg"
+  },
+  "244": {
+    "path": "covers/244.jpg",
+    "sha256": "02059f2a2e69c265a6c30535077d4c63a7376ff5bef42e7212c9135cb0ab1e17",
+    "width": 180,
+    "height": 304,
+    "source": "https://covers.openlibrary.org/b/isbn/0394700023-M.jpg"
+  },
+  "245": {
+    "path": "covers/245.jpg",
+    "sha256": "bfb9db0bb0ab2ea04cbe5c1ff228e5b038dae9bc737f75d1ea7d2de44300ed68",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0070050767-M.jpg"
+  },
+  "246": {
+    "path": "covers/246.jpg",
+    "sha256": "d65806a6f0283825a6baf55ee44b7cd1fc38c56288ef6c59fac26c9cd588fffb",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/isbn/0517693119-M.jpg"
+  },
+  "247": {
+    "path": "covers/247.jpg",
+    "sha256": "98a552daf82e5984581fc1c4f991d03562892eb24a3e525bce018c591a649385",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0931089778-M.jpg"
+  },
+  "248": {
+    "path": "covers/248.jpg",
+    "sha256": "c1264ba7e2d01b692773c6be6b92b29b42abb3eeb928a4137585d128abe0beff",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/isbn/0964605546-M.jpg"
+  },
+  "249": {
+    "path": "covers/249.jpg",
+    "sha256": "8f6eb6e21c78a411cf5482b64f7cf9502a5c123207c9be6219a4ad5aa354154a",
+    "width": 180,
+    "height": 294,
+    "source": "https://covers.openlibrary.org/b/isbn/0671520636-M.jpg"
+  },
+  "250": {
+    "path": "covers/250.jpg",
+    "sha256": "eb715b205decd772a3b614ab0dba66197a19ca1e3c03a48dba2a55599135045c",
+    "width": 180,
+    "height": 295,
+    "source": "https://covers.openlibrary.org/b/isbn/0451191145-M.jpg"
+  },
+  "251": {
+    "path": "covers/251.jpg",
+    "sha256": "30ded619525ccbbfb1f9fc6be6c36057e5fed252b77fe875316dfe7be737223b",
+    "width": 128,
+    "height": 193,
+    "source": "https://covers.openlibrary.org/b/isbn/0471569607-M.jpg"
+  },
+  "252": {
+    "path": "covers/252.jpg",
+    "sha256": "809f74ca6a0e37b615c23314c8f2a570d1846d8246856b6cc95b2a53f37b83ca",
+    "width": 180,
+    "height": 303,
+    "source": "https://covers.openlibrary.org/b/id/14344172-M.jpg"
+  },
+  "253": {
+    "path": "covers/253.jpg",
+    "sha256": "4fde3d523863b772fb8bae9301f9c67bdca646b7d80970746ced8b0b1f6faf0c",
+    "width": 180,
+    "height": 264,
+    "source": "https://covers.openlibrary.org/b/id/8666606-M.jpg"
+  },
+  "254": {
+    "path": "covers/254.jpg",
+    "sha256": "5f8d563bbba5dd60c664c6bb33d8251d58b05e6254a3aa4e2c98e9801e61b9d0",
+    "width": 180,
+    "height": 337,
+    "source": "https://covers.openlibrary.org/b/isbn/092587342X-M.jpg"
+  },
+  "255": {
+    "path": "covers/255.jpg",
+    "sha256": "43bb7f7757812acbd33b851df80721d210b7026d62c43833fc61208c8236f057",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/isbn/1565111206-M.jpg"
+  },
+  "256": {
+    "path": "covers/256.jpg",
+    "sha256": "54aa803d14719943c3c4633fd6f0eab81b5dbd88be4badc3aaefd3d00be524f2",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0965573184-M.jpg"
+  },
+  "257": {
+    "path": "covers/257.jpg",
+    "sha256": "5770ea935d1a00c23a7a480003203e72272d5dd5d73b2e09de80d917affe0965",
+    "width": 180,
+    "height": 242,
+    "source": "https://covers.openlibrary.org/b/isbn/1930617046-M.jpg"
+  },
+  "258": {
+    "path": "covers/258.jpg",
+    "sha256": "f7343c9b85cf1590020813a64429b8f9a5d7893daf2b0e6432c342a73d4ad2ea",
+    "width": 180,
+    "height": 290,
+    "source": "https://covers.openlibrary.org/b/id/6575745-M.jpg"
+  },
+  "259": {
+    "path": "covers/259.jpg",
+    "sha256": "624d2f47818f544570dc1675c794e89f431b6187405f67c5b111be396444c4a7",
+    "width": 180,
+    "height": 222,
+    "source": "https://covers.openlibrary.org/b/isbn/0028641582-M.jpg"
+  },
+  "260": {
+    "path": "covers/260.jpg",
+    "sha256": "a6f58dd556be46feadb3d2a21057838ef48a49e405116d42b98756012729d26c",
+    "width": 128,
+    "height": 169,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737118-M.jpg"
+  },
+  "261": {
+    "path": "covers/261.jpg",
+    "sha256": "2face6cbfb32d8a12058673b04b3aa3fe3f8911076f88b7cfa127d77b74c8ff5",
+    "width": 180,
+    "height": 159,
+    "source": "https://covers.openlibrary.org/b/isbn/0694521701-M.jpg"
+  },
+  "263": {
+    "path": "covers/263.jpg",
+    "sha256": "30c73dab6c4191f48914ef672d8b3e5d8c485d7dd4dff3b256e9f637d78bbd20",
+    "width": 180,
+    "height": 269,
+    "source": "https://covers.openlibrary.org/b/id/6981251-M.jpg"
+  },
+  "264": {
+    "path": "covers/264.jpg",
+    "sha256": "624e94492a29b3cdc76102d4cca9328a8a7a6e0e619c685be380855edccd1fb9",
+    "width": 180,
+    "height": 245,
+    "source": "https://covers.openlibrary.org/b/isbn/0930657233-M.jpg"
+  },
+  "265": {
+    "path": "covers/265.jpg",
+    "sha256": "cfce4512be70adf0a7a1db515ac7067d42f7b8143a7c01c7c6b8c930706050c5",
+    "width": 180,
+    "height": 286,
+    "source": "https://covers.openlibrary.org/b/isbn/0671536834-M.jpg"
+  },
+  "266": {
+    "path": "covers/266.jpg",
+    "sha256": "2a6a670dc3250266d74521ac9429506e2577555d0d7c2f18b78e68a6f73fe085",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/id/408421-M.jpg"
+  },
+  "267": {
+    "path": "covers/267.jpg",
+    "sha256": "32d9805e94bdab11dc256af1812956d32a67ec7eb58d320251ccb52d346bef3a",
+    "width": 180,
+    "height": 295,
+    "source": "https://covers.openlibrary.org/b/isbn/0694515663-M.jpg"
+  },
+  "270": {
+    "path": "covers/270.jpg",
+    "sha256": "e2912dcaa1601e4c0cc2f96b56bf347ebf1e6b24234835149b3a6febbed9c583",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/id/14417175-M.jpg"
+  },
+  "271": {
+    "path": "covers/271.jpg",
+    "sha256": "ee06064b1f847d71115f43d98776ef2787e4366eecdf9d9a24c5b2365c33cc17",
+    "width": 180,
+    "height": 286,
+    "source": "https://covers.openlibrary.org/b/isbn/1561708542-M.jpg"
+  },
+  "272": {
+    "path": "covers/272.jpg",
+    "sha256": "ae810d4299763dd7968c6b0c4fa4e1664584d41137058aabceb7bb051dfbdb26",
+    "width": 128,
+    "height": 191,
+    "source": "https://covers.openlibrary.org/b/isbn/0138805504-M.jpg"
+  },
+  "274": {
+    "path": "covers/274.jpg",
+    "sha256": "3574a73b656bb9ef2f64b8fce402a3129520fd282ed80738b9e7cbe78c60b0c2",
+    "width": 180,
+    "height": 306,
+    "source": "https://covers.openlibrary.org/b/isbn/1559275839-M.jpg"
+  },
+  "275": {
+    "path": "covers/275.jpg",
+    "sha256": "c69a47cc67d725bc96defb8d9bcaa149fbe54459fe11595abf6872a3b951276b",
+    "width": 180,
+    "height": 204,
+    "source": "https://covers.openlibrary.org/b/isbn/0743539648-M.jpg"
+  },
+  "276": {
+    "path": "covers/276.jpg",
+    "sha256": "dee3728407071e857cd1912218c7b664cde9106930ad2a4f1ae1e8ec99e167f7",
+    "width": 180,
+    "height": 305,
+    "source": "https://covers.openlibrary.org/b/isbn/0671788523-M.jpg"
+  },
+  "277": {
+    "path": "covers/277.jpg",
+    "sha256": "b66a97a00ff5f21a4559007f9eeec53da0d8bc0691a950b0f792fcb0f70b1697",
+    "width": 180,
+    "height": 259,
+    "source": "https://covers.openlibrary.org/b/isbn/1433272466-M.jpg"
+  },
+  "278": {
+    "path": "covers/278.jpg",
+    "sha256": "fcc523fa426ab66964135157eac63ff07c191521d68afecd7f6a22f1e2c2f9a4",
+    "width": 300,
+    "height": 427,
+    "source": "http://books.google.com/books/content?id=O4r1DwAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "279": {
+    "path": "covers/279.jpg",
+    "sha256": "398cfc88decdab1eb74399f04dcd2ce95c9a72a55874342d47d0fa188c65bcc1",
+    "width": 180,
+    "height": 232,
+    "source": "https://covers.openlibrary.org/b/isbn/0916661059-M.jpg"
+  },
+  "281": {
+    "path": "covers/281.jpg",
+    "sha256": "25d2f23e2eab9c8e99b8c9c13619ce8aeb021ed542e6db8370bfb3bb94bb7d72",
+    "width": 180,
+    "height": 248,
+    "source": "https://covers.openlibrary.org/b/id/82725-M.jpg"
+  },
+  "282": {
+    "path": "covers/282.jpg",
+    "sha256": "bf19a821f01794abcc5297c04254f24276161895858079e7ab463a6345ffb14e",
+    "width": 180,
+    "height": 282,
+    "source": "https://covers.openlibrary.org/b/isbn/1559580968-M.jpg"
+  },
+  "283": {
+    "path": "covers/283.jpg",
+    "sha256": "712a983cf00d9c065110f666912fd2b412d4307b81d7ada750a7489aac6e9a03",
+    "width": 180,
+    "height": 236,
+    "source": "https://covers.openlibrary.org/b/isbn/0070499993-M.jpg"
+  },
+  "284": {
+    "path": "covers/284.jpg",
+    "sha256": "34f3a67f50889ca0f55132f67830433f39deb74674ec32b6e9844895d261f38c",
+    "width": 180,
+    "height": 220,
+    "source": "https://covers.openlibrary.org/b/isbn/0761527443-M.jpg"
+  },
+  "285": {
+    "path": "covers/285.jpg",
+    "sha256": "b7e239985df4548a7a9562266f7a7a527fe9170e8812a1836c6ca36bd212091a",
+    "width": 180,
+    "height": 238,
+    "source": "https://covers.openlibrary.org/b/isbn/0376015810-M.jpg"
+  },
+  "286": {
+    "path": "covers/286.jpg",
+    "sha256": "91c9cfe4c131bfba7a71ec7e99a79c62dd312a711d200fd7eade41436a570c29",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/0679445013-M.jpg"
+  },
+  "287": {
+    "path": "covers/287.jpg",
+    "sha256": "7a8f24dad58725e3eb9465fe2e85f79d9535625a35865b7add8e3819af257979",
+    "width": 180,
+    "height": 232,
+    "source": "https://covers.openlibrary.org/b/isbn/0873373529-M.jpg"
+  },
+  "288": {
+    "path": "covers/288.jpg",
+    "sha256": "1f2f9e49e4408e4cef821d67f5d669231d1dd63c5f220ebbaf13f905a8d0e8a8",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0312858280-M.jpg"
+  },
+  "289": {
+    "path": "covers/289.jpg",
+    "sha256": "d6331238ca4c1272664877b3d11be00f7248badc97b50674aa05ef03e739eb1e",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0805025901-M.jpg"
+  },
+  "290": {
+    "path": "covers/290.jpg",
+    "sha256": "8d7809d6c8da5a02848ce908ee3882c292b95416ecce3431641f3a8c7ffe8342",
+    "width": 180,
+    "height": 315,
+    "source": "https://covers.openlibrary.org/b/id/7339281-M.jpg"
+  },
+  "291": {
+    "path": "covers/291.jpg",
+    "sha256": "2e21b94cca8cd624198e4baac9e5b25de155b666293aba94048635b97afacf49",
+    "width": 180,
+    "height": 234,
+    "source": "https://covers.openlibrary.org/b/isbn/0873376420-M.jpg"
+  },
+  "292": {
+    "path": "covers/292.jpg",
+    "sha256": "5ad9210c3cb677cbc5ca9fb68b76f809a78c1f087a405c757a5ab9b3d065cdea",
+    "width": 128,
+    "height": 195,
+    "source": "https://covers.openlibrary.org/b/isbn/0915166100-M.jpg"
+  },
+  "293": {
+    "path": "covers/293.jpg",
+    "sha256": "06b707ef0f0a9e1859b909e87dfc7e24451e23379ed26d60f4fc780c60321cb8",
+    "width": 180,
+    "height": 252,
+    "source": "https://covers.openlibrary.org/b/isbn/053491585X-M.jpg"
+  },
+  "294": {
+    "path": "covers/294.jpg",
+    "sha256": "f8a374e3ac12c7a22c999ef2c75983aacb98770c36205f62c2e324b5215e1c0d",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/isbn/0878917918-M.jpg"
+  },
+  "295": {
+    "path": "covers/295.jpg",
+    "sha256": "1de51183f5f39b6eaecabbde662c1225f18232fcd2c459ba4b4c4647d2d88c57",
+    "width": 180,
+    "height": 234,
+    "source": "https://covers.openlibrary.org/b/isbn/0201106280-M.jpg"
+  },
+  "296": {
+    "path": "covers/296.jpg",
+    "sha256": "a53d8f62ac33e48aea46e00cf68044bd3a07d37b463ab693234d6f3e6cbb2205",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/0913730394-M.jpg"
+  },
+  "297": {
+    "path": "covers/297.jpg",
+    "sha256": "0cc1885f899126f0577701152c1b6884e06869d086a570478e123b7d3504421b",
+    "width": 180,
+    "height": 268,
+    "source": "https://covers.openlibrary.org/b/isbn/0471808067-M.jpg"
+  },
+  "298": {
+    "path": "covers/298.jpg",
+    "sha256": "7dc91c890b2c8962152c7886e026246f5780a0a3e431cc6c64527dfe7b05b2a2",
+    "width": 180,
+    "height": 240,
+    "source": "https://covers.openlibrary.org/b/isbn/0865730083-M.jpg"
+  },
+  "299": {
+    "path": "covers/299.jpg",
+    "sha256": "97ff5956468997f87e69b80bb83c87f3c99d810f34f09087b5a9cfa53cda6f79",
+    "width": 128,
+    "height": 185,
+    "source": "https://covers.openlibrary.org/b/isbn/0201416549-M.jpg"
+  },
+  "301": {
+    "path": "covers/301.jpg",
+    "sha256": "93438a5f5ed986fbca71368d75611c17980c517106bb29651f4f8ad94dc15ef5",
+    "width": 180,
+    "height": 278,
+    "source": "https://covers.openlibrary.org/b/id/12680937-M.jpg"
+  },
+  "302": {
+    "path": "covers/302.jpg",
+    "sha256": "c2fed5938a7f81f27a1589b99dba470847eafb75e50780ef9379a22f7cecf301",
+    "width": 180,
+    "height": 223,
+    "source": "https://covers.openlibrary.org/b/isbn/0790611333-M.jpg"
+  },
+  "303": {
+    "path": "covers/303.jpg",
+    "sha256": "1c792c236b61defe46ae573e668526d175db67a72edfb4cf8838d6cd098f2660",
+    "width": 180,
+    "height": 285,
+    "source": "https://covers.openlibrary.org/b/isbn/0385063490-M.jpg"
+  },
+  "304": {
+    "path": "covers/304.jpg",
+    "sha256": "1bc87484c0ada83d1ef41f985b94f536faa3ed78db6aa16a71f6371a75a5e29f",
+    "width": 180,
+    "height": 231,
+    "source": "https://covers.openlibrary.org/b/isbn/1874416656-M.jpg"
+  },
+  "305": {
+    "path": "covers/305.jpg",
+    "sha256": "ca70dc86aed30b16f26d6635db3c77c7ba025db24ff40bcd9f819c2e51285188",
+    "width": 180,
+    "height": 213,
+    "source": "https://covers.openlibrary.org/b/isbn/3829004389-M.jpg"
+  },
+  "306": {
+    "path": "covers/306.jpg",
+    "sha256": "ff211f806f2ea53b21fd329ddc1a44df1356a9897b617bc5979ae2f46a0b67b2",
+    "width": 180,
+    "height": 269,
+    "source": "https://covers.openlibrary.org/b/isbn/0470196122-M.jpg"
+  },
+  "307": {
+    "path": "covers/307.jpg",
+    "sha256": "340f937526de2c2f7023b7ccf8ba89521e2a4f77971073b51eed538d378d6e2a",
+    "width": 180,
+    "height": 205,
+    "source": "https://covers.openlibrary.org/b/isbn/0739315099-M.jpg"
+  },
+  "308": {
+    "path": "covers/308.jpg",
+    "sha256": "4eb00d5c97d994120eea3996f41b190b527f74563d49521653a1381a1d8f39a3",
+    "width": 128,
+    "height": 187,
+    "source": "https://covers.openlibrary.org/b/isbn/0865713251-M.jpg"
+  },
+  "309": {
+    "path": "covers/309.jpg",
+    "sha256": "0e8706e6da24e3392b4cf0f436b6177af4691714f6db366de26eb3d5db799e2b",
+    "width": 180,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/0684802023-M.jpg"
+  },
+  "310": {
+    "path": "covers/310.jpg",
+    "sha256": "cc7c0a6e0af154862e2cb73ee9b70060cf2e6f3e56dcc6026a020dae519794e9",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/id/1652-M.jpg"
+  },
+  "311": {
+    "path": "covers/311.jpg",
+    "sha256": "cd0285a99aa76523d2e7278bc2f0df5c0b960dccbc0aab5012cc8d119051d554",
+    "width": 180,
+    "height": 301,
+    "source": "https://covers.openlibrary.org/b/isbn/0935998004-M.jpg"
+  },
+  "312": {
+    "path": "covers/312.jpg",
+    "sha256": "ef027977bd24508af9f740c5b44bc10349ccf134847ffa8551d372cf95203293",
+    "width": 180,
+    "height": 231,
+    "source": "https://covers.openlibrary.org/b/isbn/0966914902-M.jpg"
+  },
+  "313": {
+    "path": "covers/313.jpg",
+    "sha256": "dba5a0de9c5d2b8b53659dffbc475fbc902814f172ae6ec3f65a831710e077c7",
+    "width": 128,
+    "height": 161,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737312-M.jpg"
+  },
+  "314": {
+    "path": "covers/314.jpg",
+    "sha256": "fb4970511474ae7a6f65facb8cfcf9cde7499e6db5559cb7bee0fce4e5350fac",
+    "width": 128,
+    "height": 169,
+    "source": "https://covers.openlibrary.org/b/isbn/0865737177-M.jpg"
+  },
+  "315": {
+    "path": "covers/315.jpg",
+    "sha256": "3ab6487f6d9aa4fccd25f46b07d42b34c8b2b9a213accc0b880c4f6ff11c919c",
+    "width": 180,
+    "height": 218,
+    "source": "https://covers.openlibrary.org/b/isbn/0782116582-M.jpg"
+  },
+  "316": {
+    "path": "covers/316.jpg",
+    "sha256": "1b33ada517fd881c44555f2ab0e3282d92c161d9d9bcafed76d7260fcc8af18e",
+    "width": 180,
+    "height": 303,
+    "source": "https://covers.openlibrary.org/b/isbn/0451522605-M.jpg"
+  },
+  "317": {
+    "path": "covers/317.jpg",
+    "sha256": "438a9c3c622d07f3732a7b4e4d31e0db68cb7eec88c8167d65e66dd652e49173",
+    "width": 128,
+    "height": 218,
+    "source": "https://books.google.com/books/content?vid=isbn:9780914294535&printsec=frontcover&img=1&zoom=1"
+  },
+  "318": {
+    "path": "covers/318.jpg",
+    "sha256": "af923e4973436335688fd358d60c662c66b02ce9e4fcace6ff63774a59c4e17b",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/id/320516-M.jpg"
+  },
+  "319": {
+    "path": "covers/319.jpg",
+    "sha256": "14e0660fbffec785976e0813956cf74a3675886a7184f4f3745cd7c2c5b97d94",
+    "width": 180,
+    "height": 288,
+    "source": "https://covers.openlibrary.org/b/isbn/0669120650-M.jpg"
+  },
+  "320": {
+    "path": "covers/320.jpg",
+    "sha256": "ddfaf8750cc0ce91f99bb0135bfc2bc4a1685180c37cb27cfaf1d8233553b8b3",
+    "width": 180,
+    "height": 267,
+    "source": "https://covers.openlibrary.org/b/isbn/0895260115-M.jpg"
+  },
+  "321": {
+    "path": "covers/321.jpg",
+    "sha256": "102e52237c8a058c5b57ce7cb27da5a4d3beec472ccaee0e27a421f73e02b7fc",
+    "width": 180,
+    "height": 238,
+    "source": "https://covers.openlibrary.org/b/isbn/1564584925-M.jpg"
+  },
+  "322": {
+    "path": "covers/322.jpg",
+    "sha256": "6c1bf50679b47b932f14c07bf2c461224209e23db8fd4b39616a4c55eb17146e",
+    "width": 180,
+    "height": 290,
+    "source": "https://covers.openlibrary.org/b/isbn/0028636651-M.jpg"
+  },
+  "323": {
+    "path": "covers/323.jpg",
+    "sha256": "3d06261ef7e5f86af7fa1f28d0e3e8c7071809405ef22f9bdd033e5070fb691b",
+    "width": 180,
+    "height": 280,
+    "source": "https://covers.openlibrary.org/b/isbn/0671520318-M.jpg"
+  },
+  "324": {
+    "path": "covers/324.jpg",
+    "sha256": "9cdf9f404b79809cc338b94ea26a219b64cf3ae5778878de672fbb1c79650f11",
+    "width": 180,
+    "height": 225,
+    "source": "https://covers.openlibrary.org/b/isbn/1413307108-M.jpg"
+  },
+  "325": {
+    "path": "covers/325.jpg",
+    "sha256": "542044be73842a28419369600b2df9b17ce923d0dedf20832db702e479ca6abd",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/0962957607-M.jpg"
+  },
+  "326": {
+    "path": "covers/326.jpg",
+    "sha256": "ea08ca6994c91ec469fd6eec4387a68cb87dcf1280e4979b68e18f98a2dd6c12",
+    "width": 128,
+    "height": 197,
+    "source": "https://covers.openlibrary.org/b/isbn/0201103656-M.jpg"
+  },
+  "327": {
+    "path": "covers/327.jpg",
+    "sha256": "a62107df8a99e0ee3b5c21f19fa8fc270109e3c9662038e2f8603da23a2c5012",
+    "width": 180,
+    "height": 227,
+    "source": "https://covers.openlibrary.org/b/isbn/0670835684-M.jpg"
+  },
+  "329": {
+    "path": "covers/329.jpg",
+    "sha256": "0a986b5111ba6b205a1980f77a1d8fd4bcbeb531ba553892589ad49379c3062c",
+    "width": 180,
+    "height": 267,
+    "source": "https://covers.openlibrary.org/b/isbn/1858683114-M.jpg"
+  },
+  "330": {
+    "path": "covers/330.jpg",
+    "sha256": "dba16818a11b170c557eae3fced9e9b5e8ad007cd50fa0e7d19476c5e3a35b6a",
+    "width": 180,
+    "height": 263,
+    "source": "https://covers.openlibrary.org/b/isbn/0670031089-M.jpg"
+  },
+  "331": {
+    "path": "covers/331.jpg",
+    "sha256": "9b461fcdd76f8a3d4bbc4a38bfd6b3a4d864ab2cc22da56bae4440a7d51a926b",
+    "width": 180,
+    "height": 226,
+    "source": "https://covers.openlibrary.org/b/isbn/0201604809-M.jpg"
+  },
+  "332": {
+    "path": "covers/332.jpg",
+    "sha256": "723fceb7397728bd14bd81ca319bd2e38cc3789c2fdc359a2902c058de17da1e",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/isbn/1570622434-M.jpg"
+  },
+  "333": {
+    "path": "covers/333.jpg",
+    "sha256": "c1378cb60ee8e99549b5ca955d951ea5cc38efac5cc8bc683ae6fd268c763d0a",
+    "width": 180,
+    "height": 302,
+    "source": "https://covers.openlibrary.org/b/isbn/0393314960-M.jpg"
+  },
+  "334": {
+    "path": "covers/334.jpg",
+    "sha256": "0e89dd647661e0b81cbc3e2b1c821d0e8f9cfddb106ffadc51781dd2c27de41d",
+    "width": 180,
+    "height": 239,
+    "source": "https://covers.openlibrary.org/b/isbn/0553370928-M.jpg"
+  },
+  "335": {
+    "path": "covers/335.jpg",
+    "sha256": "05add24e2c27f9286f54471dfb2b6a81c7014596b4e3c87a9ba9c77a8e259fa2",
+    "width": 180,
+    "height": 292,
+    "source": "https://covers.openlibrary.org/b/isbn/0394298314-M.jpg"
+  },
+  "336": {
+    "path": "covers/336.jpg",
+    "sha256": "b242a8ceb50319e7028e7ff231de8fda31b4d6a20c658f5514552aebafbefc68",
+    "width": 180,
+    "height": 308,
+    "source": "https://covers.openlibrary.org/b/isbn/0441555276-M.jpg"
+  },
+  "337": {
+    "path": "covers/337.jpg",
+    "sha256": "1a1ea78aff696f9befb6bb47373835d25c7f2a74554abd34b1361975c409049b",
+    "width": 174,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/0395430917-M.jpg"
+  },
+  "338": {
+    "path": "covers/338.jpg",
+    "sha256": "b33d8eb47137805e2dbd66daad40145c70aceb9429a2839d162546052ccac0fd",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/isbn/1559946008-M.jpg"
+  },
+  "339": {
+    "path": "covers/339.jpg",
+    "sha256": "1dc37f74890cc81add6ab1acd29a13ddc636cf81b0f96a24d5903e19dc86c2c4",
+    "width": 180,
+    "height": 191,
+    "source": "https://covers.openlibrary.org/b/isbn/0740713930-M.jpg"
+  },
+  "340": {
+    "path": "covers/340.jpg",
+    "sha256": "4382fa103a90785a2bb3922f356f85983d65d24592dc9bf299c2f46f9b44b5f7",
+    "width": 180,
+    "height": 224,
+    "source": "https://covers.openlibrary.org/b/isbn/0789721252-M.jpg"
+  },
+  "341": {
+    "path": "covers/341.jpg",
+    "sha256": "a0346c8e99ee7f2f2f4cb0fea02bae7400dbf7b5a55bdb5c31aa6fa9f6bdbef0",
+    "width": 180,
+    "height": 227,
+    "source": "https://covers.openlibrary.org/b/isbn/0028621646-M.jpg"
+  },
+  "342": {
+    "path": "covers/342.jpg",
+    "sha256": "a095a5849b38f621ee2701eb0d8f341aa3f99d5929673aa23ee2f9dbb32c9229",
+    "width": 180,
+    "height": 233,
+    "source": "https://covers.openlibrary.org/b/isbn/0064671054-M.jpg"
+  },
+  "343": {
+    "path": "covers/343.jpg",
+    "sha256": "81b239c2a258bea72c7cd0d4ea913e45cd4253d5917e82ceeb2b141241e6c385",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/isbn/044155282X-M.jpg"
+  },
+  "344": {
+    "path": "covers/344.jpg",
+    "sha256": "ceb3807bc0cc7ceffd9e5858835a177e329fb263f2223bc312444486fcf53e84",
+    "width": 180,
+    "height": 308,
+    "source": "https://covers.openlibrary.org/b/id/8292212-M.jpg"
+  },
+  "345": {
+    "path": "covers/345.jpg",
+    "sha256": "1156862b37689df8824fdcefcbc9658224e15af49afa36875ced3a955219a9d6",
+    "width": 180,
+    "height": 305,
+    "source": "https://covers.openlibrary.org/b/isbn/0451521331-M.jpg"
+  },
+  "346": {
+    "path": "covers/346.jpg",
+    "sha256": "1cd52d72c645690bbfe183f32c2bd0d6b563eae47b2d44e8b1e5a42b808e1e49",
+    "width": 180,
+    "height": 282,
+    "source": "https://covers.openlibrary.org/b/isbn/0873523792-M.jpg"
+  },
+  "347": {
+    "path": "covers/347.jpg",
+    "sha256": "7332f629f7a2abf3b7cfc095bc11f6e1a9caba324fee1329bb7d3b28dcfeff8d",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/id/234957-M.jpg"
+  },
+  "348": {
+    "path": "covers/348.jpg",
+    "sha256": "860e7d7443db3021b78973110b81b7cff6f9c36992c4739b4d75492bdd2111b7",
+    "width": 180,
+    "height": 296,
+    "source": "https://covers.openlibrary.org/b/isbn/0380762277-M.jpg"
+  },
+  "350": {
+    "path": "covers/350.jpg",
+    "sha256": "ec74664dde2324151a7a83d6e1105c7ff8be9f658ab7400a330939e06a9cd6c5",
+    "width": 180,
+    "height": 203,
+    "source": "https://covers.openlibrary.org/b/isbn/0739332228-M.jpg"
+  },
+  "351": {
+    "path": "covers/351.jpg",
+    "sha256": "2c8eaf1b8e0830031f6bf879228679367db1a8cd88f7d2039e4f6ed31b9d0b5b",
+    "width": 180,
+    "height": 314,
+    "source": "https://covers.openlibrary.org/b/isbn/0671580795-M.jpg"
+  },
+  "352": {
+    "path": "covers/352.jpg",
+    "sha256": "dd79073e1b3a67188e8961f071872aa3faff9a572a7388791a534155fcfb7297",
+    "width": 128,
+    "height": 201,
+    "source": "https://covers.openlibrary.org/b/id/4056047-M.jpg"
+  },
+  "353": {
+    "path": "covers/353.jpg",
+    "sha256": "9e35eefb9d489cecc2dbfefe9a16b3cb1888a650619996341876bf9c9c4f636d",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/isbn/0451521293-M.jpg"
+  },
+  "354": {
+    "path": "covers/354.jpg",
+    "sha256": "26292014c1a4ccdadc3e6883442290281bdaa6110b1cffdd3fe2ad8fadf309ea",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/1580910157-M.jpg"
+  },
+  "355": {
+    "path": "covers/355.jpg",
+    "sha256": "dae3967a62b192f6565854f83f354ae7a9567166e86a11d1028a38a853a10b6f",
+    "width": 180,
+    "height": 231,
+    "source": "https://covers.openlibrary.org/b/isbn/0672321076-M.jpg"
+  },
+  "356": {
+    "path": "covers/356.jpg",
+    "sha256": "5ef8803faf1bbc9f44ada157a49af4f69706716c59e8e160d5724705e494130a",
+    "width": 180,
+    "height": 293,
+    "source": "https://covers.openlibrary.org/b/isbn/0842345507-M.jpg"
+  },
+  "357": {
+    "path": "covers/357.jpg",
+    "sha256": "6b9dd20577273f7137ab49410dc614d40b8695d6eb2019cfa3172a0f8ae11106",
+    "width": 180,
+    "height": 288,
+    "source": "https://covers.openlibrary.org/b/isbn/0451524608-M.jpg"
+  },
+  "358": {
+    "path": "covers/358.jpg",
+    "sha256": "31cc0006a5077f2cd754d4629650b29352b294d41cfb0d62b60ca1429ceb9700",
+    "width": 180,
+    "height": 250,
+    "source": "https://covers.openlibrary.org/b/isbn/0872595978-M.jpg"
+  },
+  "359": {
+    "path": "covers/359.jpg",
+    "sha256": "87128e9e5239ed870541a1b2502fdba0d460b02e0fcf5b37a9da1dbd15e57d1a",
+    "width": 180,
+    "height": 262,
+    "source": "https://covers.openlibrary.org/b/isbn/0811819086-M.jpg"
+  },
+  "360": {
+    "path": "covers/360.jpg",
+    "sha256": "11a5454649d7f1ec8f6f7f6e8398acd1cc9868c1d0503d95cc7bc1fa3f3ed39e",
+    "width": 180,
+    "height": 285,
+    "source": "https://covers.openlibrary.org/b/isbn/1560324937-M.jpg"
+  },
+  "361": {
+    "path": "covers/361.jpg",
+    "sha256": "3a1662da0109a64e9a34fb4ff7569e2a4fdb7f2a49cc281dfe2e7138f82da8e5",
+    "width": 180,
+    "height": 251,
+    "source": "https://covers.openlibrary.org/b/isbn/0671470884-M.jpg"
+  },
+  "362": {
+    "path": "covers/362.jpg",
+    "sha256": "156a04753efedbec61d6d9c795e6673eba04a0d9b9bf263ca4121669df2b384c",
+    "width": 180,
+    "height": 269,
+    "source": "https://covers.openlibrary.org/b/id/709077-M.jpg"
+  },
+  "363": {
+    "path": "covers/363.jpg",
+    "sha256": "d685d5a5632bc9e7b5af4b3726df783ce611a54134cdd67f4d9c165be0614cdf",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/isbn/0062700960-M.jpg"
+  },
+  "364": {
+    "path": "covers/364.jpg",
+    "sha256": "a0d43769e1d20049fa76fb5c9706eac4b504f6c99f0fa31f4d4ac240481e453a",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0809293307-M.jpg"
+  },
+  "365": {
+    "path": "covers/365.jpg",
+    "sha256": "34f12bd23bf3299d3fec979c9131a559c91201b8da786c7d3722b766d837bc57",
+    "width": 180,
+    "height": 283,
+    "source": "https://covers.openlibrary.org/b/isbn/0671534882-M.jpg"
+  },
+  "366": {
+    "path": "covers/366.jpg",
+    "sha256": "a60ea4703e9dfda50014ab77892b5b87ac77958fe5669dba160f207ad9ce3d85",
+    "width": 180,
+    "height": 302,
+    "source": "https://covers.openlibrary.org/b/isbn/0451524446-M.jpg"
+  },
+  "367": {
+    "path": "covers/367.jpg",
+    "sha256": "2fcadf7df7db4cd8a109b7436ccbd588017f098629ad05e6ec0a7919b8379427",
+    "width": 180,
+    "height": 231,
+    "source": "https://covers.openlibrary.org/b/isbn/0873378288-M.jpg"
+  },
+  "368": {
+    "path": "covers/368.jpg",
+    "sha256": "fb1b55c3bf142c9cb9455e16d54f4f90d0fea61b7dce5c61f9e93051ae3adae0",
+    "width": 180,
+    "height": 202,
+    "source": "https://covers.openlibrary.org/b/isbn/0764536885-M.jpg"
+  },
+  "369": {
+    "path": "covers/369.jpg",
+    "sha256": "3ea37985a365845780184af09258caf7c6d4179feec3cbceb4e5b630ec74b8a6",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0671506196-M.jpg"
+  },
+  "370": {
+    "path": "covers/370.jpg",
+    "sha256": "86b25ade4d94e6bbc4b7b35e4d5da776394d1ee7185a1f262731b8f9d81fe811",
+    "width": 180,
+    "height": 288,
+    "source": "https://covers.openlibrary.org/b/isbn/0814471714-M.jpg"
+  },
+  "371": {
+    "path": "covers/371.jpg",
+    "sha256": "26ed8e38ec50976548a69760066bb454ef459e34145b9620c40b0527c2ebba73",
+    "width": 180,
+    "height": 298,
+    "source": "https://covers.openlibrary.org/b/isbn/0441552765-M.jpg"
+  },
+  "372": {
+    "path": "covers/372.jpg",
+    "sha256": "73fb49071f848130ecc7bc1f571e99aa89224993342184f93e2109be3f3eb3b1",
+    "width": 180,
+    "height": 294,
+    "source": "https://covers.openlibrary.org/b/isbn/0441023622-M.jpg"
+  },
+  "373": {
+    "path": "covers/373.jpg",
+    "sha256": "b63e9d5e6eba792ec35755d49dd24cc2865e3ff0018e878d1ea49dc6ab0256bb",
+    "width": 180,
+    "height": 264,
+    "source": "https://covers.openlibrary.org/b/isbn/156838985X-M.jpg"
+  },
+  "374": {
+    "path": "covers/374.jpg",
+    "sha256": "4ef26abf633c589a16cf04059b1ba478266b1d24d8941a495c3f4cd64dfbbf07",
+    "width": 180,
+    "height": 313,
+    "source": "https://covers.openlibrary.org/b/id/8998268-M.jpg"
+  },
+  "375": {
+    "path": "covers/375.jpg",
+    "sha256": "6190fe4308afa84a1f05bf8a37be5c6965d279cfdd0f5eb5b22b6361869168c6",
+    "width": 180,
+    "height": 259,
+    "source": "https://covers.openlibrary.org/b/isbn/0912965002-M.jpg"
+  },
+  "376": {
+    "path": "covers/376.jpg",
+    "sha256": "fdd97390930728c8d93f5cd5ada9d468d315a115ad1e418041c50240683a47d1",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/isbn/0938895109-M.jpg"
+  },
+  "377": {
+    "path": "covers/377.jpg",
+    "sha256": "8b5d17a5270844f0d2376343d2eb4da090c228ae2e67ffa484ece7cbe6a729a2",
+    "width": 180,
+    "height": 203,
+    "source": "https://covers.openlibrary.org/b/isbn/0739334085-M.jpg"
+  },
+  "378": {
+    "path": "covers/378.jpg",
+    "sha256": "b959e7d428df5959c4011ff7da2a246b1444e6f715f4ff45544473e8fa20842d",
+    "width": 180,
+    "height": 298,
+    "source": "https://covers.openlibrary.org/b/isbn/0441555217-M.jpg"
+  },
+  "379": {
+    "path": "covers/379.jpg",
+    "sha256": "8bab19d3f04ac9d4c211c03a78c11ff18ecdbde1066214fec519f421c724a408",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/isbn/0441484999-M.jpg"
+  },
+  "380": {
+    "path": "covers/380.jpg",
+    "sha256": "97c8c718fa2f06be059031b34f2630cfb8f79a114476a9feb0d89af1b2a4ac61",
+    "width": 180,
+    "height": 302,
+    "source": "https://covers.openlibrary.org/b/isbn/0441552773-M.jpg"
+  },
+  "381": {
+    "path": "covers/381.jpg",
+    "sha256": "09513a9d2c2c68fc494878f0e173733891f95f84e47902bea7e530491f3b8311",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/044155279X-M.jpg"
+  },
+  "382": {
+    "path": "covers/382.jpg",
+    "sha256": "41916081fa5f696756ac4a1d19a23edd74f7e29d7d8a1244c50e8118df992aee",
+    "width": 180,
+    "height": 308,
+    "source": "https://covers.openlibrary.org/b/isbn/039395224X-M.jpg"
+  },
+  "383": {
+    "path": "covers/383.jpg",
+    "sha256": "abc6df758e1b1185f3b28d4ed080d76fe2b8081d6dced7fa8aa611228d0b82d9",
+    "width": 180,
+    "height": 267,
+    "source": "https://covers.openlibrary.org/b/isbn/0811816281-M.jpg"
+  },
+  "384": {
+    "path": "covers/384.jpg",
+    "sha256": "1fb28ecc6c3594aaf091064392b206c2e586c5a4147658517a6044fd004dbe7e",
+    "width": 128,
+    "height": 196,
+    "source": "https://covers.openlibrary.org/b/isbn/0887306403-M.jpg"
+  },
+  "385": {
+    "path": "covers/385.jpg",
+    "sha256": "f4c985e614444b0c527e5d50cf84b2ae09e5332bd74ecc8180f4369d73e757b3",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/isbn/0441338518-M.jpg"
+  },
+  "386": {
+    "path": "covers/386.jpg",
+    "sha256": "55c5ef4214e674dea12c2a2087314e827528c3dc37cd1a5a76e4d34c10322565",
+    "width": 180,
+    "height": 229,
+    "source": "https://covers.openlibrary.org/b/isbn/1563924285-M.jpg"
+  },
+  "387": {
+    "path": "covers/387.jpg",
+    "sha256": "4d4a10ad27bbfdf1e5b10c01e4eb2b4ccae631a4dfd48f13d7ffa5d5d182f698",
+    "width": 180,
+    "height": 302,
+    "source": "https://covers.openlibrary.org/b/isbn/0451522664-M.jpg"
+  },
+  "388": {
+    "path": "covers/388.jpg",
+    "sha256": "44a9d5c6a555dc2c328f76455cb56271d41631e3008c936219ef0f85ecd102a6",
+    "width": 180,
+    "height": 227,
+    "source": "https://covers.openlibrary.org/b/isbn/0812932358-M.jpg"
+  },
+  "389": {
+    "path": "covers/389.jpg",
+    "sha256": "68a5893b6b6ea6d06da1ffe7a8ba856c70623bdee5826d54ccff9ec1bbdee8f3",
+    "width": 180,
+    "height": 155,
+    "source": "https://covers.openlibrary.org/b/isbn/0694526088-M.jpg"
+  },
+  "390": {
+    "path": "covers/390.jpg",
+    "sha256": "41f204bc996eb3b3a3be023e38bbb73af485495137a7af06058b1611861b901e",
+    "width": 180,
+    "height": 305,
+    "source": "https://covers.openlibrary.org/b/isbn/0451524381-M.jpg"
+  },
+  "391": {
+    "path": "covers/391.jpg",
+    "sha256": "4810aac25eeb932e85e2a5f32169a48a7eecdffe6cbff2aab0ee77f84a8aa763",
+    "width": 180,
+    "height": 294,
+    "source": "https://covers.openlibrary.org/b/isbn/1558503919-M.jpg"
+  },
+  "392": {
+    "path": "covers/392.jpg",
+    "sha256": "75ad25f3b471e5a778eb056990a4e3b682233e6d8091bd9d60f0b30077ed79cd",
+    "width": 180,
+    "height": 295,
+    "source": "https://covers.openlibrary.org/b/isbn/0937539635-M.jpg"
+  },
+  "393": {
+    "path": "covers/393.jpg",
+    "sha256": "cc2da1ac8349aec0ebf369ee95bd6a26cd7a3405722f3fa7aab2c0726c5fa59c",
+    "width": 128,
+    "height": 195,
+    "source": "https://covers.openlibrary.org/b/isbn/1888766018-M.jpg"
+  },
+  "394": {
+    "path": "covers/394.jpg",
+    "sha256": "59edf6a3e36b9484f6a6ac58007dfa99dcb08ace71ff81ba8f2fd896d2934292",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0425098478-M.jpg"
+  },
+  "395": {
+    "path": "covers/395.jpg",
+    "sha256": "4156346698c00c654a6e18cd5a322472e79422c82e08c6e9567dc6a70e452401",
+    "width": 180,
+    "height": 280,
+    "source": "https://covers.openlibrary.org/b/isbn/1580622240-M.jpg"
+  },
+  "396": {
+    "path": "covers/396.jpg",
+    "sha256": "61a7b5316433d1ffeaf81afdf93424ad26e647d3816f7b7c65e3152d53bf82f7",
+    "width": 128,
+    "height": 226,
+    "source": "https://covers.openlibrary.org/b/isbn/0345302834-M.jpg"
+  },
+  "397": {
+    "path": "covers/397.jpg",
+    "sha256": "1c2f0cbf8f6d64597b36e45d24626db413ffa797e41acfd683babba46f743ff8",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/155927378X-M.jpg"
+  },
+  "398": {
+    "path": "covers/398.jpg",
+    "sha256": "db0f5e1e07720feec062612554e15a4fe6e91b24b06c0ac6cf60e16e419cf10f",
+    "width": 180,
+    "height": 233,
+    "source": "https://covers.openlibrary.org/b/isbn/087337617X-M.jpg"
+  },
+  "399": {
+    "path": "covers/399.jpg",
+    "sha256": "05eb10480dfb6defaf0bbe49c28d08712d23f226e98052c3cf4331590cfe5f62",
+    "width": 180,
+    "height": 155,
+    "source": "https://covers.openlibrary.org/b/isbn/1586210912-M.jpg"
+  },
+  "400": {
+    "path": "covers/400.jpg",
+    "sha256": "171bd44a11da69d1295e314a80c7f52d192f6aafcc943b2d4c3c13cb8d847c53",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/isbn/0906212456-M.jpg"
+  },
+  "401": {
+    "path": "covers/401.jpg",
+    "sha256": "5f1aabbfe51c596d0a0b8ba4499a01d7c3af1003ea9afcd508c3ba9738a58835",
+    "width": 180,
+    "height": 305,
+    "source": "https://covers.openlibrary.org/b/isbn/044011120X-M.jpg"
+  },
+  "402": {
+    "path": "covers/402.jpg",
+    "sha256": "f46418e62c76f17d6d5b73481eec4b7f3f75c8c0c233f37b16ffcf0ad86d6d27",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0070511144-M.jpg"
+  },
+  "403": {
+    "path": "covers/403.jpg",
+    "sha256": "1c366cf7cb5a807e3b619ca8f32ba0c7fd330eeaf9324a3a8f3f1977bf79c33d",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/isbn/0452283426-M.jpg"
+  },
+  "404": {
+    "path": "covers/404.jpg",
+    "sha256": "e7ce31a661f9eaaed7745b08f44c1b2b1bf6dc0bb0e660c3d48f29fd37d75bdf",
+    "width": 180,
+    "height": 288,
+    "source": "https://covers.openlibrary.org/b/isbn/0671219715-M.jpg"
+  },
+  "405": {
+    "path": "covers/405.jpg",
+    "sha256": "ccf5eff3fb3e2dd8cca41700e19f5940d9b133f9354b000e1fda9139865059e4",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/isbn/0300042086-M.jpg"
+  },
+  "407": {
+    "path": "covers/407.jpg",
+    "sha256": "9c61790a27a0790f4abd443812e2e395b02406625561d80f8a10f45d53d0eb81",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/isbn/1585420492-M.jpg"
+  },
+  "408": {
+    "path": "covers/408.jpg",
+    "sha256": "25ddd69f26513f4027980b8c82b335171e795239ff70750fd9855bbd44356912",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/isbn/1882330285-M.jpg"
+  },
+  "409": {
+    "path": "covers/409.jpg",
+    "sha256": "8e7b6b9621db97b58753dcdea4c5f1e9035b70f4cb6b99b23fe50e36df02e1fa",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/id/12986375-M.jpg"
+  },
+  "410": {
+    "path": "covers/410.jpg",
+    "sha256": "24672053a9026736dea1ab09c3271c5d765c786bbaee3a8f53645a62c135c62f",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/0553276999-M.jpg"
+  },
+  "411": {
+    "path": "covers/411.jpg",
+    "sha256": "a8a53db7846ccdbe27975da7cbcc598d94ee53fe295fcef3c6543465dcd3c018",
+    "width": 180,
+    "height": 244,
+    "source": "https://covers.openlibrary.org/b/isbn/0395428572-M.jpg"
+  },
+  "412": {
+    "path": "covers/412.jpg",
+    "sha256": "61d7079fb849b242cd96c7fea3fba48130fd3b710fb1b34ffb98b7e89ac3c4a1",
+    "width": 128,
+    "height": 184,
+    "source": "https://books.google.com/books/content?vid=isbn:9780918393692&printsec=frontcover&img=1&zoom=1"
+  },
+  "413": {
+    "path": "covers/413.jpg",
+    "sha256": "b12c57c5532c6e946594a5749b59774d5497e141b03a7c220ec29fea79d8fff8",
+    "width": 180,
+    "height": 288,
+    "source": "https://covers.openlibrary.org/b/id/134179-M.jpg"
+  },
+  "414": {
+    "path": "covers/414.jpg",
+    "sha256": "e754c55c3677a3aef4e5de60a1ac42a620ee19e7adc01eeae352de80b34157e8",
+    "width": 180,
+    "height": 293,
+    "source": "https://covers.openlibrary.org/b/isbn/0471052906-M.jpg"
+  },
+  "415": {
+    "path": "covers/415.jpg",
+    "sha256": "c6f482c3666cb1c639ee901487c6c2d3281ceb2f03ed0ea923a66a17db333ba4",
+    "width": 180,
+    "height": 240,
+    "source": "https://covers.openlibrary.org/b/isbn/0451520696-M.jpg"
+  },
+  "416": {
+    "path": "covers/416.jpg",
+    "sha256": "8906bbaba9da9462f90c8d579bbae80dcfb10da14e812e67050e7affd0257afc",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/0140714146-M.jpg"
+  },
+  "417": {
+    "path": "covers/417.jpg",
+    "sha256": "81faca2a694726253fe88096a8540e5768abdd5756144969cba24a1d24001ccf",
+    "width": 180,
+    "height": 178,
+    "source": "https://covers.openlibrary.org/b/isbn/0002171856-M.jpg"
+  },
+  "418": {
+    "path": "covers/418.jpg",
+    "sha256": "a50c8c68e5f03269b02c6b74b3c9c210e047f567489e48fe835cdddd7d7a6e47",
+    "width": 180,
+    "height": 301,
+    "source": "https://covers.openlibrary.org/b/isbn/0553239740-M.jpg"
+  },
+  "419": {
+    "path": "covers/419.jpg",
+    "sha256": "f5bd6d99f25fa6d449da05fda55c1f0922c246e88a835fa2b41af6ca1013123e",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/isbn/1880184109-M.jpg"
+  },
+  "420": {
+    "path": "covers/420.jpg",
+    "sha256": "e8fe5d3f2e87b8e84ecd9acf3746aad3262d604316876fe4ab1c254ce13b44e5",
+    "width": 180,
+    "height": 241,
+    "source": "https://covers.openlibrary.org/b/isbn/156305339X-M.jpg"
+  },
+  "421": {
+    "path": "covers/421.jpg",
+    "sha256": "addb49ca5bb803f402faedd4c0d048732237cbd940277492224da34efdfe5f38",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0894803204-M.jpg"
+  },
+  "423": {
+    "path": "covers/423.jpg",
+    "sha256": "c02b99913b6ddcc0cae4cb4850c83946a110e64074264d972798fef088571f11",
+    "width": 180,
+    "height": 310,
+    "source": "https://covers.openlibrary.org/b/isbn/0451523113-M.jpg"
+  },
+  "424": {
+    "path": "covers/424.jpg",
+    "sha256": "74eb5fbc96a51fe3ee7ec93b5598ab3831bfd84873c335dddfd92664ac3d8137",
+    "width": 128,
+    "height": 175,
+    "source": "https://covers.openlibrary.org/b/isbn/0810924145-M.jpg"
+  },
+  "425": {
+    "path": "covers/425.jpg",
+    "sha256": "452e6690f9a637d981aeb116711e45fb539c6dc6a05171ebe0336350d7919c6e",
+    "width": 180,
+    "height": 303,
+    "source": "https://covers.openlibrary.org/b/isbn/0451521374-M.jpg"
+  },
+  "426": {
+    "path": "covers/426.jpg",
+    "sha256": "ca9d45800fac2a8fcfeaa82bed1b242c76ea7508de1fc69b02069c5b8b4878ab",
+    "width": 180,
+    "height": 302,
+    "source": "https://covers.openlibrary.org/b/isbn/0451521250-M.jpg"
+  },
+  "427": {
+    "path": "covers/427.jpg",
+    "sha256": "ffc54f5d9675fe6d66b1e31eee772abeb93bc88e20e2f12d7ee8bf2eab6ab869",
+    "width": 180,
+    "height": 203,
+    "source": "https://covers.openlibrary.org/b/isbn/0743509218-M.jpg"
+  },
+  "428": {
+    "path": "covers/428.jpg",
+    "sha256": "925a9a4456ff3b5aeca9e5f7b08c080e4a57e3f905e7c884d0efe285224aa83a",
+    "width": 180,
+    "height": 356,
+    "source": "https://covers.openlibrary.org/b/isbn/0471146609-M.jpg"
+  },
+  "429": {
+    "path": "covers/429.jpg",
+    "sha256": "98a2107e496d0d927e3c3040409997db89a971a2a50f772221c83234fa82fb65",
+    "width": 128,
+    "height": 158,
+    "source": "https://covers.openlibrary.org/b/isbn/0131958844-M.jpg"
+  },
+  "430": {
+    "path": "covers/430.jpg",
+    "sha256": "461454eb7b033d0dc19a2d439e80ef99c5fbffa43027130d089c6cf4ff0632c3",
+    "width": 180,
+    "height": 130,
+    "source": "https://covers.openlibrary.org/b/isbn/0671635670-M.jpg"
+  },
+  "431": {
+    "path": "covers/431.jpg",
+    "sha256": "63246dff74685679018bb36f43c569e7f32010d384fa21535fa6c8083dc0be6a",
+    "width": 180,
+    "height": 236,
+    "source": "https://covers.openlibrary.org/b/isbn/1882723252-M.jpg"
+  },
+  "432": {
+    "path": "covers/432.jpg",
+    "sha256": "708e04084cc936ce22684a649ee365748f5890859e794cc9b18af76b34ec2973",
+    "width": 180,
+    "height": 228,
+    "source": "https://covers.openlibrary.org/b/isbn/0064671429-M.jpg"
+  },
+  "433": {
+    "path": "covers/433.jpg",
+    "sha256": "58f9df045aa35ff546d694c5335b283b2a315a583c83b115048fc945a8c4b155",
+    "width": 180,
+    "height": 293,
+    "source": "https://covers.openlibrary.org/b/isbn/0671569112-M.jpg"
+  },
+  "434": {
+    "path": "covers/434.jpg",
+    "sha256": "4e1169b2482e1eeeabeff09524b59da1ac40d14d018ed0a6eca9a4a703e6fbff",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/isbn/044098761X-M.jpg"
+  },
+  "435": {
+    "path": "covers/435.jpg",
+    "sha256": "8e85dfe0448d26ce145535ded52655d50a8127545fe256c28ff6f827dfc2c551",
+    "width": 180,
+    "height": 238,
+    "source": "https://covers.openlibrary.org/b/isbn/1590598296-M.jpg"
+  },
+  "436": {
+    "path": "covers/436.jpg",
+    "sha256": "a6f602b052531d39fdd2a4c157d95b5616be2b0c434c94fd3f9fa6f888e8c3a8",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/isbn/0874776953-M.jpg"
+  },
+  "437": {
+    "path": "covers/437.jpg",
+    "sha256": "c91966ff360f07d8d48cdbd033720e52f4ee6cf3dfbd9a57e32091347c654349",
+    "width": 180,
+    "height": 293,
+    "source": "https://covers.openlibrary.org/b/isbn/0440901588-M.jpg"
+  },
+  "438": {
+    "path": "covers/438.jpg",
+    "sha256": "473d61283d084f1c13869f82a4c7e85253213b08341801ee14cbcb83e37e8b0f",
+    "width": 180,
+    "height": 278,
+    "source": "https://covers.openlibrary.org/b/isbn/155874262X-M.jpg"
+  },
+  "439": {
+    "path": "covers/439.jpg",
+    "sha256": "9eb23b5dcb37075fd12e69d38ae8dc555c1ed80ef99cb0a35f543cf94a9b88db",
+    "width": 175,
+    "height": 360,
+    "source": "https://covers.openlibrary.org/b/isbn/0671502352-M.jpg"
+  },
+  "440": {
+    "path": "covers/440.jpg",
+    "sha256": "024e48c5823df213adec6433bfc3b2786c8af54d38ebd8436d1d9d48c418c664",
+    "width": 180,
+    "height": 222,
+    "source": "https://covers.openlibrary.org/b/isbn/159240328X-M.jpg"
+  },
+  "441": {
+    "path": "covers/441.jpg",
+    "sha256": "6f6af1d9addd54cc8dce2ebe9dc2be2b2b61ce6314e86002b570c3207089173b",
+    "width": 180,
+    "height": 298,
+    "source": "https://covers.openlibrary.org/b/id/10432365-M.jpg"
+  },
+  "443": {
+    "path": "covers/443.jpg",
+    "sha256": "5ce949d970630d45c1ba60f0bdd22c9a0f0f1f0b0c0fd51712bbba12a57fe8bf",
+    "width": 180,
+    "height": 311,
+    "source": "https://covers.openlibrary.org/b/isbn/055327757X-M.jpg"
+  },
+  "444": {
+    "path": "covers/444.jpg",
+    "sha256": "c0597d39b24fd7bc8f2be64e464fdf4fe9cd7e741cc3b049f2faf6f3c79b6f43",
+    "width": 180,
+    "height": 222,
+    "source": "https://covers.openlibrary.org/b/isbn/0600615189-M.jpg"
+  },
+  "445": {
+    "path": "covers/445.jpg",
+    "sha256": "b20f8a51ec13686296568a50c704d2db7fdfb543aef1c42a46c1b4f3ed77e9ba",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/0684846411-M.jpg"
+  },
+  "446": {
+    "path": "covers/446.jpg",
+    "sha256": "dda7a8275be56cf514a1160bfcbb74cd31cb47338c8d2b7114857d6d09ed38af",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0192813897-M.jpg"
+  },
+  "447": {
+    "path": "covers/447.jpg",
+    "sha256": "86ec564f31c95dc5f416c1b90ee4ea2181a1bc867643588778fb4d4561961f74",
+    "width": 180,
+    "height": 291,
+    "source": "https://covers.openlibrary.org/b/isbn/0451522648-M.jpg"
+  },
+  "448": {
+    "path": "covers/448.jpg",
+    "sha256": "e976cb60bf126500d8601d27aad774404a25396b5f3ac4851eee116671d33279",
+    "width": 180,
+    "height": 141,
+    "source": "https://covers.openlibrary.org/b/isbn/0854870806-M.jpg"
+  },
+  "449": {
+    "path": "covers/449.jpg",
+    "sha256": "3863419d2340502bbd18509113fd4f842ac1067e5de97e472fa574c8c5077d42",
+    "width": 180,
+    "height": 265,
+    "source": "https://covers.openlibrary.org/b/isbn/0929261135-M.jpg"
+  },
+  "450": {
+    "path": "covers/450.jpg",
+    "sha256": "7d558d83793d994aed36c3cb43202b9101f085812e7e166b2f546e95c121f398",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/isbn/1576600769-M.jpg"
+  },
+  "451": {
+    "path": "covers/451.jpg",
+    "sha256": "45c91a62ea6e452100ec83aad2e8ffde400acdd75a3aed785f734bb40b2b8603",
+    "width": 180,
+    "height": 299,
+    "source": "https://covers.openlibrary.org/b/isbn/0553262637-M.jpg"
+  },
+  "452": {
+    "path": "covers/452.jpg",
+    "sha256": "fd666a33e00c501fce13b8f078d40740c7c2b9156dea5554bf4bf1a073dd557f",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/080706307X-M.jpg"
+  },
+  "453": {
+    "path": "covers/453.jpg",
+    "sha256": "17725f8946bd44419e15d5b57064ca63d4512b1f38c8660ca14483cf124681d1",
+    "width": 180,
+    "height": 303,
+    "source": "https://covers.openlibrary.org/b/isbn/0451524055-M.jpg"
+  },
+  "454": {
+    "path": "covers/454.jpg",
+    "sha256": "db2f53c5f47f028e667f3f1a604d941b4e1b2b07077782c49dbdcb326bd8a0b1",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/0807020044-M.jpg"
+  },
+  "455": {
+    "path": "covers/455.jpg",
+    "sha256": "588b36a94e09aa6bda93446fd20d0a71b527e15d257347099399fce0f9edd441",
+    "width": 180,
+    "height": 301,
+    "source": "https://covers.openlibrary.org/b/isbn/0451524101-M.jpg"
+  },
+  "456": {
+    "path": "covers/456.jpg",
+    "sha256": "b9f322b87f584b7449968d2a1f21400e162d63b14b1ebe96c0c7a8a4311d6379",
+    "width": 180,
+    "height": 234,
+    "source": "https://covers.openlibrary.org/b/isbn/0201590654-M.jpg"
+  },
+  "457": {
+    "path": "covers/457.jpg",
+    "sha256": "bae86faa4bcae767b8c93b356827e3d178dccbcd8a4415e0b2ed4a9da390e1cc",
+    "width": 180,
+    "height": 244,
+    "source": "https://covers.openlibrary.org/b/isbn/0451522532-M.jpg"
+  },
+  "458": {
+    "path": "covers/458.jpg",
+    "sha256": "ec04f113979742e26fcd00f0d867c003bffbffda14a70f66e681e65b5db621f4",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/isbn/1568582498-M.jpg"
+  },
+  "459": {
+    "path": "covers/459.jpg",
+    "sha256": "65759387fc6b9fbb2a4f6be1b91250779536a2bca91dd7b269c5c530acf7a4cf",
+    "width": 180,
+    "height": 304,
+    "source": "https://covers.openlibrary.org/b/isbn/088404632X-M.jpg"
+  },
+  "460": {
+    "path": "covers/460.jpg",
+    "sha256": "74be4559944ff31925c9a603b00af29a6841ada9bef969cda3ff7024a9ae3400",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/isbn/0938399101-M.jpg"
+  },
+  "461": {
+    "path": "covers/461.jpg",
+    "sha256": "94e67163bc0c45647442dd56fd6729d1d40c2c8487f5555a88e1b0401723f826",
+    "width": 128,
+    "height": 205,
+    "source": "https://covers.openlibrary.org/b/isbn/0671851527-M.jpg"
+  },
+  "462": {
+    "path": "covers/462.jpg",
+    "sha256": "63aead76d9edae39bca8f850f871ec46d7126975e13fe670bb31c25da013aeb2",
+    "width": 180,
+    "height": 199,
+    "source": "https://covers.openlibrary.org/b/isbn/0060591870-M.jpg"
+  },
+  "463": {
+    "path": "covers/463.jpg",
+    "sha256": "0367ee288f134bc43a0a79b2a1b24aad6c85887a07468045071e4c930bbb19e6",
+    "width": 180,
+    "height": 199,
+    "source": "https://covers.openlibrary.org/b/isbn/1591793785-M.jpg"
+  },
+  "464": {
+    "path": "covers/464.jpg",
+    "sha256": "2c354426ef0f527aa283875d10847d23388397c2988976f0c0a1627752462b4a",
+    "width": 180,
+    "height": 236,
+    "source": "https://covers.openlibrary.org/b/isbn/0920668887-M.jpg"
+  },
+  "465": {
+    "path": "covers/465.jpg",
+    "sha256": "b59f6384977e09eb0e2d7716917ff757652009c8b060d2b7a2c50d4da02588bc",
+    "width": 180,
+    "height": 250,
+    "source": "https://covers.openlibrary.org/b/isbn/1563831511-M.jpg"
+  },
+  "466": {
+    "path": "covers/466.jpg",
+    "sha256": "a39c0f324fc2806cd7bdb9da72139c415d007264426905baed72f85cece13c75",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0385336535-M.jpg"
+  },
+  "467": {
+    "path": "covers/467.jpg",
+    "sha256": "4ad8168fb4914192733be3f6c52a38852277f754dda2825fcd68b940df412fc1",
+    "width": 180,
+    "height": 229,
+    "source": "https://covers.openlibrary.org/b/isbn/0395938473-M.jpg"
+  },
+  "468": {
+    "path": "covers/468.jpg",
+    "sha256": "caec8436e78c0146dc5b233de5fb86436904de0f04763d035161d8a0bf98d3f8",
+    "width": 180,
+    "height": 278,
+    "source": "https://covers.openlibrary.org/b/isbn/0689705557-M.jpg"
+  },
+  "469": {
+    "path": "covers/469.jpg",
+    "sha256": "407d97ea5a0b9245c7d360150b439b3e1c7c049c2f5ea8222377065750e9c3fd",
+    "width": 180,
+    "height": 295,
+    "source": "https://covers.openlibrary.org/b/isbn/0345297709-M.jpg"
+  },
+  "470": {
+    "path": "covers/470.jpg",
+    "sha256": "273f8607b275f6b8db776cc86a772df9f1df2d7dc21864ad8854175e92b43e76",
+    "width": 180,
+    "height": 301,
+    "source": "https://covers.openlibrary.org/b/isbn/0345318862-M.jpg"
+  },
+  "471": {
+    "path": "covers/471.jpg",
+    "sha256": "45cf5016c22e5cbf606dc1a6b6d8a06dedc779e99cb3085a88484f4db153763b",
+    "width": 128,
+    "height": 203,
+    "source": "https://covers.openlibrary.org/b/isbn/0140286780-M.jpg"
+  },
+  "472": {
+    "path": "covers/472.jpg",
+    "sha256": "fb00ab251b2ceeafbff1f3d246e55b08f40ccc292020319600362ff18d0d9e58",
+    "width": 180,
+    "height": 301,
+    "source": "https://covers.openlibrary.org/b/isbn/0345350588-M.jpg"
+  },
+  "473": {
+    "path": "covers/473.jpg",
+    "sha256": "5c8a33a5520a650c287e4eba74c5c55d955eb5ee3546fda02eb133a17b4f6a09",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/isbn/0684825074-M.jpg"
+  },
+  "474": {
+    "path": "covers/474.jpg",
+    "sha256": "c2874aba2e1075ee3fced67405eac91b1755974f54b55df6fb1a8e0add952638",
+    "width": 180,
+    "height": 308,
+    "source": "https://covers.openlibrary.org/b/isbn/0345296044-M.jpg"
+  },
+  "475": {
+    "path": "covers/475.jpg",
+    "sha256": "48b0a0d465872713288fbeebcf56d922b8bb6f51f39c35b6c5e3e9c188c75c18",
+    "width": 180,
+    "height": 307,
+    "source": "https://covers.openlibrary.org/b/isbn/0786173270-M.jpg"
+  },
+  "476": {
+    "path": "covers/476.jpg",
+    "sha256": "84b5c516b3520b8954ec1a326155f5ed6f1ddd7840f96d5aa3c021b6b432da47",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0446386278-M.jpg"
+  },
+  "477": {
+    "path": "covers/477.jpg",
+    "sha256": "8fbe763d5b991ecffb06a48f0dce33da5de1f9876fc873a37d2b2372db603441",
+    "width": 180,
+    "height": 282,
+    "source": "https://covers.openlibrary.org/b/isbn/0802132189-M.jpg"
+  },
+  "478": {
+    "path": "covers/478.jpg",
+    "sha256": "558be8841ecc7129f825ef64d0eed0a85a9c0792f0adc1c5707ab3083721994d",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/isbn/0451529065-M.jpg"
+  },
+  "479": {
+    "path": "covers/479.jpg",
+    "sha256": "35b52b0316146929be0a087446dfc5d9e4943fdf8676d403af465324638a6276",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/isbn/0345384563-M.jpg"
+  },
+  "480": {
+    "path": "covers/480.jpg",
+    "sha256": "089c3ba0ccf0055996e496357c561e2330bec38acadcab79cf7b3123b76a141c",
+    "width": 180,
+    "height": 225,
+    "source": "https://covers.openlibrary.org/b/isbn/0060256575-M.jpg"
+  },
+  "481": {
+    "path": "covers/481.jpg",
+    "sha256": "7625606655196a82aeaec6169d8501e873f09ca853f21f933bb47f799d27bc7c",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/isbn/0380759489-M.jpg"
+  },
+  "482": {
+    "path": "covers/482.jpg",
+    "sha256": "e694ab12dff3a1a3fc7fac2f7673d41104dd45eb576337d9514fc001905e24e1",
+    "width": 180,
+    "height": 265,
+    "source": "https://covers.openlibrary.org/b/isbn/0440498058-M.jpg"
+  },
+  "483": {
+    "path": "covers/483.jpg",
+    "sha256": "20c111206fe2f3aff03ee9592c6728b39a4b2819f27b8e2fbed1fa65f57b14a9",
+    "width": 180,
+    "height": 281,
+    "source": "https://covers.openlibrary.org/b/isbn/0142437336-M.jpg"
+  },
+  "484": {
+    "path": "covers/484.jpg",
+    "sha256": "cbffc8020e1cacb18a701154c49b07a8c7f86221adf47c2b569456d228a05bfc",
+    "width": 180,
+    "height": 278,
+    "source": "https://covers.openlibrary.org/b/isbn/0385333781-M.jpg"
+  },
+  "485": {
+    "path": "covers/485.jpg",
+    "sha256": "b5c8c3d250ec0428b2984fe63f048c4ced1116fe91504ea2392697a492f69cf6",
+    "width": 180,
+    "height": 247,
+    "source": "https://covers.openlibrary.org/b/isbn/0380977265-M.jpg"
+  },
+  "486": {
+    "path": "covers/486.jpg",
+    "sha256": "f62bd730d47f642cbe0ae5033852e721790cc5ff3a9e1a75f66588424063050b",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/isbn/0140442405-M.jpg"
+  },
+  "487": {
+    "path": "covers/487.jpg",
+    "sha256": "a271bb1773d51ad05e5e08c30cd7841820ac2406cb6c2e10dd5b96187bffb7e5",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/isbn/0385334206-M.jpg"
+  },
+  "488": {
+    "path": "covers/488.jpg",
+    "sha256": "7706196a1ad04fcd64f82388a176f34219686c87e20c30c7e88c0a516ea1dfca",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/isbn/0679724699-M.jpg"
+  },
+  "489": {
+    "path": "covers/489.jpg",
+    "sha256": "cc900660e9311871d078d2ba78bc0d16c4e1b4badc1b15b90e04d167ba258ad0",
+    "width": 180,
+    "height": 280,
+    "source": "https://covers.openlibrary.org/b/id/8237052-M.jpg"
+  },
+  "490": {
+    "path": "covers/490.jpg",
+    "sha256": "99344fb3d75af9a39e00d1adba350e387950c53d0d705e8baa8c528b0e0a5178",
+    "width": 180,
+    "height": 278,
+    "source": "https://covers.openlibrary.org/b/id/6717606-M.jpg"
+  },
+  "491": {
+    "path": "covers/491.jpg",
+    "sha256": "783a2d6084126c662f3622ca557ff4d9dea0a60bc7f6491aface64639ba91112",
+    "width": 180,
+    "height": 300,
+    "source": "https://covers.openlibrary.org/b/id/5890987-M.jpg"
+  },
+  "493": {
+    "path": "covers/493.jpg",
+    "sha256": "2ddd18cfeaa5056a366efb8a1ce1396c11f11ae3b2de82db86447f8871291609",
+    "width": 180,
+    "height": 289,
+    "source": "https://covers.openlibrary.org/b/id/8223160-M.jpg"
+  },
+  "494": {
+    "path": "covers/494.jpg",
+    "sha256": "fc0e4aa7fa2efd517c4ce6ec5d5738134d48d15a25269d3316956974cf4338f7",
+    "width": 180,
+    "height": 269,
+    "source": "https://covers.openlibrary.org/b/id/6803634-M.jpg"
+  },
+  "495": {
+    "path": "covers/495.jpg",
+    "sha256": "36fc5604d7f86dddbf058d54ccc7cef37125ab97111e798c4d4a8cafc84de60e",
+    "width": 180,
+    "height": 233,
+    "source": "https://covers.openlibrary.org/b/id/12504824-M.jpg"
+  },
+  "496": {
+    "path": "covers/496.jpg",
+    "sha256": "1f89aa9474974b3b9a9234dadedd70aca6b73220d0a4441053cad0de3bfebee7",
+    "width": 180,
+    "height": 249,
+    "source": "https://covers.openlibrary.org/b/id/551262-M.jpg"
+  },
+  "497": {
+    "path": "covers/497.jpg",
+    "sha256": "6e52e39ec3644170733c877d29a9edd9a6ea196231cb4e7c21bf2ffca7252231",
+    "width": 300,
+    "height": 447,
+    "source": "http://books.google.com/books/content?id=NfHoCgAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "498": {
+    "path": "covers/498.jpg",
+    "sha256": "c78f1f0a42bbae4450fa315d5f4431c997a4bd9e64862e47e755174eca924d13",
+    "width": 180,
+    "height": 285,
+    "source": "https://covers.openlibrary.org/b/id/12707846-M.jpg"
+  },
+  "499": {
+    "path": "covers/499.jpg",
+    "sha256": "46247a85c17293f9eb4bdd077632be06b4ab07fe7364853550bf74137d8344da",
+    "width": 180,
+    "height": 277,
+    "source": "https://covers.openlibrary.org/b/id/13048826-M.jpg"
+  },
+  "500": {
+    "path": "covers/500.jpg",
+    "sha256": "98f241bfcdf14ac47f58a17f6a95c1f0ba5aa052054a6cf5ae2f5cb8cad9901f",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/id/13335427-M.jpg"
+  },
+  "501": {
+    "path": "covers/501.jpg",
+    "sha256": "935e38541f1615ba288d955e1d08448eab0b7005fcbbbecab2bc8a7a287706d8",
+    "width": 180,
+    "height": 296,
+    "source": "https://covers.openlibrary.org/b/id/8004070-M.jpg"
+  },
+  "502": {
+    "path": "covers/502.jpg",
+    "sha256": "80e8d753624fb6e4a86e892bd5dc7be538db4a42da0b3a6ce4a5eb62e4a31af8",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/id/797467-M.jpg"
+  },
+  "503": {
+    "path": "covers/503.jpg",
+    "sha256": "2e3b9ce69713e97075a69fb9a3f00fc084d75feb77613ba8972a1a6134815005",
+    "width": 180,
+    "height": 294,
+    "source": "https://covers.openlibrary.org/b/id/248248-M.jpg"
+  },
+  "505": {
+    "path": "covers/505.jpg",
+    "sha256": "6f513fb74a361c3df8b12e841c5c5c22e3405ca8c46e96ec58130dab7db30e8d",
+    "width": 180,
+    "height": 237,
+    "source": "https://covers.openlibrary.org/b/id/3043711-M.jpg"
+  },
+  "506": {
+    "path": "covers/506.jpg",
+    "sha256": "e2859cf8b4dd56e824fe21c5111588368e3dca33c0bdda03f6d7868d0eecad70",
+    "width": 180,
+    "height": 257,
+    "source": "https://covers.openlibrary.org/b/isbn/9781857588446-M.jpg"
+  },
+  "507": {
+    "path": "covers/507.jpg",
+    "sha256": "5f19ba94d95926a3fe6d18c34a8f1a16590b25920855c264e2e3086280afd31d",
+    "width": 180,
+    "height": 266,
+    "source": "https://covers.openlibrary.org/b/id/10858608-M.jpg"
+  },
+  "508": {
+    "path": "covers/508.jpg",
+    "sha256": "8336773c5ffef46ee5ea8f219af9de5a9748c2461c870d0680e0c39d7cf46614",
+    "width": 300,
+    "height": 444,
+    "source": "http://books.google.com/books/content?id=J04YAAAAYAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "509": {
+    "path": "covers/509.jpg",
+    "sha256": "86d92ca7bc0139c4fb2b98364fe0e854fa09da8c39c224d3418b3a1b65d38d72",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/id/760358-M.jpg"
+  },
+  "510": {
+    "path": "covers/510.jpg",
+    "sha256": "013dcfa0d22525bf1f9c36dde316832cbe2cec68fd0cd3f038f1c225bad0df31",
+    "width": 180,
+    "height": 284,
+    "source": "https://covers.openlibrary.org/b/id/1168119-M.jpg"
+  },
+  "511": {
+    "path": "covers/511.jpg",
+    "sha256": "c7558f324816616e90ed999cb537817cc798739857b6f01cedd3f80096b5df2d",
+    "width": 180,
+    "height": 263,
+    "source": "https://covers.openlibrary.org/b/id/8311524-M.jpg"
+  },
+  "512": {
+    "path": "covers/512.jpg",
+    "sha256": "9c7bb77007989977413c41ac586ec121c48777f8fb4a2ff71bb5dead5d8b55d0",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/id/13882953-M.jpg"
+  },
+  "513": {
+    "path": "covers/513.jpg",
+    "sha256": "d806f60c5b8975b338f763494628cf4fdb0f1c623ac5bdc00e0e951cb92972dc",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/id/11065419-M.jpg"
+  },
+  "514": {
+    "path": "covers/514.jpg",
+    "sha256": "6978af542c8630e98f4e66616299b62e744f4305357deb156acc2d1ac71d7487",
+    "width": 180,
+    "height": 225,
+    "source": "https://covers.openlibrary.org/b/id/606533-M.jpg"
+  },
+  "515": {
+    "path": "covers/515.jpg",
+    "sha256": "e5a0a2d13f793e83350de07ff7e8ac2a18906427c39668208fea60b8bb7caf17",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/id/8610816-M.jpg"
+  },
+  "516": {
+    "path": "covers/516.jpg",
+    "sha256": "16ead097142ed45163b371d12fa4910152aba55afcc5689985d7cacb063ece5b",
+    "width": 180,
+    "height": 302,
+    "source": "https://covers.openlibrary.org/b/id/10375406-M.jpg"
+  },
+  "517": {
+    "path": "covers/517.jpg",
+    "sha256": "aa882f82f55416bf6f1959777ac5b7b92bb0966c6437f500ef5994012e706632",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/id/10829225-M.jpg"
+  },
+  "518": {
+    "path": "covers/518.jpg",
+    "sha256": "d7f120f25c56cc62ce070eba77fa8d1c4959f830ee1309c55dc0ec8e97346a3d",
+    "width": 300,
+    "height": 450,
+    "source": "http://books.google.com/books/content?id=lfJof4vMsQ0C&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "519": {
+    "path": "covers/519.jpg",
+    "sha256": "c33617c5c914b89cbde23234f07994fa29be0918eff54a1258b11d565ce2d913",
+    "width": 300,
+    "height": 400,
+    "source": "http://books.google.com/books/content?id=CzytDwAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "520": {
+    "path": "covers/520.jpg",
+    "sha256": "8a35d347e3f6618918efac2fc62e2339f3d4706a7d57008d1790c0c3f81aa507",
+    "width": 180,
+    "height": 273,
+    "source": "https://covers.openlibrary.org/b/id/12725620-M.jpg"
+  },
+  "521": {
+    "path": "covers/521.jpg",
+    "sha256": "6e9d1067ade8815fac1d15b4e77fdb00b83dfda5b38bc711e05c481aa9f519de",
+    "width": 180,
+    "height": 285,
+    "source": "https://covers.openlibrary.org/b/id/11639412-M.jpg"
+  },
+  "522": {
+    "path": "covers/522.jpg",
+    "sha256": "bf1193e0dd769b70037eee9bea5141cda5ae0b04eb59532589570c0fd3a98fb8",
+    "width": 180,
+    "height": 270,
+    "source": "https://covers.openlibrary.org/b/id/10021591-M.jpg"
+  },
+  "523": {
+    "path": "covers/523.jpg",
+    "sha256": "06e5dbdbaf2325fba5236a13fbda6285176c0665d35b181deacbe682d314bfef",
+    "width": 180,
+    "height": 315,
+    "source": "https://covers.openlibrary.org/b/id/5767180-M.jpg"
+  },
+  "524": {
+    "path": "covers/524.jpg",
+    "sha256": "6153146ae7c0949a561998c0b10eb070755545ac2555acfd628e04351f902f6d",
+    "width": 180,
+    "height": 229,
+    "source": "https://covers.openlibrary.org/b/id/8157718-M.jpg"
+  },
+  "525": {
+    "path": "covers/525.jpg",
+    "sha256": "6e5b5a14608c3d0c157001b99e220a69e764afed4750bccaab954e189388454e",
+    "width": 180,
+    "height": 279,
+    "source": "https://covers.openlibrary.org/b/id/7707611-M.jpg"
+  },
+  "526": {
+    "path": "covers/526.jpg",
+    "sha256": "869f04813d353bacd78a12cad1b466d3df0339f252c2f2b523c6be5b2b4712e6",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/id/12510738-M.jpg"
+  },
+  "527": {
+    "path": "covers/527.jpg",
+    "sha256": "f2a2f0ecdf50e794acca24d468684d5d67a98ebb8a9be5481a3a3c7bb1b2da8e",
+    "width": 180,
+    "height": 225,
+    "source": "https://covers.openlibrary.org/b/id/13791769-M.jpg"
+  },
+  "528": {
+    "path": "covers/528.jpg",
+    "sha256": "bb63b666f7bc7e7092557c1b06024a14faf877eb31f811350597e7992292f6e3",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/id/5598287-M.jpg"
+  },
+  "529": {
+    "path": "covers/529.jpg",
+    "sha256": "0f56a7370ca3c5f3b39b3d7c2a629be00f1521374e53c2d78bf4ff13ce438b9a",
+    "width": 180,
+    "height": 272,
+    "source": "https://covers.openlibrary.org/b/id/8779054-M.jpg"
+  },
+  "530": {
+    "path": "covers/530.jpg",
+    "sha256": "d77e40849424a8e52e2bee7059f27376b7f3ceb2fccfa3c4825e71df7f80a6ca",
+    "width": 180,
+    "height": 255,
+    "source": "https://covers.openlibrary.org/b/id/7273771-M.jpg"
+  },
+  "531": {
+    "path": "covers/531.jpg",
+    "sha256": "a9350c763dbf46dc046d5c97a355101e5227dc45e6b17acb61ad184309a73d8b",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/id/6297223-M.jpg"
+  },
+  "532": {
+    "path": "covers/532.jpg",
+    "sha256": "c9239c6be1d77bac755875afb959b485199cab3bc72c0c43ba563a9d2103b5e6",
+    "width": 300,
+    "height": 425,
+    "source": "http://books.google.com/books/content?id=5J4xEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "533": {
+    "path": "covers/533.jpg",
+    "sha256": "e9f1b5f4547d0fac5a6329d5d9c0fe8b96e331f8985606b5f7c4b4866ebceeb2",
+    "width": 180,
+    "height": 254,
+    "source": "https://covers.openlibrary.org/b/id/507331-M.jpg"
+  },
+  "535": {
+    "path": "covers/535.jpg",
+    "sha256": "cc4201a86cfa42850944b4c9bda42edf4fcccbf47aa3a4317860ff19367db6d9",
+    "width": 180,
+    "height": 301,
+    "source": "https://covers.openlibrary.org/b/id/8285726-M.jpg"
+  },
+  "536": {
+    "path": "covers/536.jpg",
+    "sha256": "f83fb7072fa40159acafaaa80a6d09877ab9ee2bb4489e2b099da0bfa23790e3",
+    "width": 180,
+    "height": 302,
+    "source": "https://covers.openlibrary.org/b/id/6536498-M.jpg"
+  },
+  "537": {
+    "path": "covers/537.jpg",
+    "sha256": "528a1d0f8b8cdb405010d698ac3c99ed7dba05082d5e96cadf224f2a9f37847c",
+    "width": 180,
+    "height": 101,
+    "source": "https://covers.openlibrary.org/b/id/13740501-M.jpg"
+  },
+  "538": {
+    "path": "covers/538.jpg",
+    "sha256": "1601d43a862a357b96404a83421b99ba9044f427b0715252a5aa9561136a02cf",
+    "width": 180,
+    "height": 280,
+    "source": "https://covers.openlibrary.org/b/id/101957-M.jpg"
+  },
+  "539": {
+    "path": "covers/539.jpg",
+    "sha256": "bb95217b0112d19b5ba3316a016980857b769edf10891e34192757f3d4bb667e",
+    "width": 180,
+    "height": 233,
+    "source": "https://covers.openlibrary.org/b/id/12366237-M.jpg"
+  },
+  "541": {
+    "path": "covers/541.jpg",
+    "sha256": "9edf2e2c54f6440d6703046bca9b8d86fb18703f34c15038e13307292e9d58ba",
+    "width": 180,
+    "height": 223,
+    "source": "https://covers.openlibrary.org/b/id/281904-M.jpg"
+  },
+  "542": {
+    "path": "covers/542.jpg",
+    "sha256": "5841ff248d0141030fc8de1020fec26147ce0d482789e43b0b9263486dd9e246",
+    "width": 180,
+    "height": 297,
+    "source": "https://covers.openlibrary.org/b/id/12284192-M.jpg"
+  },
+  "543": {
+    "path": "covers/543.jpg",
+    "sha256": "4913e7b11b63c11220d4a05be8808892490d09a30d5af4fcad35e1db22696293",
+    "width": 180,
+    "height": 237,
+    "source": "https://covers.openlibrary.org/b/id/6954427-M.jpg"
+  },
+  "544": {
+    "path": "covers/544.jpg",
+    "sha256": "4913e7b11b63c11220d4a05be8808892490d09a30d5af4fcad35e1db22696293",
+    "width": 180,
+    "height": 237,
+    "source": "https://covers.openlibrary.org/b/id/6954427-M.jpg"
+  },
+  "545": {
+    "path": "covers/545.jpg",
+    "sha256": "9e33dd497f14a1ad84d7d77a04ce07dbf0e427be93a8dc117bc9c2b4d2824667",
+    "width": 300,
+    "height": 464,
+    "source": "http://books.google.com/books/content?id=_P5FEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "546": {
+    "path": "covers/546.jpg",
+    "sha256": "603b672d8b990551c46bb045831ffe1c1c0fb6524f5021c2981365e3284e70cc",
+    "width": 300,
+    "height": 387,
+    "source": "http://books.google.com/books/content?id=Tc8a_5EYXsYC&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "547": {
+    "path": "covers/547.jpg",
+    "sha256": "8de4d1e80d62a08b19ed81498cc7dbfd45af0ac0b656617c7e3b0f9f8e306bc3",
+    "width": 180,
+    "height": 267,
+    "source": "https://covers.openlibrary.org/b/id/786796-M.jpg"
+  },
+  "548": {
+    "path": "covers/548.jpg",
+    "sha256": "d099f2f5606e86191328e75743243f46d5266753d4fb6f1e09f205db23348068",
+    "width": 300,
+    "height": 392,
+    "source": "http://books.google.com/books/content?id=LgNjEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "551": {
+    "path": "covers/551.jpg",
+    "sha256": "f5b5a96139bd25d7645d318d6fd01aaa905fdbb174ee23dc46130d5227040439",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51BFS345dcL._SL500_.jpg"
+  },
+  "552": {
+    "path": "covers/552.jpg",
+    "sha256": "dba3a4452c532806a969b92ae5910401b261ad49baac3282aa2f9535d7c6f0fa",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51Mc--F6zGL._SL500_.jpg"
+  },
+  "553": {
+    "path": "covers/553.jpg",
+    "sha256": "a3b0d6df4e65b89f54373cbded267c6b0cdf93910f0582ff46c02cb85e219a1d",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51nPwA34szL._SL500_.jpg"
+  },
+  "554": {
+    "path": "covers/554.jpg",
+    "sha256": "983399f9c1cc3dbdf400cd7b769c76e61d7961559af3f9ac552a5e1916541b9b",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51OnRqrn1fL._SL500_.jpg"
+  },
+  "555": {
+    "path": "covers/555.jpg",
+    "sha256": "a2d780eb5d70e666a70c242f8a496c25d2b116171210fa52d50b498dc8b321db",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/61I4uhEurbL._SL500_.jpg"
+  },
+  "556": {
+    "path": "covers/556.jpg",
+    "sha256": "ed7f1c7ea980bf5ffe1bb8ebc0e0a0843e1ac40475a6bb9a9ad87d12b5e5ceb3",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51J9H6SUlAL._SL500_.jpg"
+  },
+  "557": {
+    "path": "covers/557.jpg",
+    "sha256": "5e699a2c48c085bc981b327207cda42e92b74683522324a2a75e08363bd5cdaf",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/61ATYXnfndL._SL500_.jpg"
+  },
+  "558": {
+    "path": "covers/558.jpg",
+    "sha256": "c1ef4dc056ba4c00d6aa5dbe9446b2e02d6b48f8ea671e59065905c8c9fc4fdd",
+    "width": 300,
+    "height": 450,
+    "source": "http://books.google.com/books/content?id=r13bEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "559": {
+    "path": "covers/559.jpg",
+    "sha256": "747402e864ce79c5df17a65c03156464ef049e09f7b9aef2871fb24b01443645",
+    "width": 180,
+    "height": 220,
+    "source": "https://covers.openlibrary.org/b/id/11945339-M.jpg"
+  },
+  "560": {
+    "path": "covers/560.jpg",
+    "sha256": "ffc4b20dba75a23a1315885308cdbdd9903550f60da18142e9460fc28c6c9da0",
+    "width": 70,
+    "height": 115,
+    "source": "https://covers.openlibrary.org/b/id/12819924-M.jpg"
+  },
+  "561": {
+    "path": "covers/561.jpg",
+    "sha256": "35650bd8ea0061dc4e1e6fc4f34ca398f9ba81ee884bbf0407996eac24913fb0",
+    "width": 180,
+    "height": 271,
+    "source": "https://covers.openlibrary.org/b/id/10433791-M.jpg"
+  },
+  "562": {
+    "path": "covers/562.jpg",
+    "sha256": "9d04272f59d1373a352915c651849bb92a01350423d1950a53a6c40a3220174a",
+    "width": 180,
+    "height": 274,
+    "source": "https://covers.openlibrary.org/b/id/10296989-M.jpg"
+  },
+  "563": {
+    "path": "covers/563.jpg",
+    "sha256": "37e3995b7d3b2578975ffa6ca7e2d64080013950c7de1cc321d03af58f8f9fdc",
+    "width": 180,
+    "height": 275,
+    "source": "https://covers.openlibrary.org/b/id/10351762-M.jpg"
+  },
+  "564": {
+    "path": "covers/564.jpg",
+    "sha256": "08f2a5ca532a020618c2261eb59bfcb26fe5b10dd26e4ba68032352f525755d4",
+    "width": 180,
+    "height": 287,
+    "source": "https://covers.openlibrary.org/b/id/13861623-M.jpg"
+  },
+  "565": {
+    "path": "covers/565.jpg",
+    "sha256": "e1af1acf05d49882c0d7ab1802f31949a422e9ef8c89069b1a1736d2ce9a12dc",
+    "width": 180,
+    "height": 269,
+    "source": "https://covers.openlibrary.org/b/id/513564-M.jpg"
+  },
+  "566": {
+    "path": "covers/566.jpg",
+    "sha256": "52d663bca7736476cb4e06c2f8af1fc0a2df8c9379c7b50a95d538f7566a8c35",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51m4vm-iN2L._SL500_.jpg"
+  },
+  "567": {
+    "path": "covers/567.jpg",
+    "sha256": "5b0f37c233eeabd5250375a695446e015c09df8a0f19fec3c781761b822d9274",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51Z7eoYiGzL._SL500_.jpg"
+  },
+  "568": {
+    "path": "covers/568.jpg",
+    "sha256": "fc4b81025a13c29f9570d01f8ec18fecfdb29a0bb53e8af475f1cad4116e99ef",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51ezS2YVWqL._SL500_.jpg"
+  },
+  "569": {
+    "path": "covers/569.jpg",
+    "sha256": "65c14a578e22002db7aa9f22a17aa2ffe8363d784c2b1db7676cdaae57e83c29",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/41JZQ51E4tL._SL500_.jpg"
+  },
+  "570": {
+    "path": "covers/570.jpg",
+    "sha256": "607ef83555f2ce090c089bcd3dd8daa1dc0332521d4c16ae3626b16b27f40ba1",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/41xn1GVHw7L._SL500_.jpg"
+  },
+  "571": {
+    "path": "covers/571.jpg",
+    "sha256": "4cd5d4d54f88f3ec9da58c240bc7f07ad7646adf9c4e3e09f99471509a31e281",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51lfklYPaLL._SL500_.jpg"
+  },
+  "572": {
+    "path": "covers/572.jpg",
+    "sha256": "1aaaf4e5686562e9392fae470ba2cc5efa671abd6eb4ee4c6aab1e59ca92d5c5",
+    "width": 113,
+    "height": 180,
+    "source": "https://covers.openlibrary.org/b/id/2401616-M.jpg"
+  },
+  "574": {
+    "path": "covers/574.jpg",
+    "sha256": "eeb03ac70f00e0cd57654ae773e956bd21751621b249a91718f6f79d91c54dcb",
+    "width": 180,
+    "height": 292,
+    "source": "https://covers.openlibrary.org/b/id/10721468-M.jpg"
+  },
+  "575": {
+    "path": "covers/575.jpg",
+    "sha256": "4925898633ef6d4ca02826801713a8e5d00b9aae37d0554cddbb280847938539",
+    "width": 180,
+    "height": 291,
+    "source": "https://covers.openlibrary.org/b/id/13202688-M.jpg"
+  },
+  "576": {
+    "path": "covers/576.jpg",
+    "sha256": "680775dc02da7a23f45f3a50c2d0d3d686604362d04c25e57c0239a0311bbc37",
+    "width": 180,
+    "height": 276,
+    "source": "https://covers.openlibrary.org/b/id/8802285-M.jpg"
+  },
+  "577": {
+    "path": "covers/577.jpg",
+    "sha256": "e04d6b5c0a24a0e27f7c80e97b8e838639682b59fdfb3d05f8109415a59833eb",
+    "width": 180,
+    "height": 283,
+    "source": "https://covers.openlibrary.org/b/id/14464680-M.jpg"
+  },
+  "578": {
+    "path": "covers/578.jpg",
+    "sha256": "9018d4ff02102f87cd91192d1c2c6120e23ee132cdeb5ead4b997595c42b60bd",
+    "width": 300,
+    "height": 300,
+    "source": "http://books.google.com/books/content?id=QWqNXUcDDpAC&printsec=frontcover&img=1&zoom=2&source=gbs_api"
+  },
+  "579": {
+    "path": "covers/579.jpg",
+    "sha256": "10d4a83c081e596f66bee43e4d9bda9220cf368731c3f94132f7507e50aea4cf",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51MqqEK1DeL._SL500_.jpg"
+  },
+  "580": {
+    "path": "covers/580.jpg",
+    "sha256": "5e89ea521d094ec432f9b99180286e71e93e4a0cbacc25e79034133186907e43",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51jKVZ4jYGL._SL500_.jpg"
+  },
+  "581": {
+    "path": "covers/581.jpg",
+    "sha256": "87ea527f9ee70f3f2853f8258f2cf9bbb68489dc689ad96ccfa8efc7d59945f7",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51fPW4nQFSL._SL500_.jpg"
+  },
+  "582": {
+    "path": "covers/582.jpg",
+    "sha256": "08c9e1f29781a2b9edab5388ddb4efc48902c2399463c2f99991e94a4ad0a59b",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/512BM5zsdiL._SL500_.jpg"
+  },
+  "583": {
+    "path": "covers/583.jpg",
+    "sha256": "54e959db2c3e8aaebc902356c5de696ef73ec570b4b1dfb22e4a30da41a872d4",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/418SS6kidwL._SL500_.jpg"
+  },
+  "584": {
+    "path": "covers/584.jpg",
+    "sha256": "a5e414102a94ecb4fa099514e01ccfb655f727d91e75739b8e04e6534ecc4f4f",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51drOvG31BL._SL500_.jpg"
+  },
+  "585": {
+    "path": "covers/585.jpg",
+    "sha256": "e717e7ca54ecc85b14ad668acdf339612ec6c8bb6765095741e347946d41e6fe",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51zaTQ-iqSL._SL500_.jpg"
+  },
+  "586": {
+    "path": "covers/586.jpg",
+    "sha256": "b07bb707b3a6edfb4a9789567312cc927d41d88fe638c6829055fc0fed6926ba",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/41dfe587mFL._SL500_.jpg"
+  },
+  "587": {
+    "path": "covers/587.jpg",
+    "sha256": "e2e4a43b0a6f2d830a8c26ea3cd7712779ed6f9e8ff8b823deccaa1e617bb87a",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51J8O5-peDL._SL500_.jpg"
+  },
+  "588": {
+    "path": "covers/588.jpg",
+    "sha256": "f8c8d611bb4ee763d7a614236458a48c29da0e0164145cc8ad7e27f83ff18262",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/418gBAXXrrL._SL500_.jpg"
+  },
+  "589": {
+    "path": "covers/589.jpg",
+    "sha256": "2cb5d1baa694cd979cb1a86b2b4ccbd09dc48c64fc29a609d78748457da44abc",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/517pfctTa9L._SL500_.jpg"
+  },
+  "590": {
+    "path": "covers/590.jpg",
+    "sha256": "990747dfc4f37620ac96471995ca2fb0591a6afb697ee038a7d9b398b8a3afdd",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51pKH0zxCCL._SL500_.jpg"
+  },
+  "591": {
+    "path": "covers/591.jpg",
+    "sha256": "0dee2ab483eb615f9225ef21235a953f93237eca06c063e643ced0ff1dcec772",
+    "width": 500,
+    "height": 500,
+    "source": "https://m.media-amazon.com/images/I/51Fy2ZJjIbL._SL500_.jpg"
+  },
+  "592": {
+    "path": "covers/592.jpg",
+    "sha256": "35a83aa7c8d739ad16fd08cd8ca5e49ec2c767891b3542ae1fc5e423fef95df9",
+    "width": 180,
+    "height": 207,
+    "source": "https://covers.openlibrary.org/b/id/480866-M.jpg"
+  }
+}

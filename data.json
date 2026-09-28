@@ -21,7 +21,7 @@
       "shelves": "buddhist",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/2911582373-M.jpg",
+      "cover": "covers/0.jpg",
       "spine_color": "#1162a7"
     },
     {
@@ -45,7 +45,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0028612752-M.jpg",
+      "cover": "covers/1.jpg",
       "spine_color": "#ea8b51"
     },
     {
@@ -69,7 +69,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/156884381X-M.jpg",
+      "cover": "covers/2.jpg",
       "spine_color": "#a4a84d"
     },
     {
@@ -93,7 +93,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1559273542-M.jpg",
+      "cover": "covers/3.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -117,7 +117,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0393094154-M.jpg",
+      "cover": "covers/4.jpg",
       "spine_color": "#315e45"
     },
     {
@@ -141,7 +141,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/1413306489-M.jpg",
+      "cover": "covers/5.jpg",
       "spine_color": "#6e8c9b"
     },
     {
@@ -165,7 +165,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0517097575-M.jpg",
+      "cover": "covers/6.jpg",
       "spine_color": "#e4ddd6"
     },
     {
@@ -189,7 +189,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0393092305-M.jpg",
+      "cover": "covers/7.jpg",
       "spine_color": "#aa2103"
     },
     {
@@ -213,7 +213,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0155126105-M.jpg",
+      "cover": "covers/8.jpg",
       "spine_color": "#d47013"
     },
     {
@@ -237,7 +237,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1878424440-M.jpg",
+      "cover": "covers/9.jpg",
       "spine_color": "#ae3d20"
     },
     {
@@ -261,7 +261,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471380237-M.jpg",
+      "cover": "covers/10.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -285,7 +285,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0061707813-M.jpg",
+      "cover": "covers/11.jpg",
       "spine_color": "#272726"
     },
     {
@@ -309,7 +309,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/7263662-M.jpg",
+      "cover": "covers/12.jpg",
       "spine_color": "#0a0c0b"
     },
     {
@@ -333,7 +333,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0761513116-M.jpg",
+      "cover": "covers/13.jpg",
       "spine_color": "#e7eae8"
     },
     {
@@ -357,7 +357,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1400103789-M.jpg",
+      "cover": "covers/14.jpg",
       "spine_color": "#a4c0cb"
     },
     {
@@ -381,7 +381,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0743567056-M.jpg",
+      "cover": "covers/15.jpg",
       "spine_color": "#f2e0d8"
     },
     {
@@ -405,7 +405,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1878424777-M.jpg",
+      "cover": "covers/16.jpg",
       "spine_color": "#aead74"
     },
     {
@@ -429,7 +429,7 @@
       "shelves": "referenced",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/1430328037-M.jpg",
+      "cover": "covers/17.jpg",
       "spine_color": "#0168a2"
     },
     {
@@ -453,7 +453,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/1587613379-M.jpg",
+      "cover": "covers/18.jpg",
       "spine_color": "#57442d"
     },
     {
@@ -477,7 +477,7 @@
       "shelves": "referenced",
       "read_count": 1,
       "category": "Travel",
-      "cover": "https://covers.openlibrary.org/b/isbn/1741797144-M.jpg",
+      "cover": "covers/19.jpg",
       "spine_color": "#c9c6bd"
     },
     {
@@ -501,7 +501,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Art & Design",
-      "cover": "https://covers.openlibrary.org/b/isbn/1780674880-M.jpg",
+      "cover": "covers/20.jpg",
       "spine_color": "#f5f5f5"
     },
     {
@@ -525,7 +525,7 @@
       "shelves": "referenced",
       "read_count": 1,
       "category": "Cooking & Food",
-      "cover": "https://covers.openlibrary.org/b/isbn/076793010X-M.jpg",
+      "cover": "covers/21.jpg",
       "spine_color": "#373415"
     },
     {
@@ -549,7 +549,7 @@
       "shelves": "referenced",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/1521841187-M.jpg",
+      "cover": "covers/22.jpg",
       "spine_color": "#494541"
     },
     {
@@ -573,7 +573,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/1892005034-M.jpg",
+      "cover": "covers/23.jpg",
       "spine_color": "#2e5356"
     },
     {
@@ -597,7 +597,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "http://books.google.com/books/content?id=-kmXswEACAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/24.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -621,7 +621,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/id/10873292-M.jpg",
+      "cover": "covers/25.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -645,7 +645,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/id/8634250-M.jpg",
+      "cover": "covers/26.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -669,7 +669,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/1883219078-M.jpg",
+      "cover": "covers/27.jpg",
       "spine_color": "#b7a090"
     },
     {
@@ -693,7 +693,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671864416-M.jpg",
+      "cover": "covers/28.jpg",
       "spine_color": "#93695f"
     },
     {
@@ -717,7 +717,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671708635-M.jpg",
+      "cover": "covers/29.jpg",
       "spine_color": "#b29e9b"
     },
     {
@@ -741,7 +741,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0142000280-M.jpg",
+      "cover": "covers/30.jpg",
       "spine_color": "#c0e3f0"
     },
     {
@@ -765,7 +765,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0887307280-M.jpg",
+      "cover": "covers/31.jpg",
       "spine_color": "#9da7b1"
     },
     {
@@ -789,7 +789,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0066620996-M.jpg",
+      "cover": "covers/32.jpg",
       "spine_color": "#f5424f"
     },
     {
@@ -813,7 +813,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0743269519-M.jpg",
+      "cover": "covers/33.jpg",
       "spine_color": "#88605d"
     },
     {
@@ -837,7 +837,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0307353133-M.jpg",
+      "cover": "covers/34.jpg",
       "spine_color": "#e3e5ca"
     },
     {
@@ -861,7 +861,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/id/13314878-M.jpg",
+      "cover": "covers/35.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -885,7 +885,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/id/7308093-M.jpg",
+      "cover": "covers/36.jpg",
       "spine_color": "#0f0c14"
     },
     {
@@ -909,7 +909,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/id/551262-M.jpg",
+      "cover": "covers/37.jpg",
       "spine_color": "#d1d8ad"
     },
     {
@@ -933,7 +933,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/id/10630553-M.jpg",
+      "cover": "covers/38.jpg",
       "spine_color": "#b7f0c7"
     },
     {
@@ -957,7 +957,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/5695928-M.jpg",
+      "cover": "covers/39.jpg",
       "spine_color": null
     },
     {
@@ -981,7 +981,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0140440372-M.jpg",
+      "cover": "covers/40.jpg",
       "spine_color": "#422815"
     },
     {
@@ -1005,7 +1005,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0739310364-M.jpg",
+      "cover": "covers/41.jpg",
       "spine_color": "#c70c19"
     },
     {
@@ -1029,7 +1029,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/142093029X-M.jpg",
+      "cover": "covers/42.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -1053,7 +1053,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451524586-M.jpg",
+      "cover": "covers/43.jpg",
       "spine_color": "#41331a"
     },
     {
@@ -1077,7 +1077,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0669120642-M.jpg",
+      "cover": "covers/44.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -1101,7 +1101,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451523148-M.jpg",
+      "cover": "covers/45.jpg",
       "spine_color": "#efecdf"
     },
     {
@@ -1125,7 +1125,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0915132354-M.jpg",
+      "cover": "covers/46.jpg",
       "spine_color": "#615d5b"
     },
     {
@@ -1149,7 +1149,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0789433028-M.jpg",
+      "cover": "covers/47.jpg",
       "spine_color": "#3f7539"
     },
     {
@@ -1173,7 +1173,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/id/8238736-M.jpg",
+      "cover": "covers/48.jpg",
       "spine_color": null
     },
     {
@@ -1197,7 +1197,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451151534-M.jpg",
+      "cover": "covers/49.jpg",
       "spine_color": "#e8d3a5"
     },
     {
@@ -1221,7 +1221,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/1580081231-M.jpg",
+      "cover": "covers/50.jpg",
       "spine_color": "#636672"
     },
     {
@@ -1245,7 +1245,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781565855656-M.jpg",
+      "cover": "covers/51.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -1269,7 +1269,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0931432723-M.jpg",
+      "cover": "covers/52.jpg",
       "spine_color": "#9d7531"
     },
     {
@@ -1293,7 +1293,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/id/14390287-M.jpg",
+      "cover": "covers/53.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -1317,7 +1317,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0914941488-M.jpg",
+      "cover": "covers/54.jpg",
       "spine_color": "#291168"
     },
     {
@@ -1341,7 +1341,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0822013541-M.jpg",
+      "cover": "covers/55.jpg",
       "spine_color": "#9a9b0f"
     },
     {
@@ -1365,7 +1365,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/12984540-M.jpg",
+      "cover": "covers/56.jpg",
       "spine_color": null
     },
     {
@@ -1389,7 +1389,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/1559948957-M.jpg",
+      "cover": "covers/57.jpg",
       "spine_color": "#a191a2"
     },
     {
@@ -1413,7 +1413,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0517577402-M.jpg",
+      "cover": "covers/58.jpg",
       "spine_color": "#101113"
     },
     {
@@ -1437,7 +1437,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451522680-M.jpg",
+      "cover": "covers/59.jpg",
       "spine_color": "#23241f"
     },
     {
@@ -1461,7 +1461,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0934641838-M.jpg",
+      "cover": "covers/60.jpg",
       "spine_color": "#433f63"
     },
     {
@@ -1485,7 +1485,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/093464182X-M.jpg",
+      "cover": "covers/61.jpg",
       "spine_color": "#414763"
     },
     {
@@ -1509,7 +1509,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/id/13300802-M.jpg",
+      "cover": "covers/62.jpg",
       "spine_color": "#cdbd55"
     },
     {
@@ -1533,7 +1533,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/140003342X-M.jpg",
+      "cover": "covers/63.jpg",
       "spine_color": "#273769"
     },
     {
@@ -1557,7 +1557,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0452278899-M.jpg",
+      "cover": "covers/64.jpg",
       "spine_color": "#5b6075"
     },
     {
@@ -1581,7 +1581,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/id/12569842-M.jpg",
+      "cover": "covers/65.jpg",
       "spine_color": null
     },
     {
@@ -1605,7 +1605,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0142437204-M.jpg",
+      "cover": "covers/66.jpg",
       "spine_color": "#432c25"
     },
     {
@@ -1629,7 +1629,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/014043013X-M.jpg",
+      "cover": "covers/67.jpg",
       "spine_color": "#f8f7b5"
     },
     {
@@ -1653,7 +1653,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/156924328X-M.jpg",
+      "cover": "covers/68.jpg",
       "spine_color": "#fefefe"
     },
     {
@@ -1677,7 +1677,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/1885167660-M.jpg",
+      "cover": "covers/69.jpg",
       "spine_color": "#080808"
     },
     {
@@ -1701,7 +1701,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0981709176-M.jpg",
+      "cover": "covers/70.jpg",
       "spine_color": "#241b12"
     },
     {
@@ -1725,7 +1725,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553292153-M.jpg",
+      "cover": "covers/71.jpg",
       "spine_color": "#a9342c"
     },
     {
@@ -1749,7 +1749,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781540775108-M.jpg",
+      "cover": "covers/72.jpg",
       "spine_color": "#d63b3b"
     },
     {
@@ -1773,7 +1773,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/1560520434-M.jpg",
+      "cover": "covers/73.jpg",
       "spine_color": "#e28336"
     },
     {
@@ -1797,7 +1797,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/089721479X-M.jpg",
+      "cover": "covers/74.jpg",
       "spine_color": "#1a3621"
     },
     {
@@ -1821,7 +1821,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737002-M.jpg",
+      "cover": "covers/75.jpg",
       "spine_color": "#410801"
     },
     {
@@ -1845,7 +1845,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737215-M.jpg",
+      "cover": "covers/76.jpg",
       "spine_color": "#813f42"
     },
     {
@@ -1869,7 +1869,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0751305944-M.jpg",
+      "cover": "covers/77.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -1893,7 +1893,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0071440372-M.jpg",
+      "cover": "covers/78.jpg",
       "spine_color": "#755f72"
     },
     {
@@ -1917,7 +1917,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "http://books.google.com/books/content?id=N88nnecpFhQC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/79.jpg",
       "spine_color": null
     },
     {
@@ -1941,7 +1941,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737053-M.jpg",
+      "cover": "covers/80.jpg",
       "spine_color": "#7b1f1b"
     },
     {
@@ -1965,7 +1965,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0717130835-M.jpg",
+      "cover": "covers/81.jpg",
       "spine_color": "#7d331d"
     },
     {
@@ -1989,7 +1989,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060755598-M.jpg",
+      "cover": "covers/82.jpg",
       "spine_color": "#b9d6e0"
     },
     {
@@ -2013,7 +2013,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/996077015X-M.jpg",
+      "cover": "covers/83.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -2037,7 +2037,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0452009138-M.jpg",
+      "cover": "covers/84.jpg",
       "spine_color": "#d33a14"
     },
     {
@@ -2061,7 +2061,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0930031822-M.jpg",
+      "cover": "covers/85.jpg",
       "spine_color": "#f1a233"
     },
     {
@@ -2085,7 +2085,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0894803190-M.jpg",
+      "cover": "covers/86.jpg",
       "spine_color": "#999a9b"
     },
     {
@@ -2109,7 +2109,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471848190-M.jpg",
+      "cover": "covers/87.jpg",
       "spine_color": "#000000"
     },
     {
@@ -2133,7 +2133,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0915132397-M.jpg",
+      "cover": "covers/88.jpg",
       "spine_color": "#864f32"
     },
     {
@@ -2157,7 +2157,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/8684447-M.jpg",
+      "cover": "covers/89.jpg",
       "spine_color": "#3f1c07"
     },
     {
@@ -2181,7 +2181,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0890434654-M.jpg",
+      "cover": "covers/90.jpg",
       "spine_color": "#04071b"
     },
     {
@@ -2205,7 +2205,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0312119402-M.jpg",
+      "cover": "covers/91.jpg",
       "spine_color": "#e7dfdb"
     },
     {
@@ -2229,7 +2229,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0802130348-M.jpg",
+      "cover": "covers/92.jpg",
       "spine_color": "#2b2c2e"
     },
     {
@@ -2253,7 +2253,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0440218616-M.jpg",
+      "cover": "covers/93.jpg",
       "spine_color": "#11133c"
     },
     {
@@ -2277,7 +2277,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0395329442-M.jpg",
+      "cover": "covers/94.jpg",
       "spine_color": "#000001"
     },
     {
@@ -2301,7 +2301,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737010-M.jpg",
+      "cover": "covers/95.jpg",
       "spine_color": "#410801"
     },
     {
@@ -2325,7 +2325,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671870750-M.jpg",
+      "cover": "covers/96.jpg",
       "spine_color": "#a2809d"
     },
     {
@@ -2349,7 +2349,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0807403121-M.jpg",
+      "cover": "covers/97.jpg",
       "spine_color": "#f70b0b"
     },
     {
@@ -2373,7 +2373,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0895778718-M.jpg",
+      "cover": "covers/98.jpg",
       "spine_color": "#7c7537"
     },
     {
@@ -2397,7 +2397,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/1413306519-M.jpg",
+      "cover": "covers/99.jpg",
       "spine_color": "#a6a5a5"
     },
     {
@@ -2421,7 +2421,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0140707042-M.jpg",
+      "cover": "covers/100.jpg",
       "spine_color": "#9e835a"
     },
     {
@@ -2445,7 +2445,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451521242-M.jpg",
+      "cover": "covers/101.jpg",
       "spine_color": "#040303"
     },
     {
@@ -2469,7 +2469,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/1101033401-M.jpg",
+      "cover": "covers/102.jpg",
       "spine_color": "#3e6272"
     },
     {
@@ -2493,7 +2493,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Art & Design",
-      "cover": "https://covers.openlibrary.org/b/isbn/0874770882-M.jpg",
+      "cover": "covers/103.jpg",
       "spine_color": "#e3c3af"
     },
     {
@@ -2517,7 +2517,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/089906650X-M.jpg",
+      "cover": "covers/104.jpg",
       "spine_color": "#511e05"
     },
     {
@@ -2541,7 +2541,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/1572302836-M.jpg",
+      "cover": "covers/105.jpg",
       "spine_color": "#bfd6bc"
     },
     {
@@ -2565,7 +2565,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1577311671-M.jpg",
+      "cover": "covers/106.jpg",
       "spine_color": "#d2d6d1"
     },
     {
@@ -2589,7 +2589,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0941807177-M.jpg",
+      "cover": "covers/107.jpg",
       "spine_color": "#192632"
     },
     {
@@ -2613,7 +2613,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0930657179-M.jpg",
+      "cover": "covers/108.jpg",
       "spine_color": "#627170"
     },
     {
@@ -2637,7 +2637,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0881252905-M.jpg",
+      "cover": "covers/109.jpg",
       "spine_color": "#fdfefd"
     },
     {
@@ -2661,7 +2661,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/id/4849549-M.jpg",
+      "cover": "covers/110.jpg",
       "spine_color": "#200b08"
     },
     {
@@ -2685,7 +2685,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/2296023576-M.jpg",
+      "cover": "covers/111.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -2709,7 +2709,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0809131595-M.jpg",
+      "cover": "covers/112.jpg",
       "spine_color": "#f2f2e8"
     },
     {
@@ -2733,7 +2733,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0807400556-M.jpg",
+      "cover": "covers/113.jpg",
       "spine_color": "#793b3c"
     },
     {
@@ -2757,7 +2757,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0151002347-M.jpg",
+      "cover": "covers/114.jpg",
       "spine_color": "#281913"
     },
     {
@@ -2781,7 +2781,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/1557091528-M.jpg",
+      "cover": "covers/115.jpg",
       "spine_color": "#4a536d"
     },
     {
@@ -2805,7 +2805,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0679738312-M.jpg",
+      "cover": "covers/116.jpg",
       "spine_color": "#f7f7f6"
     },
     {
@@ -2829,7 +2829,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345466411-M.jpg",
+      "cover": "covers/117.jpg",
       "spine_color": "#3a393a"
     },
     {
@@ -2853,7 +2853,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Economics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201389347-M.jpg",
+      "cover": "covers/118.jpg",
       "spine_color": "#4a0a07"
     },
     {
@@ -2877,7 +2877,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671580817-M.jpg",
+      "cover": "covers/119.jpg",
       "spine_color": "#f7f7f8"
     },
     {
@@ -2901,7 +2901,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553384104-M.jpg",
+      "cover": "covers/120.jpg",
       "spine_color": "#688783"
     },
     {
@@ -2925,7 +2925,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553277545-M.jpg",
+      "cover": "covers/121.jpg",
       "spine_color": "#f1f1f1"
     },
     {
@@ -2949,7 +2949,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0374500010-M.jpg",
+      "cover": "covers/122.jpg",
       "spine_color": "#a0aaa4"
     },
     {
@@ -2973,7 +2973,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0316769177-M.jpg",
+      "cover": "covers/123.jpg",
       "spine_color": "#e5a682"
     },
     {
@@ -2997,7 +2997,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0517799669-M.jpg",
+      "cover": "covers/124.jpg",
       "spine_color": "#e9e5aa"
     },
     {
@@ -3021,7 +3021,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0399512721-M.jpg",
+      "cover": "covers/125.jpg",
       "spine_color": "#b1a795"
     },
     {
@@ -3045,7 +3045,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0091883768-M.jpg",
+      "cover": "covers/126.jpg",
       "spine_color": "#fbfdfa"
     },
     {
@@ -3069,7 +3069,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/1364468-M.jpg",
+      "cover": "covers/127.jpg",
       "spine_color": "#be85b5"
     },
     {
@@ -3093,7 +3093,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0609802720-M.jpg",
+      "cover": "covers/128.jpg",
       "spine_color": "#888c89"
     },
     {
@@ -3117,7 +3117,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201539853-M.jpg",
+      "cover": "covers/129.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -3141,7 +3141,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201060973-M.jpg",
+      "cover": "covers/130.jpg",
       "spine_color": "#3b362e"
     },
     {
@@ -3165,7 +3165,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "http://books.google.com/books/content?id=3BPvAAAAMAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/131.jpg",
       "spine_color": null
     },
     {
@@ -3189,7 +3189,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0070540284-M.jpg",
+      "cover": "covers/132.jpg",
       "spine_color": "#fefefe"
     },
     {
@@ -3213,7 +3213,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0070464766-M.jpg",
+      "cover": "covers/133.jpg",
       "spine_color": "#3f2d7e"
     },
     {
@@ -3237,7 +3237,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/id/8289774-M.jpg",
+      "cover": "covers/134.jpg",
       "spine_color": "#f2f2f2"
     },
     {
@@ -3261,7 +3261,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060256710-M.jpg",
+      "cover": "covers/135.jpg",
       "spine_color": "#fefefe"
     },
     {
@@ -3285,7 +3285,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060891548-M.jpg",
+      "cover": "covers/136.jpg",
       "spine_color": "#789f8d"
     },
     {
@@ -3309,7 +3309,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0425081028-M.jpg",
+      "cover": "covers/137.jpg",
       "spine_color": "#fa2b19"
     },
     {
@@ -3333,7 +3333,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0130952842-M.jpg",
+      "cover": "covers/138.jpg",
       "spine_color": "#6572c9"
     },
     {
@@ -3357,7 +3357,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/1563053241-M.jpg",
+      "cover": "covers/139.jpg",
       "spine_color": "#292f78"
     },
     {
@@ -3381,7 +3381,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Survival & Preparedness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0002558327-M.jpg",
+      "cover": "covers/140.jpg",
       "spine_color": "#c2adad"
     },
     {
@@ -3405,7 +3405,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0385493207-M.jpg",
+      "cover": "covers/141.jpg",
       "spine_color": "#4f5756"
     },
     {
@@ -3429,7 +3429,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060518650-M.jpg",
+      "cover": "covers/142.jpg",
       "spine_color": "#a99f84"
     },
     {
@@ -3453,7 +3453,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0887306373-M.jpg",
+      "cover": "covers/143.jpg",
       "spine_color": "#d72222"
     },
     {
@@ -3477,7 +3477,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345397452-M.jpg",
+      "cover": "covers/144.jpg",
       "spine_color": "#000120"
     },
     {
@@ -3501,7 +3501,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/1413304141-M.jpg",
+      "cover": "covers/145.jpg",
       "spine_color": "#ebeae7"
     },
     {
@@ -3525,7 +3525,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865730318-M.jpg",
+      "cover": "covers/146.jpg",
       "spine_color": "#a69a95"
     },
     {
@@ -3549,7 +3549,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0307356868-M.jpg",
+      "cover": "covers/147.jpg",
       "spine_color": "#eae5e5"
     },
     {
@@ -3573,7 +3573,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0943955777-M.jpg",
+      "cover": "covers/148.jpg",
       "spine_color": "#7a5d44"
     },
     {
@@ -3597,7 +3597,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0071392300-M.jpg",
+      "cover": "covers/149.jpg",
       "spine_color": "#295ea1"
     },
     {
@@ -3621,7 +3621,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1878424505-M.jpg",
+      "cover": "covers/150.jpg",
       "spine_color": "#b98628"
     },
     {
@@ -3645,7 +3645,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737274-M.jpg",
+      "cover": "covers/151.jpg",
       "spine_color": "#323a4e"
     },
     {
@@ -3669,7 +3669,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737150-M.jpg",
+      "cover": "covers/152.jpg",
       "spine_color": "#18171a"
     },
     {
@@ -3693,7 +3693,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060987359-M.jpg",
+      "cover": "covers/153.jpg",
       "spine_color": "#8e9085"
     },
     {
@@ -3717,7 +3717,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345498461-M.jpg",
+      "cover": "covers/154.jpg",
       "spine_color": "#b5adac"
     },
     {
@@ -3741,7 +3741,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0071401946-M.jpg",
+      "cover": "covers/155.jpg",
       "spine_color": "#701e1a"
     },
     {
@@ -3765,7 +3765,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/8187111933-M.jpg",
+      "cover": "covers/156.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -3789,7 +3789,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060172568-M.jpg",
+      "cover": "covers/157.jpg",
       "spine_color": "#e6e7d4"
     },
     {
@@ -3813,7 +3813,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0897214951-M.jpg",
+      "cover": "covers/158.jpg",
       "spine_color": "#f1f1f1"
     },
     {
@@ -3837,7 +3837,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0198129521-M.jpg",
+      "cover": "covers/159.jpg",
       "spine_color": "#fcfcfc"
     },
     {
@@ -3861,7 +3861,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0743266323-M.jpg",
+      "cover": "covers/160.jpg",
       "spine_color": "#ac7155"
     },
     {
@@ -3885,7 +3885,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0684869020-M.jpg",
+      "cover": "covers/161.jpg",
       "spine_color": "#33533a"
     },
     {
@@ -3909,7 +3909,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451163095-M.jpg",
+      "cover": "covers/162.jpg",
       "spine_color": "#324234"
     },
     {
@@ -3933,7 +3933,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Economics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0321303598-M.jpg",
+      "cover": "covers/163.jpg",
       "spine_color": "#3f3333"
     },
     {
@@ -3957,7 +3957,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0435233076-M.jpg",
+      "cover": "covers/164.jpg",
       "spine_color": "#6374a8"
     },
     {
@@ -3981,7 +3981,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/019214183X-M.jpg",
+      "cover": "covers/165.jpg",
       "spine_color": "#416f67"
     },
     {
@@ -4005,7 +4005,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0942364155-M.jpg",
+      "cover": "covers/166.jpg",
       "spine_color": "#648068"
     },
     {
@@ -4029,7 +4029,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0684811634-M.jpg",
+      "cover": "covers/167.jpg",
       "spine_color": "#7b8b97"
     },
     {
@@ -4053,7 +4053,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0312270178-M.jpg",
+      "cover": "covers/168.jpg",
       "spine_color": "#a48f7a"
     },
     {
@@ -4077,7 +4077,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/155977701X-M.jpg",
+      "cover": "",
       "spine_color": "#c29fb6"
     },
     {
@@ -4101,7 +4101,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0143037889-M.jpg",
+      "cover": "covers/170.jpg",
       "spine_color": "#0b0b0b"
     },
     {
@@ -4125,7 +4125,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0312070454-M.jpg",
+      "cover": "covers/171.jpg",
       "spine_color": null
     },
     {
@@ -4149,7 +4149,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0517223317-M.jpg",
+      "cover": "covers/172.jpg",
       "spine_color": "#cb3232"
     },
     {
@@ -4173,7 +4173,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0966086309-M.jpg",
+      "cover": "covers/173.jpg",
       "spine_color": "#9fa7a5"
     },
     {
@@ -4197,7 +4197,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0787112615-M.jpg",
+      "cover": "covers/174.jpg",
       "spine_color": "#c6c7c6"
     },
     {
@@ -4221,7 +4221,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0964043009-M.jpg",
+      "cover": "covers/175.jpg",
       "spine_color": "#86bfc4"
     },
     {
@@ -4245,7 +4245,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/158923331X-M.jpg",
+      "cover": "covers/176.jpg",
       "spine_color": "#f4f7f7"
     },
     {
@@ -4269,7 +4269,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737037-M.jpg",
+      "cover": "covers/177.jpg",
       "spine_color": "#544348"
     },
     {
@@ -4293,7 +4293,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0895263343-M.jpg",
+      "cover": "covers/178.jpg",
       "spine_color": "#1c0925"
     },
     {
@@ -4317,7 +4317,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1591841607-M.jpg",
+      "cover": "covers/179.jpg",
       "spine_color": "#750e0d"
     },
     {
@@ -4341,7 +4341,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/1605471046-M.jpg",
+      "cover": "covers/180.jpg",
       "spine_color": "#493885"
     },
     {
@@ -4365,7 +4365,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/1562761331-M.jpg",
+      "cover": "covers/181.jpg",
       "spine_color": "#b7b4a7"
     },
     {
@@ -4389,7 +4389,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0062720082-M.jpg",
+      "cover": "covers/182.jpg",
       "spine_color": "#c58d02"
     },
     {
@@ -4413,7 +4413,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0024154334-M.jpg",
+      "cover": "covers/183.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -4437,7 +4437,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/1558502548-M.jpg",
+      "cover": "covers/184.jpg",
       "spine_color": "#86000f"
     },
     {
@@ -4461,7 +4461,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1565112601-M.jpg",
+      "cover": "covers/185.jpg",
       "spine_color": "#ede2e1"
     },
     {
@@ -4485,7 +4485,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0761101608-M.jpg",
+      "cover": "covers/186.jpg",
       "spine_color": "#c7bbb9"
     },
     {
@@ -4509,7 +4509,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0787100447-M.jpg",
+      "cover": "covers/187.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -4533,7 +4533,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/1565793471-M.jpg",
+      "cover": "covers/188.jpg",
       "spine_color": "#e8ecea"
     },
     {
@@ -4557,7 +4557,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/007882043X-M.jpg",
+      "cover": "covers/189.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -4581,7 +4581,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Parenting & Family",
-      "cover": "https://covers.openlibrary.org/b/isbn/0842322973-M.jpg",
+      "cover": "covers/190.jpg",
       "spine_color": "#dbd4d1"
     },
     {
@@ -4605,7 +4605,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/id/8741318-M.jpg",
+      "cover": "covers/191.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -4629,7 +4629,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0900689218-M.jpg",
+      "cover": "covers/192.jpg",
       "spine_color": "#060608"
     },
     {
@@ -4653,7 +4653,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/isbn/0312003579-M.jpg",
+      "cover": "covers/193.jpg",
       "spine_color": "#140502"
     },
     {
@@ -4677,7 +4677,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0375708111-M.jpg",
+      "cover": "covers/194.jpg",
       "spine_color": "#010103"
     },
     {
@@ -4701,7 +4701,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671562568-M.jpg",
+      "cover": "covers/195.jpg",
       "spine_color": "#080b0e"
     },
     {
@@ -4725,7 +4725,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/042509975X-M.jpg",
+      "cover": "covers/196.jpg",
       "spine_color": "#056105"
     },
     {
@@ -4749,7 +4749,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/1563921375-M.jpg",
+      "cover": "covers/197.jpg",
       "spine_color": "#116850"
     },
     {
@@ -4773,7 +4773,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0670532576-M.jpg",
+      "cover": "covers/198.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -4797,7 +4797,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471213039-M.jpg",
+      "cover": "covers/199.jpg",
       "spine_color": "#efcece"
     },
     {
@@ -4821,7 +4821,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0453009204-M.jpg",
+      "cover": "covers/200.jpg",
       "spine_color": "#fefefe"
     },
     {
@@ -4845,7 +4845,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/0761112278-M.jpg",
+      "cover": "covers/201.jpg",
       "spine_color": "#354367"
     },
     {
@@ -4869,7 +4869,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0071444858-M.jpg",
+      "cover": "covers/202.jpg",
       "spine_color": "#f6f6f6"
     },
     {
@@ -4893,7 +4893,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0884043762-M.jpg",
+      "cover": "covers/203.jpg",
       "spine_color": "#c6ada1"
     },
     {
@@ -4917,7 +4917,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Art & Design",
-      "cover": "https://covers.openlibrary.org/b/isbn/0929261046-M.jpg",
+      "cover": "covers/204.jpg",
       "spine_color": "#ebcd9c"
     },
     {
@@ -4941,7 +4941,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0395290317-M.jpg",
+      "cover": "covers/205.jpg",
       "spine_color": "#893e4b"
     },
     {
@@ -4965,7 +4965,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Humor & Trivia",
-      "cover": "https://covers.openlibrary.org/b/id/6990576-M.jpg",
+      "cover": "covers/206.jpg",
       "spine_color": null
     },
     {
@@ -4989,7 +4989,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0679726136-M.jpg",
+      "cover": "covers/207.jpg",
       "spine_color": "#0a0a0c"
     },
     {
@@ -5013,7 +5013,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671759639-M.jpg",
+      "cover": "covers/208.jpg",
       "spine_color": "#7a9372"
     },
     {
@@ -5037,7 +5037,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0762432845-M.jpg",
+      "cover": "covers/209.jpg",
       "spine_color": "#1973b3"
     },
     {
@@ -5061,7 +5061,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Parenting & Family",
-      "cover": "https://covers.openlibrary.org/b/isbn/1883219442-M.jpg",
+      "cover": "covers/210.jpg",
       "spine_color": "#fcf6e4"
     },
     {
@@ -5085,7 +5085,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/155994823X-M.jpg",
+      "cover": "covers/211.jpg",
       "spine_color": "#e3e2e3"
     },
     {
@@ -5109,7 +5109,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060621192-M.jpg",
+      "cover": "covers/212.jpg",
       "spine_color": "#a8ab99"
     },
     {
@@ -5133,7 +5133,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0886878209-M.jpg",
+      "cover": "covers/213.jpg",
       "spine_color": "#ea0605"
     },
     {
@@ -5157,7 +5157,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0789715953-M.jpg",
+      "cover": "covers/214.jpg",
       "spine_color": "#252422"
     },
     {
@@ -5181,7 +5181,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345414411-M.jpg",
+      "cover": "covers/215.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -5205,7 +5205,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0789721325-M.jpg",
+      "cover": "covers/216.jpg",
       "spine_color": "#438393"
     },
     {
@@ -5229,7 +5229,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0385175140-M.jpg",
+      "cover": "covers/217.jpg",
       "spine_color": "#7e7758"
     },
     {
@@ -5253,7 +5253,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0786158964-M.jpg",
+      "cover": "covers/218.jpg",
       "spine_color": "#b3aaa3"
     },
     {
@@ -5277,7 +5277,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/0873377788-M.jpg",
+      "cover": "covers/219.jpg",
       "spine_color": "#456080"
     },
     {
@@ -5301,7 +5301,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671244221-M.jpg",
+      "cover": "covers/220.jpg",
       "spine_color": "#111114"
     },
     {
@@ -5325,7 +5325,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0895886448-M.jpg",
+      "cover": "covers/221.jpg",
       "spine_color": "#210d1a"
     },
     {
@@ -5349,7 +5349,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/1883219051-M.jpg",
+      "cover": "covers/222.jpg",
       "spine_color": "#ece8e4"
     },
     {
@@ -5373,7 +5373,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/isbn/0075536064-M.jpg",
+      "cover": "covers/223.jpg",
       "spine_color": "#3a4d2f"
     },
     {
@@ -5397,7 +5397,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Cooking & Food",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694517631-M.jpg",
+      "cover": "covers/224.jpg",
       "spine_color": "#80753d"
     },
     {
@@ -5421,7 +5421,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0786303158-M.jpg",
+      "cover": "covers/225.jpg",
       "spine_color": "#000000"
     },
     {
@@ -5445,7 +5445,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/1558531564-M.jpg",
+      "cover": "covers/226.jpg",
       "spine_color": "#371c0a"
     },
     {
@@ -5469,7 +5469,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0944993591-M.jpg",
+      "cover": "covers/227.jpg",
       "spine_color": "#fdf2f2"
     },
     {
@@ -5493,7 +5493,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0140194614-M.jpg",
+      "cover": "covers/228.jpg",
       "spine_color": "#39393a"
     },
     {
@@ -5517,7 +5517,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0965774600-M.jpg",
+      "cover": "covers/229.jpg",
       "spine_color": "#000000"
     },
     {
@@ -5541,7 +5541,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/067142517X-M.jpg",
+      "cover": "covers/230.jpg",
       "spine_color": "#040404"
     },
     {
@@ -5565,7 +5565,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0679416765-M.jpg",
+      "cover": "covers/231.jpg",
       "spine_color": "#eaebed"
     },
     {
@@ -5589,7 +5589,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/014043531X-M.jpg",
+      "cover": "covers/232.jpg",
       "spine_color": "#353439"
     },
     {
@@ -5613,7 +5613,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553278223-M.jpg",
+      "cover": "covers/233.jpg",
       "spine_color": "#433638"
     },
     {
@@ -5637,7 +5637,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Travel",
-      "cover": "https://covers.openlibrary.org/b/isbn/0679001344-M.jpg",
+      "cover": "covers/234.jpg",
       "spine_color": "#a89b70"
     },
     {
@@ -5661,7 +5661,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "",
+      "cover": "covers/235.jpg",
       "spine_color": null
     },
     {
@@ -5685,7 +5685,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1891115014-M.jpg",
+      "cover": "covers/236.jpg",
       "spine_color": "#afc297"
     },
     {
@@ -5709,7 +5709,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Survival & Preparedness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0873641752-M.jpg",
+      "cover": "covers/237.jpg",
       "spine_color": "#094a69"
     },
     {
@@ -5733,7 +5733,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0525938982-M.jpg",
+      "cover": "covers/238.jpg",
       "spine_color": "#010092"
     },
     {
@@ -5757,7 +5757,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0393313344-M.jpg",
+      "cover": "covers/239.jpg",
       "spine_color": "#686b65"
     },
     {
@@ -5781,7 +5781,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/1879371634-M.jpg",
+      "cover": "covers/240.jpg",
       "spine_color": "#2f2d2e"
     },
     {
@@ -5805,7 +5805,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694517828-M.jpg",
+      "cover": "covers/241.jpg",
       "spine_color": "#a09d9e"
     },
     {
@@ -5829,7 +5829,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471155616-M.jpg",
+      "cover": "covers/242.jpg",
       "spine_color": "#2b2175"
     },
     {
@@ -5853,7 +5853,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/038531258X-M.jpg",
+      "cover": "covers/243.jpg",
       "spine_color": "#b4ad9d"
     },
     {
@@ -5877,7 +5877,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0394700023-M.jpg",
+      "cover": "covers/244.jpg",
       "spine_color": "#080806"
     },
     {
@@ -5901,7 +5901,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0070050767-M.jpg",
+      "cover": "covers/245.jpg",
       "spine_color": "#8e9591"
     },
     {
@@ -5925,7 +5925,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0517693119-M.jpg",
+      "cover": "covers/246.jpg",
       "spine_color": "#041e0a"
     },
     {
@@ -5949,7 +5949,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0931089778-M.jpg",
+      "cover": "covers/247.jpg",
       "spine_color": "#f6eee3"
     },
     {
@@ -5973,7 +5973,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0964605546-M.jpg",
+      "cover": "covers/248.jpg",
       "spine_color": "#405f64"
     },
     {
@@ -5997,7 +5997,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671520636-M.jpg",
+      "cover": "covers/249.jpg",
       "spine_color": "#65603d"
     },
     {
@@ -6021,7 +6021,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451191145-M.jpg",
+      "cover": "covers/250.jpg",
       "spine_color": "#981623"
     },
     {
@@ -6045,7 +6045,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471569607-M.jpg",
+      "cover": "covers/251.jpg",
       "spine_color": "#01012c"
     },
     {
@@ -6069,7 +6069,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/14344172-M.jpg",
+      "cover": "covers/252.jpg",
       "spine_color": "#92988e"
     },
     {
@@ -6093,7 +6093,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/id/8666606-M.jpg",
+      "cover": "covers/253.jpg",
       "spine_color": null
     },
     {
@@ -6117,7 +6117,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/092587342X-M.jpg",
+      "cover": "covers/254.jpg",
       "spine_color": "#7f7552"
     },
     {
@@ -6141,7 +6141,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1565111206-M.jpg",
+      "cover": "covers/255.jpg",
       "spine_color": "#573188"
     },
     {
@@ -6165,7 +6165,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0965573184-M.jpg",
+      "cover": "covers/256.jpg",
       "spine_color": "#f8f5f0"
     },
     {
@@ -6189,7 +6189,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/1930617046-M.jpg",
+      "cover": "covers/257.jpg",
       "spine_color": "#bc0d02"
     },
     {
@@ -6213,7 +6213,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Humor & Trivia",
-      "cover": "https://covers.openlibrary.org/b/isbn/0898458358-M.jpg",
+      "cover": "covers/258.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -6237,7 +6237,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0028641582-M.jpg",
+      "cover": "covers/259.jpg",
       "spine_color": "#93a695"
     },
     {
@@ -6261,7 +6261,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737118-M.jpg",
+      "cover": "covers/260.jpg",
       "spine_color": "#020515"
     },
     {
@@ -6285,7 +6285,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Parenting & Family",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694521701-M.jpg",
+      "cover": "covers/261.jpg",
       "spine_color": "#0a3c8c"
     },
     {
@@ -6309,7 +6309,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Music & Entertainment",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694519081-M.jpg",
+      "cover": "covers/262.jpg",
       "spine_color": "#9d9222"
     },
     {
@@ -6333,7 +6333,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/id/6981251-M.jpg",
+      "cover": "covers/263.jpg",
       "spine_color": null
     },
     {
@@ -6357,7 +6357,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0930657233-M.jpg",
+      "cover": "covers/264.jpg",
       "spine_color": "#6a3439"
     },
     {
@@ -6381,7 +6381,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671536834-M.jpg",
+      "cover": "covers/265.jpg",
       "spine_color": "#756845"
     },
     {
@@ -6405,7 +6405,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Judaism & Jewish Life",
-      "cover": "https://covers.openlibrary.org/b/isbn/155800453X-M.jpg",
+      "cover": "covers/266.jpg",
       "spine_color": "#b8a9a8"
     },
     {
@@ -6429,7 +6429,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694515663-M.jpg",
+      "cover": "covers/267.jpg",
       "spine_color": "#dbe5ed"
     },
     {
@@ -6453,7 +6453,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0679439544-M.jpg",
+      "cover": "covers/268.jpg",
       "spine_color": "#1a1a18"
     },
     {
@@ -6477,7 +6477,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694514772-M.jpg",
+      "cover": "covers/269.jpg",
       "spine_color": "#a63430"
     },
     {
@@ -6501,7 +6501,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/1561006173-M.jpg",
+      "cover": "covers/270.jpg",
       "spine_color": "#181718"
     },
     {
@@ -6525,7 +6525,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/1561708542-M.jpg",
+      "cover": "covers/271.jpg",
       "spine_color": "#9d8b56"
     },
     {
@@ -6549,7 +6549,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0138805504-M.jpg",
+      "cover": "covers/272.jpg",
       "spine_color": "#ede1dd"
     },
     {
@@ -6597,7 +6597,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1559275839-M.jpg",
+      "cover": "covers/274.jpg",
       "spine_color": "#ccb478"
     },
     {
@@ -6621,7 +6621,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0743539648-M.jpg",
+      "cover": "covers/275.jpg",
       "spine_color": "#493d74"
     },
     {
@@ -6645,7 +6645,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671788523-M.jpg",
+      "cover": "covers/276.jpg",
       "spine_color": "#de5234"
     },
     {
@@ -6669,7 +6669,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Economics",
-      "cover": "https://covers.openlibrary.org/b/isbn/1433272466-M.jpg",
+      "cover": "covers/277.jpg",
       "spine_color": "#555c65"
     },
     {
@@ -6693,7 +6693,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "http://books.google.com/books/content?id=O4r1DwAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/278.jpg",
       "spine_color": null
     },
     {
@@ -6717,7 +6717,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Survival & Preparedness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0916661059-M.jpg",
+      "cover": "covers/279.jpg",
       "spine_color": "#f43118"
     },
     {
@@ -6741,7 +6741,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/1559771895-M.jpg",
+      "cover": "covers/280.jpg",
       "spine_color": "#d02127"
     },
     {
@@ -6765,7 +6765,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/id/82725-M.jpg",
+      "cover": "covers/281.jpg",
       "spine_color": null
     },
     {
@@ -6789,7 +6789,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1559580968-M.jpg",
+      "cover": "covers/282.jpg",
       "spine_color": "#010a94"
     },
     {
@@ -6813,7 +6813,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0070499993-M.jpg",
+      "cover": "covers/283.jpg",
       "spine_color": "#99af82"
     },
     {
@@ -6837,7 +6837,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0761527443-M.jpg",
+      "cover": "covers/284.jpg",
       "spine_color": "#d2481e"
     },
     {
@@ -6861,7 +6861,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0376015810-M.jpg",
+      "cover": "covers/285.jpg",
       "spine_color": "#9c817a"
     },
     {
@@ -6885,7 +6885,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0679445013-M.jpg",
+      "cover": "covers/286.jpg",
       "spine_color": "#868786"
     },
     {
@@ -6909,7 +6909,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/0873373529-M.jpg",
+      "cover": "covers/287.jpg",
       "spine_color": "#6a3495"
     },
     {
@@ -6933,7 +6933,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/isbn/0312858280-M.jpg",
+      "cover": "covers/288.jpg",
       "spine_color": "#794c4e"
     },
     {
@@ -6957,7 +6957,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/0805025901-M.jpg",
+      "cover": "covers/289.jpg",
       "spine_color": "#a5a9c0"
     },
     {
@@ -6981,7 +6981,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/id/7339281-M.jpg",
+      "cover": "covers/290.jpg",
       "spine_color": null
     },
     {
@@ -7005,7 +7005,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0873376420-M.jpg",
+      "cover": "covers/291.jpg",
       "spine_color": "#456d54"
     },
     {
@@ -7029,7 +7029,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0915166100-M.jpg",
+      "cover": "covers/292.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -7053,7 +7053,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/053491585X-M.jpg",
+      "cover": "covers/293.jpg",
       "spine_color": "#dfdfda"
     },
     {
@@ -7077,7 +7077,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0878917918-M.jpg",
+      "cover": "covers/294.jpg",
       "spine_color": "#abd3c6"
     },
     {
@@ -7101,7 +7101,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201106280-M.jpg",
+      "cover": "covers/295.jpg",
       "spine_color": "#7d7569"
     },
     {
@@ -7125,7 +7125,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0913730394-M.jpg",
+      "cover": "covers/296.jpg",
       "spine_color": "#5e452c"
     },
     {
@@ -7149,7 +7149,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471808067-M.jpg",
+      "cover": "covers/297.jpg",
       "spine_color": "#ab5254"
     },
     {
@@ -7173,7 +7173,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865730083-M.jpg",
+      "cover": "covers/298.jpg",
       "spine_color": "#050302"
     },
     {
@@ -7197,7 +7197,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201416549-M.jpg",
+      "cover": "covers/299.jpg",
       "spine_color": "#1b2232"
     },
     {
@@ -7221,7 +7221,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/1881262103-M.jpg",
+      "cover": "covers/300.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -7245,7 +7245,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/12680937-M.jpg",
+      "cover": "covers/301.jpg",
       "spine_color": null
     },
     {
@@ -7269,7 +7269,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0790611333-M.jpg",
+      "cover": "covers/302.jpg",
       "spine_color": "#258b76"
     },
     {
@@ -7293,7 +7293,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0385063490-M.jpg",
+      "cover": "covers/303.jpg",
       "spine_color": "#68a4a8"
     },
     {
@@ -7317,7 +7317,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/1874416656-M.jpg",
+      "cover": "covers/304.jpg",
       "spine_color": "#ba4208"
     },
     {
@@ -7341,7 +7341,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/3829004389-M.jpg",
+      "cover": "covers/305.jpg",
       "spine_color": "#385b7a"
     },
     {
@@ -7365,7 +7365,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0470196122-M.jpg",
+      "cover": "covers/306.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -7389,7 +7389,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0739315099-M.jpg",
+      "cover": "covers/307.jpg",
       "spine_color": "#bbd5c2"
     },
     {
@@ -7413,7 +7413,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865713251-M.jpg",
+      "cover": "covers/308.jpg",
       "spine_color": "#2a5b55"
     },
     {
@@ -7437,7 +7437,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0684802023-M.jpg",
+      "cover": "covers/309.jpg",
       "spine_color": "#4f6c8e"
     },
     {
@@ -7461,7 +7461,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694515485-M.jpg",
+      "cover": "covers/310.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -7485,7 +7485,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/0935998004-M.jpg",
+      "cover": "covers/311.jpg",
       "spine_color": "#453d31"
     },
     {
@@ -7509,7 +7509,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0966914902-M.jpg",
+      "cover": "covers/312.jpg",
       "spine_color": "#c4aeb5"
     },
     {
@@ -7533,7 +7533,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737312-M.jpg",
+      "cover": "covers/313.jpg",
       "spine_color": "#45373e"
     },
     {
@@ -7557,7 +7557,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0865737177-M.jpg",
+      "cover": "covers/314.jpg",
       "spine_color": "#4b3a3b"
     },
     {
@@ -7581,7 +7581,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0782116582-M.jpg",
+      "cover": "covers/315.jpg",
       "spine_color": "#5a899f"
     },
     {
@@ -7605,7 +7605,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451522605-M.jpg",
+      "cover": "covers/316.jpg",
       "spine_color": "#000000"
     },
     {
@@ -7629,7 +7629,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0914294539-M.jpg",
+      "cover": "covers/317.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -7653,7 +7653,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/id/320516-M.jpg",
+      "cover": "covers/318.jpg",
       "spine_color": null
     },
     {
@@ -7677,7 +7677,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0669120650-M.jpg",
+      "cover": "covers/319.jpg",
       "spine_color": "#4a0c0a"
     },
     {
@@ -7701,7 +7701,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0895260115-M.jpg",
+      "cover": "covers/320.jpg",
       "spine_color": "#8f202f"
     },
     {
@@ -7725,7 +7725,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/1564584925-M.jpg",
+      "cover": "covers/321.jpg",
       "spine_color": "#c3cbc9"
     },
     {
@@ -7749,7 +7749,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0028636651-M.jpg",
+      "cover": "covers/322.jpg",
       "spine_color": "#d9d0c9"
     },
     {
@@ -7773,7 +7773,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671520318-M.jpg",
+      "cover": "covers/323.jpg",
       "spine_color": "#6b6146"
     },
     {
@@ -7797,7 +7797,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/1413307108-M.jpg",
+      "cover": "covers/324.jpg",
       "spine_color": "#afb7b2"
     },
     {
@@ -7821,7 +7821,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0962957607-M.jpg",
+      "cover": "covers/325.jpg",
       "spine_color": "#f60000"
     },
     {
@@ -7845,7 +7845,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201103656-M.jpg",
+      "cover": "covers/326.jpg",
       "spine_color": "#fefefe"
     },
     {
@@ -7869,7 +7869,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0670835684-M.jpg",
+      "cover": "covers/327.jpg",
       "spine_color": "#fef9d1"
     },
     {
@@ -7893,7 +7893,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1559949880-M.jpg",
+      "cover": "covers/328.jpg",
       "spine_color": "#cebaa5"
     },
     {
@@ -7917,7 +7917,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Humor & Trivia",
-      "cover": "https://covers.openlibrary.org/b/isbn/1858683114-M.jpg",
+      "cover": "covers/329.jpg",
       "spine_color": "#e3dd19"
     },
     {
@@ -7941,7 +7941,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Parenting & Family",
-      "cover": "https://covers.openlibrary.org/b/isbn/0670031089-M.jpg",
+      "cover": "covers/330.jpg",
       "spine_color": "#f47034"
     },
     {
@@ -7965,7 +7965,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201604809-M.jpg",
+      "cover": "covers/331.jpg",
       "spine_color": "#020514"
     },
     {
@@ -7989,7 +7989,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/1570622434-M.jpg",
+      "cover": "covers/332.jpg",
       "spine_color": "#fdbd04"
     },
     {
@@ -8013,7 +8013,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0393314960-M.jpg",
+      "cover": "covers/333.jpg",
       "spine_color": "#100d58"
     },
     {
@@ -8037,7 +8037,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553370928-M.jpg",
+      "cover": "covers/334.jpg",
       "spine_color": "#705b4e"
     },
     {
@@ -8061,7 +8061,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0394298314-M.jpg",
+      "cover": "covers/335.jpg",
       "spine_color": "#b59b8c"
     },
     {
@@ -8085,7 +8085,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0441555276-M.jpg",
+      "cover": "covers/336.jpg",
       "spine_color": "#322b36"
     },
     {
@@ -8109,7 +8109,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0395430917-M.jpg",
+      "cover": "covers/337.jpg",
       "spine_color": "#020001"
     },
     {
@@ -8133,7 +8133,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1559946008-M.jpg",
+      "cover": "covers/338.jpg",
       "spine_color": "#b6040b"
     },
     {
@@ -8157,7 +8157,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Humor & Trivia",
-      "cover": "https://covers.openlibrary.org/b/isbn/0740713930-M.jpg",
+      "cover": "covers/339.jpg",
       "spine_color": "#645237"
     },
     {
@@ -8181,7 +8181,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0789721252-M.jpg",
+      "cover": "covers/340.jpg",
       "spine_color": "#0c0b05"
     },
     {
@@ -8205,7 +8205,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0028621646-M.jpg",
+      "cover": "covers/341.jpg",
       "spine_color": "#e1af79"
     },
     {
@@ -8229,7 +8229,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0064671054-M.jpg",
+      "cover": "covers/342.jpg",
       "spine_color": "#7e543b"
     },
     {
@@ -8253,7 +8253,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/044155282X-M.jpg",
+      "cover": "covers/343.jpg",
       "spine_color": "#cab697"
     },
     {
@@ -8277,7 +8277,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0393025462-M.jpg",
+      "cover": "covers/344.jpg",
       "spine_color": "#616753"
     },
     {
@@ -8301,7 +8301,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451521331-M.jpg",
+      "cover": "covers/345.jpg",
       "spine_color": "#ce1a12"
     },
     {
@@ -8325,7 +8325,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/isbn/0873523792-M.jpg",
+      "cover": "covers/346.jpg",
       "spine_color": "#7d7a6a"
     },
     {
@@ -8349,7 +8349,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553471023-M.jpg",
+      "cover": "covers/347.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -8373,7 +8373,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0380762277-M.jpg",
+      "cover": "covers/348.jpg",
       "spine_color": "#f1f1f1"
     },
     {
@@ -8397,7 +8397,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/9780965463102-M.jpg",
+      "cover": "",
       "spine_color": null
     },
     {
@@ -8421,7 +8421,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0739332228-M.jpg",
+      "cover": "covers/350.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -8445,7 +8445,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671580795-M.jpg",
+      "cover": "covers/351.jpg",
       "spine_color": "#d3c7c3"
     },
     {
@@ -8469,7 +8469,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "http://books.google.com/books/content?id=RFqve7JN1l8C&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/352.jpg",
       "spine_color": null
     },
     {
@@ -8493,7 +8493,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451521293-M.jpg",
+      "cover": "covers/353.jpg",
       "spine_color": "#060605"
     },
     {
@@ -8517,7 +8517,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/1580910157-M.jpg",
+      "cover": "covers/354.jpg",
       "spine_color": "#822d02"
     },
     {
@@ -8541,7 +8541,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0672321076-M.jpg",
+      "cover": "covers/355.jpg",
       "spine_color": "#0b74b8"
     },
     {
@@ -8565,7 +8565,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0842345507-M.jpg",
+      "cover": "covers/356.jpg",
       "spine_color": "#a5602c"
     },
     {
@@ -8589,7 +8589,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451524608-M.jpg",
+      "cover": "covers/357.jpg",
       "spine_color": "#080808"
     },
     {
@@ -8613,7 +8613,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0872595978-M.jpg",
+      "cover": "covers/358.jpg",
       "spine_color": "#c9c9c1"
     },
     {
@@ -8637,7 +8637,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0811819086-M.jpg",
+      "cover": "covers/359.jpg",
       "spine_color": "#4592be"
     },
     {
@@ -8661,7 +8661,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/1560324937-M.jpg",
+      "cover": "covers/360.jpg",
       "spine_color": "#4d7686"
     },
     {
@@ -8685,7 +8685,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Health & Wellness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671470884-M.jpg",
+      "cover": "covers/361.jpg",
       "spine_color": "#000000"
     },
     {
@@ -8709,7 +8709,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/1586860542-M.jpg",
+      "cover": "covers/362.jpg",
       "spine_color": "#d20d44"
     },
     {
@@ -8733,7 +8733,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0062700960-M.jpg",
+      "cover": "covers/363.jpg",
       "spine_color": "#8b6923"
     },
     {
@@ -8757,7 +8757,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0809293307-M.jpg",
+      "cover": "covers/364.jpg",
       "spine_color": "#878488"
     },
     {
@@ -8781,7 +8781,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671534882-M.jpg",
+      "cover": "covers/365.jpg",
       "spine_color": "#1d2031"
     },
     {
@@ -8805,7 +8805,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451524446-M.jpg",
+      "cover": "covers/366.jpg",
       "spine_color": "#1b1b1a"
     },
     {
@@ -8829,7 +8829,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/0873378288-M.jpg",
+      "cover": "covers/367.jpg",
       "spine_color": "#a8b299"
     },
     {
@@ -8853,7 +8853,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0764536885-M.jpg",
+      "cover": "covers/368.jpg",
       "spine_color": "#dbdbda"
     },
     {
@@ -8877,7 +8877,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671506196-M.jpg",
+      "cover": "covers/369.jpg",
       "spine_color": "#726d18"
     },
     {
@@ -8901,7 +8901,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0814471714-M.jpg",
+      "cover": "covers/370.jpg",
       "spine_color": "#452d11"
     },
     {
@@ -8925,7 +8925,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0441552765-M.jpg",
+      "cover": "covers/371.jpg",
       "spine_color": "#948d63"
     },
     {
@@ -8949,7 +8949,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0441023622-M.jpg",
+      "cover": "covers/372.jpg",
       "spine_color": "#76634d"
     },
     {
@@ -8973,7 +8973,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/156838985X-M.jpg",
+      "cover": "covers/373.jpg",
       "spine_color": "#91938e"
     },
     {
@@ -8997,7 +8997,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0931580943-M.jpg",
+      "cover": "covers/374.jpg",
       "spine_color": "#afacab"
     },
     {
@@ -9021,7 +9021,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0912965002-M.jpg",
+      "cover": "covers/375.jpg",
       "spine_color": "#292747"
     },
     {
@@ -9045,7 +9045,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Survival & Preparedness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0938895109-M.jpg",
+      "cover": "covers/376.jpg",
       "spine_color": "#998e02"
     },
     {
@@ -9069,7 +9069,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0739334085-M.jpg",
+      "cover": "covers/377.jpg",
       "spine_color": "#878475"
     },
     {
@@ -9093,7 +9093,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0441555217-M.jpg",
+      "cover": "covers/378.jpg",
       "spine_color": "#8f8651"
     },
     {
@@ -9117,7 +9117,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0441484999-M.jpg",
+      "cover": "covers/379.jpg",
       "spine_color": "#3e341e"
     },
     {
@@ -9141,7 +9141,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0441552773-M.jpg",
+      "cover": "covers/380.jpg",
       "spine_color": "#1a0f0b"
     },
     {
@@ -9165,7 +9165,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/044155279X-M.jpg",
+      "cover": "covers/381.jpg",
       "spine_color": "#674526"
     },
     {
@@ -9189,7 +9189,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/039395224X-M.jpg",
+      "cover": "covers/382.jpg",
       "spine_color": "#081410"
     },
     {
@@ -9213,7 +9213,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0811816281-M.jpg",
+      "cover": "covers/383.jpg",
       "spine_color": "#492817"
     },
     {
@@ -9237,7 +9237,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0887306403-M.jpg",
+      "cover": "covers/384.jpg",
       "spine_color": "#cc3333"
     },
     {
@@ -9261,7 +9261,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0441338518-M.jpg",
+      "cover": "covers/385.jpg",
       "spine_color": "#473b2c"
     },
     {
@@ -9285,7 +9285,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Outdoors & Sports",
-      "cover": "https://covers.openlibrary.org/b/isbn/1563924285-M.jpg",
+      "cover": "covers/386.jpg",
       "spine_color": "#1d696f"
     },
     {
@@ -9309,7 +9309,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451522664-M.jpg",
+      "cover": "covers/387.jpg",
       "spine_color": "#0d0d0c"
     },
     {
@@ -9333,7 +9333,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/0812932358-M.jpg",
+      "cover": "covers/388.jpg",
       "spine_color": "#989885"
     },
     {
@@ -9357,7 +9357,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0694526088-M.jpg",
+      "cover": "covers/389.jpg",
       "spine_color": "#d21413"
     },
     {
@@ -9381,7 +9381,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451524381-M.jpg",
+      "cover": "covers/390.jpg",
       "spine_color": "#1a1a1a"
     },
     {
@@ -9405,7 +9405,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1558503919-M.jpg",
+      "cover": "covers/391.jpg",
       "spine_color": "#2c2837"
     },
     {
@@ -9429,7 +9429,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0937539635-M.jpg",
+      "cover": "covers/392.jpg",
       "spine_color": "#a5555e"
     },
     {
@@ -9453,7 +9453,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/1888766018-M.jpg",
+      "cover": "covers/393.jpg",
       "spine_color": "#caac6c"
     },
     {
@@ -9477,7 +9477,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0425098478-M.jpg",
+      "cover": "covers/394.jpg",
       "spine_color": "#f6f5e6"
     },
     {
@@ -9501,7 +9501,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1580622240-M.jpg",
+      "cover": "covers/395.jpg",
       "spine_color": "#57442e"
     },
     {
@@ -9525,7 +9525,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345302834-M.jpg",
+      "cover": "covers/396.jpg",
       "spine_color": "#fdfdfd"
     },
     {
@@ -9549,7 +9549,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/155927378X-M.jpg",
+      "cover": "covers/397.jpg",
       "spine_color": "#a4abb2"
     },
     {
@@ -9573,7 +9573,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/087337617X-M.jpg",
+      "cover": "covers/398.jpg",
       "spine_color": "#cc3632"
     },
     {
@@ -9597,7 +9597,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1586210912-M.jpg",
+      "cover": "covers/399.jpg",
       "spine_color": "#483b43"
     },
     {
@@ -9621,7 +9621,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Art & Design",
-      "cover": "https://covers.openlibrary.org/b/isbn/0906212456-M.jpg",
+      "cover": "covers/400.jpg",
       "spine_color": "#a19b8a"
     },
     {
@@ -9645,7 +9645,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/044011120X-M.jpg",
+      "cover": "covers/401.jpg",
       "spine_color": "#494c55"
     },
     {
@@ -9669,7 +9669,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0070511144-M.jpg",
+      "cover": "covers/402.jpg",
       "spine_color": "#f7f8f8"
     },
     {
@@ -9693,7 +9693,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Law & Legal",
-      "cover": "https://covers.openlibrary.org/b/isbn/0452283426-M.jpg",
+      "cover": "covers/403.jpg",
       "spine_color": "#d89482"
     },
     {
@@ -9717,7 +9717,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671219715-M.jpg",
+      "cover": "covers/404.jpg",
       "spine_color": "#78796d"
     },
     {
@@ -9741,7 +9741,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0300042086-M.jpg",
+      "cover": "covers/405.jpg",
       "spine_color": "#ece9e7"
     },
     {
@@ -9765,7 +9765,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Art & Design",
-      "cover": "https://covers.openlibrary.org/b/isbn/185627912X-M.jpg",
+      "cover": "covers/406.jpg",
       "spine_color": null
     },
     {
@@ -9789,7 +9789,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Parenting & Family",
-      "cover": "https://covers.openlibrary.org/b/isbn/1585420492-M.jpg",
+      "cover": "covers/407.jpg",
       "spine_color": "#f3d7d7"
     },
     {
@@ -9813,7 +9813,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Home Improvement & DIY",
-      "cover": "https://covers.openlibrary.org/b/isbn/1882330285-M.jpg",
+      "cover": "covers/408.jpg",
       "spine_color": "#fefefe"
     },
     {
@@ -9837,7 +9837,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/id/12986375-M.jpg",
+      "cover": "covers/409.jpg",
       "spine_color": null
     },
     {
@@ -9861,7 +9861,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553276999-M.jpg",
+      "cover": "covers/410.jpg",
       "spine_color": "#cf483b"
     },
     {
@@ -9885,7 +9885,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0395428572-M.jpg",
+      "cover": "covers/411.jpg",
       "spine_color": "#e5e1dd"
     },
     {
@@ -9909,7 +9909,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0918393698-M.jpg",
+      "cover": "covers/412.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -9933,7 +9933,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/id/134179-M.jpg",
+      "cover": "covers/413.jpg",
       "spine_color": null
     },
     {
@@ -9957,7 +9957,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Data & Software Engineering",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471052906-M.jpg",
+      "cover": "covers/414.jpg",
       "spine_color": "#fefefe"
     },
     {
@@ -9981,7 +9981,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451520696-M.jpg",
+      "cover": "covers/415.jpg",
       "spine_color": "#fbfefe"
     },
     {
@@ -10005,7 +10005,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0140714146-M.jpg",
+      "cover": "covers/416.jpg",
       "spine_color": "#091340"
     },
     {
@@ -10029,7 +10029,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Survival & Preparedness",
-      "cover": "https://covers.openlibrary.org/b/isbn/0002171856-M.jpg",
+      "cover": "covers/417.jpg",
       "spine_color": "#eae2e3"
     },
     {
@@ -10053,7 +10053,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553239740-M.jpg",
+      "cover": "covers/418.jpg",
       "spine_color": "#070706"
     },
     {
@@ -10077,7 +10077,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/1880184109-M.jpg",
+      "cover": "covers/419.jpg",
       "spine_color": "#f0efee"
     },
     {
@@ -10101,7 +10101,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/156305339X-M.jpg",
+      "cover": "covers/420.jpg",
       "spine_color": "#efefe9"
     },
     {
@@ -10125,7 +10125,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0894803204-M.jpg",
+      "cover": "covers/421.jpg",
       "spine_color": "#dbd7d1"
     },
     {
@@ -10149,7 +10149,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "http://books.google.com/books/content?id=kMh_k7iZNHsC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/422.jpg",
       "spine_color": null
     },
     {
@@ -10173,7 +10173,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451523113-M.jpg",
+      "cover": "covers/423.jpg",
       "spine_color": "#efefe1"
     },
     {
@@ -10197,7 +10197,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Art & Design",
-      "cover": "https://covers.openlibrary.org/b/isbn/0810924145-M.jpg",
+      "cover": "covers/424.jpg",
       "spine_color": "#242a2c"
     },
     {
@@ -10221,7 +10221,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451521374-M.jpg",
+      "cover": "covers/425.jpg",
       "spine_color": "#1a1a19"
     },
     {
@@ -10245,7 +10245,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451521250-M.jpg",
+      "cover": "covers/426.jpg",
       "spine_color": "#22221d"
     },
     {
@@ -10269,7 +10269,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0743509218-M.jpg",
+      "cover": "covers/427.jpg",
       "spine_color": "#eaedec"
     },
     {
@@ -10293,7 +10293,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/isbn/0471146609-M.jpg",
+      "cover": "covers/428.jpg",
       "spine_color": "#1c2e5a"
     },
     {
@@ -10317,7 +10317,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0131958844-M.jpg",
+      "cover": "covers/429.jpg",
       "spine_color": "#fdfefe"
     },
     {
@@ -10341,7 +10341,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671635670-M.jpg",
+      "cover": "covers/430.jpg",
       "spine_color": "#a99e81"
     },
     {
@@ -10365,7 +10365,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Survival & Preparedness",
-      "cover": "https://covers.openlibrary.org/b/isbn/1882723252-M.jpg",
+      "cover": "covers/431.jpg",
       "spine_color": "#1f274e"
     },
     {
@@ -10389,7 +10389,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0064671429-M.jpg",
+      "cover": "covers/432.jpg",
       "spine_color": "#1d363b"
     },
     {
@@ -10413,7 +10413,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671569112-M.jpg",
+      "cover": "covers/433.jpg",
       "spine_color": "#542a44"
     },
     {
@@ -10437,7 +10437,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/044098761X-M.jpg",
+      "cover": "covers/434.jpg",
       "spine_color": "#1b3453"
     },
     {
@@ -10461,7 +10461,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/1590598296-M.jpg",
+      "cover": "covers/435.jpg",
       "spine_color": "#3d300d"
     },
     {
@@ -10485,7 +10485,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Psychology & Relationships",
-      "cover": "https://covers.openlibrary.org/b/isbn/0874776953-M.jpg",
+      "cover": "covers/436.jpg",
       "spine_color": "#fda935"
     },
     {
@@ -10509,7 +10509,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0440901588-M.jpg",
+      "cover": "covers/437.jpg",
       "spine_color": "#2c1c30"
     },
     {
@@ -10533,7 +10533,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/155874262X-M.jpg",
+      "cover": "covers/438.jpg",
       "spine_color": "#416655"
     },
     {
@@ -10557,7 +10557,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671502352-M.jpg",
+      "cover": "covers/439.jpg",
       "spine_color": "#8e4856"
     },
     {
@@ -10581,7 +10581,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/159240328X-M.jpg",
+      "cover": "covers/440.jpg",
       "spine_color": "#ececee"
     },
     {
@@ -10605,7 +10605,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/1558001131-M.jpg",
+      "cover": "covers/441.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -10629,7 +10629,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671551299-M.jpg",
+      "cover": "covers/442.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -10653,7 +10653,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/055327757X-M.jpg",
+      "cover": "covers/443.jpg",
       "spine_color": "#f1efed"
     },
     {
@@ -10677,7 +10677,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Reference & General Knowledge",
-      "cover": "https://covers.openlibrary.org/b/isbn/0600615189-M.jpg",
+      "cover": "covers/444.jpg",
       "spine_color": "#9f8b7d"
     },
     {
@@ -10701,7 +10701,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Economics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0684846411-M.jpg",
+      "cover": "covers/445.jpg",
       "spine_color": "#7c7e67"
     },
     {
@@ -10725,7 +10725,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/isbn/0192813897-M.jpg",
+      "cover": "covers/446.jpg",
       "spine_color": "#52514a"
     },
     {
@@ -10749,7 +10749,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451522648-M.jpg",
+      "cover": "covers/447.jpg",
       "spine_color": "#0c0b0a"
     },
     {
@@ -10773,7 +10773,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0854870806-M.jpg",
+      "cover": "covers/448.jpg",
       "spine_color": "#4e1c41"
     },
     {
@@ -10797,7 +10797,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Art & Design",
-      "cover": "https://covers.openlibrary.org/b/isbn/0929261135-M.jpg",
+      "cover": "covers/449.jpg",
       "spine_color": "#dee646"
     },
     {
@@ -10821,7 +10821,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/1576600769-M.jpg",
+      "cover": "covers/450.jpg",
       "spine_color": "#f1ecec"
     },
     {
@@ -10845,7 +10845,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0553262637-M.jpg",
+      "cover": "covers/451.jpg",
       "spine_color": "#eeefef"
     },
     {
@@ -10869,7 +10869,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/080706307X-M.jpg",
+      "cover": "covers/452.jpg",
       "spine_color": "#648b51"
     },
     {
@@ -10893,7 +10893,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451524055-M.jpg",
+      "cover": "covers/453.jpg",
       "spine_color": "#1a1a1a"
     },
     {
@@ -10917,7 +10917,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0807020044-M.jpg",
+      "cover": "covers/454.jpg",
       "spine_color": "#ebddcf"
     },
     {
@@ -10941,7 +10941,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451524101-M.jpg",
+      "cover": "covers/455.jpg",
       "spine_color": "#30302d"
     },
     {
@@ -10965,7 +10965,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Computing & Programming",
-      "cover": "https://covers.openlibrary.org/b/isbn/0201590654-M.jpg",
+      "cover": "covers/456.jpg",
       "spine_color": "#f3eae6"
     },
     {
@@ -10989,7 +10989,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Shakespeare",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451522532-M.jpg",
+      "cover": "covers/457.jpg",
       "spine_color": "#080a09"
     },
     {
@@ -11013,7 +11013,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/1568582498-M.jpg",
+      "cover": "covers/458.jpg",
       "spine_color": "#891009"
     },
     {
@@ -11037,7 +11037,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/088404632X-M.jpg",
+      "cover": "covers/459.jpg",
       "spine_color": "#8b7b5f"
     },
     {
@@ -11061,7 +11061,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0938399101-M.jpg",
+      "cover": "covers/460.jpg",
       "spine_color": "#452818"
     },
     {
@@ -11085,7 +11085,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/isbn/0671851527-M.jpg",
+      "cover": "covers/461.jpg",
       "spine_color": "#404431"
     },
     {
@@ -11109,7 +11109,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060591870-M.jpg",
+      "cover": "covers/462.jpg",
       "spine_color": "#f1b27c"
     },
     {
@@ -11133,7 +11133,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/1591793785-M.jpg",
+      "cover": "covers/463.jpg",
       "spine_color": "#85bbb4"
     },
     {
@@ -11157,7 +11157,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0920668887-M.jpg",
+      "cover": "covers/464.jpg",
       "spine_color": "#544b69"
     },
     {
@@ -11181,7 +11181,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Parenting & Family",
-      "cover": "https://covers.openlibrary.org/b/isbn/1563831511-M.jpg",
+      "cover": "covers/465.jpg",
       "spine_color": "#f1f1f2"
     },
     {
@@ -11205,7 +11205,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0385336535-M.jpg",
+      "cover": "covers/466.jpg",
       "spine_color": "#d2c37d"
     },
     {
@@ -11229,7 +11229,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0395938473-M.jpg",
+      "cover": "covers/467.jpg",
       "spine_color": "#7e8480"
     },
     {
@@ -11253,7 +11253,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Writing & Language",
-      "cover": "https://covers.openlibrary.org/b/isbn/0689705557-M.jpg",
+      "cover": "covers/468.jpg",
       "spine_color": "#7e4b4d"
     },
     {
@@ -11277,7 +11277,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345297709-M.jpg",
+      "cover": "covers/469.jpg",
       "spine_color": "#966103"
     },
     {
@@ -11301,7 +11301,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345318862-M.jpg",
+      "cover": "covers/470.jpg",
       "spine_color": "#514821"
     },
     {
@@ -11325,7 +11325,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Finance & Investing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0140286780-M.jpg",
+      "cover": "covers/471.jpg",
       "spine_color": "#ffffff"
     },
     {
@@ -11349,7 +11349,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345350588-M.jpg",
+      "cover": "covers/472.jpg",
       "spine_color": "#9e6721"
     },
     {
@@ -11373,7 +11373,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0684825074-M.jpg",
+      "cover": "covers/473.jpg",
       "spine_color": "#efe0b4"
     },
     {
@@ -11397,7 +11397,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345296044-M.jpg",
+      "cover": "covers/474.jpg",
       "spine_color": "#c4a238"
     },
     {
@@ -11421,7 +11421,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0786173270-M.jpg",
+      "cover": "covers/475.jpg",
       "spine_color": "#837f60"
     },
     {
@@ -11445,7 +11445,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Sales & Marketing",
-      "cover": "https://covers.openlibrary.org/b/isbn/0446386278-M.jpg",
+      "cover": "covers/476.jpg",
       "spine_color": "#917f37"
     },
     {
@@ -11469,7 +11469,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0802132189-M.jpg",
+      "cover": "covers/477.jpg",
       "spine_color": "#0f1011"
     },
     {
@@ -11493,7 +11493,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/isbn/0451529065-M.jpg",
+      "cover": "covers/478.jpg",
       "spine_color": "#5d5758"
     },
     {
@@ -11517,7 +11517,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Spirituality & Religion",
-      "cover": "https://covers.openlibrary.org/b/isbn/0345384563-M.jpg",
+      "cover": "covers/479.jpg",
       "spine_color": "#b5b29e"
     },
     {
@@ -11541,7 +11541,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0060256575-M.jpg",
+      "cover": "covers/480.jpg",
       "spine_color": "#f7f7f7"
     },
     {
@@ -11565,7 +11565,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0380759489-M.jpg",
+      "cover": "covers/481.jpg",
       "spine_color": "#685d37"
     },
     {
@@ -11589,7 +11589,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0440498058-M.jpg",
+      "cover": "covers/482.jpg",
       "spine_color": "#4a5471"
     },
     {
@@ -11613,7 +11613,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0142437336-M.jpg",
+      "cover": "covers/483.jpg",
       "spine_color": "#101112"
     },
     {
@@ -11637,7 +11637,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0385333781-M.jpg",
+      "cover": "covers/484.jpg",
       "spine_color": "#baab7d"
     },
     {
@@ -11661,7 +11661,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0380977265-M.jpg",
+      "cover": "covers/485.jpg",
       "spine_color": "#2c4b70"
     },
     {
@@ -11685,7 +11685,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Philosophy",
-      "cover": "https://covers.openlibrary.org/b/isbn/0140442405-M.jpg",
+      "cover": "covers/486.jpg",
       "spine_color": "#cbc692"
     },
     {
@@ -11709,7 +11709,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Literature & Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/0385334206-M.jpg",
+      "cover": "covers/487.jpg",
       "spine_color": "#e7783c"
     },
     {
@@ -11733,7 +11733,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "History & Politics",
-      "cover": "https://covers.openlibrary.org/b/isbn/0679724699-M.jpg",
+      "cover": "covers/488.jpg",
       "spine_color": "#9f7c5e"
     },
     {
@@ -11757,7 +11757,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/1540884244-M.jpg",
+      "cover": "covers/489.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11782,7 +11782,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Humor",
-      "cover": "https://covers.openlibrary.org/b/id/6717606-M.jpg",
+      "cover": "covers/490.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11807,7 +11807,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Science Fiction & Fantasy",
-      "cover": "https://covers.openlibrary.org/b/id/5890987-M.jpg",
+      "cover": "covers/491.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11832,7 +11832,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Children's Books",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781452300115-M.jpg",
+      "cover": "covers/492.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11857,7 +11857,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/8223160-M.jpg",
+      "cover": "covers/493.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11882,7 +11882,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Self-Help & Psychology",
-      "cover": "https://covers.openlibrary.org/b/id/6803634-M.jpg",
+      "cover": "covers/494.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11907,7 +11907,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/12504824-M.jpg",
+      "cover": "covers/495.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11932,7 +11932,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Philosophy & Spirituality",
-      "cover": "https://covers.openlibrary.org/b/id/551262-M.jpg",
+      "cover": "covers/496.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11957,7 +11957,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Self-Help & Psychology",
-      "cover": "http://books.google.com/books/content?id=NfHoCgAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/497.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -11982,7 +11982,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/12707846-M.jpg",
+      "cover": "covers/498.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12007,7 +12007,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/13048826-M.jpg",
+      "cover": "covers/499.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12032,7 +12032,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/13335427-M.jpg",
+      "cover": "covers/500.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12057,7 +12057,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=8qfDoQEACAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/501.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12082,7 +12082,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/id/797467-M.jpg",
+      "cover": "covers/502.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12107,7 +12107,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/248248-M.jpg",
+      "cover": "covers/503.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12132,7 +12132,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Politics & Government",
-      "cover": "https://covers.openlibrary.org/b/isbn/0241961149-M.jpg",
+      "cover": "covers/504.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12157,7 +12157,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/3043711-M.jpg",
+      "cover": "covers/505.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12182,7 +12182,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781857588446-M.jpg",
+      "cover": "covers/506.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12207,7 +12207,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Philosophy & Spirituality",
-      "cover": "https://covers.openlibrary.org/b/id/10858608-M.jpg",
+      "cover": "covers/507.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12232,7 +12232,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=J04YAAAAYAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/508.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12257,7 +12257,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/760358-M.jpg",
+      "cover": "covers/509.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12282,7 +12282,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/1168119-M.jpg",
+      "cover": "covers/510.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12307,7 +12307,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/8311524-M.jpg",
+      "cover": "covers/511.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12332,7 +12332,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Business & Entrepreneurship",
-      "cover": "https://covers.openlibrary.org/b/id/13882953-M.jpg",
+      "cover": "covers/512.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12357,7 +12357,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/11065419-M.jpg",
+      "cover": "covers/513.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12382,7 +12382,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/606533-M.jpg",
+      "cover": "covers/514.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12407,7 +12407,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/8610816-M.jpg",
+      "cover": "covers/515.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12432,7 +12432,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/10375406-M.jpg",
+      "cover": "covers/516.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12457,7 +12457,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/10829225-M.jpg",
+      "cover": "covers/517.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12482,7 +12482,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=lfJof4vMsQ0C&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/518.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12507,7 +12507,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=CzytDwAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/519.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12532,7 +12532,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Science & Nature",
-      "cover": "https://covers.openlibrary.org/b/id/12725620-M.jpg",
+      "cover": "covers/520.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12557,7 +12557,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/1478274158-M.jpg",
+      "cover": "covers/521.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12582,7 +12582,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/10021591-M.jpg",
+      "cover": "covers/522.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12607,7 +12607,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/5767180-M.jpg",
+      "cover": "covers/523.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12632,7 +12632,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Fiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781540818959-M.jpg",
+      "cover": "covers/524.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12657,7 +12657,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781612387383-M.jpg",
+      "cover": "covers/525.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12682,7 +12682,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Sociology & Social Sciences",
-      "cover": "https://covers.openlibrary.org/b/id/12510738-M.jpg",
+      "cover": "covers/526.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12707,7 +12707,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781541025578-M.jpg",
+      "cover": "covers/527.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12732,7 +12732,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/5598287-M.jpg",
+      "cover": "covers/528.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12757,7 +12757,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Fiction",
-      "cover": "https://covers.openlibrary.org/b/id/8779054-M.jpg",
+      "cover": "covers/529.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12782,7 +12782,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Self-Help & Psychology",
-      "cover": "https://covers.openlibrary.org/b/isbn/1389157482-M.jpg",
+      "cover": "covers/530.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12807,7 +12807,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/6297223-M.jpg",
+      "cover": "covers/531.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12832,7 +12832,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=5J4xEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/532.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12857,7 +12857,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Self-Help & Psychology",
-      "cover": "https://covers.openlibrary.org/b/id/507331-M.jpg",
+      "cover": "covers/533.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12882,7 +12882,7 @@
       "shelves": "",
       "read_count": 1,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=ctbmBQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12907,7 +12907,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781155233147-M.jpg",
+      "cover": "covers/535.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12932,7 +12932,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/6536498-M.jpg",
+      "cover": "covers/536.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12957,7 +12957,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/13740501-M.jpg",
+      "cover": "covers/537.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -12982,7 +12982,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/101957-M.jpg",
+      "cover": "covers/538.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13007,7 +13007,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/12366237-M.jpg",
+      "cover": "covers/539.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13032,7 +13032,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=oTtnGwAACAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/540.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13057,7 +13057,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/281904-M.jpg",
+      "cover": "covers/541.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13082,7 +13082,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/12284192-M.jpg",
+      "cover": "covers/542.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13107,7 +13107,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/6954427-M.jpg",
+      "cover": "covers/543.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13132,7 +13132,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/6954427-M.jpg",
+      "cover": "covers/544.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13157,7 +13157,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=_P5FEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/545.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13182,7 +13182,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=Tc8a_5EYXsYC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/546.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13207,7 +13207,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/id/786796-M.jpg",
+      "cover": "covers/547.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13232,7 +13232,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "http://books.google.com/books/content?id=LgNjEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/548.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13257,7 +13257,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/1529070449-M.jpg",
+      "cover": "covers/549.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13282,7 +13282,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Nonfiction",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781529070422-M.jpg",
+      "cover": "covers/550.jpg",
       "spine_color": "",
       "source": "apple_books"
     },
@@ -13307,7 +13307,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51BFS345dcL._SL500_.jpg",
+      "cover": "covers/551.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13334,7 +13334,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51Mc--F6zGL._SL500_.jpg",
+      "cover": "covers/552.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13361,7 +13361,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51nPwA34szL._SL500_.jpg",
+      "cover": "covers/553.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13388,7 +13388,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51OnRqrn1fL._SL500_.jpg",
+      "cover": "covers/554.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13415,7 +13415,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/61I4uhEurbL._SL500_.jpg",
+      "cover": "covers/555.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13442,7 +13442,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51J9H6SUlAL._SL500_.jpg",
+      "cover": "covers/556.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13469,7 +13469,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/61ATYXnfndL._SL500_.jpg",
+      "cover": "covers/557.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13496,7 +13496,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "http://books.google.com/books/content?id=r13bEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/558.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13523,7 +13523,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/11945339-M.jpg",
+      "cover": "covers/559.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13550,7 +13550,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/12819924-M.jpg",
+      "cover": "covers/560.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13577,7 +13577,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/10433791-M.jpg",
+      "cover": "covers/561.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13604,7 +13604,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/10296989-M.jpg",
+      "cover": "covers/562.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13631,7 +13631,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/10351762-M.jpg",
+      "cover": "covers/563.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13658,7 +13658,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/13861623-M.jpg",
+      "cover": "covers/564.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13685,7 +13685,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/513564-M.jpg",
+      "cover": "covers/565.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13712,7 +13712,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51m4vm-iN2L._SL500_.jpg",
+      "cover": "covers/566.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13739,7 +13739,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51Z7eoYiGzL._SL500_.jpg",
+      "cover": "covers/567.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13766,7 +13766,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51ezS2YVWqL._SL500_.jpg",
+      "cover": "covers/568.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13793,7 +13793,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/41JZQ51E4tL._SL500_.jpg",
+      "cover": "covers/569.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13820,7 +13820,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/41xn1GVHw7L._SL500_.jpg",
+      "cover": "covers/570.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13847,7 +13847,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51lfklYPaLL._SL500_.jpg",
+      "cover": "covers/571.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13874,7 +13874,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/2401616-M.jpg",
+      "cover": "covers/572.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13901,7 +13901,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/isbn/9798822519190-M.jpg",
+      "cover": "covers/573.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13928,7 +13928,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/10721468-M.jpg",
+      "cover": "covers/574.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13955,7 +13955,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/13202688-M.jpg",
+      "cover": "covers/575.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -13982,7 +13982,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://covers.openlibrary.org/b/id/8802285-M.jpg",
+      "cover": "covers/576.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14009,7 +14009,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "http://books.google.com/books/content?id=NCcenQAACAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/577.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14036,7 +14036,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "http://books.google.com/books/content?id=QWqNXUcDDpAC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+      "cover": "covers/578.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14063,7 +14063,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51MqqEK1DeL._SL500_.jpg",
+      "cover": "covers/579.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14090,7 +14090,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51jKVZ4jYGL._SL500_.jpg",
+      "cover": "covers/580.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14117,7 +14117,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51fPW4nQFSL._SL500_.jpg",
+      "cover": "covers/581.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14144,7 +14144,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/512BM5zsdiL._SL500_.jpg",
+      "cover": "covers/582.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14171,7 +14171,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/418SS6kidwL._SL500_.jpg",
+      "cover": "covers/583.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14198,7 +14198,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51drOvG31BL._SL500_.jpg",
+      "cover": "covers/584.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14225,7 +14225,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51zaTQ-iqSL._SL500_.jpg",
+      "cover": "covers/585.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14252,7 +14252,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/41dfe587mFL._SL500_.jpg",
+      "cover": "covers/586.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14279,7 +14279,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51J8O5-peDL._SL500_.jpg",
+      "cover": "covers/587.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14306,7 +14306,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/418gBAXXrrL._SL500_.jpg",
+      "cover": "covers/588.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14333,7 +14333,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/517pfctTa9L._SL500_.jpg",
+      "cover": "covers/589.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14360,7 +14360,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51pKH0zxCCL._SL500_.jpg",
+      "cover": "covers/590.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14387,7 +14387,7 @@
       "shelves": "",
       "my_review": "",
       "status": "",
-      "cover": "https://m.media-amazon.com/images/I/51Fy2ZJjIbL._SL500_.jpg",
+      "cover": "covers/591.jpg",
       "spine_color": "",
       "source": "audible",
       "read_count": 0,
@@ -14414,7 +14414,7 @@
       "shelves": "",
       "read_count": 0,
       "category": "Self-Help & Personal Growth",
-      "cover": "https://covers.openlibrary.org/b/id/480866-M.jpg",
+      "cover": "covers/592.jpg",
       "spine_color": "#D4A574"
     }
   ]

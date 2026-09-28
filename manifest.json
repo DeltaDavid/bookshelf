@@ -1,6 +1,6 @@
 {
-  "name": "Bookshelf",
-  "short_name": "Bookshelf",
+  "name": "Books",
+  "short_name": "Books",
   "description": "Personal reading library",
   "start_url": "/",
   "scope": "/",

@@ -1,4 +1,5 @@
 const WEB_SCHEMES = new Set(['http:', 'https:', 'mailto:']);
+export const SPARKLE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c.7 4.7 3.3 7.3 8 8-4.7.7-7.3 3.3-8 8-.7-4.7-3.3-7.3-8-8Z"/><path d="M19 16c.3 2 1.3 3 3 3-1.7.3-2.7 1.3-3 3-.3-1.7-1.3-2.7-3-3 1.7-.3 2.7-1.3 3-3Z"/></svg>';
 
 export function safeDestination(value, allowedActions = new Set()) {
   let url;
@@ -71,7 +72,7 @@ export function chooseRandomComplex(catalog, random = Math.random) {
 
 const STYLE = `
 .amk{--amk-accent:var(--accent,#2868b2);position:fixed;right:20px;bottom:20px;z-index:2147481900;width:min(390px,calc(100vw - 24px));min-width:min(300px,calc(100vw - 24px));max-width:min(620px,calc(100vw - 12px));max-height:calc(100vh - 24px);display:flex;flex-direction:column;color:var(--ink,#1f2933);background:var(--card,#fff);border:1px solid var(--line2,#d6dde6);border-radius:12px;box-shadow:0 14px 42px rgba(0,0,0,.22);font:13px/1.45 var(--font,-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif);overflow:hidden}
-.amk[hidden]{display:none}.amk-head,.amk-compose,.amk-controls{display:flex;align-items:center;gap:8px}.amk-head{padding:10px 12px;background:var(--headbg,#f4f6f9);border-bottom:1px solid var(--line2,#d6dde6)}.amk-head strong{flex:1}.amk button{font:inherit;cursor:pointer}.amk-icon{width:29px;height:29px;border:0;background:transparent;border-radius:7px}.amk-icon:hover,.amk-icon:focus{background:rgba(0,0,0,.07)}
+.amk[hidden]{display:none}.amk-head,.amk-compose,.amk-controls{display:flex;align-items:center;gap:8px}.amk-head{padding:10px 12px;background:var(--headbg,#f4f6f9);border-bottom:1px solid var(--line2,#d6dde6)}.amk-head strong{flex:1}.amk button{font:inherit;cursor:pointer}.amk-icon{width:29px;height:29px;border:0;background:transparent;border-radius:7px}.amk-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.amk-icon:hover,.amk-icon:focus{background:rgba(0,0,0,.07)}
 .amk-body{min-height:86px;max-height:min(56vh,520px);overflow:auto;padding:10px;display:flex;flex-direction:column;gap:8px}.amk-empty{margin:auto;padding:25px;color:var(--mut,#687382);text-align:center;max-width:260px}.amk-msg{max-width:88%;padding:8px 10px;border-radius:10px;overflow-wrap:anywhere}.amk-msg.user{align-self:flex-end;background:color-mix(in srgb,var(--amk-accent) 16%,transparent)}.amk-msg.assistant{align-self:flex-start;background:var(--accentSoft,#edf2f7)}.amk-msg>*{margin:0 0 5px}.amk-msg>*:last-child{margin-bottom:0}.amk-msg pre,.amk-msg code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.amk-msg pre{white-space:pre-wrap}.amk-action{border:0;padding:0;color:var(--amk-accent);background:transparent;text-decoration:underline}
 .amk-card{border-left:3px solid var(--amk-accent);background:color-mix(in srgb,var(--amk-accent) 8%,var(--card,#fff));padding:8px 10px;border-radius:7px}.amk-card.warning{border-left-color:#b45309}.amk-card>strong{display:block;margin-bottom:4px}
 .amk-foot{padding:9px 10px;border-top:1px solid var(--line2,#d6dde6);display:flex;flex-direction:column;gap:7px}.amk-compose textarea{flex:1;min-width:0;min-height:34px;max-height:132px;resize:none;overflow:auto;box-sizing:border-box;padding:7px 9px;border:1px solid var(--line2,#d6dde6);border-radius:8px;background:var(--card,#fff);color:inherit;font:inherit}.amk-send,.amk-voice{border:0;border-radius:8px;padding:8px 11px;background:var(--amk-accent);color:#fff;font-weight:650}.amk-send:disabled{opacity:.55}.amk-state{font-size:11px;color:var(--mut,#687382);flex:1}.amk-error{color:#b42318;font-size:11px}
@@ -166,7 +167,7 @@ export function attachAskMe(options) {
   const title = doc.createElement('strong'); title.textContent = options.title ?? 'Ask Me';
   const state = doc.createElement('span'); state.className = 'amk-state'; state.textContent = 'Ready';
   const prompts = doc.createElement('div'); prompts.className = 'amk-prompts';
-  const promptButton = doc.createElement('button'); promptButton.type = 'button'; promptButton.className = 'amk-icon'; promptButton.textContent = '✦'; promptButton.title = 'Example questions'; promptButton.setAttribute('aria-label', 'Example questions');
+  const promptButton = doc.createElement('button'); promptButton.type = 'button'; promptButton.className = 'amk-icon'; promptButton.innerHTML = SPARKLE_ICON; promptButton.title = 'Example questions'; promptButton.setAttribute('aria-label', 'Example questions');
   const promptMenu = doc.createElement('div'); promptMenu.className = 'amk-prompt-menu'; promptMenu.hidden = true;
   if (options.cascadingPrompts) promptMenu.classList.add('cascade');
   prompts.append(promptButton); doc.body.append(promptMenu);
@@ -187,11 +188,11 @@ export function attachAskMe(options) {
   foot.append(form, controls); panel.append(head, body, foot); root.append(panel);
 
   const allowedActions = new Set(Object.keys(options.actions ?? {}));
-  function resizeInput() { input.style.height = 'auto'; input.style.height = `${Math.min(input.scrollHeight, 132)}px`; }
+  function resizeInput() { input.style.height = 'auto'; input.style.height = `${Math.min(input.scrollHeight, 132)}px`; clampPanel(); }
   function addMessage(role, text) {
     empty.remove(); const message = doc.createElement('article'); message.className = `amk-msg ${role}`;
     if (role === 'assistant') renderSafeAnswer(message, text, { allowedActions, actions: options.actions ?? {} }); else message.textContent = text;
-    body.append(message); body.scrollTop = body.scrollHeight;
+    body.append(message); body.scrollTop = body.scrollHeight; clampPanel();
   }
   async function submit(text, fromVoice = false) {
     text = String(text ?? '').trim(); if (!text || send.disabled) return;
@@ -202,6 +203,7 @@ export function attachAskMe(options) {
       const answer = typeof result === 'string' ? result : result?.text ?? result?.answer;
       if (!answer) throw new Error('Ask Me returned no answer.');
       addMessage('assistant', answer); state.textContent = 'Ready';
+      if (fromVoice) options.voice?.speak?.(answer);
     } catch (cause) { error.textContent = cause?.message ?? 'Ask Me is unavailable.'; state.textContent = 'Unavailable'; }
     finally { send.disabled = false; }
   }
@@ -215,13 +217,22 @@ export function attachAskMe(options) {
   promptButton.addEventListener('click', () => { promptMenu.hidden = !promptMenu.hidden; if (!promptMenu.hidden) placePromptMenu(); });
   const dismissPromptMenu = (event) => { if (!promptMenu.hidden && !promptMenu.contains(event.target) && !promptButton.contains(event.target)) promptMenu.hidden = true; };
   doc.addEventListener('pointerdown', dismissPromptMenu);
-  close.addEventListener('click', () => { panel.hidden = true; options.onClose?.(); });
+  close.addEventListener('click', () => { panel.hidden = true; options.voice?.stop?.(); listening = false; if (voiceButton) voiceButton.textContent = 'Start voice'; options.onClose?.(); });
   input.addEventListener('input', resizeInput);
   input.addEventListener('keydown', (event) => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); form.requestSubmit(); } });
   form.addEventListener('submit', (event) => { event.preventDefault(); submit(input.value); });
   voiceButton?.addEventListener('click', async () => {
     if (listening) { await options.voice.stop?.(); listening = false; voiceButton.textContent = 'Start voice'; state.textContent = 'Ready'; }
-    else { try { await options.voice.start((transcript) => submit(transcript, true)); listening = true; voiceButton.textContent = 'Stop voice'; state.textContent = 'Listening'; } catch (cause) { error.textContent = cause?.message ?? 'Voice is unavailable.'; } }
+    else {
+      try {
+        await options.voice.start(
+          (transcript) => submit(transcript, true),
+          () => { listening = false; voiceButton.textContent = 'Start voice'; if (state.textContent === 'Listening') state.textContent = 'Ready'; },
+          (cause) => { error.textContent = cause?.message ?? 'Voice is unavailable.'; state.textContent = 'Unavailable'; }
+        );
+        listening = true; voiceButton.textContent = 'Stop voice'; state.textContent = 'Listening'; error.textContent = '';
+      } catch (cause) { error.textContent = cause?.message ?? 'Voice is unavailable.'; state.textContent = 'Unavailable'; }
+    }
   });
   const positionKey = options.storageKey ? `${options.storageKey}:position` : null;
   const sizeKey = options.storageKey ? `${options.storageKey}:size` : null;
@@ -246,7 +257,7 @@ export function attachAskMe(options) {
   resizeInput();
   return {
     open() { panel.hidden = false; input.focus(); },
-    close() { panel.hidden = true; },
+    close() { panel.hidden = true; options.voice?.stop?.(); listening = false; if (voiceButton) voiceButton.textContent = 'Start voice'; },
     ask(text) { return submit(text); },
     setDraft(text) { input.value = String(text ?? ''); resizeInput(); },
     destroy() { options.voice?.stop?.(); win.removeEventListener('resize', clampPanel); doc.removeEventListener('pointerdown', dismissPromptMenu); promptMenu.remove(); panel.remove(); },
