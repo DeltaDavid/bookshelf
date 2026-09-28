@@ -881,7 +881,88 @@ input:focus-visible,[tabindex]:focus-visible{
 /* "We don't need the search, categories, statuses, etc. at the top of the
    stats." The control bar is global markup rendered on every view; Stats has
    nothing to filter, so it is hidden there rather than removed. */
-body:has(#v-stats.active) .ctl{display:none}
+body:has(#v-stats.active) .ctl{visibility:hidden}
+
+.topbar{position:sticky;top:0;z-index:201;display:flex;align-items:center;gap:18px;min-height:64px;padding:0 28px;background:var(--bg2);border-bottom:1px solid var(--border);box-shadow:0 1px 2px var(--shadow)}
+.topbar .hdr{padding:0;border:0;box-shadow:none;flex:none}
+.topbar .hdr h1{white-space:nowrap}
+.topbar .tabs{position:static;padding:0;border:0;flex:none;align-self:stretch;align-items:center}
+.topbar .tab-btn{min-height:44px;padding:10px 13px}
+.topbar .ctl{position:static;padding:0;border:0;flex:1;min-width:0;flex-wrap:nowrap;justify-content:flex-end;gap:8px}
+.topbar .ctl-search{min-width:100px;max-width:220px;flex:1}
+.topbar .ctl select{max-width:145px}
+.topbar .toolbar-btn{white-space:nowrap;min-height:44px;padding:9px 11px}
+.topbar .st[hidden],#mobSt{display:none!important}
+.cover-item img,.modal-cover,.similar-item img,.bk-tbl .tbl-cover{background:transparent!important}
+.cover-item img{box-shadow:none}
+#modal-cover img{display:block;width:150px;height:auto;max-height:225px;object-fit:contain}
+body:has(.modal-overlay.open) .askme-fab{display:none}
+
+.modal-nav{position:sticky;top:0;z-index:11;display:flex;justify-content:flex-end;align-items:center;gap:10px;padding:12px 24px;min-height:68px;background:var(--bg2)}
+.modal-nav-btn,.modal-nav .modal-close{position:static;min-height:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.modal-nav-btn{padding:0 15px}
+.modal-nav .modal-close{width:44px;flex:none;margin-left:auto}
+.modal-nav-btn:first-child{margin-right:auto}
+.modal-info .hstar{font-size:28px}
+.modal-info .hstar .star{min-height:36px}
+.modal-info .hstar-ro{font-size:19px}
+.modal-body .mb-section:not(.progress-section):not(.text-section):not(.quote-section){display:grid;grid-template-columns:120px minmax(0,1fr);align-items:center;gap:12px;margin-bottom:9px;min-height:36px}
+.modal-body .mb-section:not(.progress-section):not(.text-section):not(.quote-section) .mb-label{margin:0}
+.modal-body .mb-val{min-width:0}
+.modal-body .editable{display:inline-flex;align-items:center;min-height:36px;max-width:100%;border:1px solid var(--border);border-radius:7px;padding:5px 10px;background:var(--bg);vertical-align:middle}
+.modal-body .editable:hover,.modal-body .editable:focus-visible{border-color:var(--accent-live);background:#f3f7fc}
+.modal-body .editable::after{content:'\270E';font-size:12px;color:var(--dim);margin-left:12px}
+.modal-body .edit-input{min-height:36px}
+.modal-body .progress-fields{display:grid;grid-template-columns:1fr;gap:8px}
+.modal-body .progress-field{display:grid;grid-template-columns:120px minmax(0,1fr);align-items:center;gap:12px;min-width:0}
+.modal-body .progress-field-label{margin:0}
+.modal-body .progress-field input{min-height:44px}
+.modal-body .text-section,.modal-body .quote-section{margin-top:20px}
+.modal-body .text-section .mb-label,.modal-body .quote-section .mb-label{margin-bottom:8px}
+.autogrow{display:block;width:100%;min-height:44px;overflow:hidden;resize:none;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--txt);font:inherit;font-size:14px;line-height:1.45;outline:none}
+.autogrow:hover{border-color:#aebfd3}
+.autogrow:focus{border-color:var(--accent-live);box-shadow:0 0 0 3px rgba(47,111,181,.12)}
+.quote-item{display:flex;align-items:flex-start;gap:8px;padding:0;margin:0 0 8px;background:none;border:0;font-style:normal}
+.quote-item .autogrow{flex:1}
+.quote-item .q-del{position:static;opacity:1;flex:none;width:44px;height:44px;background:var(--bg3);border-radius:8px}
+.quote-add{align-items:flex-start}
+.quote-add .autogrow{flex:1;min-width:0}
+.quote-add .autogrow{resize:none}
+.quote-add button{min-height:44px;align-self:flex-start;padding:0 16px;font-size:13px}
+.timeline{margin-top:26px;padding:20px;border-radius:12px}
+.timeline h4{margin-bottom:12px}
+.tl-track{padding:0}
+.tl-item{display:grid;grid-template-columns:140px minmax(0,1fr);align-items:center;gap:14px;border:0;border-top:1px solid var(--rule);padding:12px 0}
+.tl-item:last-child{padding-bottom:12px}
+.tl-item::before{display:none}
+.tl-date{font-size:12px;font-variant-numeric:tabular-nums;margin:0}
+.tl-label{font-size:13px;font-weight:560}
+.tl-add-date{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.tl-add-date label{display:flex;align-items:center;gap:8px;margin:0;font-size:12px}
+.tl-add-date input{min-height:44px;padding:7px 10px}
+@media(max-width:1100px) and (min-width:769px){.topbar{gap:10px;padding:0 18px}.topbar .ctl-search{max-width:145px}.topbar .ctl select{max-width:130px}.topbar .toolbar-btn{padding:9px 8px}.topbar button[onclick="openAskMe()"]{display:none}}
+.mobile-controls-button{display:none}
+@media(max-width:768px){
+  .topbar{top:env(safe-area-inset-top,0px);min-height:58px;padding:0 12px;gap:4px}
+  .topbar .hdr{padding:0}.topbar .hdr h1{font-size:1.25rem}
+  .topbar .tabs{display:flex;margin-left:auto}
+  .topbar .tab-btn{padding:8px 8px;font-size:12px}
+  .topbar .ctl{display:none}
+  .mobile-controls-button{display:flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;border:1px solid var(--border);border-radius:9px;background:var(--bg2);color:var(--txt);font-size:20px;cursor:pointer}
+  .mobile-controls-button[aria-expanded=true]{background:var(--bg3);border-color:var(--accent-live)}
+  .mob-toolbar{display:none;position:fixed;top:calc(58px + env(safe-area-inset-top,0px));left:0;right:0;z-index:202;padding:12px 16px;box-shadow:0 10px 22px rgba(15,33,56,.12)}
+  .mob-toolbar.open{display:block}
+  .mob-toolbar .mob-filter-bar{justify-content:flex-start}
+  .mobile-search-button{min-height:44px;padding:8px 14px;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--txt);font:inherit;font-size:13px;cursor:pointer}
+  .bottom-tabs{display:none}
+  body{padding-bottom:env(safe-area-inset-bottom,0px)}
+  .mob-fab{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .askme-fab{bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+  .modal-nav{padding:8px 16px;min-height:60px}.modal-nav .modal-close{margin-left:0}
+  .modal-body .mb-section:not(.progress-section):not(.text-section):not(.quote-section){grid-template-columns:96px minmax(0,1fr)}
+  .modal-body .progress-field{grid-template-columns:96px minmax(0,1fr)}
+  .tl-item{grid-template-columns:105px minmax(0,1fr)}
+}
 </style></head><body>
 <script>
 /* Apply dark mode before paint to prevent theme flash */
@@ -926,8 +1007,24 @@ try{if(localStorage.getItem('bs_dark')==='1')document.body.classList.add('dark-m
 <div class="md-item" onclick="alert('Books v2.2')">About</div>
 </div></div>
 </div>
+<div class="topbar" id="topbar">
 <div class="hdr">
 <h1>Books</h1>
+</div>
+<div class="tabs">
+<button class="tab-btn active" onclick="switchTab('cover')">Cover</button>
+<button class="tab-btn" onclick="switchTab('table')">Table</button>
+<button class="tab-btn" onclick="switchTab('stats')">Stats</button>
+</div>
+<button class="mobile-controls-button" id="mobileControlsButton" aria-label="Search and filters" aria-expanded="false" onclick="toggleMobileControls()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2" fill="var(--bg2)"/><circle cx="15" cy="17" r="2" fill="var(--bg2)"/></svg></button>
+<div class="ctl">
+<div class="ctl-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" id="ctlSrch" placeholder="Search..." oninput="document.getElementById('srch').value=this.value;debouncedFilter()"></div>
+<select id="cf"><option value="">All Categories</option></select>
+<button class="toolbar-btn" id="sf-btn" onclick="openStatusFilter()" style="position:relative">All Statuses &#9662;</button>
+<button class="toolbar-btn" onclick="openAskMe()">Ask Me</button>
+<button class="toolbar-btn primary" onclick="openAddBook()">+ Add Book</button>
+<div class="st" id="st" hidden>0 books</div>
+</div>
 </div>
 <div class="search-wrap">
 <div class="search-bar">
@@ -938,6 +1035,7 @@ try{if(localStorage.getItem('bs_dark')==='1')document.body.classList.add('dark-m
 
 <div class="mob-toolbar" id="mobToolbar">
 <div class="mob-filter-bar">
+<button class="mobile-search-button" onclick="toggleMobileControls(false);toggleTabSearch()">Search</button>
 <button class="mob-chip" onclick="openCatPicker()" id="mob-cat-btn">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
 <span class="mob-chip-label">Category</span>
@@ -954,24 +1052,6 @@ try{if(localStorage.getItem('bs_dark')==='1')document.body.classList.add('dark-m
 <div class="st" id="mobSt" style="text-align:center;color:var(--dim);font-size:12px;font-weight:500;padding-top:4px">0 books</div>
 </div>
 
-<div class="tabs">
-<button class="tab-btn active" onclick="switchTab('cover')">Cover</button>
-<button class="tab-btn" onclick="switchTab('table')">Table</button>
-<button class="tab-btn" onclick="switchTab('stats')">Stats</button>
-</div>
-
-<div class="ctl">
-<div class="ctl-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" id="ctlSrch" placeholder="Search..." oninput="document.getElementById('srch').value=this.value;debouncedFilter()"></div>
-<select id="cf"><option value="">All Categories</option></select>
-<button class="toolbar-btn" id="sf-btn" onclick="openStatusFilter()" style="position:relative">All Statuses &#9662;</button>
-<button class="toolbar-btn" onclick="openAskMe()">Ask Me</button>
-<button class="toolbar-btn primary" onclick="openAddBook()">+ Add Book</button>
-<div class="st" id="st">0 books</div>
-</div>
-
-
-
-
 <div class="view active" id="v-cover"></div>
 <div id="bulkBar" class="bulk-bar">
 <span class="bulk-count" id="bulkCount">0 selected</span>
@@ -987,11 +1067,10 @@ try{if(localStorage.getItem('bs_dark')==='1')document.body.classList.add('dark-m
 <!-- Book Detail Modal -->
 <div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
 <div class="modal">
-<button class="modal-close" onclick="closeModal()">&times;</button>
 <div class="modal-nav">
 <button class="modal-nav-btn" id="prevBook" onclick="navModal(-1)">&larr; Previous</button>
-<span class="modal-nav-counter" id="modalCounter"></span>
 <button class="modal-nav-btn" id="nextBook" onclick="navModal(1)">Next &rarr;</button>
+<button class="modal-close" onclick="closeModal()" aria-label="Close book detail">&times;</button>
 </div>
 <div class="modal-top">
 <div id="modal-cover"></div>
@@ -1021,7 +1100,7 @@ try{if(localStorage.getItem('bs_dark')==='1')document.body.classList.add('dark-m
 </div>
 
 <script>
-/* exported switchTab, openModal, closeModal, navModal, openAddBook, closeAddBook, searchBooks, addFromSearch, addManualBook, setBookDate, sortTbl, toggleAllRows, updateBulkSelection, clearBulkSelection, bulkEdit, bulkAddNewItem, applyBulk, applyBulkMulti, openStatusFilter, updateStatusFilter, exportData, exportCSV, downloadBackup, toggleDarkMode, showShortcuts, closeSearchOverlay, openCatPicker, closeCatPicker, toggleTabSearch, clickStar, previewHalf, resetHalf, saveField, isDuplicate, coverCheck, coverFail, deletePicker, startEdit, addQuote, deleteQuote, applyFilters, debouncedFilter, navigateToCategory */
+/* exported switchTab, openModal, closeModal, navModal, openAddBook, closeAddBook, searchBooks, addFromSearch, addManualBook, setBookDate, sortTbl, toggleAllRows, updateBulkSelection, clearBulkSelection, bulkEdit, bulkAddNewItem, applyBulk, applyBulkMulti, openStatusFilter, updateStatusFilter, exportData, exportCSV, downloadBackup, toggleDarkMode, showShortcuts, closeSearchOverlay, openCatPicker, closeCatPicker, toggleTabSearch, clickStar, previewHalf, resetHalf, saveField, isDuplicate, coverCheck, coverFail, deletePicker, startEdit, addQuote, deleteQuote, saveQuote, toggleMobileControls, applyFilters, debouncedFilter, navigateToCategory */
 // ===== CATEGORY COLORS =====
 const CC={"Art & Design":"#9C27B0","Business & Entrepreneurship":"#1565C0","Computing & Programming":"#2E7D32","Cooking & Food":"#E65100","Data & Software Engineering":"#00695C","Economics":"#AD1457","Finance & Investing":"#283593","Health & Wellness":"#558B2F","History & Politics":"#BF360C","Home Improvement & DIY":"#4E342E","Humor & Trivia":"#F57F17","Judaism & Jewish Life":"#006064","Law & Legal":"#4A148C","Literature & Fiction":"#827717","Music & Entertainment":"#880E4F","Outdoors & Sports":"#1B5E20","Parenting & Family":"#BF360C","Philosophy":"#4527A0","Psychology & Relationships":"#01579B","Reference & General Knowledge":"#37474F","Sales & Marketing":"#0D47A1","Science & Nature":"#1B5E20","Science Fiction & Fantasy":"#311B92","Self-Help & Personal Growth":"#FF6F00","Shakespeare":"#6A1B9A","Spirituality & Religion":"#004D40","Survival & Preparedness":"#3E2723","Travel":"#0277BD","Writing & Language":"#D84315","Uncategorized":"#616161"};
 const CB={"Art & Design":"#F3E5F5","Business & Entrepreneurship":"#E3F2FD","Computing & Programming":"#E8F5E9","Cooking & Food":"#FFF3E0","Data & Software Engineering":"#E0F2F1","Economics":"#FCE4EC","Finance & Investing":"#E8EAF6","Health & Wellness":"#F1F8E9","History & Politics":"#FBE9E7","Home Improvement & DIY":"#EFEBE9","Humor & Trivia":"#FFF9C4","Judaism & Jewish Life":"#E0F7FA","Law & Legal":"#F3E5F5","Literature & Fiction":"#FFFDE7","Music & Entertainment":"#FCE4EC","Outdoors & Sports":"#E8F5E9","Parenting & Family":"#FFF3E0","Philosophy":"#EDE7F6","Psychology & Relationships":"#E1F5FE","Reference & General Knowledge":"#ECEFF1","Sales & Marketing":"#E3F2FD","Science & Nature":"#E8F5E9","Science Fiction & Fantasy":"#EDE7F6","Self-Help & Personal Growth":"#FFF8E1","Shakespeare":"#F3E5F5","Spirituality & Religion":"#E0F7FA","Survival & Preparedness":"#EFEBE9","Travel":"#E1F5FE","Writing & Language":"#FBE9E7","Uncategorized":"#F5F5F5"};
@@ -1128,7 +1207,7 @@ function coverFallbackHTML(b,w){
 function coverHTML(b,w,h){
   const src=safeCoverURL(b.cover);
   if(!src)return coverFallbackHTML(b,w);
-  return'<img src="'+coverAttr(src)+'" alt="Cover for '+coverAttr(b.title)+'" data-book-id="'+b.id+'" width="'+w+'" height="'+h+'" loading="lazy" style="object-fit:contain;border-radius:4px;background:var(--bg3)" onload="coverCheck(this)" onerror="coverFail(this)">';
+  return'<img src="'+coverAttr(src)+'" alt="Cover for '+coverAttr(b.title)+'" data-book-id="'+b.id+'" width="'+w+'" height="'+h+'" loading="lazy" style="object-fit:contain;border-radius:4px" onload="coverCheck(this)" onerror="coverFail(this)">';
 }
 // ===== TOOLTIP =====
 function tipHTML(b){
@@ -1149,10 +1228,9 @@ function tagPillsHTML(b){
 // ===== INLINE EDITING =====
 function makeEditable(val,bookId,field,className){
   let display;
-  if(field==='date_read')display=val?fmtDate(val):'<span style="color:var(--dim);font-style:italic">click to edit</span>';
-  else if(field==='notes')display=val?esc(val).replace(/\n/g,'<br>'):'<span style="color:var(--dim);font-style:italic">Add notes...</span>';
-  else display=val?esc(val):'<span style="color:var(--dim);font-style:italic">click to edit</span>';
-  return'<span class="editable '+(className||'')+'" onclick="event.stopPropagation();startEdit(this,'+bookId+',\''+field+'\')" title="Click to edit">'+display+'</span>';}
+  if(field==='date_read')display=val?fmtDate(val):'Add date';
+  else display=val?esc(val):'Add '+field;
+  return'<span class="editable '+(className||'')+'" role="button" tabindex="0" aria-label="Edit '+field+'" onclick="event.stopPropagation();startEdit(this,'+bookId+',\''+field+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();startEdit(this,'+bookId+',\''+field+'\')}">'+display+'</span>';}
 
 // ===== SHELF MANAGEMENT =====
 function collectAllShelves(){
@@ -1244,7 +1322,6 @@ function startEdit(el,bookId,field){  if(el.classList.contains('editing'))return
   if(field==='shelves'){openPicker(el,bookId,'shelves');return}
   if(field==='status'){openPicker(el,bookId,'status');return}
   if(field==='tags'){openPicker(el,bookId,'tags');return}
-  i
   if(field==='type'){
     el.classList.add('editing');
     const sel=document.createElement('select');sel.className='edit-input';
@@ -1468,6 +1545,7 @@ function openModal(id){
   if(modalIdx<0)modalIdx=0;
   renderModalContent(id);
   document.getElementById('modal').classList.add('open');
+  document.querySelectorAll('#modal-body .autogrow').forEach(autoGrow);
 }
 function navModal(dir){
   modalIdx+=dir;
@@ -1484,7 +1562,6 @@ function renderModalContent(id){
   // Nav
   document.getElementById('prevBook').disabled=modalIdx<=0;
   document.getElementById('nextBook').disabled=modalIdx>=modalBookList.length-1;
-  document.getElementById('modalCounter').textContent=(modalIdx+1)+' of '+modalBookList.length;
 
   // Title
   document.getElementById('modal-title').innerHTML='<a href="'+esc(amazonURL(b))+'" target="_blank">'+esc(b.title)+'</a>';
@@ -1539,16 +1616,16 @@ function renderModalContent(id){
 
   // Notes
   const notes=getNotes(b);
-  body+='<div class="mb-section"><div class="mb-label">My Notes</div><div class="mb-val">'+makeEditable(notes||'',b.id,'notes')+'</div></div>';
+  body+='<div class="mb-section text-section"><div class="mb-label">Notes</div><textarea class="autogrow" rows="1" placeholder="Add notes" aria-label="Notes" oninput="autoGrow(this);saveField('+b.id+',\'notes\',this.value)">'+esc(notes||'')+'</textarea></div>';
 
   // Quotes/Highlights
-  body+='<div class="mb-section"><div class="mb-label">Quotes &amp; Highlights</div>';
+  body+='<div class="mb-section quote-section"><div class="mb-label">Quotes &amp; Highlights</div>';
   if(quotes.length>0){
     quotes.forEach((q,i)=>{
-      body+='<div class="quote-item">\u201C'+esc(q)+'\u201D<button class="q-del" onclick="event.stopPropagation();deleteQuote('+b.id+','+i+')">&times;</button></div>';
+      body+='<div class="quote-item"><textarea class="autogrow" rows="1" aria-label="Quote or highlight '+(i+1)+'" oninput="autoGrow(this);saveQuote('+b.id+','+i+',this.value)">'+esc(q)+'</textarea><button class="q-del" aria-label="Remove quote or highlight" onclick="event.stopPropagation();deleteQuote('+b.id+','+i+')">&times;</button></div>';
     });
   }
-  body+='<div class="quote-add"><textarea id="quote-input" placeholder="Add a quote or highlight..." rows="2"></textarea><button onclick="addQuote('+b.id+')">Add</button></div>';
+  body+='<div class="quote-add"><textarea class="autogrow" id="quote-input" placeholder="Add a quote or highlight" aria-label="New quote or highlight" rows="1" oninput="autoGrow(this)"></textarea><button onclick="addQuote('+b.id+')">Add</button></div>';
   body+='</div>';
 
   // Similar Books
@@ -1556,7 +1633,7 @@ function renderModalContent(id){
   const sameCat=DATA.filter(x=>x.category===b.category&&x.id!==b.id&&x.author!==b.author).slice(0,6);
   const similar=[...sameAuthor,...sameCat].slice(0,8);
   if(similar.length>0){
-    body+='<div class="mb-section"><div class="mb-label">Similar Books</div><div class="similar-grid">';    similar.forEach(s=>{
+    body+='<div class="mb-section text-section"><div class="mb-label">Similar Books</div><div class="similar-grid">';    similar.forEach(s=>{
       body+='<div class="similar-item" onclick="openModal('+s.id+')" title="'+esc(s.title)+' by '+esc(s.author)+'">';
       if(s.cover)body+='<img src="'+s.cover+'" loading="lazy">';
       else body+='<div class="sim-ph">'+esc(s.title.slice(0,30))+'</div>';
@@ -1574,6 +1651,13 @@ function renderModalContent(id){
   body+=renderTimeline(b);
 
   document.getElementById('modal-body').innerHTML=body;
+  document.querySelectorAll('#modal-body .autogrow').forEach(autoGrow);
+}
+
+function autoGrow(el){el.style.height='auto';el.style.height=el.scrollHeight+'px'}
+function saveQuote(bookId,index,value){
+  const book=DATA.find(b=>b.id===bookId);if(!book)return;
+  const quotes=[...getQuotes(book)];quotes[index]=value;saveField(bookId,'quotes',quotes);
 }
 
 function addQuote(bookId){
@@ -1797,10 +1881,10 @@ function renderTimeline(b){
   events.sort((a,b)=>a.date.localeCompare(b.date));
   let h='<div class="timeline"><h4>Reading Timeline</h4><div class="tl-track">';
   if(events.length===0){h+='<div style="font-size:12px;color:var(--dim);padding:4px 0">No dates recorded yet.</div>'}
-  events.forEach(ev=>{h+='<div class="tl-item"><div class="tl-date">'+ev.date+'</div><div class="tl-label">'+ev.label+'</div></div>'});
+  events.forEach(ev=>{h+='<div class="tl-item"><div class="tl-date">'+fmtDate(ev.date)+'</div><div class="tl-label">'+ev.label+'</div></div>'});
   h+='</div><div class="tl-add-date">';
-  if(!events.find(e=>e.key==='date_started')){h+='<label>Started:</label><input type="date" onchange="setBookDate('+b.id+',\'date_started\',this.value)"> '}
-  if(!events.find(e=>e.key==='date_read')){h+='<label>Finished:</label><input type="date" onchange="setBookDate('+b.id+',\'date_read\',this.value)">'}
+  if(!events.find(e=>e.key==='date_started')){h+='<label>Started <input type="date" onchange="setBookDate('+b.id+',\'date_started\',this.value)"></label> '}
+  if(!events.find(e=>e.key==='date_read')){h+='<label>Finished <input type="date" onchange="setBookDate('+b.id+',\'date_read\',this.value)"></label>'}
   h+='</div></div>';
   return h;
 }
@@ -2071,6 +2155,14 @@ function updateMenuState(){
 
 
 /* toggleMobPanel removed - buttons now trigger actions directly */
+function toggleMobileControls(force){
+  const toolbar=document.getElementById('mobToolbar');
+  const button=document.getElementById('mobileControlsButton');
+  const open=typeof force==='boolean'?force:!toolbar.classList.contains('open');
+  toolbar.classList.toggle('open',open);
+  button.setAttribute('aria-expanded',String(open));
+  window.dispatchEvent(new Event('resize'));
+}
 /* Sync mobile category dropdown with desktop one */
 function syncMobCats(){
   const src=document.getElementById('cf');
@@ -2108,13 +2200,12 @@ function syncMobCats(){
 (function(){
   function setStickyTops(){
     const mb=document.querySelector('.menubar');
-    const tabs=document.querySelector('.tabs');
-    const ctl=document.querySelector('.ctl');
+    const topbar=document.querySelector('.topbar');
     if(window.innerWidth>768){
       const mbH=mb?mb.offsetHeight:0;
-      const tabH=tabs?tabs.offsetHeight:0;
-      if(tabs)tabs.style.top=mbH+'px';
-      if(ctl)ctl.style.top=(mbH+tabH)+'px';
+      if(topbar)topbar.style.top=mbH+'px';
+    }else if(topbar){
+      topbar.style.top='env(safe-area-inset-top,0px)';
     }
   }
   setStickyTops();
@@ -2218,14 +2309,14 @@ function closeSearchOverlay(){
     let top=0;
     if(window.innerWidth>768){
       const mb=document.querySelector('.menubar');
-      const tabs=document.querySelector('.tabs');
-      const ctl=document.querySelector('.ctl');
+      const topbar=document.querySelector('.topbar');
       if(mb)top+=mb.offsetHeight;
-      if(tabs)top+=tabs.offsetHeight;
-      if(ctl)top+=ctl.offsetHeight;
+      if(topbar)top+=topbar.offsetHeight;
     }else{
+      const topbar=document.querySelector('.topbar');
       const toolbar=document.querySelector('.mob-toolbar');
-      if(toolbar){
+      if(topbar)top+=topbar.offsetHeight;
+      if(toolbar&&toolbar.offsetHeight){
         const toolbarTop=parseFloat(getComputedStyle(toolbar).top)||0;
         top=toolbarTop+toolbar.offsetHeight;
       }
@@ -2236,7 +2327,7 @@ function closeSearchOverlay(){
   window.addEventListener('resize',setThTop);
   if(window.ResizeObserver){
     const observer=new ResizeObserver(setThTop);
-    ['.menubar','.tabs','.ctl','.mob-toolbar'].forEach(selector=>{
+    ['.menubar','.topbar','.mob-toolbar'].forEach(selector=>{
       const element=document.querySelector(selector);
       if(element)observer.observe(element);
     });
